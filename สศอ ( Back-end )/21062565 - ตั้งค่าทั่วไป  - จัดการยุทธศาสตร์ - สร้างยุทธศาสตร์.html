@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../สศอ/assets/images/logo2.png">
+
+    <link href="../สศอ/assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="../สศอ/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../สศอ/assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/select2/css/select2.min.css">
+    <link href="../สศอ/assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+    <link href="../สศอ/assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../สศอ/assets/css/nestable.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/css/style.css">
+	<style>
+		.dd3-handle:hover {
+			cursor: auto;
+		}
+	</style>
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll app-sidebar-be">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="../สศอ/assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="../สศอ/assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 "  data-toggle="slide"  href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">สำหรับผู้บริหาร</a></li>
+							<li><a class="slide-item py-2" href="/">ข้อมูลคำของบประมาณ</a></li>
+							<li><a class="slide-item py-2" href="/">การติดตามผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">การประเมินผลงาน</a></li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/line-md_document-report.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน<br/>(ตามเป้าหมาย แนวทาง และตัวชี้วัด) </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการประเมินผลโครงการ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม <br/> การเบิกจ่ายงบประมาณ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม<br/> การงานตามตัวชี้วัด </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการร่างพรบ.</a></li>
+							<li><a class="slide-item py-2" href="/">ติดตามความก้าวหน้า </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/bi_folder-fill.png" class="side-menu__icon">
+							<span class="side-menu__label">ข้อมูลหน่วยงาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">หน่วยงานทั้งหมด</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าหน่วยงาน.</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="/">
+							<img src="../สศอ/assets/images/icon/sidemenu/mdi_email.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/fa_user-solid.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการสิทธิ์และผู้ใช้งาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการผู้ใช้งาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการสิทธิ์การใช้งาน</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/ci_settings-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">ตั้งค่าทั่วไป</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการแผนงาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการแผนแม่บทฯ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการยุทธศาสตร์</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการหน่วยนับ</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าระยะเวลาดำเนินการ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="../สศอ/assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="fixed-custom-1 pt-4  px-3">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">Dashbord</a></li>
+					    <li class="breadcrumb-item active text-color-1 fw-500" aria-current="page">จัดการยุทธศาสตร์</li>
+					  </ol>
+					</nav>
+
+
+				</div>
+
+				<div class="pt-2 pb-3"></div>
+
+
+				<div class="row">
+					<div class="col">
+						<form class="needs-validation" novalidate id="form">
+							<div class="row">
+								<div class="card card-st-3  mb-4 col-lg-8">
+									<div class="card-body p-5">
+
+										<div class="row align-items-lg-center mb-3">
+											<div class="col-lg-4 col-xl-3">
+												<label class="text-color-8 fw-bold"> รหัสยุทธศาสตร์ </label>
+											</div>
+											<div class="col-lg-8 col-xl-9">
+												<input type="text" name="" class="form-control form-st-1"  placeholder="กรุณากรอกชื่อแผนงาน" readonly="" required="" value="NS001">
+											</div>
+										</div>
+										<div class="row align-items-lg-center mb-3">
+											<div class="col-lg-4 col-xl-3">
+												<label class="text-color-8 fw-bold"> ชื่อยุทธศาสตร์  <span class="text-danger">*</span></label>
+											</div>
+											<div class="col-lg-8 col-xl-9">
+												<input type="text" name="" class="form-control form-st-1"  placeholder="กรุณากรอกชื่อแผนงาน" required="">
+											</div>
+										</div>
+										<div class="row align-items-lg-center mb-5">
+											<div class="col-lg-4 col-xl-3">
+												<label class="text-color-8 fw-bold"> ปีงบประมาณ <span class="text-danger">*</span></label>
+											</div>
+											<div class="col-lg-8 col-xl-9">
+												<div class="row align-items-center">
+													<div class="col-5">
+														<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกปีงบประมาณ" required="">
+															<option value=""></option>
+															<option value="2565">2565</option>
+														</select>
+													</div>
+													<div class="col  text-center">
+														<label class="text-color-8 fw-bold text-center"> ถึง </label>
+													</div>
+													<div class="col-5">
+														<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกปีงบประมาณ" required="">
+															<option value=""></option>
+															<option value="2565">2565</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="text-center d-flex justify-content-end flex-wrap">
+											<button type="button" class="btn btn-st-5 mx-2 mb-3 ">ยกเลิก</button>
+											<button type="" class="btn btn-st-2 ms-2 mb-3 order-0 " id="btn-save">บันทึก</button>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+
+							
+						</form>
+
+
+						<div>
+							<a href="" class="btn btn-st-2 px-2 mb-4 me-2" data-bs-toggle="modal" data-bs-target="#createMainPlanModal">เพิ่มยุทธศาสตร์ (ด้านหลัก)</a>
+							<a href="" class="btn btn-st-2 px-2 mb-4" data-bs-toggle="modal" data-bs-target="#createPlanModal">เพิ่มยุทธศาสตร์ (ด้านรอง)</a>
+						</div>
+
+
+						<div class="card card-st-3  mb-4">
+							<div class="card-body p-0">
+
+								<ul class="nav nav-tabs nav-tabs-st-1" id="myTab" role="tablist">
+								  <li class="nav-item" role="presentation">
+								    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-selected="true">ยุทธศาสตร์ (ด้านหลัก)</button>
+								  </li>
+								  <li class="nav-item" role="presentation">
+								    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-selected="false">ยุทธศาสตร์ (ด้านรอง)</button>
+								  </li>
+								</ul>
+								<div class="tab-content" id="nav-tabContent">
+								  <div class="tab-pane fade show active" id="tab1" role="tabpanel" >
+								  	<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+										<button class="btn btn-st-11 btn-export py-2  btn-control   me-auto mb-2 " id="" >
+											<img src="../สศอ/assets/images/icon/carbon_export.png" class="mt-n1 me-1" width="18"> นำข้อมูลออก
+										</button>
+		
+										<div class="mb-2">
+											<input type="search" name="" id="search" class="form-control form-st-1" placeholder="ชื่อยุทธศาสตร์ " style="min-width: 240px;">
+										</div>
+									</div>
+									<div class="pt-3">
+										<table class="table " id="list-table-1">
+											<thead>
+												<tr>
+													<th class="py-0">
+														<div class="form-check form-check-st-1 no-sort">
+							  								<input class="form-check-input checkall-1" type="checkbox"  >
+														</div>
+													</th>
+													<th class="py-0">รหัสยุทธศาสตร์</th>
+													<th class="select2-filter py-0">
+														ชื่อยุทธศาสตร์
+														<select class="select2-c2" name="">
+															<option value="" selected="">แสดงทั้งหมด</option>
+															<option value="เปิดใช้งาน">เปิดใช้งาน</option>
+															<option value="ปิดใช้งาน">ปิดใช้งาน</option>
+														</select>
+													</th>
+													<th class="select2-filter py-0">
+														สถานะ
+														<select class="select2-c3" name="">
+															<option value="" selected="">แสดงทั้งหมด</option>
+															<option value="เปิดใช้งาน">เปิดใช้งาน</option>
+															<option value=" ปิดใช้งาน"> ปิดใช้งาน</option>
+														</select>
+													</th>
+													<th></th>
+												</tr>
+											</thead>
+										</table>
+									</div>
+								  </div>
+								  <div class="tab-pane fade" id="tab2" role="tabpanel" >
+								  	<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+										<button class="btn btn-st-11 btn-export py-2  btn-control   me-auto mb-2 " id="" >
+											<img src="../สศอ/assets/images/icon/carbon_export.png" class="mt-n1 me-1" width="18"> นำข้อมูลออก
+										</button>
+		
+										<div class="mb-2">
+											<input type="search" name="" id="search2" class="form-control form-st-1" placeholder="ชื่อยุทธศาสตร์ " style="min-width: 240px;">
+										</div>
+									</div>
+									<div class="pt-3">
+										<table class="table " id="list-table-2">
+											<thead>
+												<tr>
+													<th class="py-0">
+														<div class="form-check form-check-st-1 no-sort">
+							  								<input class="form-check-input checkall-2" type="checkbox"  >
+														</div>
+													</th>
+													<th class="py-0">รหัสยุทธศาสตร์</th>
+													<th class="select2-filter py-0">
+														ชื่อยุทธศาสตร์
+														<select class="select2-c2-t2" name="">
+															<option value="" selected="">แสดงทั้งหมด</option>
+															<option value="เปิดใช้งาน">เปิดใช้งาน</option>
+															<option value="ปิดใช้งาน">ปิดใช้งาน</option>
+														</select>
+													</th>
+													<th class="select2-filter py-0">
+														สถานะ
+														<select class="select2-c3-t2" name="">
+															<option value="" selected="">แสดงทั้งหมด</option>
+															<option value="เปิดใช้งาน">เปิดใช้งาน</option>
+															<option value=" ปิดใช้งาน"> ปิดใช้งาน</option>
+														</select>
+													</th>
+													<th></th>
+												</tr>
+											</thead>
+										</table>
+									</div>
+								  </div>
+								</div>
+								
+							</div>
+						</div>
+
+						<div class="card card-st-3  mb-4" style="border: 1px solid #CECECE;">
+							<div class="card-body p-0">
+								<p class="mb-0" id="el5">
+								  <a class="btn btn-cp-2 px-3 fs-16 col-auto text-color-8 py-3 fw-bold mb-0 text-white " data-bs-toggle="collapse" href="#collapsex" role="button" aria-expanded="false" style="background-color: #FC8004;border-bottom: 1px solid #CECECE;    border-radius: 15px 15px 0px 0px;">
+								    ประวัติการใช้งาน
+								  </a>
+								</p>
+
+								<div class="collapse show mb-4" id="collapsex">
+								  <div class="card card-body px-4 pt-4 pb-0 border-0 " style="">
+								  		<table class="table">
+								  			<thead>
+								  				<tr>
+								  					<th class="fw-normal"c>วันเวลา</th>
+								  					<th class="fw-normal">รายการ</th>
+								  					<th class="fw-normal">ชื่อผู้ดำเนินการ</th>
+
+								  				</tr>
+								  			</thead>
+								  			<tbody>
+								  				<tr>
+								  					<td>
+								  						13/04/2565 15:30:50
+								  					</td>
+								  					<td>
+								  						แก้ไขเอกสาร <span class="text-color-1">AB001</span>
+								  					</td>
+								  					<td>
+								  						<div class="text-color-1">เบญจวรรณ บัวพิทักษ์</div>
+								  					</td>
+								  				</tr>
+								  				<tr>
+								  					<td>
+								  						13/04/2565 15:30:50
+								  					</td>
+								  					<td>
+								  						แก้ไขเอกสาร <span class="text-color-1">AB001</span>
+								  					</td>
+								  					<td>
+								  						<div class="text-color-1">เบญจวรรณ บัวพิทักษ์</div>
+								  					</td>
+								  				</tr>
+								  				<tr>
+								  					<td>
+								  						13/04/2565 15:30:50
+								  					</td>
+								  					<td>
+								  						แก้ไขเอกสาร <span class="text-color-1">AB001</span>
+								  					</td>
+								  					<td>
+								  						<div class="text-color-1">เบญจวรรณ บัวพิทักษ์</div>
+								  					</td>
+								  				</tr>
+								  			</tbody>
+								  		</table>
+
+								  </div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="modal fade" id="createMainPlanModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+	      <div class="modal-body pb-3 px-0">
+
+	      	<form class="needs-validation" novalidate id="form-create-main-plan">
+		      	<button type="button" class="btn-close btn-close-2" data-bs-dismiss="modal" aria-label="Close"></button>
+		      	<div class="px-3">
+		        	<div class="text-color-8 fs-16 fw-500 ">เพิ่มยุทธศาสตร์ (ด้านหลัก)</div>
+		        </div>
+
+		        <hr style="opacity: 0.1" />
+		        <div class="px-3">
+			        <div class="mb-4">
+			        	<label class="text-dark fs-16 mb-2 fw-light">รหัสยุทธศาสตร์ด้านหลัก</label>
+			        	<input type="text" name="plan_code" class="form-control form-st-1 " placeholder="รหัสยุทธศาสตร์ด้านหลัก"  required="" readonly="" value="NSM001-1" >
+			        </div>
+			        <div class="mb-4">
+			        	<label class="text-dark fs-16 mb-2 fw-light">ชื่อยุทธศาสตร์ (ด้านหลัก) <span class="text-danger">*</span></label>
+			        	<input type="text" name="plan_name" class="form-control form-st-1 " placeholder="ชื่อยุทธศาสตร์ (ด้านหลัก)"  required=""  value="" >
+			        </div>
+			        <div class="d-flex align-items-center mb-4">
+			        	<div class="fs-16 text-color-8 me-4 mb-1">สถานะการใช้งาน</div>
+			        	<div class="plan-status-check">
+			        		<input type="checkbox" name="plan_status" class="hide-input" id="main-plan">
+			        		<label for="main-plan"></label>
+			        	</div>
+			        </div>
+			        <div class="fw-light fs-16 mb-5">
+			        	<span class="me-3">วันที่สร้าง</span>
+			        	<span class="text-color-1 me-3">18/03/2565</span>
+			        	<span class="me-3">ผู้สร้าง</span>
+			        	<span class="text-color-1">นางสาวเบญจวรรณ บัวพิทักษ์</span>
+			        </div>
+			    </div>
+			    <hr style="opacity: 0.1" />
+		        <div class="px-3">
+			        <div class="text-center d-flex flex-wrap justify-content-end">
+			        	<button type="button" class="btn btn-link text-color-8 text-decoration-none mx-2 mb-2" data-bs-dismiss="modal">ยกเลิก</button>
+			        	<button class="btn btn-st-2 mx-2  mb-2 px-0 " style="min-width: 80px;">บันทึก</button>
+			        </div>
+		        </div>
+	        </form>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="editMainPlanModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+	      <div class="modal-body pb-3 px-0">
+
+	      	<form class="needs-validation" novalidate id="form-edit-main-plan">
+		      	<button type="button" class="btn-close btn-close-2" data-bs-dismiss="modal" aria-label="Close"></button>
+		      	<div class="px-3">
+		        	<div class="text-color-8 fs-16 fw-500 ">แก้ไขยุทธศาสตร์ (ด้านหลัก)</div>
+		        </div>
+
+		        <hr style="opacity: 0.1" />
+		        <div class="px-3">
+			        <div class="mb-4">
+			        	<label class="text-dark fs-16 mb-2 fw-light">รหัสยุทธศาสตร์ด้านหลัก</label>
+			        	<input type="text" name="plan_code" class="form-control form-st-1 " placeholder="รหัสยุทธศาสตร์ด้านหลัก"  required="" readonly="" value="NSM001-1" id="main_plan_code">
+			        </div>
+			        <div class="mb-4">
+			        	<label class="text-dark fs-16 mb-2 fw-light">ชื่อยุทธศาสตร์ (ด้านหลัก) <span class="text-danger">*</span></label>
+			        	<input type="text" name="plan_name" class="form-control form-st-1 " placeholder="ชื่อยุทธศาสตร์ (ด้านหลัก)"  required=""  value="" id="main_plan_name">
+			        </div>
+			        <div class="d-flex align-items-center mb-4">
+			        	<div class="fs-16 text-color-8 me-4 mb-1">สถานะการใช้งาน</div>
+			        	<div class="plan-status-check">
+			        		<input type="checkbox" name="plan_status" class="hide-input" id="main-plan-check">
+			        		<label for="main-plan-check"></label>
+			        	</div>
+			        </div>
+			        <div class="fw-light fs-16 mb-5">
+			        	<span class="me-3">วันที่สร้าง</span>
+			        	<span class="text-color-1 me-3">18/03/2565</span>
+			        	<span class="me-3">ผู้สร้าง</span>
+			        	<span class="text-color-1">นางสาวเบญจวรรณ บัวพิทักษ์</span>
+			        </div>
+			    </div>
+			    <input type="hidden" name="plan_id" id="main_plan_id">
+			    <hr style="opacity: 0.1" />
+		        <div class="px-3">
+			        <div class="text-center d-flex flex-wrap justify-content-end">
+			        	<button type="button" class="btn btn-link text-color-8 text-decoration-none mx-2 mb-2" data-bs-dismiss="modal">ยกเลิก</button>
+			        	<button class="btn btn-st-2 mx-2  mb-2 px-0 " style="min-width: 80px;">บันทึก</button>
+			        </div>
+		        </div>
+	        </form>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="createPlanModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+	      <div class="modal-body pb-3 px-0">
+
+	      	<form class="needs-validation" novalidate id="form-create-plan">
+		      	<button type="button" class="btn-close btn-close-2" data-bs-dismiss="modal" aria-label="Close"></button>
+		      	<div class="px-3">
+		        	<div class="text-color-8 fs-16 fw-500 ">เพิ่มยุทธศาสตร์ (ด้านรอง)</div>
+		        </div>
+
+		        <hr style="opacity: 0.1" />
+		        <div class="px-3">
+			        <div class="mb-4">
+			        	<label class="text-dark fs-16 mb-2 fw-light">รหัสยุทธศาสตร์ด้านรอง</label>
+			        	<input type="text" name="plan_code" class="form-control form-st-1 " placeholder="รหัสยุทธศาสตร์ด้านหลัก"  required="" readonly="" value="NSM001-1" >
+			        </div>
+			        <div class="mb-4">
+			        	<label class="text-dark fs-16 mb-2 fw-light">ชื่อยุทธศาสตร์ (ด้านรอง) <span class="text-danger">*</span></label>
+			        	<input type="text" name="plan_name" class="form-control form-st-1 " placeholder="ชื่อยุทธศาสตร์ (ด้านหลัก)"  required=""  value="" >
+			        </div>
+			        <div class="d-flex align-items-center mb-4">
+			        	<div class="fs-16 text-color-8 me-4 mb-1">สถานะการใช้งาน</div>
+			        	<div class="plan-status-check">
+			        		<input type="checkbox" name="plan_status" class="hide-input" id="plan">
+			        		<label for="plan"></label>
+			        	</div>
+			        </div>
+			        <div class="fw-light fs-16 mb-5">
+			        	<span class="me-3">วันที่สร้าง</span>
+			        	<span class="text-color-1 me-3">18/03/2565</span>
+			        	<span class="me-3">ผู้สร้าง</span>
+			        	<span class="text-color-1">นางสาวเบญจวรรณ บัวพิทักษ์</span>
+			        </div>
+			    </div>
+			    <hr style="opacity: 0.1" />
+		        <div class="px-3">
+			        <div class="text-center d-flex flex-wrap justify-content-end">
+			        	<button type="button" class="btn btn-link text-color-8 text-decoration-none mx-2 mb-2" data-bs-dismiss="modal">ยกเลิก</button>
+			        	<button class="btn btn-st-2 mx-2  mb-2 px-0 " style="min-width: 80px;">บันทึก</button>
+			        </div>
+		        </div>
+	        </form>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="editPlanModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 500px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+	      <div class="modal-body pb-3 px-0">
+
+	      	<form class="needs-validation" novalidate id="form-edit-plan">
+		      	<button type="button" class="btn-close btn-close-2" data-bs-dismiss="modal" aria-label="Close"></button>
+		      	<div class="px-3">
+		        	<div class="text-color-8 fs-16 fw-500 ">แก้ไขยุทธศาสตร์ (ด้านรอง)</div>
+		        </div>
+
+		        <hr style="opacity: 0.1" />
+		        <div class="px-3">
+			        <div class="mb-4">
+			        	<label class="text-dark fs-16 mb-2 fw-light">รหัสยุทธศาสตร์ด้านรอง</label>
+			        	<input type="text" name="plan_code" class="form-control form-st-1 " placeholder="รหัสยุทธศาสตร์ด้านหลัก"  required="" readonly="" value="NSM001-1" id="plan_code">
+			        </div>
+			        <div class="mb-4">
+			        	<label class="text-dark fs-16 mb-2 fw-light">ชื่อยุทธศาสตร์ (ด้านรอง) <span class="text-danger">*</span></label>
+			        	<input type="text" name="plan_name" class="form-control form-st-1 " placeholder="ชื่อยุทธศาสตร์ (ด้านหลัก)"  required=""  value="" id="plan_name">
+			        </div>
+			        <div class="d-flex align-items-center mb-4">
+			        	<div class="fs-16 text-color-8 me-4 mb-1">สถานะการใช้งาน</div>
+			        	<div class="plan-status-check">
+			        		<input type="checkbox" name="plan_status" class="hide-input" id="plan-check">
+			        		<label for="plan-check"></label>
+			        	</div>
+			        </div>
+			        <div class="fw-light fs-16 mb-5">
+			        	<span class="me-3">วันที่สร้าง</span>
+			        	<span class="text-color-1 me-3">18/03/2565</span>
+			        	<span class="me-3">ผู้สร้าง</span>
+			        	<span class="text-color-1">นางสาวเบญจวรรณ บัวพิทักษ์</span>
+			        </div>
+			    </div>
+			    <input type="hidden" name="plan_id" id="plan_id">
+			    <hr style="opacity: 0.1" />
+		        <div class="px-3">
+			        <div class="text-center d-flex flex-wrap justify-content-end">
+			        	<button type="button" class="btn btn-link text-color-8 text-decoration-none mx-2 mb-2" data-bs-dismiss="modal">ยกเลิก</button>
+			        	<button class="btn btn-st-2 mx-2  mb-2 px-0 " style="min-width: 80px;">บันทึก</button>
+			        </div>
+		        </div>
+	        </form>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="successModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+	      <div class="modal-body pb-5">
+	      	<button type="button" class="btn-close btn-close-2" data-bs-dismiss="modal" aria-label="Close"></button>
+	        <div class="text-center pt-5 pb-4">
+	        	<div class="mx-auto i-success" style="">
+					<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 10L10.3333 17.5L25 2.5" stroke="#4AD991" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+	        	</div>
+	        </div>
+	        <div class="text-center fw-bold fs-20 mb-2">บันทึกข้อมูลสำเร็จ</div>
+	        <div class="text-center fs-18">ระบบทำการบันทึกข้อมูลเรียบร้อยแล้ว</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="deleteMainPlanModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+
+	      <div class="modal-body ">
+	      	<div class="text-end">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      	</div>
+	        <div class="text-center text-color-1 fs-18 fw-500 pt-4 mb-1 pb-5">คุณต้องการลบหรือไม่ ?</div>
+
+	        <div class="text-center d-flex flex-wrap justify-content-center">
+	        	<button  class="btn btn-st-2 mx-2  mb-3 " id="btn-confirm-delete-mainPlan">ตกลง</button>
+	        	<button type="button" class="btn btn-st-3 mx-2 mb-3 " data-bs-dismiss="modal">ยกเลิก</button>
+	        </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="deletePlanModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+	      <div class="modal-body ">
+	      	<div class="text-end">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      	</div>
+	        <div class="text-center text-color-1 fs-18 fw-500 pt-4 mb-1 pb-5">คุณต้องการลบหรือไม่ ?</div>
+
+	        <div class="text-center d-flex flex-wrap justify-content-center">
+	        	<button  class="btn btn-st-2 mx-2  mb-3 " id="btn-confirm-delete-Plan">ตกลง</button>
+	        	<button type="button" class="btn btn-st-3 mx-2 mb-3 " data-bs-dismiss="modal">ยกเลิก</button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="successPlanModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+	      <div class="modal-body pb-5">
+	      	<button type="button" class="btn-close btn-close-2" data-bs-dismiss="modal" aria-label="Close"></button>
+	        <div class="text-center pt-5 pb-4">
+	        	<div class="mx-auto i-success" style="">
+					<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 10L10.3333 17.5L25 2.5" stroke="#4AD991" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+	        	</div>
+	        </div>
+	        <div class="text-center fw-bold fs-20 mb-2">สร้างรายการสำเร็จ</div>
+	        <div class="text-center fs-18">ระบบได้สร้างรายการ</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="alertModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+	      <div class="modal-body pb-5">
+	      	<button type="button" class="btn-close btn-close-2" data-bs-dismiss="modal" aria-label="Close"></button>
+	        <div class="text-center pt-5 pb-4">
+	        	<div class="mx-auto i-success" style="">
+					<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M3 10L10.3333 17.5L25 2.5" stroke="#4AD991" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+	        	</div>
+	        </div>
+	        <div class="text-center fw-bold fs-20 mb-2">กรุณาสร้างยุทธศาสตร์</div>
+	        <div class="text-center fs-18">อย่างน้อย 1 รายการ</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../สศอ/assets/plugins/moment/moment.js"></script>
+	<script src="../สศอ/assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../สศอ/assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="../สศอ/assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="../สศอ/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jquery.dataTables.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jszip.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/pdfmake.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/vfs_fonts.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.html5.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.print.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+	<script src="../สศอ/assets/js/jquery.nestable.js"></script>
+	
+	<script type="text/javascript">
+    	var successModal = new bootstrap.Modal(document.getElementById('successModal'), {
+		  keyboard: false
+		})
+		var editMainPlanModal = new bootstrap.Modal(document.getElementById('editMainPlanModal'), {
+		  keyboard: false
+		})
+
+		var createMainPlanModalEl = document.getElementById('createMainPlanModal')
+		createMainPlanModalEl.addEventListener('show.bs.modal', function (event) {
+		  $('#form-create-main-plan').find('input[name="plan_name"]').val('')
+		  $('#form-create-main-plan').find('input[name="plan_status"]').attr('checked',false)
+		})
+		var createMainPlanModal = new bootstrap.Modal(createMainPlanModalEl, {
+		  keyboard: false
+		})
+
+		
+
+		var deleteMainPlanModal = new bootstrap.Modal(document.getElementById('deleteMainPlanModal'), {
+		  keyboard: false
+		})
+
+		var editPlanModal = new bootstrap.Modal(document.getElementById('editPlanModal'), {
+		  keyboard: false
+		})
+
+
+		var createPlanModalEl = document.getElementById('createPlanModal')
+		createPlanModalEl.addEventListener('show.bs.modal', function (event) {
+		  $('#form-create-plan').find('input[name="plan_name"]').val('')
+		  $('#form-create-plan').find('input[name="plan_status"]').attr('checked',false)
+		})
+		var createPlanModal = new bootstrap.Modal(createPlanModalEl, {
+		  keyboard: false
+		})
+
+		var deletePlanModal = new bootstrap.Modal(document.getElementById('deletePlanModal'), {
+		  keyboard: false
+		})
+
+		var successPlanModal = new bootstrap.Modal(document.getElementById('successPlanModal'), {
+		  keyboard: false
+		})
+		var alertModal = new bootstrap.Modal(document.getElementById('alertModal'), {
+		  keyboard: false
+		})
+		
+	</script>
+
+	<script type="text/javascript">
+		$(document).on('click','.btn-edit-main-plan',function (){
+			var plan_id = $(this).attr('data-id')
+			var plan_code = $(this).attr('data-code')
+			var plan_name = $(this).attr('data-name')
+			var plan_status = $(this).attr('data-status')
+
+
+			$('#main_plan_id').val(plan_id)
+			$('#main_plan_code').val(plan_code)
+			$('#main_plan_name').val(plan_name)
+
+			if(plan_status == 1){
+				$('#main-plan-check').prop('checked',true)
+			}else{
+				$('#main-plan-check').prop('checked',false)
+			}
+
+			editMainPlanModal.show()
+
+		})
+
+		$(document).on('click','.btn-delete-main-plan',function (){
+			var plan_id = $(this).attr('data-id')
+
+			$('#btn-confirm-delete-mainPlan').attr('data-id',plan_id)
+			deleteMainPlanModal.show()
+
+		})
+
+		$(document).on('click','#btn-confirm-delete-mainPlan',function (){
+			var plan_id = $(this).attr('data-id')
+
+			var indexes = table.rows().indexes().filter( function ( value, index ) {
+		        return plan_id == table.row(value).data().id;
+		      } );
+		  		
+		     table.rows(indexes).remove().draw();
+
+
+			deleteMainPlanModal.hide()
+		})
+
+
+		$(document).on('click','.btn-edit-plan',function (){
+			var plan_id = $(this).attr('data-id')
+			var plan_code = $(this).attr('data-code')
+			var plan_name = $(this).attr('data-name')
+			var plan_status = $(this).attr('data-status')
+
+
+			$('#plan_id').val(plan_id)
+			$('#plan_code').val(plan_code)
+			$('#plan_name').val(plan_name)
+
+			if(plan_status == 1){
+				$('#plan-check').prop('checked',true)
+			}else{
+				$('#plan-check').prop('checked',false)
+			}
+
+			editPlanModal.show()
+
+		})
+
+
+
+		$(document).on('click','.btn-delete-plan',function (){
+			var plan_id = $(this).attr('data-id')
+			$('#btn-confirm-delete-Plan').attr('data-id',plan_id)
+			deletePlanModal.show()
+
+		})
+
+		$(document).on('click','#btn-confirm-delete-Plan',function (){
+			var plan_id = $(this).attr('data-id')
+			var indexes = table2.rows().indexes().filter( function ( value, index ) {
+		        return plan_id == table2.row(value).data().id;
+		      } );
+		  		
+		     table2.rows(indexes).remove().draw();
+	
+			deletePlanModal.hide()
+		})
+
+	</script>
+
+
+
+	<script type="text/javascript">
+
+
+	    $( "#form" ).submit(function( event ) {
+	    	var form = $(this);
+	    	if (!form[0].checkValidity()) {
+	          event.preventDefault()
+	          event.stopPropagation()
+	        }else if(table.data().count() <= 0 || table2.data().count() <= 0){
+	        	event.preventDefault()
+	          	event.stopPropagation()
+
+	        	alertModal.show()
+	        }else{
+	        	event.preventDefault()
+	          	event.stopPropagation()
+
+	        	successPlanModal.show()
+	        }
+	        form.addClass('was-validated')
+		});
+
+	    $( "#form-create-main-plan" ).submit(function( event ) {
+	    	var form = $(this);
+	    	if (!form[0].checkValidity()) {
+	          event.preventDefault()
+	          event.stopPropagation()
+	        }else{
+	        	event.preventDefault()
+	          	event.stopPropagation()
+	          	createMainPlanModal.hide()
+	          	editMainPlanModal.hide()
+	        	successModal.show()
+
+	        	var plan_code = form.find('input[name="plan_code"]').val()
+	        	var plan_name = form.find('input[name="plan_name"]').val()
+	        	var plan_status = 0;
+	        	if(form.find('input[name="plan_status"]').is(':checked')){
+	        		var plan_status = 1;
+	        	}
+
+	        	var insert_id = 3;
+
+	        	table.row.add( {
+			        "id": insert_id,
+			        "plan_code":plan_code,
+			        "plan_name": plan_name,
+			        "status": plan_status,
+			    } ).draw();
+	        }
+	        form.addClass('was-validated')
+		});
+
+		$( "#form-edit-main-plan" ).submit(function( event ) {
+	    	var form = $(this);
+	    	if (!form[0].checkValidity()) {
+	           	event.preventDefault()
+	          	event.stopPropagation()
+	        }else{
+	        	event.preventDefault()
+	          	event.stopPropagation()
+	          	createMainPlanModal.hide()
+	          	editMainPlanModal.hide()
+	        	successModal.show()
+
+	        	console.log(form.serialize())
+	        }
+	        form.addClass('was-validated')
+		});
+
+		$( "#form-create-plan" ).submit(function( event ) {
+	    	var form = $(this);
+	    	if (!form[0].checkValidity()) {
+	           	event.preventDefault()
+	          	event.stopPropagation()
+	        }else{
+	        	event.preventDefault()
+	          	event.stopPropagation()
+	          	createPlanModal.hide()
+	          	editPlanModal.hide()
+	        	successModal.show()
+
+
+	        	var plan_code = form.find('input[name="plan_code"]').val()
+	        	var plan_name = form.find('input[name="plan_name"]').val()
+	        	var plan_status = 0;
+	        	if(form.find('input[name="plan_status"]').is(':checked')){
+	        		var plan_status = 1;
+	        	}
+
+	        	var insert_id = 3;
+
+	        	table2.row.add( {
+			        "id": insert_id,
+			        "plan_code":plan_code,
+			        "plan_name": plan_name,
+			        "status": plan_status,
+			    } ).draw();
+
+
+	        }
+	        form.addClass('was-validated')
+		});
+
+		$( "#form-edit-plan" ).submit(function( event ) {
+	    	var form = $(this);
+	    	if (!form[0].checkValidity()) {
+	           	event.preventDefault()
+	          	event.stopPropagation()
+	        }else{
+	        	event.preventDefault()
+	          	event.stopPropagation()
+	          	createPlanModal.hide()
+	          	editPlanModal.hide()
+	        	successModal.show()
+
+	        	console.log(form.serialize())
+	        }
+	        form.addClass('was-validated')
+		});
+
+
+
+	</script>
+	
+	<script type="text/javascript">
+
+		var myData4 = [
+		    {
+		        "id": 1,
+		        "plan_code":"NSM001-1",
+		        "plan_name": "ชื่อยุทธศาสตร์",
+		        "status": 0,
+		    },
+		    {
+		        "id": 2,
+		        "plan_code":"NSM001-2",
+		        "plan_name": "ชื่อยุทธศาสตร์",
+		        "status": 1,
+		    }
+
+		];
+
+
+		var table =	$('#list-table-1').DataTable({
+	        scrollX:        true,
+	        scrollCollapse: true,
+			data: myData4,
+		    columns: [
+		        { data: 'id' },
+		        { data: 'plan_code' },
+		        { data: 'plan_name' },
+		        { data: 'status' },
+		        { data: 'id' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle w-30px ","orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check form-check-st-1"><input class="form-check-input check-1" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left w-100px ","orderable": false,
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<button class="alink-st-1 btn-link btn btn-edit-main-plan"  data-id="'+row.id+'" data-code="'+row.plan_code+'" data-name="'+row.plan_name+'" data-status="'+row.status+'">'+data+'</button >';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left","width":84,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data+'</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		    	{ targets : [3],className:"align-middle text-center   w-100px ","width":5,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="unitstatus-table">'
+			          	if(data == 0){
+			          		html += '<div class="unit-status status-0"> ปิดใช้งาน</div>'
+			          	}else if(data == 1){
+			          		html += '<div class="unit-status status-1">เปิดใช้งาน</div>'
+			          	}
+			          	
+			          	html += '</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [4],className:"align-middle text-center   w-100px ","width":5,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<button class="btn btn-link p-0 btn-delete-main-plan" data-id="'+data+'"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2650_26672)"><path d="M2 5V15C2 15.55 2.45 16 3 16H12C12.55 16 13 15.55 13 15V5H2ZM5 14H4V7H5V14ZM7 14H6V7H7V14ZM9 14H8V7H9V14ZM11 14H10V7H11V14ZM13.25 2H10V0.75C9.99921 0.551331 9.91994 0.361024 9.77946 0.220543C9.63898 0.0800612 9.44867 0.000789946 9.25 0L5.75 0C5.55133 0.000789946 5.36102 0.0800612 5.22054 0.220543C5.08006 0.361024 5.00079 0.551331 5 0.75V2H1.75C1.55125 2.00053 1.36079 2.07972 1.22025 2.22025C1.07971 2.36079 1.00053 2.55125 1 2.75V4H14V2.75C13.9995 2.55125 13.9203 2.36079 13.7797 2.22025C13.6392 2.07972 13.4488 2.00053 13.25 2ZM9 2H6V1.013H9V2Z" fill="#FF0000"/></g><defs><clipPath id="clip0_2650_26672"><rect width="16" height="16" fill="white"/></clipPath></defs></svg></button>'
+			            return html;
+			        }
+		    	}
+				  				
+							  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			// "ordering": true,
+			"dom": '<<t>ilp>',
+		});
+
+
+		$('#search').keyup(function(){
+		      table.search($(this).val()).draw() ;
+		})
+
+
+		$(".select2-c2").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c2').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(2).search( text,true, false, true  ).draw();
+		});
+		$(".select2-c3").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c3').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(3).search( text,true, false, true  ).draw();
+		});
+
+	</script>
+
+	<script type="text/javascript">
+
+		var myData2 = [
+		    {
+		        "id": 1,
+		        "plan_code":"NSM001-1",
+		        "plan_name": "ชื่อยุทธศาสตร์",
+		        "status": 0,
+		    }
+		];
+
+
+		var table2 =	$('#list-table-2').DataTable({
+	        scrollX:        true,
+	        scrollCollapse: true,
+			data: myData2,
+		    columns: [
+		        { data: 'id' },
+		        { data: 'plan_code' },
+		        { data: 'plan_name' },
+		        { data: 'status' },
+		        { data: 'id' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle w-30px ","orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check form-check-st-1"><input class="form-check-input check-2" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left w-100px ","orderable": false,
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<button class="alink-st-1 btn-link btn btn-edit-plan"  data-id="'+row.id+'" data-code="'+row.plan_code+'" data-name="'+row.plan_name+'" data-status="'+row.status+'">'+data+'</button >';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left","width":84,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data+'</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		    	{ targets : [3],className:"align-middle text-center   w-100px ","width":5,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="unitstatus-table">'
+			          	if(data == 0){
+			          		html += '<div class="unit-status status-0"> ปิดใช้งาน</div>'
+			          	}else if(data == 1){
+			          		html += '<div class="unit-status status-1">เปิดใช้งาน</div>'
+			          	}
+			          	
+			          	html += '</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [4],className:"align-middle text-center   w-100px ","width":5,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<button class="btn btn-link p-0 btn-delete-plan" data-id="'+data+'"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2650_26672)"><path d="M2 5V15C2 15.55 2.45 16 3 16H12C12.55 16 13 15.55 13 15V5H2ZM5 14H4V7H5V14ZM7 14H6V7H7V14ZM9 14H8V7H9V14ZM11 14H10V7H11V14ZM13.25 2H10V0.75C9.99921 0.551331 9.91994 0.361024 9.77946 0.220543C9.63898 0.0800612 9.44867 0.000789946 9.25 0L5.75 0C5.55133 0.000789946 5.36102 0.0800612 5.22054 0.220543C5.08006 0.361024 5.00079 0.551331 5 0.75V2H1.75C1.55125 2.00053 1.36079 2.07972 1.22025 2.22025C1.07971 2.36079 1.00053 2.55125 1 2.75V4H14V2.75C13.9995 2.55125 13.9203 2.36079 13.7797 2.22025C13.6392 2.07972 13.4488 2.00053 13.25 2ZM9 2H6V1.013H9V2Z" fill="#FF0000"/></g><defs><clipPath id="clip0_2650_26672"><rect width="16" height="16" fill="white"/></clipPath></defs></svg></button>'
+			            return html;
+			        }
+		    	}
+				  				
+							  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			// "ordering": true,
+			"dom": '<<t>ilp>',
+		});
+
+
+		$('#search2').keyup(function(){
+		      table2.search($(this).val()).draw() ;
+		})
+
+
+		$(".select2-c2-t2").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c2-t2').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(2).search( text,true, false, true  ).draw();
+		});
+		$(".select2-c3-t2").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c3-t2').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(3).search( text,true, false, true  ).draw();
+		});
+
+	</script>
+	<script type="text/javascript">
+		$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+			table.columns.adjust().draw();
+			table2.columns.adjust().draw();
+		})
+
+		$('.checkall-1').on('click',function() {
+		    if($(this).is(':checked')){
+		    	$('.check-1').prop('checked',true);
+		    }else{
+		    	$('.check-1').prop('checked',false);
+		    }
+		});
+		$('.checkall-2').on('click',function() {
+		    if($(this).is(':checked')){
+		    	$('.check-2').prop('checked',true);
+		    }else{
+		    	$('.check-2').prop('checked',false);
+		    }
+		});
+	</script>
+
+	<script type="text/javascript">
+		
+
+	</script>
+</body>
+</html>

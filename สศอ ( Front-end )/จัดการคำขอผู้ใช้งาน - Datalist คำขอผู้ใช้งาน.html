@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo2.png">
+
+    <link href="assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/select2/css/select2.min.css">
+    <link href="assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+    <link href="assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link href="assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+	<link href="assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+	<link href="assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+	<link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 active"  href="#">
+							<img src="assets/images/icon/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/fluent_people-20-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">งานของฉัน</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="assets/images/icon/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">ข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">คำของบประมาณ</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/mdi_email-newsletter.png" class="side-menu__icon">
+							<span class="side-menu__label">ข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="fixed-custom-1 pt-4  px-4">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">จัดการคำขอผู้ใช้งาน</a></li>
+					  </ol>
+					</nav>
+				</div>
+
+				<div class="pt-4 pb-3"></div>
+
+				<div class="d-flex flex-wrap mb-4">
+					<div class="card card-st-4 me-4">
+						<div class="card-body d-flex align-items-center">
+							<div class="me-auto text-color-12">
+								<div class="fs-13 mb-2 ">คำขอทั้งหมด</div>
+								<div class="fs-16 fw-bold">180</div>
+							</div>
+							<div class="icon-t1" style="background: #F0F0F7;">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.38095 6.22997C5.38095 3.87559 7.33418 1.99997 9.70238 1.99997H10.2976C12.6658 1.99997 14.619 3.87559 14.619 6.22997V6.80997C14.619 8.3223 13.8131 9.63709 12.609 10.3841C15.142 11.1411 17 13.4411 17 16.1866C17 17.2063 16.1572 18 15.1587 18H4.84127C3.84282 18 3 17.2063 3 16.1866C3 13.4411 4.85798 11.1411 7.39102 10.3841C6.18687 9.63709 5.38095 8.3223 5.38095 6.80997V6.22997ZM9.70238 3.49997C8.1257 3.49997 6.88095 4.74045 6.88095 6.22997V6.80997C6.88095 8.29949 8.1257 9.53997 9.70238 9.53997H10.2976C11.8743 9.53997 13.119 8.29949 13.119 6.80997V6.22997C13.119 4.74045 11.8743 3.49997 10.2976 3.49997H9.70238ZM9.20635 11.62C6.58865 11.62 4.5 13.6828 4.5 16.1866C4.5 16.3415 4.63434 16.5 4.84127 16.5H15.1587C15.3657 16.5 15.5 16.3415 15.5 16.1866C15.5 13.6828 13.4113 11.62 10.7937 11.62H9.20635Z" fill="black"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="card card-st-4 me-4">
+						<div class="card-body d-flex align-items-center">
+							<div class="me-auto text-color-12">
+								<div class="fs-13 mb-2 ">คำขอรออนุมัติ</div>
+								<div class="fs-16 fw-bold">150</div>
+							</div>
+							<div class="icon-t1" style="background: #FFF4E5;">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.38095 6.22997C5.38095 3.87559 7.33418 1.99997 9.70238 1.99997H10.2976C12.6658 1.99997 14.619 3.87559 14.619 6.22997V6.80997C14.619 8.3223 13.8131 9.63709 12.609 10.3841C15.142 11.1411 17 13.4411 17 16.1866C17 17.2063 16.1572 18 15.1587 18H4.84127C3.84282 18 3 17.2063 3 16.1866C3 13.4411 4.85798 11.1411 7.39102 10.3841C6.18687 9.63709 5.38095 8.3223 5.38095 6.80997V6.22997ZM9.70238 3.49997C8.1257 3.49997 6.88095 4.74045 6.88095 6.22997V6.80997C6.88095 8.29949 8.1257 9.53997 9.70238 9.53997H10.2976C11.8743 9.53997 13.119 8.29949 13.119 6.80997V6.22997C13.119 4.74045 11.8743 3.49997 10.2976 3.49997H9.70238ZM9.20635 11.62C6.58865 11.62 4.5 13.6828 4.5 16.1866C4.5 16.3415 4.63434 16.5 4.84127 16.5H15.1587C15.3657 16.5 15.5 16.3415 15.5 16.1866C15.5 13.6828 13.4113 11.62 10.7937 11.62H9.20635Z" fill="#FFB901"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="card card-st-4 me-4">
+						<div class="card-body d-flex align-items-center">
+							<div class="me-auto text-color-12">
+								<div class="fs-13 mb-2 ">คำขอที่อนุมัติ</div>
+								<div class="fs-16 fw-bold">30</div>
+							</div>
+							<div class="icon-t1" style="background: #DAF7E8;">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.38095 6.22997C5.38095 3.87559 7.33418 1.99997 9.70238 1.99997H10.2976C12.6658 1.99997 14.619 3.87559 14.619 6.22997V6.80997C14.619 8.3223 13.8131 9.63709 12.609 10.3841C15.142 11.1411 17 13.4411 17 16.1866C17 17.2063 16.1572 18 15.1587 18H4.84127C3.84282 18 3 17.2063 3 16.1866C3 13.4411 4.85798 11.1411 7.39102 10.3841C6.18687 9.63709 5.38095 8.3223 5.38095 6.80997V6.22997ZM9.70238 3.49997C8.1257 3.49997 6.88095 4.74045 6.88095 6.22997V6.80997C6.88095 8.29949 8.1257 9.53997 9.70238 9.53997H10.2976C11.8743 9.53997 13.119 8.29949 13.119 6.80997V6.22997C13.119 4.74045 11.8743 3.49997 10.2976 3.49997H9.70238ZM9.20635 11.62C6.58865 11.62 4.5 13.6828 4.5 16.1866C4.5 16.3415 4.63434 16.5 4.84127 16.5H15.1587C15.3657 16.5 15.5 16.3415 15.5 16.1866C15.5 13.6828 13.4113 11.62 10.7937 11.62H9.20635Z" fill="#4AD991"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="card card-st-4 me-4">
+						<div class="card-body d-flex align-items-center">
+							<div class="me-auto text-color-12">
+								<div class="fs-13 mb-2 ">คำขอถูกระงับ</div>
+								<div class="fs-16 fw-bold">4</div>
+							</div>
+							<div class="icon-t1" style="background: #FFE0E0;">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M5.38095 6.22997C5.38095 3.87559 7.33418 1.99997 9.70238 1.99997H10.2976C12.6658 1.99997 14.619 3.87559 14.619 6.22997V6.80997C14.619 8.3223 13.8131 9.63709 12.609 10.3841C15.142 11.1411 17 13.4411 17 16.1866C17 17.2063 16.1572 18 15.1587 18H4.84127C3.84282 18 3 17.2063 3 16.1866C3 13.4411 4.85798 11.1411 7.39102 10.3841C6.18687 9.63709 5.38095 8.3223 5.38095 6.80997V6.22997ZM9.70238 3.49997C8.1257 3.49997 6.88095 4.74045 6.88095 6.22997V6.80997C6.88095 8.29949 8.1257 9.53997 9.70238 9.53997H10.2976C11.8743 9.53997 13.119 8.29949 13.119 6.80997V6.22997C13.119 4.74045 11.8743 3.49997 10.2976 3.49997H9.70238ZM9.20635 11.62C6.58865 11.62 4.5 13.6828 4.5 16.1866C4.5 16.3415 4.63434 16.5 4.84127 16.5H15.1587C15.3657 16.5 15.5 16.3415 15.5 16.1866C15.5 13.6828 13.4113 11.62 10.7937 11.62H9.20635Z" fill="#FF0000"/>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="row">
+					<div class="col">
+
+						<div class="card card-st-3  mb-4 " style="">
+							<div class="card-body p-0">
+								
+								<ul class="data-status d-flex">
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-1" data-status ="0" value="" checked="">
+										<label for="data-status-1" class="mb-0">ทั้งหมด (<span class="countStatus">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-2" data-status ="1" value="รออนุมัติ">
+										<label for="data-status-2" class="mb-0">รออนุมัติ (<span class="countStatus0">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-3" data-status ="2" value="อนุมัติแล้ว">
+										<label for="data-status-3" class="mb-0">อนุมัติแล้ว (<span class="countStatus1">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-6" data-status ="4" value="ระงับบัญชี">
+										<label for="data-status-6" class="mb-0 text-danger">ระงับบัญชี  (<span class="countStatus2">0</span>)</label>
+									</li>
+
+
+								</ul>
+								<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+
+									<button class="btn btn-st-11 btn-export  btn-control   me-3 mb-2 " id="" >
+										<img src="assets/images/icon/carbon_export.png" class="mt-n1" width="24"> นำข้อมูลออก
+									</button>
+
+									<div class="fs-16 text-color-8 mb-2  me-3">เลือกจากช่วงวันที่ขออนุมัติ</div>
+									<div class="mb-2 me-auto">
+										<input type="text" name="" id="" class="form-control form-st-1 icon-calendar-2 daterange " placeholder="dd/mm/yyyy -  dd/mm/yyyy" style="min-width: 240px;">
+									</div>
+	
+									<div class="mb-2">
+										<input type="search" name="" id="search" class="form-control form-st-1" placeholder="รหัสโครงการ / ชื่อโครงการ" style="min-width: 240px;">
+									</div>
+								</div>
+								<table class="table" id="list-table">
+									<thead >
+										<tr>
+											<th class="py-1 ">
+												<div class="form-check form-check-st-1">
+					  								<input class="form-check-input" type="checkbox" >
+												</div>
+											</th>
+											<th class="py-1">รหัสผู้ใช้งาน</th>
+											<th class="py-1">วันที่ขออนุมัติ</th>
+											<th class="py-1">ชื่อ - นามสกุล</th>
+											<th class="select2-filter py-1">
+												หน่วยงาน
+												<select class="select2-agency" name="">
+													<option value="" selected="">ทั้งหมด</option>
+													<option value="0">กรมวิทยาศาสตร์บริการ</option>
+													<option value="1">สถาบันมาตรวิทยาแห่งชาติ</option>
+												</select>
+											</th>
+											<th class="select2-filter py-1">
+												กระทรวง
+												<select class="select2-department" name="">
+													<option value="" selected="">ทั้งหมด</option>
+													<option value="0">กระทรวงอุตสาหกรรม</option>
+													<option value="1">กระทรวงแรงงาน</option>
+												</select>
+											</th>
+											<th class="py-1">สถานะ</th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/plugins/moment/moment.js"></script>
+	<script src="assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="assets/plugins/sidebar/sidebar.js"></script>
+	<script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+	<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+	<script src="assets/plugins/datatable/js/jszip.min.js"></script>
+	<script src="assets/plugins/datatable/js/pdfmake.min.js"></script>
+	<script src="assets/plugins/datatable/js/vfs_fonts.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.html5.min.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.print.min.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+	<script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+
+	<script type="text/javascript">
+			$(function() {
+	          	var start = moment().subtract(0, 'days');
+	          	var end = moment();
+	          	function cb(start, end) {
+
+	          		console.log( start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY') )
+	          	}
+	          	$('.daterange').daterangepicker({
+		            startDate: start,
+		            endDate: end,
+		            ranges: {
+		               'Today': [moment(), moment()],
+		               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+		               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+		               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+		               'This Month': [moment().startOf('month'), moment().endOf('month')],
+		               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+		            }
+		        }, cb);
+	          	cb(start, end);
+	      	});
+		</script>
+	<script type="text/javascript">
+
+		var myData4 = [
+		    {
+		        "id": 1,
+		        "user_code":"UDSS64001",
+		        "request_date": "01/03/2022 17:30:40",
+		        "user_name": "นาย สมรักษ์ พงมั่นหมาย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "department": "กระทรวงอุตสาหกรรม",
+		        "status": 0,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "user_code":"UDSS64001",
+		        "request_date": "01/03/2022 17:30:40",
+		        "user_name": "นาย สมรักษ์ พงมั่นหมาย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "department": "กระทรวงอุตสาหกรรม",
+		        "status": 1,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "user_code":"UDSS64001",
+		        "request_date": "01/03/2022 17:30:40",
+		        "user_name": "นาย สมรักษ์ พงมั่นหมาย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "department": "กระทรวงอุตสาหกรรม",
+		        "status": 2,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "user_code":"UDSS64001",
+		        "request_date": "01/03/2022 17:30:40",
+		        "user_name": "นาย สมรักษ์ พงมั่นหมาย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "department": "กระทรวงอุตสาหกรรม",
+		        "status": 1,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "user_code":"UDSS64001",
+		        "request_date": "01/03/2022 17:30:40",
+		        "user_name": "นาย สมรักษ์ พงมั่นหมาย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "department": "กระทรวงอุตสาหกรรม",
+		        "status": 2,
+		        
+		    }
+		];
+
+
+		var table =	$('#list-table').DataTable({
+	        // scrollX:        true,
+	        // scrollCollapse: true,
+			data: myData4,
+		    columns: [
+		        { data: 'id' },
+		        { data: 'user_code' },
+		        { data: 'request_date' },
+		        { data: 'user_name' },
+		        { data: 'agency' },
+		        { data: 'department' },
+		        { data: 'status' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle ",
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check form-check-st-1"><input class="form-check-input" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left",
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<a href="/'+data+'" target="_blank" class="alink-st-1"  >'+data+'</a>';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left",
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data+'</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		        { targets : [3],className:"align-middle text-left"
+		    	},
+		    	{ targets : [4],className:"align-middle text-left"
+
+		    	},
+		    	{ targets : [5],className:"align-middle text-left"
+
+		    	},
+		    	{ targets : [6],className:"align-middle text-center   ",
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="projectstatus-table">'
+			          	
+			          	if(data == 0){
+			          		html += '<div class="user-status status-0">รออนุมัติ</div>'
+			          	}else if(data == 1){
+			          		html += '<div class="user-status status-1">อนุมัติแล้ว</div>'
+			          	}else if(data == 2){
+			          		html += '<div class="user-status status-2">ระงับบัญชี</div>'
+			          	}
+			          	
+			          	html += '</div>'
+
+					
+					
+			            return html;
+			        }
+		    	}
+				  				
+							  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			"ordering": false,
+			"dom": '<<t>ilp>',
+			buttons: [
+				{
+			        extend: 'csv',
+			        text: 'Export csv',
+			        charset: 'utf-8',
+			        extension: '.csv',
+			        fieldSeparator: ';',
+			        fieldBoundary: '',
+			        bom: true
+			    },
+			    {
+			        extend: 'pdf',
+	                orientation: 'landscape',
+	                pageSize: 'LEGAL',
+	                customize:function(doc){
+	                    doc.defaultStyle = {
+	                        font:'THSarabun',
+	                        fontSize:16                                 
+	                    };
+	                    doc.styles.tableHeader.fontSize = 16;
+	                    var rowCount = doc.content[1].table.body.length;
+	                    for (i = 1; i < rowCount; i++) { 
+	                        doc.content[1].table.body[i][0].alignment = 'center';
+	                        doc.content[1].table.body[i][1].alignment = 'center';
+	                        doc.content[1].table.body[i][2].alignment = 'center';
+	                        doc.content[1].table.body[i][3].alignment = 'center';
+	                    };                                  
+	                    console.log(doc);
+	                }
+			    },
+
+	            'copy',  'excel',  'print'
+	        ]
+		});
+
+		var countStatus0 = table.column(6).data().filter( function ( value, index ) {
+	        return value === 0 ? true : false;
+	    } ).count();
+	    var countStatus1 = table.column(6).data().filter( function ( value, index ) {
+	        return value === 1 ? true : false;
+	    } ).count();
+	    var countStatus2 = table.column(6).data().filter( function ( value, index ) {
+	        return value === 2 ? true : false;
+	    } ).count();
+
+
+		$('.countStatus0').text(countStatus0)
+		$('.countStatus1').text(countStatus1)
+		$('.countStatus2').text(countStatus2)
+		$('.countStatus').text(countStatus0 + countStatus1 + countStatus2  );
+
+
+		$('#search').keyup(function(){
+		      table.search($(this).val()).draw() ;
+		})
+
+
+		$('.input-status').on('change',function(){
+			var status = $('.input-status:checked').val();
+			console.log(status)
+			table.column(6).search(status,true, false, true  ).draw();
+		})
+
+		$(".select2-agency").select2({
+				minimumResultsForSearch: Infinity
+		});
+		$('.select2-agency').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'ทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(4).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-department").select2({
+				minimumResultsForSearch: Infinity
+		});
+		$('.select2-department').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'ทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(5).search( text,true, false, true  ).draw();
+		});
+
+
+
+	</script>
+
+</body>
+</html>

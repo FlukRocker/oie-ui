@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../สศอ/assets/images/logo2.png">
+
+    <link href="../สศอ/assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="../สศอ/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../สศอ/assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll app-sidebar-be">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="../สศอ/assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="../สศอ/assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 "  data-toggle="slide"  href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">สำหรับผู้บริหาร</a></li>
+							<li><a class="slide-item py-2" href="/">ข้อมูลคำของบประมาณ</a></li>
+							<li><a class="slide-item py-2" href="/">การติดตามผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">การประเมินผลงาน</a></li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/line-md_document-report.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน<br/>(ตามเป้าหมาย แนวทาง และตัวชี้วัด) </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการประเมินผลโครงการ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม <br/> การเบิกจ่ายงบประมาณ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม<br/> การงานตามตัวชี้วัด </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการร่างพรบ.</a></li>
+							<li><a class="slide-item py-2" href="/">ติดตามความก้าวหน้า </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/bi_folder-fill.png" class="side-menu__icon">
+							<span class="side-menu__label">ข้อมูลหน่วยงาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">หน่วยงานทั้งหมด</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าหน่วยงาน.</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="/">
+							<img src="../สศอ/assets/images/icon/sidemenu/mdi_email.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/fa_user-solid.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการสิทธิ์และผู้ใช้งาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการผู้ใช้งาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการสิทธิ์การใช้งาน</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/ci_settings-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">ตั้งค่าทั่วไป</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการแผนงาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการแผนแม่บทฯ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการยุทธศาสตร์</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการหน่วยนับ</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าระยะเวลาดำเนินการ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="../สศอ/assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+				<div class="  px-1">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">จัดการผู้ใช้งาน </a></li>
+					    <li class="breadcrumb-item active text-color-1 fw-500" aria-current="page">เพิ่มพนักงาน</li>
+					  </ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="py-2"></div>
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-auto"> 
+
+						<div style="width: 380px;">
+							<div class="card card-st-3">
+								<div class="card-header bg-white py-3" style="border-bottom: 1px solid rgba(0,0,0,.09);">
+									<div class="profile mt-3 mb-4">
+										<img src="../สศอ/assets/images/avatar-default.png" class="preview-image">
+										<button class="btn btn-upload-image-profile btn-link">
+										<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0 9.50232V12.0025H2.50017L9.874 4.62865L7.37383 2.12848L0 9.50232ZM11.8074 2.69515C11.9322 2.57057 12.0024 2.40147 12.0024 2.22511C12.0024 2.04876 11.9322 1.87965 11.8074 1.75508L10.2473 0.194976C10.1227 0.0701487 9.9536 0 9.77725 0C9.6009 0 9.43179 0.0701487 9.30722 0.194976L8.08714 1.41506L10.5873 3.91523L11.8074 2.69515Z" fill="white"/>
+										</svg>
+										</button>
+										<input type="file" name="" class="hide-input file-upload">
+									</div>
+									<div class="fs-16 text-center text-color-18 mb-1 bx-username">ไม่มีข้อมูล</div>
+
+									
+								</div>
+								<div class="card-body">
+									
+									<div class="fs-16 text-color-1 fw-500 mb-3">แก้ไขรหัสผ่าน</div>
+
+									<div class="mb-3">
+										<label class=" fs-14 fw-500 text-color-17 mb-2 ">ตั้งค่ารหัสผ่าน   </label>
+										<div class="position-relative">
+											<input type="password" name="" class="form-control form-st-1 password-input" required="" placeholder=" " value="" >
+											<button type="button" class="btn btn-change-type-password c2"></button>
+										</div>
+									</div>
+									<div class="form-check form-check-st-2 mb-3 py-2">
+									  <input class="form-check-input password-default" type="checkbox" value="P@ssw0rd" id="CheckP1" value="">
+									  <label class="form-check-label text-dark fs-14 ps-2 pt-1" for="CheckP1">
+									    ใช้รหัสผ่านเริ่มต้น = P@ssw0rd
+									  </label>
+									</div>
+
+									<div class="mb-4">
+										<label class=" fs-14 fw-500 text-color-17 mb-2 ">สิทธิ์การใช้งาน</label>
+										<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกสิทธิ์การใช้งาน" >
+											<option value="" selected=""></option>
+											<option value="" >admin</option>
+										</select>
+									</div>
+
+
+								</div>
+								<div class="card-footer bg-white" style="border-top: 1px solid rgba(0,0,0,.09);">
+									<div class="d-flex align-items-center justify-content-end py-3">
+										<button class="btn btn-st-2 me-2" style="min-width: 80px">บันทึก</button>
+										<button class="btn btn-st-3" style="min-width: 80px">ยกเลิก</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card card-st-3">
+							<div class="card-header d-flex align-items-center bg-white py-2" style="border-bottom: 1px solid rgba(0,0,0,.09);">
+								
+								<div class="fs-16 text-color-17 me-auto">ข้อมูลส่วนตัว</div>
+								<div class="d-flex align-items-center  ps-4">
+									<div class="me-4 mb-1">สถานะ</div>
+									<div class="unit-status-check">
+						        		<input type="checkbox" name="" class="hide-input" id="unit-check" checked="">
+						        		<label for="unit-check"></label>
+						        	</div>
+								</div>
+							</div>
+							<div class="card-body">
+								
+
+								<div class="row">
+
+
+									<div class="col-lg-2 mb-3">
+										<label class=" fs-14 fw-500 text-color-17 mb-2 ">คำนำหน้า</label>
+										<select class="form-control form-st-1 form-select select2 user-prefix input-name" data-placeholder="คำนำหน้าชื่อ" >
+											<option value=""></option>
+											<option value="นาย" >นาย</option>
+										</select>
+									</div>
+									<div class="col-lg-5 mb-3">
+										<label class=" fs-14 fw-500 text-color-17 mb-2 ">ชื่อ</label>
+										<input type="text" name="" class="form-control form-st-1 user-name input-name" required="" placeholder="กรุณากรอกชื่อ" value="">
+									</div>
+									<div class="col-lg-5 mb-3">
+										<label class=" fs-14 fw-500 text-color-17 mb-2 ">นามสกุล</label>
+										<input type="text" name="" class="form-control form-st-1 user-surname input-name" required="" placeholder="กรุณากรอกนามสกุล" value="">
+									</div>
+									<div class="col-lg-12 mb-3">
+										<label class=" fs-14 fw-500 text-color-17 mb-2 ">ตำแหน่งงาน</label>
+										<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณากรอกตำแหน่งงาน" value="">
+									</div>
+									<div class="col-lg-6 mb-3">
+										<label class=" fs-14 fw-500 text-color-17 mb-2 ">เบอร์โทรศัพท์</label>
+										<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณากรอกเบอร์โทรศัพท์" value="" >
+									</div>
+									<div class="col-lg-6 mb-3">
+										<label class=" fs-14 fw-500 text-color-17 mb-2 ">เบอร์โทรศัพท์สำนักงาน</label>
+										<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณากรอกเบอร์โทรศัพท์สำนักงาน" value="">
+									</div>
+									<div class="col-lg-6 mb-3">
+										<label class=" fs-14 fw-500 text-color-17 mb-2 ">LINE ID</label>
+										<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณากรอกไลน์ไอดี" value="" >
+									</div>
+									<div class="col-lg-6 mb-3">
+										<label class=" fs-14 fw-500 text-color-17 mb-2 ">Email</label>
+										<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณากรอกอีเมล" value="" >
+									</div>
+								</div>
+								<div class="py-4"></div>
+
+							</div>
+							<div class="card-footer bg-white" style="border-top: 1px solid rgba(0,0,0,.09);">
+								<div class="d-flex align-items-center justify-content-end py-3">
+									<button class="btn btn-st-2 me-2" style="min-width: 80px">บันทึก</button>
+									<button class="btn btn-st-3" style="min-width: 80px">ยกเลิก</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../สศอ/assets/plugins/moment/moment.js"></script>
+	<script src="../สศอ/assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../สศอ/assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="../สศอ/assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="../สศอ/assets/js/sticky.min.js"></script>
+
+
+	
+	<script type="text/javascript">
+
+		(function () {
+		  'use strict'
+		  var forms = document.querySelectorAll('.needs-validation')
+		  Array.prototype.slice.call(forms)
+		    .forEach(function (form) {
+		      form.addEventListener('submit', function (event) {
+		        if (!form.checkValidity()) {
+		          event.preventDefault()
+		          event.stopPropagation()
+
+		          confirmModal.show()
+		        }
+
+		        form.classList.add('was-validated')
+		      }, false)
+		    })
+		})()
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.select2').select2({
+		    	minimumResultsForSearch: -1,
+		    	"language": {
+				    "noResults": function(){
+				        return '<div class="fs-12 py-2">ไม่พบข้อมูล</div>';
+				    }
+				},
+			    escapeMarkup: function (markup) {
+			        return markup;
+			    }
+		    });
+		});
+	</script>
+	<script type="text/javascript">
+		$('.btn-change-type-password').on('click',function(){
+			var input = $(this).closest('div').find('input');
+			var type = input.attr('type')
+			if(type == 'text'){
+				input.attr('type','password')
+			}else{
+				input.attr('type','text')
+			}
+		})
+	</script>
+
+	<script type="text/javascript">
+		$('.btn-upload-image-profile').on('click',function(){
+	      $('.file-upload').click();
+	    })
+	    $(document).on('change','.file-upload',function(){
+	    	var $this = $(this);
+	    	var file = $this.get(0).files[0];
+	        var reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.addEventListener("load", function(e) {
+
+                $('.preview-image').attr('src',e.target.result)
+
+            });
+	    })
+	</script>
+	<script type="text/javascript">
+		$('.password-default').on('change',function (){
+			if($(this).is(':checked')){
+				$('.password-input').val($(this).val()).attr('readonly',true).attr('type','text')
+			}else{
+				$('.password-input').val('').attr('readonly',false).attr('type','password')
+			}
+			
+		})
+	</script>
+	<script type="text/javascript">
+		$('.input-name').on('change keyup',function(){
+
+			var prefix = $('.user-prefix').val();
+			var name = $('.user-name').val();
+			var surname = $('.user-surname').val();
+
+			if(prefix != '' || name != '' || surname != '' ){
+				$('.bx-username').text(prefix+name+' '+surname)
+			}else{
+				$('.bx-username').text('ไม่มีข้อมูล')
+			}
+		})
+	</script>
+
+
+	
+
+</body>
+</html>

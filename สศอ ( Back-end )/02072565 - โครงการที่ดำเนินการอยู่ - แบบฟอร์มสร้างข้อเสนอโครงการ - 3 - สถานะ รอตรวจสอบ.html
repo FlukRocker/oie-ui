@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../สศอ/assets/images/logo2.png">
+
+    <link href="../สศอ/assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="../สศอ/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../สศอ/assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/select2/css/select2.min.css">
+    <link href="../สศอ/assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll app-sidebar-be">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="../สศอ/assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="../สศอ/assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 "  data-toggle="slide"  href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">สำหรับผู้บริหาร</a></li>
+							<li><a class="slide-item py-2" href="/">ข้อมูลคำของบประมาณ</a></li>
+							<li><a class="slide-item py-2" href="/">การติดตามผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">การประเมินผลงาน</a></li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/line-md_document-report.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน<br/>(ตามเป้าหมาย แนวทาง และตัวชี้วัด) </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการประเมินผลโครงการ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม <br/> การเบิกจ่ายงบประมาณ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม<br/> การงานตามตัวชี้วัด </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการร่างพรบ.</a></li>
+							<li><a class="slide-item py-2" href="/">ติดตามความก้าวหน้า </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/bi_folder-fill.png" class="side-menu__icon">
+							<span class="side-menu__label">ข้อมูลหน่วยงาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">หน่วยงานทั้งหมด</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าหน่วยงาน.</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="/">
+							<img src="../สศอ/assets/images/icon/sidemenu/mdi_email.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/fa_user-solid.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการสิทธิ์และผู้ใช้งาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการผู้ใช้งาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการสิทธิ์การใช้งาน</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/ci_settings-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">ตั้งค่าทั่วไป</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการแผนงาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการแผนแม่บทฯ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการยุทธศาสตร์</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการหน่วยนับ</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าระยะเวลาดำเนินการ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="../สศอ/assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+
+			<div class="container-fluid mb-5">
+				<div class="px-3">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">โครงการที่ดำเนินการอยู่ </a></li>
+					    <li class="breadcrumb-item active text-color-1 fw-500" aria-current="page">PIEO64/001-B</li>
+					  </ol>
+					</nav>
+				
+					<div class="my-4">
+						<div class="row g-0">
+							<div class="col-xl-12">
+								<div class="card card-st-3 ">
+									<div class="card-body p-3 pt-4 ">
+										<div class="d-flex flex-wrap w-100">
+											<div class="flex-fill">
+												<div class="">
+													<div class="row g-0 mb-3">
+														<div class=" text-color-9 pe-2 text-nowrap w-100px">รหัสเอกสาร</div>
+														<div class="col text-color-1 text-nowrap">PIEO64/001</div>
+													</div>
+												</div>
+												<div class="">
+													<div class="row g-0 mb-3">
+														<div class=" text-color-9 pe-2 text-nowrap w-100px">สถานะ</div>
+														<div class="col text-color-1 text-nowrap">แบบร่าง</div>
+														<!-- <div class="col text-danger text-nowrap">ไม่อนุมัติ</div> -->
+													</div>
+												</div>
+											</div>
+											<div class="flex-fill">
+												<div class="">
+													<div class="row g-0 mb-3">
+														<div class="col-4 text-color-9 pe-2 text-nowrap w-100px">วันที่สร้าง</div>
+														<div class="col text-color-1 text-nowrap">01-03-2565</div>
+													</div>
+												</div>
+												<div class="">
+													<div class="row g-0 mb-3" >
+														<div class=" text-color-9 pe-2 text-nowrap w-100px">ผู้สร้าง</div>
+														<div class="col text-color-1 text-nowrap">นางสาวเบญจวรรณ บัวพิทักษ์</div>
+													</div>
+												</div>
+											</div>
+											<div class=" text-end">
+												<div class="g-btn-document">
+													<button class="btn btn-download-document"> ดาวน์โหลดเอกสาร</button>
+													<button class="btn btn-print-document">พิมพ์เอกสาร</button>
+												</div>
+												<div class="g-btn-edit-form d-none">
+													<button class="btn btn-st-2 ms-2 mb-3 ">บันทึกร่าง</button>
+													<button class="btn btn-st-9 ms-2 mb-3 ">ส่งอนุมัติ</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				
+			</div>
+
+			<div class="sticky" data-sticky-class="step-sticky">
+				<div class="container-fluid">
+					<div class="my-4 ">
+						<div class="row">
+							<div class="col-xl-9 col-11 d-flex align-items-center">
+								<ul class="steps-2 step-success flex-fill">
+									<li class="step-1 active ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ - 1 - edit.html">
+											<div class="step-icon">1</div>
+											<div class="step-name" >รายละเอียดหลัก</div>
+										</a>
+									</li>
+									<li class="step-2 active ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ - 2 - edit.html">
+											<div class="step-icon">2</div>
+											<div class="step-name" >หลักการและเหตุผล</div>
+										</a>
+									</li>
+									<li class="step-3 active ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ - 3 - edit.html">
+											<div class="step-icon">3</div>
+											<div class="step-name" style="color: #56B68B;">การดำเนินงาน</div>
+										</a>
+									</li>
+									<li class="step-4 active ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ - 4 - edit.html">
+											<div class="step-icon">4</div>
+											<div class="step-name">สถานที่/ประมาณการ</div>
+										</a>
+									</li>
+									<li class="step-5 active ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ - 5 - edit.html">
+											<div class="step-icon">5</div>
+											<div class="step-name">ผู้รับผิดชอบ</div>
+										</a>
+									</li>
+								</ul>
+								<ul class="steps-3">
+									<li class="step-1  ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ ข้อแก้ไข.html">
+											<div class="step-icon"></div>
+											<div class="step-name">ข้อแก้ไข</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col">
+
+						<div class="card card-st-3  mb-4">
+							<div class="card-body p-4">
+								<div class="fs-24 mb-2">
+									<span class="fw-bold text-color-1">คำของบประมาณ (ตามพรบ.งบประมาณ) </span>
+									<span class="text-color-9">(หน้า 3/5)</span>
+								</div>
+								<div class="fs-15 mb-3 text-color-8">กรุณากรอกข้อมูลเพื่อสร้างข้อเสนอโครงการ  </div>
+
+								<form class="needs-validation" novalidate>
+
+									<div class="mb-5">
+
+										<div class="mb-3 row align-items-lg-center" id="el1">
+											<div class="col-12">
+												<label class=" fs-18  text-color-1 fw-bold mb-4">7.แผนการดำเนินงาน</label>
+
+												<div class="d-flex align-items-center flex-wrap mb-3">
+													<div class="ps-5 fw-500 fs-16 text-color-8 mb-3 me-3">7.1 ระยะเวลาดำเนินงาน</div>
+													<div class=" mb-3">
+														<input type="" name="" class="form-control form-st-1 datepicker icon-calendar" placeholder="dd/mm/yyyy" id="date1" readonly="">
+													</div>
+													<div class=" mb-3 fs-14 fw-bold px-2">ถึง</div>
+													<div class=" mb-3">
+														<input type="" name="" class="form-control form-st-1 datepicker icon-calendar" placeholder="dd/mm/yyyy" id="date2" readonly="">
+													</div>
+
+													<div class="ms-3 fs-16 text-dark mb-3">
+														( <span>X</span> เดือน <span>X</span> วัน)
+													</div>
+
+												</div>
+												<div class="d-flex align-items-center flex-wrap mb-4">
+													<div class="ps-5 fw-500 fs-16 text-color-8 mb-3 me-3">7.2 แผนดำเนินงาน</div>
+												</div>
+
+												<div class="title-g mb-5" id="title-g-3" data-title="">
+													<table class="table   fs-14">
+														<thead>
+															<tr>
+																<th class="border" width="5%"></th>
+																<th class="border" width="40%">การดำเนินงาน / กิจกรรม</th>
+																<th class="border" width="35%">วันเริ่มต้น - วันสิ้นสุด</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="border">
+																	<div class="inputnumber-s2 text-center">1</div>
+																</td>
+																<td class="border">
+																	<textarea class="form-control form-st-1 mb-3" rows="4" readonly="" ></textarea>
+																</td>
+																<td class="border">
+																	<div class="row g-0 align-items-center">
+																		<div class="col">
+																			<input type="" name="" class="form-control form-st-1 datepicker " placeholder="dd/mm/yyyy " readonly="">
+																		</div>
+																		<div class="col-auto px-3">
+																			<div class=" fs-14 fw-bold px-2">ถึง</div>
+																		</div>
+																		<div class="col">
+																			<input type="" name="" class="form-control form-st-1 datepicker " placeholder="dd/mm/yyyy " readonly="">
+																		</div>
+																	</div>
+																</td>
+															</tr>
+
+														</tbody>
+													</table>
+
+													<button type="button" class="btn btn-st-6 btn-link btn-addInput-table ms-5 d-none el-custom-view">เพิ่มการดำเนินงาน/กิจกรรม</button>
+
+												</div>
+
+											</div>
+										</div>
+
+										<div class="mb-3 row align-items-lg-center" id="el2">
+											<div class="col-12">
+												<label class=" fs-18  text-color-1 fw-bold mb-4">8.งบประมาณ <span class="text-color-9 fs-14">(วงเงินงบประมาณ พร้อมรายละเอียดงบประมาณ)</span></label>
+
+												<div class="dx-2 fw-500 text-color-8 fw-500 mb-4">งบประมาณทั้งหมด 6,804,000.00 บาท (หกล้านแปดแสนสี่พันบาทถ้วน)</div>
+
+												<div class="table-st-1 mb-4">
+													<div class="row g-0">
+														<div class="col">
+															<div class="border py-2 px-2 th" >ปีงบประมาณ </div>
+															<div class="border py-2 px-2 td">
+																<div class="fs-14 fw-light text-center pt-2">2565</div>
+															</div>
+														</div>
+														<div class="col">
+															<div class="border py-2 px-2 th" >ไตรมาสที่ 1 </div>
+															<div class="border py-2 px-2 td">
+																<input type="text" name="" class="form-control form-st-1 border-color-o maskMoney budget-quarter" placeholder="ระบุงบประมาณ" required="" id="budget-quarter-1" readonly="">
+															</div>
+														</div>
+														<div class="col">
+															<div class="border py-2 px-2 th" >ไตรมาสที่ 2 </div>
+															<div class="border py-2 px-2 td">
+																<input type="text" name="" class="form-control form-st-1 border-color-o maskMoney budget-quarter" placeholder="ระบุงบประมาณ" required="" id="budget-quarter-2" readonly="">
+															</div>
+														</div>
+														<div class="col">
+															<div class="border py-2 px-2 th" >ไตรมาสที่ 3 </div>
+															<div class="border py-2 px-2 td">
+																<input type="text" name="" class="form-control form-st-1 border-color-o maskMoney budget-quarter" placeholder="ระบุงบประมาณ" required="" id="budget-quarter-3" readonly="">
+															</div>
+														</div>
+														<div class="col">
+															<div class="border py-2 px-2 th" >ไตรมาสที่ 4 </div>
+															<div class="border py-2 px-2 td">
+																<input type="text" name="" class="form-control form-st-1 border-color-o maskMoney budget-quarter" placeholder="ระบุงบประมาณ" required="" id="budget-quarter-4" readonly="">
+															</div>
+														</div>
+														<div class="col">
+															<div class="border py-2 px-2 th" >งบประมาณรวม </div>
+															<div class="border py-2 px-2 td">
+																<input type="text" name="" class="form-control form-st-1 border-color-o maskMoney budget-quarter" placeholder="ระบุงบประมาณ" required="" id="budget-sum" readonly="">
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="title-g" id="title-g-4" data-title="">
+													<table class="table   fs-14">
+														<thead>
+															<tr>
+																<th class="border" width="5%" valign="middle">ลำดับ</th>
+																<th class="border" width="35%" valign="middle">รายการ</th>
+																<th class="border  text-center" width="10%" valign="middle">จำนวน</th>
+																<th class="border  text-center" width="10%" valign="middle">หน่วยนับ</th>
+																<th class="border text-center" width="10%" valign="middle">
+																	<div>อัตราต่อหน่วย</div>
+																	<div>(บาท)</div>
+																</th>
+																<th class="border text-center" width="10%" valign="middle">
+																	<div>งบประมาณรวม</div>
+																	<div>(บาท)</div>
+																</th>
+															</tr>
+														</thead>
+														<tbody>
+															<tr class="r-main rcount">
+																<td class="border">
+																	<div class="inputnumber-s2 text-center">1</div>
+																</td>
+																<td class="border">
+																	<textarea class="form-control form-st-1 mb-3" rows="4" readonly=""></textarea>
+																</td>
+																<td class="border"></td>
+																<td class="border"></td>
+																<td class="border"></td>
+																<td class="border"></td>
+															</tr>
+															<tr class="r-detail">
+																<td class="border"></td>
+																<td class="border">
+																	<textarea class="form-control form-st-1 mb-3" rows="4" readonly=""></textarea>
+
+																	<div class="d-flex  align-items-start">
+																		<div class="mb-2 me-3 fs-14 text-nowrap">ประเภทรายจ่าย :</div>
+																		<div class="expendituretype">
+																			<div class="form-check form-check-inline expendituretype-c1" >
+																			  <input class="form-check-input" type="radio" name="expendituretype[0][0]" id="expendituretype0-1" value="งบดำเนินงาน" disabled="">
+																			  <label class="form-check-label" for="expendituretype0-1">งบดำเนินงาน</label>
+																			</div>
+																			<div class="form-check form-check-inline expendituretype-c2">
+																			  <input class="form-check-input" type="radio" name="expendituretype[0][0]" id="expendituretype0-2" value="งบลงทุน" disabled="">
+																			  <label class="form-check-label" for="expendituretype0-2">งบลงทุน</label>
+																			</div>
+																			<div class="form-check form-check-inline expendituretype-c3">
+																			  <input class="form-check-input" type="radio" name="expendituretype[0][0]" id="expendituretype0-3" value="งบเงินอุดหนุน" disabled="">
+																			  <label class="form-check-label" for="expendituretype0-3">งบเงินอุดหนุน</label>
+																			</div>
+																			<div class="form-check form-check-inline expendituretype-c4">
+																			  <input class="form-check-input" type="radio" name="expendituretype[0][0]" id="expendituretype0-4" value="งบรายจ่ายอื่น" disabled="">
+																			  <label class="form-check-label" for="expendituretype0-4">งบรายจ่ายอื่น</label>
+																			</div>
+																		</div>
+
+																	</div>
+																</td>
+																<td class="border">
+																	<input type="text" name="" class="form-control form-st-1 text-center validateNumber"  placeholder="จำนวน" readonly="">
+																</td>
+																<td class="border">
+																	<select class="form-control form-st-1 form-select" disabled="">
+																		<option value="" selected=""></option>
+																		<option value="กิจการ">กิจการ</option>
+																	</select>
+																</td>
+																<td class="border">
+																	<input type="text" name="" class="form-control form-st-1 text-center "  placeholder="" readonly="">
+																</td>
+																<td class="border">
+																	<input type="text" name="" class="form-control form-st-1 text-center "  placeholder=""  readonly="">
+																</td>
+															</tr>
+															<tr class="r-btn">
+																<td class="border"></td>
+																<td class="border">
+																	<button type="button" class="btn btn-st-6 btn-link btn-addInput-detail ms-5 d-none el-custom-view">เพิ่มค่าใช้จ่าย</button>
+																</td>
+																<td class="border"></td>
+																<td class="border"></td>
+																<td class="border"></td>
+																<td class="border"></td>
+															</tr>
+														</tbody>
+													</table>
+
+													<button type="button" class="btn btn-st-8 btn-link btn-addInput-m ms-5 d-none el-custom-view">เพิ่มกิจกรรม</button>
+
+												</div>
+
+											</div>
+										</div>
+
+
+									</div>
+
+									<div class="d-flex justify-content-end flex-wrap align-items-center mb-5">
+										<div class="fs-15 fw-bold text-color-8 me-3">งบประมาณตามแผน</div>
+										<div class="dx-1 text-color-8  fw-bold me-3">
+											<span class="fs-18">3,888,000.00</span>
+											<span class="fs-14 text-color-8">บาท</span>
+										</div>
+										<div class="fs-15 fw-bold text-color-8 me-3">งบประมาณคงเหลือ</div>
+										<div class="dx-1 fw-bold">
+											<span class="fs-18  text-danger">3,888,000.00</span>
+											<span class="fs-14 text-color-8">บาท</span>
+										</div>
+									</div>
+
+										
+
+									<!-- <div class="text-center d-flex  flex-wrap">
+										<a class="btn btn-st-4 mx-2 mb-3 me-auto">ก่อนหน้า</a>
+										<button class="btn btn-st-5 mx-2 mb-3 ">บันทึกแบบร่าง</button>
+										<button class="btn btn-st-2 ms-2 mb-3 ">ขั้นตอนถัดไป</button>
+									</div> -->
+
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div style="width: 280px;">
+							<div class="sticky" data-sticky-class="card-title-sticky">
+								<div class="card card-st-3 mb-4">
+									<div class="card-body p-3 pe-4">
+										<ul id="progress" class="ps-2">
+											<li data-elId="#el1"><div class="node activated"></div><p>วิธีการดำเนินงาน</p></li>
+											<li><div class="divider  grey"></div></li>
+										    <li data-elId="#el2"><div class="node "></div><p>แผนการดำเนินการ</p></li>
+										    <li><div class="divider  grey"></div></li>
+										    <li data-elId="#el3"><div class="node  "></div><p>งบประมาณ</p></li>
+										</ul>
+									</div>
+								</div>
+								<div class="card card-st-3 mb-4">
+									<div class="card-body p-3 pe-4 fs-14">
+
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">รหัสโครงการ</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">PIEO64/001</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">วันที่สร้าง</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">01-03-2565</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">อ้างอิง</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">-</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">แก้ไขล่าสุด</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">01-03-2565</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-auto mb-2  text-color-9 fw-light">ผู้สร้าง</div>
+												<div class="col mb-2 text-color-11 fw-bolder">น.ส. เบญจวรรณ บัวพิทักษ์1</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="modal fade" id="confirmModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+
+	      <div class="modal-body pb-4">
+	      	<div class="text-end">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      	</div>
+	        
+	        <div class="text-center text-color-1 fs-18 fw-500 pt-4 mb-5 pb-3">กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน ?</div>
+
+
+	        <div class="text-center d-flex flex-wrap justify-content-center">
+	        	<button type="button" class="btn btn-st-3 mx-2 mb-3 order-1 order-sm-0" data-bs-dismiss="modal">ยกเลิก</button>
+	        	<a href="" class="btn btn-st-2 mx-2  mb-3 order-0 order-sm-1">ยืนยัน</a>
+	        </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../สศอ/assets/plugins/moment/moment.js"></script>
+	<script src="../สศอ/assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../สศอ/assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="../สศอ/assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="../สศอ/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+	<script src="../สศอ/assets/js/sticky.min.js"></script>
+	<script src="../สศอ/assets/js/jquery.maskMoney.min.js" ></script> 
+
+	<script type="text/javascript">
+		var sticky = new Sticky('.sticky');
+		sticky.update();
+	</script>
+
+
+	<script type="text/javascript">
+		var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'), {
+		  keyboard: false
+		})
+	</script>
+	
+	<script type="text/javascript">
+
+		(function () {
+		  'use strict'
+		  var forms = document.querySelectorAll('.needs-validation')
+		  Array.prototype.slice.call(forms)
+		    .forEach(function (form) {
+		      form.addEventListener('submit', function (event) {
+		        if (!form.checkValidity()) {
+		          event.preventDefault()
+		          event.stopPropagation()
+
+		          confirmModal.show()
+		        }
+
+		        form.classList.add('was-validated')
+		      }, false)
+		    })
+		})()
+	</script>
+
+
+	<script type="text/javascript">
+		$('.btn-addInput').on('click',function(){
+			var title = $(this).closest('.title-g');
+			var subnumber = title.find('.g-input').length + 1;
+			var div = title.find('.g-input:first-child').clone();
+			div.find('.btn-delete-input').removeClass('invisible');
+			div.find('.subnumber').text(subnumber);
+			div.find('input').val('')
+			$( div ).insertBefore( $(this) );
+		})
+		$('.title-g').on('click','.btn-delete-input',function(){
+
+			var titleid = $(this).closest('.title-g').prop('id');
+
+			$(this).closest('.g-input').remove();
+
+			$('#'+titleid+ ' .g-input').each(function( index ) {
+				$(this).find('.subnumber').text(index + 1)
+			});
+
+		})
+	</script>
+
+
+	<script type="text/javascript">
+		$('.btn-addInput-table').on('click',function(){
+
+			var title = $(this).closest('.title-g');
+			var name = $(this).closest('.title-g').attr('data-title');
+			var number = title.find('tbody tr').length + 1;
+			var div = title.find('tbody tr:first-child').clone();
+			div.find('.btn-delete-input').removeClass('invisible');
+			div.find('.inputnumber-s2').text(number);
+			div.find('input').val('')
+			div.find('textarea').val('')
+			div.find('select').val('')
+
+
+			title.find('table').find('tbody').append(div)
+
+			$('.datepicker').datepicker({
+		        format: 'dd/mm/yyyy',
+		        autoclose:true
+		    });
+
+		})
+		$('table tbody').on('click','.btn-delete-input',function(){
+
+			var titleid = $(this).closest('.title-g').prop('id');
+
+			$(this).closest('tr').remove();
+
+			$('#'+titleid+ ' tbody tr').each(function( index ) {
+				$(this).find('.inputnumber-s2').text(index + 1)
+			});
+
+		})
+
+
+		$('table tbody').on('click','.btn-addInput-detail',function(){
+
+			var number = $('.rcount').length - 1;
+			var number = $('.rcount-detail').length ;
+
+			var div = $(this).closest('tbody').find('.r-detail').clone();
+
+
+			div.removeClass('r-detail').addClass('rcount-detail')
+			div.find('input').val('')
+			div.find('textarea').val('')
+			div.find('select').val('')
+			div.find('.btn-delete-detail').removeClass('invisible');
+
+
+			var id1 = makeid(5)+"-c1"
+			var id2 = makeid(5)+"-c2"
+			var id3 = makeid(5)+"-c3"
+			var id4 = makeid(5)+"-c4"
+
+			div.find('.expendituretype').find('input').attr('name','expendituretype'+'['+number+']')
+
+			div.find('.expendituretype-c1').find('input').attr('id',id1)
+			div.find('.expendituretype-c1').find('label').attr('for',id1)
+			div.find('.expendituretype-c2').find('input').attr('id',id2)
+			div.find('.expendituretype-c2').find('label').attr('for',id2)
+			div.find('.expendituretype-c3').find('input').attr('id',id3)
+			div.find('.expendituretype-c3').find('label').attr('for',id3)
+			div.find('.expendituretype-c4').find('input').attr('id',id4)
+			div.find('.expendituretype-c4').find('label').attr('for',id4)
+
+
+			var rowid = $(this).closest('tr').attr('data-rowid')
+			div.attr('data-rowid',rowid)
+
+			$( div ).insertBefore( $(this).closest('tr') );
+
+
+		})
+
+		$('table tbody').on('click','.btn-delete-detail',function(){
+
+			$(this).closest('tr').remove();
+
+		})
+
+		$('.btn-addInput-m').on('click',function(){
+
+
+
+			var title = $(this).closest('.title-g');
+
+			var number = $('.rcount').length + 1;
+
+			var div  =  title.find('.r-main').clone();
+			var div2 = title.find('.r-detail').clone();
+			var div3 = title.find('.r-btn').clone();
+
+
+
+			var id1 = makeid(5)+"-c1"
+			var id2 = makeid(5)+"-c2"
+			var id3 = makeid(5)+"-c3"
+			var id4 = makeid(5)+"-c4"
+
+			div2.find('.expendituretype').find('input').attr('name','expendituretype'+'['+number+']')
+
+			div2.find('.expendituretype-c1').find('input').attr('id',id1)
+			div2.find('.expendituretype-c1').find('label').attr('for',id1)
+			div2.find('.expendituretype-c2').find('input').attr('id',id2)
+			div2.find('.expendituretype-c2').find('label').attr('for',id2)
+			div2.find('.expendituretype-c3').find('input').attr('id',id3)
+			div2.find('.expendituretype-c3').find('label').attr('for',id3)
+			div2.find('.expendituretype-c4').find('input').attr('id',id4)
+			div2.find('.expendituretype-c4').find('label').attr('for',id4)
+
+
+
+			div2.find('input').val('')
+			div2.find('textarea').val('')
+			div2.find('select').val('')
+			div.find('.btn-delete-input-all').removeClass('invisible');
+			div.find('.inputnumber-s2').text(number)
+
+			var rowid = makeid(5);
+			div.removeClass('r-main').attr('data-rowid',rowid)
+			div2.removeClass('r-detail').attr('data-rowid',rowid)
+			div3.removeClass('r-btn').attr('data-rowid',rowid)
+
+
+
+			$('#title-g-4 table tbody' ).append( div );
+			$('#title-g-4 table tbody' ).append( div2 );
+			$('#title-g-4 table tbody' ).append( div3 );
+
+
+		})
+
+		$('table tbody').on('click','.btn-delete-input-all',function(){
+			var rowid = $(this).closest('tr').attr('data-rowid')
+
+			$('[data-rowid='+rowid+']').closest('tr').remove();
+
+		})
+
+		
+
+		function makeid(length) {
+		    var result           = '';
+		    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+		    var charactersLength = characters.length;
+		    for ( var i = 0; i < length; i++ ) {
+		      result += characters.charAt(Math.floor(Math.random() * 
+		 charactersLength));
+		   }
+		   return result;
+		}
+
+	</script>
+
+	<script type="text/javascript">
+	    $('.datepicker').datepicker({
+	        format: 'dd/mm/yyyy',
+	        autoclose:true
+	    });
+	  </script>
+
+	 <script>
+        $(document).ready(function (){
+            $("#progress li").click(function (){
+            	$("#progress li div").removeClass('activated')
+            	for(i=0;i<=$(this).index();i++){
+            		$("#progress li:nth-child("+i+")").find('div').addClass('activated')
+            	}
+            	var ids = $(this).attr('data-elId')
+            	$(this).find('.node').addClass('activated')
+                $('html, body').animate({
+                    scrollTop: $(ids).offset().top-400
+                }, 0);
+            });
+
+            $(function(){
+			  $(window).scroll(function(){
+			    var el1 = $('#el1').height();
+			    var el2 = $('#el2').offset().top - (screen.height - 100);
+			    var el3 = $('#el3').offset().top - (screen.height - 100);
+
+			    if($(this).scrollTop()>=el2){
+			    	$("#progress li:nth-child(2)").find('div').addClass('activated')
+			    	$("#progress li:nth-child(3)").find('div').addClass('activated')
+			    }else{
+			    	$("#progress li:nth-child(2)").find('div').removeClass('activated')
+			    	$("#progress li:nth-child(3)").find('div').removeClass('activated')
+			    }
+
+			    if($(this).scrollTop()>=el3){
+			    	$("#progress li:nth-child(4)").find('div').addClass('activated')
+			    	$("#progress li:nth-child(5)").find('div').addClass('activated')
+			    }else{
+			    	$("#progress li:nth-child(4)").find('div').removeClass('activated')
+			    	$("#progress li:nth-child(5)").find('div').removeClass('activated')
+			    }
+
+			  });
+			});
+        });
+    </script>
+    <script type="text/javascript">
+		function validateNumber(event) {
+            var key = window.event ? event.keyCode : event.which;
+            if (event.keyCode === 8) {
+                return true;
+            } else if ( key < 48 || key > 57 ) {
+                return false;
+            } else {
+                return true;
+            }
+        };
+        $(document).ready(function(){
+            $('.validateNumber').keypress(validateNumber);
+        });
+	</script>
+	<script type="text/javascript">
+    	$('.btn-edit').on('click',function(){
+
+    		$('form input').attr('readonly',false).attr('disabled',false);
+    		$('form textarea').attr('readonly',false);
+    		$('form .select2').attr('disabled',false);
+    		$('form select').attr('disabled',false);
+    		$('.btn-save').removeClass('d-none');
+
+    		$('.g-btn-document').addClass('d-none');
+    		$('.g-btn-edit-form').removeClass('d-none');
+    		$('.el-custom-view').removeClass('d-none');
+    		$('.steps-2').removeClass('step-success')
+
+    	})
+
+    	var deleteConfirmModal = new bootstrap.Modal(document.getElementById('deleteConfirmModal'), {
+		  keyboard: false
+		})
+
+    	$('.btn-delete').on('click',function(){
+    		deleteConfirmModal.show()
+    	})
+    </script>
+    <script type="text/javascript">
+		$(".maskMoney").maskMoney({precision:2});
+	</script>
+
+	<script type="text/javascript">
+    	$('.budget-quarter').on('keyup',function (){
+
+    		var budget1 = $('#budget-quarter-1').maskMoney('unmasked')[0];
+    		var budget2 = $('#budget-quarter-2').maskMoney('unmasked')[0];
+    		var budget3 = $('#budget-quarter-3').maskMoney('unmasked')[0];
+    		var budget4 = $('#budget-quarter-4').maskMoney('unmasked')[0];
+
+    		var budgetsum = parseFloat(budget1) + parseFloat(budget2)  + parseFloat(budget3)  + parseFloat(budget4);
+
+    		$('#budget-sum').val(budgetsum).trigger('mask.maskMoney');
+
+    		if($(this).val().length > 0){
+    			$(this).removeClass('border-color-o')
+    		}else{
+    			$(this).addClass('border-color-o')
+    		}
+    	})
+    </script>
+</body>
+</html>

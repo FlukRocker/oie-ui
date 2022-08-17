@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo2.png">
+
+    <link href="assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/select2/css/select2.min.css">
+    <link href="assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+    <link href="assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link href="assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+	<link href="assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+	<link href="assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+	<link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 active"  href="#">
+							<img src="assets/images/icon/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/fluent_people-20-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">งานของฉัน</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="assets/images/icon/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">ข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">คำของบประมาณ</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/mdi_email-newsletter.png" class="side-menu__icon">
+							<span class="side-menu__label">ข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="fixed-custom-1 pt-4  px-4">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">รายงานความก้าวหน้า</a></li>
+					  </ol>
+					</nav>
+				</div>
+
+				<div class="pt-4 pb-5"></div>
+
+
+
+
+				<div class="row">
+					<div class="col">
+
+						<div class="card card-st-3  mb-4 " style="">
+							<div class="card-body p-0">
+								
+								<ul class="data-status d-flex">
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-6" data-status ="0" value="" checked="">
+										<label for="data-status-6" class="mb-0">ทั้งหมด (<span class="countStatus">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-1" data-status ="1" value="แบบร่าง">
+										<label for="data-status-1" class="mb-0">แบบร่าง (<span class="countStatus0">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-0" data-status ="0" value="รอรายงาน">
+										<label for="data-status-0" class="mb-0">รอรายงาน (<span class="countStatus1">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-4" data-status ="4" value="รอแก้ไข">
+										<label for="data-status-4" class="mb-0 ">รอแก้ไข  (<span class="countStatus2">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-2" data-status ="2" value="รอตรวจสอบ">
+										<label for="data-status-2" class="mb-0">รอตรวจสอบ (<span class="countStatus0">0</span>)</label>
+									</li>
+
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-3" data-status ="3" value="รับรองแล้ว">
+										<label for="data-status-3" class="mb-0 ">รับรองแล้ว  (<span class="countStatus2">0</span>)</label>
+									</li>
+								</ul>
+
+
+
+
+
+								<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+
+									<button class="btn btn-st-11 btn-export  btn-control   me-3 mb-2 " id="" >
+										<img src="assets/images/icon/carbon_export.png" class="mt-n1" width="24"> นำข้อมูลออก
+									</button>
+
+									<div class="fs-16 text-color-8 mb-2  me-3">เลือกจากวันเริ่มต้นโครงการ</div>
+									<div class="mb-2 me-auto">
+										<input type="text" name="" id="" class="form-control form-st-1 icon-calendar-2 daterange " placeholder="dd/mm/yyyy -  dd/mm/yyyy" style="min-width: 240px;">
+									</div>
+	
+									<div class="mb-2">
+										<input type="search" name="" id="search" class="form-control form-st-1" placeholder="รหัสโครงการ / ชื่อโครงการ" style="min-width: 240px;">
+									</div>
+								</div>
+								<table class="table" id="list-table">
+									<thead >
+										<tr>
+											<th class="py-1 ">
+												<div class="form-check form-check-st-1">
+					  								<input class="form-check-input" type="checkbox" >
+												</div>
+											</th>
+											<th class="py-1">รหัสคำขอ</th>
+											<th class="py-1">ชื่อโครงการ</th>
+											<th class="py-1">รานงานผล</th>
+											<th class="py-1">ตรวจสอบ</th>
+											<th class="py-1">รับรอง</th>
+											<th class="py-1">สถานะ</th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/plugins/moment/moment.js"></script>
+	<script src="assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="assets/plugins/sidebar/sidebar.js"></script>
+	<script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+	<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+	<script src="assets/plugins/datatable/js/jszip.min.js"></script>
+	<script src="assets/plugins/datatable/js/pdfmake.min.js"></script>
+	<script src="assets/plugins/datatable/js/vfs_fonts.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.html5.min.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.print.min.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+	<script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+
+	<script type="text/javascript">
+			$(function() {
+	          	var start = moment().subtract(0, 'days');
+	          	var end = moment();
+	          	function cb(start, end) {
+
+	          		console.log( start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY') )
+	          	}
+	          	$('.daterange').daterangepicker({
+		            startDate: start,
+		            endDate: end,
+		            ranges: {
+		               'Today': [moment(), moment()],
+		               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+		               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+		               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+		               'This Month': [moment().startOf('month'), moment().endOf('month')],
+		               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+		            }
+		        }, cb);
+	          	cb(start, end);
+	      	});
+		</script>
+	<script type="text/javascript">
+
+		var myData4 = [
+		    {
+		        "id": 1,
+		        "request_code":"PIEO64/001-C",
+		        "project_name":"ชื่อโครงการ",
+		        "sum_report_success": 3,
+		        "sum_examine_success": 2,
+		        "sum_guarantee_success": 1,
+		        "quarter": [
+		        	{
+		        		"quarter_code":"RIEO64/002-1",
+		        		"quarter_name":"ไตรมาสที่ 1 ",
+		        		"report_success":1,
+		        		"examine_success":1,
+		        		"guarantee_success":1,
+		        		"status":3
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-2",
+		        		"quarter_name":"ไตรมาสที่ 2 ",
+		        		"report_success":1,
+		        		"examine_success":1,
+		        		"guarantee_success":0,
+		        		"status":2
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-3",
+		        		"quarter_name":"ไตรมาสที่ 3",
+		        		"report_success":1,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":1
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-4",
+		        		"quarter_name":"ไตรมาสที่ 4 ",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":0
+		        	}
+		        ]
+		        
+		    },
+		    {
+		        "id": 1,
+		        "request_code":"PIEO64/001-C",
+		        "project_name":"ชื่อโครงการ",
+		        "sum_report_success": 3,
+		        "sum_examine_success": 2,
+		        "sum_guarantee_success": 1,
+		        "quarter": [
+		        	{
+		        		"quarter_code":"RIEO64/002-1",
+		        		"quarter_name":"ไตรมาสที่ 1 ",
+		        		"report_success":1,
+		        		"examine_success":1,
+		        		"guarantee_success":1,
+		        		"status":3
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-2",
+		        		"quarter_name":"ไตรมาสที่ 2 ",
+		        		"report_success":1,
+		        		"examine_success":1,
+		        		"guarantee_success":0,
+		        		"status":2
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-3",
+		        		"quarter_name":"ไตรมาสที่ 3",
+		        		"report_success":1,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":1
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-4",
+		        		"quarter_name":"ไตรมาสที่ 4 ",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":0
+		        	}
+		        ]
+		        
+		    },
+		    {
+		        "id": 1,
+		        "request_code":"PIEO64/001-C",
+		        "project_name":"ชื่อโครงการ",
+		        "sum_report_success": 0,
+		        "sum_examine_success": 0,
+		        "sum_guarantee_success": 0,
+		        "quarter": [
+		        	{
+		        		"quarter_code":"RIEO64/002-1",
+		        		"quarter_name":"ไตรมาสที่ 1 ",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":0
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-2",
+		        		"quarter_name":"ไตรมาสที่ 2 ",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":0
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-3",
+		        		"quarter_name":"ไตรมาสที่ 3",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":0
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-4",
+		        		"quarter_name":"ไตรมาสที่ 4 ",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":4
+		        	}
+		        ]
+		        
+		    },
+
+		];
+
+		
+
+							
+
+		var table =	$('#list-table').DataTable({
+	        // scrollX:        true,
+	        // scrollCollapse: true,
+			data: myData4,
+		    columns: [
+
+		        { data: 'id' },
+		        { data: 'request_code' },
+		        { data: 'project_name' },
+		        { data: 'sum_report_success' },
+		        { data: 'sum_examine_success' },
+		        { data: 'sum_guarantee_success' },
+		        { data: 'quarter' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle ","width": "5%",
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check form-check-st-1"><input class="form-check-input" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left","width": "15%",
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<a href="/'+data+'" target="_blank" class="alink-st-1"  >'+data+'</a>';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left details-control","width": "25%",
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data+'</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		        { targets : [3],className:"align-middle text-center","width": "15%",
+
+		        	render : function (data, type, row) {
+
+			          	var html = "";
+			          	html += '<div class="card-p">'
+			          	html += '<div class="percent">'
+			          	html += '<svg>'
+			          	html += '<circle cx="20" cy="20" r="15"></circle>'
+			          	html += '<circle cx="20" cy="20" r="15" style="--percent: '+data*25+'"></circle>'
+			          	html += '</svg>'
+			          	html += '<div class="number">'
+			          	html += '<h3 class="mb-0">'+data+'</h3>'
+			          	html += '</div>'
+			          	html += '</div>'
+			          	html += '</div>'
+			            return html;
+
+			        }
+
+		    	},
+		    	{ targets : [4],className:"align-middle text-center","width": "15%",
+
+		    		render : function (data, type, row) {
+
+			          	var html = "";
+			          	html += '<div class="card-p">'
+			          	html += '<div class="percent">'
+			          	html += '<svg>'
+			          	html += '<circle cx="20" cy="20" r="15"></circle>'
+			          	html += '<circle cx="20" cy="20" r="15" style="--percent: '+data*25+'"></circle>'
+			          	html += '</svg>'
+			          	html += '<div class="number">'
+			          	html += '<h3 class="mb-0">'+data+'</h3>'
+			          	html += '</div>'
+			          	html += '</div>'
+			          	html += '</div>'
+			            return html;
+
+			        }
+
+		    	},
+		    	{ targets : [5],className:"align-middle text-center","width": "15%",
+
+		    		render : function (data, type, row) {
+
+			          	var html = "";
+			          	html += '<div class="card-p">'
+			          	html += '<div class="percent">'
+			          	html += '<svg>'
+			          	html += '<circle cx="20" cy="20" r="15"></circle>'
+			          	html += '<circle cx="20" cy="20" r="15" style="--percent: '+data*25+'"></circle>'
+			          	html += '</svg>'
+			          	html += '<div class="number">'
+			          	html += '<h3 class="mb-0">'+data+'</h3>'
+			          	html += '</div>'
+			          	html += '</div>'
+			          	html += '</div>'
+			            return html;
+
+			        }
+
+		    	},
+		    	{ targets : [6],className:"align-middle text-center   ","width": "10%",
+		        	render : function (data, type, row) {
+			          	var html = "";
+				
+			            return html;
+			        }
+		    	}
+				  				
+							  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			"ordering": false,
+			"dom": '<<t>ilp>',
+			buttons: [
+				{
+			        extend: 'csv',
+			        text: 'Export csv',
+			        charset: 'utf-8',
+			        extension: '.csv',
+			        fieldSeparator: ';',
+			        fieldBoundary: '',
+			        bom: true
+			    },
+			    {
+			        extend: 'pdf',
+	                orientation: 'landscape',
+	                pageSize: 'LEGAL',
+	                customize:function(doc){
+	                    doc.defaultStyle = {
+	                        font:'THSarabun',
+	                        fontSize:16                                 
+	                    };
+	                    doc.styles.tableHeader.fontSize = 16;
+	                    var rowCount = doc.content[1].table.body.length;
+	                    for (i = 1; i < rowCount; i++) { 
+	                        doc.content[1].table.body[i][0].alignment = 'center';
+	                        doc.content[1].table.body[i][1].alignment = 'center';
+	                        doc.content[1].table.body[i][2].alignment = 'center';
+	                        doc.content[1].table.body[i][3].alignment = 'center';
+	                    };                                  
+	                    console.log(doc);
+	                }
+			    },
+
+	            'copy',  'excel',  'print'
+	        ]
+		});
+
+
+
+		var detailRows = [];
+ 
+	    $('#list-table tbody').on( 'click', 'tr td.details-control', function () {
+	        var tr = $(this).closest('tr');
+	        var row = table.row( tr );
+	        var idx = $.inArray( tr.attr('id'), detailRows );
+	 
+	        if ( row.child.isShown() ) {
+	            tr.removeClass( 'details' );
+	            row.child.hide();
+	            detailRows.splice( idx, 1 );
+	        }
+	        else {
+	            tr.addClass( 'details' );
+	            row.child( format( row.data() ) ).show();
+	 
+	            if ( idx === -1 ) {
+	                detailRows.push( tr.attr('id') );
+	            }
+	        }
+	    } );
+
+	    table.on( 'draw', function () {
+	        $.each( detailRows, function ( i, id ) {
+	            $('#'+id+' td.details-control').trigger( 'click' );
+	        } );
+
+	        console.log('xx')
+	    } );
+
+	    function format ( d ) {
+
+			var html = "";
+			html += '<table class="table">'
+			$.each(d.quarter, function(i, item) {
+
+				
+				html += '<tr>'
+				html += '<td width="5%"><div class="form-check form-check-st-1"><input class="form-check-input" type="checkbox" value="'+d.quarter[i].quarter_code+'" ></div></td>'
+				html += '<td width="15%"><a href="" class="text-color-1">'+d.quarter[i].quarter_code+'</a></td>'
+				html += '<td width="25%"><div>'+d.quarter[i].quarter_name+'</div></td>'
+				if(d.quarter[i].report_success == 1){
+					html += '<td width="15%"><div class="check-mark active"></div></td>'
+				}else{
+					html += '<td width="15%"><div class="check-mark "></div></td>'
+				}
+				if(d.quarter[i].examine_success == 1){
+					html += '<td width="15%"><div class="check-mark active"></div></td>'
+				}else{
+					html += '<td width="15%"><div class="check-mark "></div></td>'
+				}
+				if(d.quarter[i].guarantee_success == 1){
+					html += '<td width="15%"><div class="check-mark active"></div></td>'
+				}else{
+					html += '<td width="15%"><div class="check-mark "></div></td>'
+				}
+				
+
+				if(d.quarter[i].status == 0){
+					html += '<td width="10%"><div class="project-quarter-status status-0">รอรายงาน</div></td>'
+				}else if(d.quarter[i].status == 1){
+					html += '<td width="10%"><div class="status-0 project-status align-middle text-center">แบบร่าง</div></td>'
+				}else if(d.quarter[i].status == 2){
+					html += '<td width="10%"><div class="project-quarter-status status-1">รอตรวจสอบ</div></td>'
+				}else if(d.quarter[i].status == 3){
+					html += '<td width="10%"><div class="project-quarter-status status-2">ตรวจสอบแล้ว</div></td>'
+				}else if(d.quarter[i].status == 4){
+					html += '<td width="10%"><div class="project-quarter-status" style="color: #FC8004;border: 1px solid #FF7676;">รอแก้ไข</div></td>'
+				}else{
+					html += '<td width="10%"></td>'
+				}
+	
+				html += '</tr>'
+
+			    // console.log(d.quarter[i].quarter_code);
+			});
+			html += '</table>'
+		    return html;
+		}
+
+
+
+		var countStatus0 = 0;
+		var countStatus1 = 0;
+		var countStatus2 = 0;
+		var countStatus3 = 0;
+		var countStatus4 = 0;
+		table.rows().data().filter( function ( value, index ) {
+
+	        $.each( value.quarter, function( key, value ) {
+			  if(value.status == '0'){
+			  	countStatus1 += 1;
+			  }else if(value.status == '1'){
+			  	countStatus0 += 1;
+			  }else if(value.status == '2'){
+			  	countStatus3 += 1;
+			  }else if(value.status == '3'){
+			  	countStatus4 += 1;
+			  }else if(value.status == '4'){
+			  	countStatus2 += 1;
+			  }
+			   console.log(value.status)
+			});
+
+	    } ).count();
+	    
+		$('.countStatus0').text(countStatus0)
+		$('.countStatus1').text(countStatus1)
+		$('.countStatus2').text(countStatus2)
+		$('.countStatus3').text(countStatus3)
+		$('.countStatus4').text(countStatus4)
+
+
+		$('#search').keyup(function(){
+		      table.search($(this).val()).draw() ;
+		})
+
+
+		$('.input-status').on('change',function(){
+			var status = $('.input-status:checked').val();
+			console.log(status)
+			table.column(6).search(status,true, false, true  ).draw();
+		})
+
+		$(".select2-agency").select2({
+				minimumResultsForSearch: Infinity
+		});
+		$('.select2-agency').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'ทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(4).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-department").select2({
+				minimumResultsForSearch: Infinity
+		});
+		$('.select2-department').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'ทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(5).search( text,true, false, true  ).draw();
+		});
+
+
+
+	</script>
+
+</body>
+</html>

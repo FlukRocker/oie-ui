@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo2.png">
+
+    <link href="assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/select2/css/select2.min.css">
+    <link href="assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 active"  href="#">
+							<img src="assets/images/icon/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/fluent_people-20-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">งานของฉัน</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="assets/images/icon/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">ข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">คำของบประมาณ</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/mdi_email-newsletter.png" class="side-menu__icon">
+							<span class="side-menu__label">ข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid mb-5">
+				<div class="px-3">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">Dashbord</a></li>
+					    <li class="breadcrumb-item"><a href="#" class="fw-500 text-color-8 text-decoration-none">ข่าวประชาสัมพันธ์</a></li>
+					    
+					  </ol>
+					</nav>
+				</div>
+			</div>
+
+
+			<div class="container-fluid">
+
+				<div class="px-3 pb-5">
+
+					<div class="d-flex justify-content-between align-items-center mb-4">
+						<div class="fs-20 fw-bold text-color-1 ">ข่าวประชาสัมพันธ์</div>
+						<a href="" class="fs-16 text-dark">ดูบทความทั้งหมด</a>
+					</div>
+
+
+					<div class="d-flex pb-1 flex-wrap align-items-center mb-4">
+						<div class="fs-16 text-color-8 mb-2  me-3">เลือกดูจาก</div>
+						<div class=" mb-2 me-4">
+							<input type="" name="" class="form-control form-st-1 datepicker icon-calendar" placeholder="dd/mm/yyyy" id="date2">
+						</div>
+						<div class="fs-16 text-color-8 mb-2  mx-3">เลือกดูจาก</div>
+						<div class=" mb-2 " style="flex: 0 0 150px;">
+							<select class="form-control form-st-1 form-select ">
+								<option value="2565" selected="">2565</option>
+							</select>
+						</div>
+	
+					</div>
+
+					<div class="fs-16 mb-3">จำนวนทั้งหมด 32 รายการ</div>
+
+					<div class="d-flex flex-wrap news">
+
+						<a href="" class="text-decoration-none">
+							<div class="card card-news" >
+							  <div class="card-body">
+							  	<img src="assets/images/news.png" class="card-img-top mb-2" alt="...">
+							    <div class="news-title mb-3">สศอ.เผยดัชนี MPI ก.พ. ขยายตัว2.75%YoY, 2 เดือนโต 2.38%</div>
+							    <div class="d-flex align-items-center">
+							    	<div class="writer-image me-3">
+							    		<img src="assets/images/Avatar.png">
+							    	</div>
+							    	<div class=" text-color-18">
+							    		<div class="fs-12 fw-bolder mb-2">Admin</div>
+							    		<div class="fs-12">10 ม.ค. 2022  ∙ 10:00:06</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+						<a href="" class="text-decoration-none">
+							<div class="card card-news" >
+							  <div class="card-body">
+							  	<img src="assets/images/news.png" class="card-img-top mb-2" alt="...">
+							    <div class="news-title mb-3">สศอ.เผยดัชนี MPI ก.พ. ขยายตัว2.75%YoY, 2 เดือนโต 2.38%</div>
+
+							    <div class="d-flex align-items-center">
+							    	<div class="writer-image me-3">
+							    		<img src="assets/images/Avatar.png">
+							    	</div>
+							    	<div class=" text-color-18">
+							    		<div class="fs-12 fw-bolder mb-2">Admin</div>
+							    		<div class="fs-12">10 ม.ค. 2022  ∙ 10:00:06</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+						<a href="" class="text-decoration-none">
+							<div class="card card-news" >
+							  <div class="card-body">
+							  	<img src="assets/images/news.png" class="card-img-top mb-2" alt="...">
+							    <div class="news-title mb-3">สศอ.เผยดัชนี MPI ก.พ. ขยายตัว2.75%YoY, 2 เดือนโต 2.38%</div>
+
+							    <div class="d-flex align-items-center">
+							    	<div class="writer-image me-3">
+							    		<img src="assets/images/Avatar.png">
+							    	</div>
+							    	<div class=" text-color-18">
+							    		<div class="fs-12 fw-bolder mb-2">Admin</div>
+							    		<div class="fs-12">10 ม.ค. 2022  ∙ 10:00:06</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+						<a href="" class="text-decoration-none">
+							<div class="card card-news" >
+							  <div class="card-body">
+							  	<img src="assets/images/news.png" class="card-img-top mb-2" alt="...">
+							    <div class="news-title mb-3">สศอ.เผยดัชนี MPI ก.พ. ขยายตัว2.75%YoY, 2 เดือนโต 2.38%</div>
+
+							    <div class="d-flex align-items-center">
+							    	<div class="writer-image me-3">
+							    		<img src="assets/images/Avatar.png">
+							    	</div>
+							    	<div class=" text-color-18">
+							    		<div class="fs-12 fw-bolder mb-2">Admin</div>
+							    		<div class="fs-12">10 ม.ค. 2022  ∙ 10:00:06</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+						<a href="" class="text-decoration-none">
+							<div class="card card-news" >
+							  <div class="card-body">
+							  	<img src="assets/images/news.png" class="card-img-top mb-2" alt="...">
+							    <div class="news-title mb-3">สศอ.เผยดัชนี MPI ก.พ. ขยายตัว2.75%YoY, 2 เดือนโต 2.38%</div>
+
+							    <div class="d-flex align-items-center">
+							    	<div class="writer-image me-3">
+							    		<img src="assets/images/Avatar.png">
+							    	</div>
+							    	<div class=" text-color-18">
+							    		<div class="fs-12 fw-bolder mb-2">Admin</div>
+							    		<div class="fs-12">10 ม.ค. 2022  ∙ 10:00:06</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+						<a href="" class="text-decoration-none">
+							<div class="card card-news" >
+							  <div class="card-body">
+							  	<img src="assets/images/news.png" class="card-img-top mb-2" alt="...">
+							    <div class="news-title mb-3">สศอ.เผยดัชนี MPI ก.พ. ขยายตัว2.75%YoY, 2 เดือนโต 2.38%</div>
+
+							    <div class="d-flex align-items-center">
+							    	<div class="writer-image me-3">
+							    		<img src="assets/images/Avatar.png">
+							    	</div>
+							    	<div class=" text-color-18">
+							    		<div class="fs-12 fw-bolder mb-2">Admin</div>
+							    		<div class="fs-12">10 ม.ค. 2022  ∙ 10:00:06</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+						<a href="" class="text-decoration-none">
+							<div class="card card-news" >
+							  <div class="card-body">
+							  	<img src="assets/images/news.png" class="card-img-top mb-2" alt="...">
+							    <div class="news-title mb-3">สศอ.เผยดัชนี MPI ก.พ. ขยายตัว2.75%YoY, 2 เดือนโต 2.38%</div>
+
+							    <div class="d-flex align-items-center">
+							    	<div class="writer-image me-3">
+							    		<img src="assets/images/Avatar.png">
+							    	</div>
+							    	<div class=" text-color-18">
+							    		<div class="fs-12 fw-bolder mb-2">Admin</div>
+							    		<div class="fs-12">10 ม.ค. 2022  ∙ 10:00:06</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+						<a href="" class="text-decoration-none">
+							<div class="card card-news" >
+							  <div class="card-body">
+							  	<img src="assets/images/news.png" class="card-img-top mb-2" alt="...">
+							    <div class="news-title mb-3">สศอ.เผยดัชนี MPI ก.พ. ขยายตัว2.75%YoY, 2 เดือนโต 2.38%</div>
+
+							    <div class="d-flex align-items-center">
+							    	<div class="writer-image me-3">
+							    		<img src="assets/images/Avatar.png">
+							    	</div>
+							    	<div class=" text-color-18">
+							    		<div class="fs-12 fw-bolder mb-2">Admin</div>
+							    		<div class="fs-12">10 ม.ค. 2022  ∙ 10:00:06</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+						</a>
+
+					</div>
+
+					<div class="text-center py-3">
+						<button class="btn btn-st-1 px-5 btn-view-more" style="min-width: 300px;border-radius: 7px;">ดูเพิ่มเติม</button>
+					</div>
+
+					
+				</div>
+				
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/plugins/moment/moment.js"></script>
+	<script src="assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="assets/plugins/sidebar/sidebar.js"></script>
+	<script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+	<script src="assets/js/sticky.min.js"></script>
+
+	<script type="text/javascript">
+		var sticky = new Sticky('.sticky');
+		sticky.update();
+	</script>
+	<script type="text/javascript">
+	    $('.datepicker').datepicker({
+	        format: 'dd/mm/yyyy',
+	        autoclose:true
+	    });
+	 </script>
+	 <script type="text/javascript">
+	 	$('.btn-view-more').on('click',function (){
+
+
+	 		var html = "";
+	 		for (var i = 0; i < 8; i++) {
+	 				 		
+		 		html += '<a href="" class="text-decoration-none">'
+		 		html += '<div class="card card-news" >'
+		 		html += '<div class="card-body">'
+		 		html += '<img src="assets/images/news.png" class="card-img-top mb-2" alt="...">'
+		 		html += '<div class="news-title mb-3">สศอ.เผยดัชนี MPI ก.พ. ขยายตัว2.75%YoY, 2 เดือนโต 2.38%</div>'
+		 		html += ' <div class="d-flex align-items-center">'
+		 		html += '<div class="writer-image me-3">'
+		 		html += '<img src="assets/images/Avatar.png">'
+		 		html += '</div>'
+		 		html += '<div class=" text-color-18">'
+		 		html += '<div class="fs-12 fw-bolder mb-2">Admin</div>'
+		 		html += '<div class="fs-12">10 ม.ค. 2022  ∙ 10:00:06</div>'
+		 		html += '</div>'
+		 		html += '</div>'
+		 		html += '</div>'
+		 		html += '</div>'
+		 		html += '</a>'
+	 		}
+
+	 		$('.news').append(html)
+
+
+		    
+							   
+							   
+	 	})
+	 </script>
+</body>
+</html>

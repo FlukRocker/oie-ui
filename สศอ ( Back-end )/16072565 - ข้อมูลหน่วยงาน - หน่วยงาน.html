@@ -1,0 +1,4304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../สศอ/assets/images/logo2.png">
+
+    <link href="../สศอ/assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="../สศอ/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../สศอ/assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/select2/css/select2.min.css">
+    <link href="../สศอ/assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+    <link href="../สศอ/assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../สศอ/assets/css/dropify.css">
+
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll app-sidebar-be">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="../สศอ/assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="../สศอ/assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 "  data-toggle="slide"  href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">สำหรับผู้บริหาร</a></li>
+							<li><a class="slide-item py-2" href="/">ข้อมูลคำของบประมาณ</a></li>
+							<li><a class="slide-item py-2" href="/">การติดตามผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">การประเมินผลงาน</a></li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/line-md_document-report.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน<br/>(ตามเป้าหมาย แนวทาง และตัวชี้วัด) </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการประเมินผลโครงการ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม <br/> การเบิกจ่ายงบประมาณ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม<br/> การงานตามตัวชี้วัด </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการร่างพรบ.</a></li>
+							<li><a class="slide-item py-2" href="/">ติดตามความก้าวหน้า </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/bi_folder-fill.png" class="side-menu__icon">
+							<span class="side-menu__label">ข้อมูลหน่วยงาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">หน่วยงานทั้งหมด</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าหน่วยงาน.</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="/">
+							<img src="../สศอ/assets/images/icon/sidemenu/mdi_email.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/fa_user-solid.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการสิทธิ์และผู้ใช้งาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการผู้ใช้งาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการสิทธิ์การใช้งาน</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/ci_settings-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">ตั้งค่าทั่วไป</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการแผนงาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการแผนแม่บทฯ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการยุทธศาสตร์</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการหน่วยนับ</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าระยะเวลาดำเนินการ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="../สศอ/assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="fixed-custom-1 pt-4  px-3">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">Dashboard</a></li>
+					    <li class="breadcrumb-item active text-color-1 fw-500" aria-current="page">กระทรวงอุตสาหกรรม</li>
+					    
+					  </ol>
+					</nav>
+
+
+				</div>
+
+				<div class="pt-3 pb-3"></div>
+
+				<div class="d-flex flex-row">
+					<div class="me-3">
+						<div class="card card-agency mb-3" style="width: 277px">
+							<div class="card-header"></div>
+							<div class="card-body pb-0">
+								<div class="agency-profile mb-4">
+									<img src="../สศอ/assets/images/ministry/ministry-3.png" class="agency-preview-image">
+									<button class="btn btn-upload-image-agency btn-link">
+									</button>
+									<input type="file" name="" class="hide-input file-upload">
+								</div>
+
+								<div class="mb-3">
+									<span class="me-3 fs-14 fw-light">รหัสหน่วยงาน</span>
+									<span class="fw-500 fs-16 text-color-1">INS00002-1</span>
+								</div>
+
+								<div class="mb-3">
+									<div class="me-3 fs-14 fw-light">ชื่อหน่วยงาน (TH)</div>
+									<div class="position-relative ministry-g">
+										<input type="" name="" readonly class="form-control-plaintext ps-1 fw-500 fs-16 text-color-8" value="กรมโรงงานอุตสาหกรรม">
+										<button type="button" class="btn btn-link p-0 btn-edit-sc btn-edit-name-th"></button>
+										<button type="button" class="btn btn-link p-0 btn-save-sc d-none btn-save-name-th">บันทึก</button>
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<div class="me-3 fs-14 fw-light">ชื่อหน่วยงาน (EN)</div>
+									<div class="position-relative ministry-g">
+										<input type="" name="" readonly class="form-control-plaintext ps-1 fw-500 fs-16 text-color-8" value="Department of Industrial W..">
+										<button type="button" class="btn btn-link p-0 btn-edit-sc btn-edit-name-en"></button>
+										<button type="button" class="btn btn-link p-0 btn-save-sc d-none btn-save-name-en">บันทึก</button>
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<div class="me-3 fs-14 fw-light">อักษรย่อหน่วยงาน</div>
+									<div class="position-relative ministry-g">
+										<input type="" name="" readonly class="form-control-plaintext ps-1 fw-500 fs-16 text-color-8" value="ABC">
+										<button type="button" class="btn btn-link p-0 btn-edit-sc btn-edit-sname"></button>
+										<button type="button" class="btn btn-link p-0 btn-save-sc d-none btn-save-sname">บันทึก</button>
+									</div>
+								</div>
+
+								<div class="mb-3">
+									<div class="me-3 fs-14 fw-light">อักษรย่อหน่วยงานในระบบ (3 ตัวอักษร)</div>
+									<div class="position-relative ministry-g">
+										<input type="" name="" readonly class="form-control-plaintext ps-1 fw-500 fs-16 text-color-8" value="ABC">
+										<button type="button" class="btn btn-link p-0 btn-edit-sc btn-edit-sname"></button>
+										<button type="button" class="btn btn-link p-0 btn-save-sc d-none btn-save-sname">บันทึก</button>
+									</div>
+								</div>
+
+								<div class="mb-3 d-flex align-items-start">
+									<div class="me-3 fs-14 fw-light" style="flex:0 0 55px;">วันที่สร้าง</div>
+									<div class="fw-500 fs-16 text-color-1">18/03/2565</div>
+								</div>
+								<div class="mb-3 d-flex align-items-start">
+									<div class="me-3 fs-14 fw-light" style="flex:0 0 55px;">ผู้สร้าง</div>
+									<div class="fw-500 fs-16 text-color-1">นางสาวเบญจวรรณบัวพิทักษ์</div>
+								</div>
+							</div>
+							<div class="card-footer bg-white pt-4" style="border-top: 1 solid #EFEFEF;">
+								<div class="d-flex align-items-center mb-4">
+						        	<div class="fs-16 text-color-8 me-4 mb-1">สถานะ</div>
+						        	<div class="plan-status-check">
+						        		<input type="checkbox" name="plan_status" class="hide-input" id="main-plan" checked="">
+						        		<label for="main-plan" class=""></label>
+						        	</div>
+						        </div>
+							</div>
+						</div>
+						<div class="card card-st-6 mb-3">
+							<div class="card-body">
+								<div class="position-relative">
+									<div class="fw-500"><i class="icon-user-edit"></i> จัดการผู้ใช้งาน</div>
+									<a href="" class="btn btn-link p-0 btn-edit-sc" style="top: 2px;"></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="pe-3" style="width: calc(100% - 280px)">
+
+						<div class="mb-3">
+							<div class="fs-14 fw-bold text-color-7 mb-2 pe-5">ใช้ข้อมูลของปี</div>
+							<div class="select2-sm" style="width: 150px;">
+								<select class="form-control form-select text-center select2">
+									<option value="2565">ปี 2565</option>
+									<option value="2564">ปี 2564</option>
+									<option value="2563">ปี 2563</option>
+								</select>
+							</div>
+						</div>
+						<div class="d-flex flex-wrap">
+	
+							<div class="card card-detail-st1 mb-3  me-3">
+								<div class="card-body">
+									<div class="d-flex flex-wrap align-items-center">
+										<div class="me-auto">โครงการทั้งหมด</div>
+										<div class="text-color-1 fs-24 fw-bolder">17</div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-detail-st1 mb-3 flex-fill  ">
+								<div class="card-body">
+									<div class="d-flex flex-wrap align-items-center">
+										<div class="me-auto">งบประมาณทั้งหมด</div>
+										<div class="text-color-1 fs-24 fw-bolder">528,142,600</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="d-flex flex-wrap">
+							<div class="card card-detail-st1 mb-3 me-3">
+								<div class="card-body">
+									<div class="d-flex flex-wrap align-items-center">
+										<div class="me-auto">
+											<div class="fs-14 fw-light mb-2">ข้อเสนอโครงการ</div>
+											<div class="fs-16 fw-bold">180</div>
+										</div>
+										<div class="icon-card-detail-1"></div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-detail-st1 mb-3  me-3">
+								<div class="card-body">
+									<div class="d-flex flex-wrap align-items-center">
+										<div class="me-auto">
+											<div class="fs-14 fw-light mb-2">ข้อเสนอโครงการร่างพรบ.</div>
+											<div class="fs-16 fw-bold">180</div>
+										</div>
+										<div class="icon-card-detail-2"></div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-detail-st1 mb-3  me-3">
+								<div class="card-body">
+									<div class="d-flex flex-wrap align-items-center">
+										<div class="me-auto">
+											<div class="fs-14 fw-light mb-2">โครงการที่ดำเนินการอยู่</div>
+											<div class="fs-16 fw-bold">180</div>
+										</div>
+										<div class="icon-card-detail-3"></div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-detail-st1 mb-3 ">
+								<div class="card-body">
+									<div class="d-flex flex-wrap align-items-center">
+										<div class="me-auto">
+											<div class="fs-14 fw-light mb-2">รายงานความก้าวหน้า</div>
+											<div class="fs-16 fw-bold">180</div>
+										</div>
+										<div class="icon-card-detail-4"></div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="card card-st-3  mb-4">
+							<div class="card-body ">
+								<div class="fs-20 fw-bold mb-2">เอกสารทั้งหมด</div>
+
+								<ul class="nav nav-pills nav-pills-st-1 mb-4" id="pills-tab" role="tablist">
+								  <li class="nav-item" role="presentation">
+								    <button class="nav-link active"  data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab"  aria-selected="true">ข้อเสนอโครงการ (<span class="count-p1">0</span>)</button>
+								  </li>
+								  <li class="nav-item" role="presentation">
+								    <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab"  aria-selected="false">ข้อเสนอโครงการ ร่างพรบ.  (<span class="count-p2">0</span>)</button>
+								  </li>
+								  <li class="nav-item" role="presentation">
+								    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-3" type="button" role="tab" >โครงการที่ดำเนินการอยู่ (<span class="count-p3">0</span>)</button>
+								  </li>
+								  <li class="nav-item" role="presentation">
+								    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-4" type="button" role="tab" >รายงานความก้าวหน้า  (<span class="count-p4">0</span>)</button>
+								  </li>
+								</ul>
+
+								<div class="tab-content" id="pills-tabContent">
+								  <div class="tab-pane fade show active" id="pills-1" role="tabpanel" >
+								  	<div>
+										<ul class="data-status d-flex">
+											<li>
+												<input type="radio" name="data-status" class="input-status" id="data-status-1" data-status ="0" value="" checked="">
+												<label for="data-status-1" class="mb-0">ทั้งหมด (<span class="countStatus">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status" id="data-status-2" data-status ="1" value="แบบร่าง">
+												<label for="data-status-2" class="mb-0">แบบร่าง (<span class="countStatus0">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status" id="data-status-3" data-status ="2" value="รอแก้ไข">
+												<label for="data-status-3" class="mb-0">รอแก้ไข (<span class="countStatus1">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status" id="data-status-4" data-status ="3" value="รออนุมัติ">
+												<label for="data-status-4" class="mb-0">รออนุมัติ (<span class="countStatus2">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status" id="data-status-5" data-status ="4" value="รอยกเลิก">
+												<label for="data-status-5" class="mb-0">รอยกเลิก (<span class="countStatus3">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status" id="data-status-6" data-status ="5" value="อนุมัติแล้ว">
+												<label for="data-status-6" class="mb-0">อนุมัติแล้ว (<span class="countStatus4">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status" id="data-status-7" data-status ="6" value="ยกเลิก">
+												<label for="data-status-7" class="mb-0 text-danger">ยกเลิก (<span class="countStatus5">0</span>)</label>
+											</li>
+
+
+										</ul>
+										<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+
+											<div class="btn-group btn-group-export-2  mb-2 me-3" role="group">
+											    <button id="btnGroupDrop1" type="button" class="btn   btn-st-11 " data-bs-toggle="dropdown" aria-expanded="false">
+											      <img src="../สศอ/assets/images/icon/carbon_export.png" class="mt-n1 me-1" width="18"> นำข้อมูลออก
+											    </button>
+											    <ul class="dropdown-menu py-0" aria-labelledby="btnGroupDrop1">
+											      <li class="py-0 border-0">
+											      	<button class="dropdown-item">ข้อมูลแบบสรุป</button>
+											      </li>
+											      <li class="py-0 border-0 ">
+											      	<form>
+											      	<button type="button" class="dropdown-item btn-show-export-detail" >ข้อมูลแบบละเอียด</button>
+											      	</form>
+											      </li>
+											      <li class="py-0 border-0 export-detail d-none">
+											      	<button class="dropdown-item" >สรุปงบประมาณรายจ่าย</button>
+											      </li>
+											      <li class="py-0 border-0 export-detail d-none">
+											      	<button class="dropdown-item" >สรุปคำขอเป้าหมาย</button>
+											      </li>
+											      <li class="py-0 border-0 export-detail d-none">
+											      	<button class="dropdown-item" >เอกสาร TOR</button>
+											      </li>
+											      <li class="py-0 border-0 export-detail d-none">
+											      	<button class="dropdown-item" >ภาพรวมโครงการ</button>
+											      </li>
+
+											    </ul>
+											</div>
+
+											<div class="select2-datetype mb-2 me-3 py-0">
+												<select class="select2-date" name="" data-placeholder="เลือกรูปแบบ">
+													<option value="" selected=""></option>
+													<option value="1">วันที่ส่งคำขอ</option>
+													<option value="2">วันที่สร้าง</option>
+													<option value="3">ระยะเวลาดำเนินโครงการ</option>
+												</select>
+											</div>
+											<div class="mb-2 me-3">
+												<input type="text" name="" id="" class="form-control form-st-1 icon-calendar-2 daterange daterange-p1 " placeholder="dd/mm/yyyy -  dd/mm/yyyy" style="min-width: 240px;border: 1px solid #E5E5E5;" disabled="">
+											</div>
+
+											<div class="dropdown dropdisplay dropdisplay-p1 ml-auto text-nowrap me-auto mb-2" >
+												<button aria-expanded="false" aria-haspopup="true" class="btn ripple  ripple1  "
+												data-bs-toggle="dropdown" id="dropleftMenuButton" type="button" aria-haspopup="true" aria-expanded="false">
+													<img src="../สศอ/assets/images/icon/display.png" width="17" class="mt-n1 me-1"> ตัวเลือกการแสดงผล
+												</button>
+												<div aria-labelledby="dropleftMenuButton" class="dropdown-menu checkboxinput  tx-13">
+													<form class="px-4 pt-2 ">
+														<div class="d-flex justify-content-between align-items-center">
+															<div class="fw-bold fs-16 ">
+																<img src="../สศอ/assets/images/icon/display-2.png" width="17" class="mt-n1 me-1">
+																ตัวเลือกการแสดงผล
+															</div>
+															<button type="button" class="btn btn-close-dropdisplay btn-link p-0 mb-1">
+																<img src="../สศอ/assets/images/icon/close-3.png" width="24" class="mt-n1">
+															</button>
+														</div>
+														<hr class="mt-2 mb-3">
+														<div class="row">
+															<div class="col-4 mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="1" name="checkdisplay[]" id="checkdisplay-0" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-0">
+																	    รหัสข้อเสนอ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="2" name="checkdisplay[]" id="checkdisplay-1" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-1">
+																	    ปีงบประมาณ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="3" name="checkdisplay[]" id="checkdisplay-2" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-2">
+																	    วันที่ส่งคำขอ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="4" name="checkdisplay[]" id="checkdisplay-3" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-3">
+																	    วันที่สร้าง
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="5" name="checkdisplay[]" id="checkdisplay-4" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-4">
+																	     ชื่อโครงการ/ค่าใช้จ่าย
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="6" name="checkdisplay[]" id="checkdisplay-5" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-5">
+																	   
+																	  	โครงการ Flagship 
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="7" name="checkdisplay[]" id="checkdisplay-6" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-6">
+																	    
+																	  	กลุ่มโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="8" name="checkdisplay[]" id="checkdisplay-7" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-7">
+																	    
+																	    งบประมาณ
+																	  </label>
+																</div>
+															</div>
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="9" name="checkdisplay[]" id="checkdisplay-8" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-8">
+																	    ประเภท
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="10" name="checkdisplay[]" id="checkdisplay-9" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-9">
+																	    เป้าหมายแผนงาน 
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="11" name="checkdisplay[]" id="checkdisplay-10" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-10">
+																	    ตัวชี้วัดเป้าหมายแผนงาน
+																	  </label>
+																</div>
+															</div>
+
+
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="12" name="checkdisplay[]" id="checkdisplay-11" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-11">
+																	    แนวทางการดำเนินงาน
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="13" name="checkdisplay[]" id="checkdisplay-12" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-12">
+																	    ตัวชี้วัดแนวทาง
+																	  </label>
+																</div>
+															</div>
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="14" name="checkdisplay[]" id="checkdisplay-13" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-13">
+																	    กระทรวง
+																	  </label>
+																</div>
+															</div>
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="15" name="checkdisplay[]" id="checkdisplay-14" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-14">
+																	    หน่วยงาน
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="16" name="checkdisplay[]" id="checkdisplay-15" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-15">
+																	    หัวหน้าโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="17" name="checkdisplay[]" id="checkdisplay-16" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-16">
+																	    ผู้ประสานงานหลัก
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="18" name="checkdisplay[]" id="checkdisplay-17" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-17">
+																	    ผู้สร้างโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="19" name="checkdisplay[]" id="checkdisplay-18" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-18">
+																	    ระยะเวลาโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="20" name="checkdisplay[]" id="checkdisplay-19" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-19">
+																	    สถานะ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<!-- <div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="" name="checkdisplay[]" id="checkdisplay-20" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-20">
+																	    แสดงทั้งหมด
+																	  </label>
+																</div> -->
+															</div>
+														</div>
+
+														<div class="d-flex align-items-center justify-content-end pe-4 py-3">
+															<button type="button" class="btn btn-link btn-reset-table-display me-4">รีเซ็ตค่าเริ่มต้น</button>
+															<button type="button" class="btn  btn-save-table-display">บันทึกผลการแสดงนี้ไว้</button>
+														</div>
+													</form>
+												</div>
+											</div>
+
+
+			
+											<div class="mb-2">
+												<input type="search" name="" id="search" class="form-control form-st-1" placeholder="รหัสโครงการ / ชื่อโครงการ" style="min-width: 240px;">
+											</div>
+										</div>
+										<div class="pt-3">
+											<table class="table " id="list-table">
+												<thead>
+													<tr>
+														<th class="py-0">
+															<div class="form-check form-check-st-1 no-sort">
+								  								<input class="form-check-input check-input-all" type="checkbox" >
+															</div>
+														</th>
+														<th class="py-0">รหัสข้อเสนอ</th>
+														<th class="select2-filter py-0">
+															ปีงบประมาณ
+															<select class="select2-c2" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="2565">2565</option>
+																<option value="2564">2564</option>
+															</select>
+														</th>
+														<th class="py-0">วันที่ส่งคำขอ</th>
+														<th class="py-0">วันที่สร้าง</th>
+														<th class="select2-filter py-0">
+															ชื่อโครงการ (ค่าใช้จ่าย)
+															<div class="project_annual active fw-light fs-12">โครงการสำคัญประจำปี</div>
+														</th>
+														<th class="select2-filter py-0">
+															โครงการ Flagship หรือ โครงการเทียบเท่าผลผลิต  
+															<select class="select2-c6" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="Flagship 1">Flagship 1</option>
+																<option value="Flagship 2">Flagship 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															กลุ่มโครงการ
+															<select class="select2-c7" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="py-0">งบประมาณ</th>
+														<th class="select2-filter py-0">
+															ประเภท
+															<select class="select2-c9" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															เป้าหมายแผนงาน 
+															<select class="select2-c10" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ตัวชี้วัดเป้าหมายแผนงาน
+															<select class="select2-c11" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															แนวทางการดำเนินงาน
+															<select class="select2-c12" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ตัวชี้วัดแนวทาง
+															<select class="select2-c13" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															กระทรวง
+															<select class="select2-c14" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															หน่วยงาน
+															<select class="select2-c15" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															หัวหน้าโครงการ
+															<select class="select2-c16" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ผู้ประสานงานหลัก
+															<select class="select2-c17" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ผู้สร้างโครงการ
+															<select class="select2-c18" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="py-0">ระยะเวลาโครงการ</th>
+														<th class="select2-filter py-0">
+															สถานะ
+															<select class="select2-c20" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="แบบร่าง">แบบร่าง</option>
+																<option value="รอแก้ไข">รอแก้ไข</option>
+																<option value="รออนุมัติ">รออนุมัติ</option>
+																<option value="รอยกเลิก">รอยกเลิก</option>
+																<option value="อนุมัติแล้ว">อนุมัติแล้ว</option>
+																<option value="ยกเลิก">ยกเลิก</option>
+															</select>
+														</th>
+													</tr>
+												</thead>
+											</table>
+										</div>
+									</div>
+								  </div>
+								  <div class="tab-pane fade " id="pills-2" role="tabpanel" >
+								  	<div>
+										<ul class="data-status d-flex">
+											<li>
+												<input type="radio" name="data-status" class="input-status-2" id="data-status2-1" data-status ="0" value="" checked="">
+												<label for="data-status2-1" class="mb-0">ทั้งหมด (<span class="countStatus2">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-2" id="data-status2-2" data-status ="1" value="แบบร่าง">
+												<label for="data-status2-2" class="mb-0">แบบร่าง (<span class="countStatus2-0">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-2" id="data-status2-3" data-status ="2" value="รอแก้ไข">
+												<label for="data-status2-3" class="mb-0">รอแก้ไข (<span class="countStatus2-1">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-2" id="data-status2-4" data-status ="3" value="รออนุมัติ">
+												<label for="data-status2-4" class="mb-0">รออนุมัติ (<span class="countStatus2-2">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-2" id="data-status2-5" data-status ="4" value="รอยกเลิก">
+												<label for="data-status2-5" class="mb-0">รอยกเลิก (<span class="countStatus2-3">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-2" id="data-status2-6" data-status ="5" value="อนุมัติแล้ว">
+												<label for="data-status2-6" class="mb-0">อนุมัติแล้ว (<span class="countStatus2-4">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-2" id="data-status2-7" data-status ="6" value="ยกเลิก">
+												<label for="data-status2-7" class="mb-0 text-danger">ยกเลิก (<span class="countStatus2-5">0</span>)</label>
+											</li>
+
+
+										</ul>
+										<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+
+
+											<div class="btn-group btn-group-export-2  mb-2 me-3" role="group">
+											    <button id="btnGroupDrop1" type="button" class="btn   btn-st-11 " data-bs-toggle="dropdown" aria-expanded="false">
+											      <img src="../สศอ/assets/images/icon/carbon_export.png" class="mt-n1 me-1" width="18"> นำข้อมูลออก
+											    </button>
+											    <ul class="dropdown-menu py-0" aria-labelledby="btnGroupDrop1">
+											      <li class="py-0 border-0">
+											      	<button class="dropdown-item">ข้อมูลแบบสรุป</button>
+											      </li>
+											      <li class="py-0 border-0 ">
+											      	<form>
+											      	<button type="button" class="dropdown-item btn-p2-show-export-detail" >ข้อมูลแบบละเอียด</button>
+											      	</form>
+											      </li>
+											      <li class="py-0 border-0 export-detail-p2 d-none">
+											      	<button class="dropdown-item" >สรุปงบประมาณรายจ่าย</button>
+											      </li>
+											      <li class="py-0 border-0 export-detail-p2 d-none">
+											      	<button class="dropdown-item" >สรุปคำขอเป้าหมาย</button>
+											      </li>
+											      <li class="py-0 border-0 export-detail-p2 d-none">
+											      	<button class="dropdown-item" >เอกสาร TOR</button>
+											      </li>
+											      <li class="py-0 border-0 export-detail-p2 d-none">
+											      	<button class="dropdown-item" >ภาพรวมโครงการ</button>
+											      </li>
+
+											    </ul>
+											</div>
+
+											<div class="select2-datetype mb-2 me-3 py-0">
+												<select class="select2-p2-date" name="" data-placeholder="เลือกรูปแบบ">
+													<option value="" selected=""></option>
+													<option value="วันที่ส่งคำขอ">วันที่ส่งคำขอ</option>
+													<option value="วันที่สร้าง">วันที่สร้าง</option>
+													<option value="ระยะเวลาดำเนินโครงการ">ระยะเวลาดำเนินโครงการ</option>
+												</select>
+											</div>
+											<div class="mb-2 me-3">
+												<input type="text" name="" id="" class="form-control form-st-1 icon-calendar-2 daterange daterange-p2 " placeholder="dd/mm/yyyy -  dd/mm/yyyy" style="min-width: 240px;border: 1px solid #E5E5E5;" disabled="">
+											</div>
+
+											<div class="dropdown dropdisplay dropdisplay-p2 ml-auto text-nowrap me-auto mb-2" >
+												<button aria-expanded="false" aria-haspopup="true" class="btn ripple2 ripple   "
+												data-bs-toggle="dropdown" id="dropleftMenuButton" type="button" aria-haspopup="true" aria-expanded="false">
+													<img src="../สศอ/assets/images/icon/display.png" width="17" class="mt-n1 me-1"> ตัวเลือกการแสดงผล
+												</button>
+												<div aria-labelledby="dropleftMenuButton" class="dropdown-menu checkboxinput-2  tx-13" style="width: 650px;">
+													<form class="px-4 pt-2 ">
+														<div class="d-flex justify-content-between align-items-center">
+															<div class="fw-bold fs-16 ">
+																<img src="../สศอ/assets/images/icon/display-2.png" width="17" class="mt-n1 me-1">
+																ตัวเลือกการแสดงผล
+															</div>
+															<button type="button" class="btn btn-close-dropdisplay btn-link p-0 mb-1">
+																<img src="../สศอ/assets/images/icon/close-3.png" width="24" class="mt-n1">
+															</button>
+														</div>
+														<hr class="mt-2 mb-3">
+														<div class="row">
+															<div class="col-4 mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="1" name="checkdisplay[]" id="checkdisplay2-0" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-0">
+																	    รหัสข้อเสนอ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="2" name="checkdisplay[]" id="checkdisplay2-1" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-1">
+																	    ปีงบประมาณ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="3" name="checkdisplay[]" id="checkdisplay2-2" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-2">
+																	    วันที่ส่งคำขอ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="4" name="checkdisplay[]" id="checkdisplay2-3" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-3">
+																	    วันที่สร้าง
+																	  </label>
+																</div>
+															</div>
+															
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="5" name="checkdisplay[]" id="checkdisplay2-5" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-5">
+																	    ชื่อโครงการ/ค่าใช้จ่าย
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="6" name="checkdisplay[]" id="checkdisplay2-6" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-6">
+																	    โครงการ Flagship 
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="7" name="checkdisplay[]" id="checkdisplay2-7" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-7">
+																	    กลุ่มโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="8" name="checkdisplay[]" id="checkdisplay2-4" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-4">
+																	    งบประมาณตามร่างพรบ.
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="9" name="checkdisplay[]" id="checkdisplay2-s4" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-s4">
+																	    งบประมาณที่เสนอขอ
+																	  </label>
+																</div>
+															</div>
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="10" name="checkdisplay[]" id="checkdisplay2-8" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-8">
+																	    ประเภท
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="11" name="checkdisplay[]" id="checkdisplay2-9" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-9">
+																	    เป้าหมายแผนงาน 
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="12" name="checkdisplay[]" id="checkdisplay2-10" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-10">
+																	    ตัวชี้วัดเป้าหมายแผนงาน
+																	  </label>
+																</div>
+															</div>
+
+
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="13" name="checkdisplay[]" id="checkdisplay2-11" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-11">
+																	    แนวทางการดำเนินงาน
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="14" name="checkdisplay[]" id="checkdisplay2-12" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-12">
+																	    ตัวชี้วัดแนวทาง
+																	  </label>
+																</div>
+															</div>
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="15" name="checkdisplay[]" id="checkdisplay2-13" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-13">
+																	    กระทรวง
+																	  </label>
+																</div>
+															</div>
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="16" name="checkdisplay[]" id="checkdisplay2-14" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-14">
+																	    หน่วยงาน
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="17" name="checkdisplay[]" id="checkdisplay2-15" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-15">
+																	    หัวหน้าโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="18" name="checkdisplay[]" id="checkdisplay2-16" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-16">
+																	    ผู้ประสานงานหลัก
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="19" name="checkdisplay[]" id="checkdisplay2-17" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-17">
+																	    ผู้สร้างโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="20" name="checkdisplay[]" id="checkdisplay2-18" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-18">
+																	    ระยะเวลาโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="21" name="checkdisplay[]" id="checkdisplay2-19" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay2-19">
+																	    สถานะ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<!-- <div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="" name="checkdisplay[]" id="checkdisplay-20" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-20">
+																	    แสดงทั้งหมด
+																	  </label>
+																</div> -->
+															</div>
+														</div>
+
+														<div class="d-flex align-items-center justify-content-end pe-4 py-3">
+															<button type="button" class="btn btn-link btn-reset-table-display me-4">รีเซ็ตค่าเริ่มต้น</button>
+															<button type="button" class="btn  btn-save-table-display">บันทึกผลการแสดงนี้ไว้</button>
+														</div>
+													</form>
+												</div>
+											</div>
+
+
+			
+											<div class="mb-2">
+												<input type="search" name="" id="search2" class="form-control form-st-1" placeholder="รหัสโครงการ / ชื่อโครงการ" style="min-width: 240px;">
+											</div>
+										</div>
+										<div class="pt-3">
+											<table class="table " id="list-table-2">
+												<thead>
+													<tr>
+														<th class="py-0">
+															<div class="form-check form-check-st-1 no-sort">
+								  								<input class="form-check-input check-input-all-2" type="checkbox" >
+															</div>
+														</th>
+														<th class="py-0">รหัสข้อเสนอ</th>
+														<th class="select2-filter py-0">
+															ปีงบประมาณ
+															<select class="select2-p2-c2" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="2565">2565</option>
+																<option value="2564">2564</option>
+															</select>
+														</th>
+														<th class="py-0">วันที่ส่งคำขอ</th>
+														<th class="py-0">วันที่สร้าง</th>
+														<th class="select2-filter py-0">
+															ชื่อโครงการ (ค่าใช้จ่าย)
+															<div class="project_annual active fw-light fs-12">โครงการสำคัญประจำปี</div>
+														</th>
+														<th class="select2-filter py-0">
+															โครงการ Flagship หรือ โครงการเทียบเท่าผลผลิต  
+															<select class="select2-p2-c6" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="Flagship 1">Flagship 1</option>
+																<option value="Flagship 2">Flagship 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															กลุ่มโครงการ
+															<select class="select2-p2-c7" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="py-0">งบประมาณตามร่างพรบ. (บาท)</th>
+														<th class="py-0">งบประมาณที่เสนอขอ</th>
+														<th class="select2-filter py-0">
+															ประเภท
+															<select class="select2-p2-c10" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															เป้าหมายแผนงาน 
+															<select class="select2-p2-c11" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ตัวชี้วัดเป้าหมายแผนงาน
+															<select class="select2-p2-c12" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															แนวทางการดำเนินงาน
+															<select class="select2-p2-c13" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ตัวชี้วัดแนวทาง
+															<select class="select2-p2-c14" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															กระทรวง
+															<select class="select2-p2-c15" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															หน่วยงาน
+															<select class="select2-p2-c16" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															หัวหน้าโครงการ
+															<select class="select2-p2-c17" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ผู้ประสานงานหลัก
+															<select class="select2-p2-c18" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ผู้สร้างโครงการ
+															<select class="select2-p2-c19" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="py-0">ระยะเวลาโครงการ</th>
+														<th class="select2-filter py-0">
+															สถานะ
+															<select class="select2-p2-c21" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="แบบร่าง">แบบร่าง</option>
+																<option value="รอแก้ไข">รอแก้ไข</option>
+																<option value="รออนุมัติ">รออนุมัติ</option>
+																<option value="รอยกเลิก">รอยกเลิก</option>
+																<option value="อนุมัติแล้ว">อนุมัติแล้ว</option>
+																<option value="ยกเลิก">ยกเลิก</option>
+															</select>
+														</th>
+													</tr>
+												</thead>
+											</table>
+										</div>
+									</div>
+								  </div>
+								  <div class="tab-pane fade " id="pills-3" role="tabpanel">
+								  	<div>
+									  	<ul class="data-status d-flex">
+											<li>
+												<input type="radio" name="data-status" class="input-status-3" id="data-status3-1" data-status ="0" value="" checked="">
+												<label for="data-status3-1" class="mb-0">ทั้งหมด (<span class="countStatus3">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-3" id="data-status3-2" data-status ="1" value="รอตรวจสอบ">
+												<label for="data-status3-2" class="mb-0">รอตรวจสอบ (<span class="countStatus3-0">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-3" id="data-status3-3" data-status ="2" value="ดำเนินการอยู่">
+												<label for="data-status3-3" class="mb-0">อยู่ระหว่างดำเนินการ (<span class="countStatus3-1">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-3" id="data-status3-4" data-status ="3" value="ปิดโครงการ">
+												<label for="data-status3-4" class="mb-0">ปิดโครงการ (<span class="countStatus3-2">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-3" id="data-status3-5" data-status ="4" value="รอยืนยัน">
+												<label for="data-status3-5" class="mb-0">รอยืนยัน (<span class="countStatus3-3">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-3" id="data-status3-6" data-status ="5" value="ยกเลิก">
+												<label for="data-status3-6" class="mb-0 text-danger">ยกเลิก (<span class="countStatus3-4">0</span>)</label>
+											</li>
+
+
+										</ul>
+										<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+
+
+											<div class="btn-group btn-group-export-2  mb-2 me-3" role="group">
+											    <button id="btnGroupDrop1" type="button" class="btn   btn-st-11 " data-bs-toggle="dropdown" aria-expanded="false">
+											      <img src="../สศอ/assets/images/icon/carbon_export.png" class="mt-n1 me-1" width="18"> นำข้อมูลออก
+											    </button>
+											    <ul class="dropdown-menu py-0" aria-labelledby="btnGroupDrop1">
+											      <li class="py-0 border-0">
+											      	<button class="dropdown-item">ข้อมูลแบบสรุป</button>
+											      </li>
+											      <li class="py-0 border-0 ">
+											      	<form>
+											      	<button type="button" class="dropdown-item btn-p3-show-export-detail" >ข้อมูลแบบละเอียด</button>
+											      	</form>
+											      </li>
+											      <li class="py-0 border-0 export-detail-p3 d-none">
+											      	<button class="dropdown-item" >สรุปงบประมาณรายจ่าย</button>
+											      </li>
+											      <li class="py-0 border-0 export-detail-p3 d-none">
+											      	<button class="dropdown-item" >สรุปคำขอเป้าหมาย</button>
+											      </li>
+											      <li class="py-0 border-0 export-detail-p3 d-none">
+											      	<button class="dropdown-item" >เอกสาร TOR</button>
+											      </li>
+											      <li class="py-0 border-0 export-detail-p3 d-none">
+											      	<button class="dropdown-item" >ภาพรวมโครงการ</button>
+											      </li>
+
+											    </ul>
+											</div>
+
+											<div class="select2-datetype mb-2 me-3 py-0">
+												<select class="select2-p3-date" name="" data-placeholder="เลือกรูปแบบ">
+													<option value="" selected=""></option>
+													<option value="วันที่ส่งคำขอ">วันที่ส่งคำขอ</option>
+													<option value="วันที่สร้าง">วันที่สร้าง</option>
+													<option value="ระยะเวลาดำเนินโครงการ">ระยะเวลาดำเนินโครงการ</option>
+												</select>
+											</div>
+											<div class="mb-2 me-3">
+												<input type="text" name="" id="" class="form-control form-st-1 icon-calendar-2 daterange " placeholder="dd/mm/yyyy -  dd/mm/yyyy" style="min-width: 240px;border: 1px solid #E5E5E5;" disabled="">
+											</div>
+
+											<div class="dropdown dropdisplay dropdisplay-p3 ml-auto text-nowrap me-auto mb-2" >
+												<button aria-expanded="false" aria-haspopup="true" class="btn ripple3  ripple   "
+												data-bs-toggle="dropdown" id="dropleftMenuButton" type="button" aria-haspopup="true" aria-expanded="false">
+													<img src="../สศอ/assets/images/icon/display.png" width="17" class="mt-n1 me-1"> ตัวเลือกการแสดงผล
+												</button>
+												<div aria-labelledby="dropleftMenuButton" class="dropdown-menu checkboxinput-3  tx-13" style="width: 700px;">
+													<form class="px-4 pt-2 ">
+														<div class="d-flex justify-content-between align-items-center">
+															<div class="fw-bold fs-16 ">
+																<img src="../สศอ/assets/images/icon/display-2.png" width="17" class="mt-n1 me-1">
+																ตัวเลือกการแสดงผล
+															</div>
+															<button type="button" class="btn btn-p3-close-dropdisplay btn-link p-0 mb-1">
+																<img src="../สศอ/assets/images/icon/close-3.png" width="24" class="mt-n1">
+															</button>
+														</div>
+														<hr class="mt-2 mb-3">
+														<div class="row">
+															<div class="col-4 mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="1" name="checkdisplay[]" id="checkdisplay3-0" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-0">
+																	    รหัสข้อเสนอ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="2" name="checkdisplay[]" id="checkdisplay3-1" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-1">
+																	    ปีงบประมาณ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="3" name="checkdisplay[]" id="checkdisplay3-2" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-2">
+																	    วันที่ส่งคำขอ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="4" name="checkdisplay[]" id="checkdisplay3-3" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-3">
+																	    วันที่สร้าง
+																	  </label>
+																</div>
+															</div>
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="5" name="checkdisplay[]" id="checkdisplay3-5" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-5">
+																	    ชื่อโครงการ/ค่าใช้จ่าย
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="6" name="checkdisplay[]" id="checkdisplay3-6" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-6">
+																	    โครงการ Flagship 
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="7" name="checkdisplay[]" id="checkdisplay3-7" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-7">
+																	    กลุ่มโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="8" name="checkdisplay[]" id="checkdisplay3-4" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-4">
+																	    งบประมาณตามพรบ. (บาท)
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="9" name="checkdisplay[]" id="checkdisplay3-4" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-4">
+																	    งบประมาณตามร่างพรบ. (บาท)
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="10" name="checkdisplay[]" id="checkdisplay3-4" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-4">
+																	    งบประมาณที่เสนอขอ
+																	  </label>
+																</div>
+															</div>
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="11" name="checkdisplay[]" id="checkdisplay3-8" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-8">
+																	    ประเภท
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="12" name="checkdisplay[]" id="checkdisplay3-9" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-9">
+																	    เป้าหมายแผนงาน 
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="13" name="checkdisplay[]" id="checkdisplay3-10" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-10">
+																	    ตัวชี้วัดเป้าหมายแผนงาน
+																	  </label>
+																</div>
+															</div>
+
+
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="14" name="checkdisplay[]" id="checkdisplay3-11" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-11">
+																	    แนวทางการดำเนินงาน
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="15" name="checkdisplay[]" id="checkdisplay3-12" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-12">
+																	    ตัวชี้วัดแนวทาง
+																	  </label>
+																</div>
+															</div>
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="16" name="checkdisplay[]" id="checkdisplay3-13" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-13">
+																	    กระทรวง
+																	  </label>
+																</div>
+															</div>
+
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="17" name="checkdisplay[]" id="checkdisplay3-14" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-14">
+																	    หน่วยงาน
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="18" name="checkdisplay[]" id="checkdisplay3-15" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-15">
+																	    หัวหน้าโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="19" name="checkdisplay[]" id="checkdisplay3-16" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-16">
+																	    ผู้ประสานงานหลัก
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="20" name="checkdisplay[]" id="checkdisplay3-17" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-17">
+																	    ผู้สร้างโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="21" name="checkdisplay[]" id="checkdisplay3-18" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-18">
+																	    ระยะเวลาโครงการ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="22" name="checkdisplay[]" id="checkdisplay3-19" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay3-19">
+																	    สถานะ
+																	  </label>
+																</div>
+															</div>
+															<div class="col-4  mb-3">
+																<!-- <div class="form-check ">
+																	 <input class="form-check-input form-check-input-st-2" type="checkbox" value="" name="checkdisplay[]" id="checkdisplay-20" checked="">
+																	  <label class="form-check-label fs-15 ms-2" for="checkdisplay-20">
+																	    แสดงทั้งหมด
+																	  </label>
+																</div> -->
+															</div>
+														</div>
+
+														<div class="d-flex align-items-center justify-content-end pe-4 py-3">
+															<button type="button" class="btn btn-link btn-reset-table-display me-4">รีเซ็ตค่าเริ่มต้น</button>
+															<button type="button" class="btn  btn-save-table-display">บันทึกผลการแสดงนี้ไว้</button>
+														</div>
+													</form>
+												</div>
+											</div>
+
+
+			
+											<div class="mb-2">
+												<input type="search" name="" id="search3" class="form-control form-st-1" placeholder="รหัสโครงการ / ชื่อโครงการ" style="min-width: 240px;">
+											</div>
+										</div>
+										<div class="pt-3">
+											<table class="table " id="list-table-3">
+												<thead>
+													<tr>
+														<th class="py-0">
+															<div class="form-check mt-2 form-check-st-1 no-sort">
+								  								<input class="form-check-input check-input-all-3" type="checkbox" >
+															</div>
+														</th>
+														<th class="py-0">รหัสข้อเสนอ</th>
+														<th class="select2-filter py-0">
+															ปีงบประมาณ
+															<select class="select2-p3-c2" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="2565">2565</option>
+																<option value="2564">2564</option>
+															</select>
+														</th>
+														<th class="py-0">วันที่ส่งคำขอ</th>
+														<th class="py-0">วันที่สร้าง</th>
+														<th class="select2-filter py-0">
+															ชื่อโครงการ (ค่าใช้จ่าย)
+															<div class="project_annual active fw-light fs-12">โครงการสำคัญประจำปี</div>
+														</th>
+														<th class="select2-filter py-0">
+															โครงการ Flagship หรือ โครงการเทียบเท่าผลผลิต  
+															<select class="select2-p3-c6" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="Flagship 1">Flagship 1</option>
+																<option value="Flagship 2">Flagship 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															กลุ่มโครงการ
+															<select class="select2-p3-c7" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="py-0">งบประมาณตามพรบ. (บาท)</th>
+														<th class="py-0">งบประมาณตามร่างพรบ. (บาท)</th>
+														<th class="py-0">งบประมาณที่เสนอขอ</th>
+														<th class="select2-filter py-0">
+															ประเภท
+															<select class="select2-p3-c9" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															เป้าหมายแผนงาน 
+															<select class="select2-p3-c10" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ตัวชี้วัดเป้าหมายแผนงาน
+															<select class="select2-p3-c11" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															แนวทางการดำเนินงาน
+															<select class="select2-p3-c12" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ตัวชี้วัดแนวทาง
+															<select class="select2-p3-c13" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															กระทรวง
+															<select class="select2-p3-c14" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															หน่วยงาน
+															<select class="select2-p3-c15" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															หัวหน้าโครงการ
+															<select class="select2-p3-c16" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ผู้ประสานงานหลัก
+															<select class="select2-p3-c17" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="select2-filter py-0">
+															ผู้สร้างโครงการ
+															<select class="select2-p3-c18" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="text 1">text 1</option>
+																<option value="text 2">text 2</option>
+															</select>
+														</th>
+														<th class="py-0">ระยะเวลาโครงการ</th>
+														<th class="select2-filter py-0">
+															สถานะ
+															<select class="select2-p3-c20" name="">
+																<option value="" selected="">แสดงทั้งหมด</option>
+																<option value="รอตรวจสอบ">รอตรวจสอบ</option>
+																<option value="ดำเนินการอยู่">ดำเนินการอยู่</option>
+																<option value="ปิดโครงการ">ปิดโครงการ</option>
+																<option value="ยกเลิก">ยกเลิก</option>
+																<option value="รอยืนยัน">รอยืนยัน</option>
+
+															</select>
+														</th>
+													</tr>
+												</thead>
+											</table>
+										</div>
+									</div>
+
+
+								  </div>
+								  <div class="tab-pane fade " id="pills-4" role="tabpanel">
+								  	<div>
+									  	<ul class="data-status d-flex">
+											<li>
+												<input type="radio" name="data-status" class="input-status-4" id="data-status4-6" data-status ="0" value="" checked="">
+												<label for="data-status4-6" class="mb-0">ทั้งหมด </label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-4" id="data-status4-1" data-status ="1" value="รอรายงาน">
+												<label for="data-status4-1" class="mb-0">รอรายงาน (<span class="countStatus40">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-4" id="data-status4-0" data-status ="0" value="รอตรวจสอบ">
+												<label for="data-status4-0" class="mb-0">รอตรวจสอบ (<span class="countStatus41">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-4" id="data-status4-4" data-status ="4" value="ตรวจสอบแล้ว">
+												<label for="data-status4-4" class="mb-0 ">ตรวจสอบแล้ว  (<span class="countStatus42">0</span>)</label>
+											</li>
+											<li>
+												<input type="radio" name="data-status" class="input-status-4" id="data-status4-2" data-status ="2" value="รอแก้ไข">
+												<label for="data-status4-2" class="mb-0">รอแก้ไข (<span class="countStatus43">0</span>)</label>
+											</li>
+
+
+										</ul>
+
+										<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+
+											<button class="btn btn-st-11 btn-export  btn-control   me-3 mb-2 " id="" >
+												<img src="../สศอ/assets/images/icon/carbon_export.png" class="mt-n1" width="24"> นำข้อมูลออก
+											</button>
+
+											<div class="fs-16 text-color-8 mb-2  me-3">เลือกจากวันเริ่มต้นโครงการ</div>
+											<div class="mb-2 me-auto">
+												<input type="text" name="" id="" class="form-control form-st-1 icon-calendar-2 daterange daterange-p4" placeholder="dd/mm/yyyy -  dd/mm/yyyy" style="min-width: 240px;">
+											</div>
+			
+											<div class="mb-2">
+												<input type="search" name="" id="search4" class="form-control form-st-1" placeholder="รหัสโครงการ / ชื่อโครงการ" style="min-width: 240px;">
+											</div>
+										</div>
+										
+										<table class="table" id="list-table-4">
+											<thead >
+												<tr>
+													<th class="py-1 ">
+														<div class="form-check form-check-st-1">
+							  								<input class="form-check-input check-input-all-4" type="checkbox" >
+														</div>
+													</th>
+													<th class="py-1">รหัสคำขอ</th>
+													<th class="py-1">ชื่อโครงการ</th>
+													<th class="py-1">รานงานผล</th>
+													<th class="py-1">ตรวจสอบ</th>
+													<th class="py-1">รับรอง</th>
+													<th class="py-1">สถานะ</th>
+												</tr>
+											</thead>
+										</table>
+									</div>
+								  </div>
+								</div>
+
+
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../สศอ/assets/plugins/moment/moment.js"></script>
+	<script src="../สศอ/assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../สศอ/assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="../สศอ/assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="../สศอ/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+	<script src="../สศอ/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jquery.dataTables.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jszip.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/pdfmake.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/vfs_fonts.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.html5.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.print.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+	<script src="../สศอ/assets/js/dropify.js" ></script> 
+
+	<script src="../สศอ/assets/plugins/daterangepicker/daterangepicker.js"></script>
+
+	<script type="text/javascript">
+		$.fn.dataTable.Api.register( 'sum()', function ( ) {
+			return this.flatten().reduce( function ( a, b ) {
+				if ( typeof a === 'string' ) {
+					a = a.replace(/[^\d.-]/g, '') * 1;
+				}
+				if ( typeof b === 'string' ) {
+					b = b.replace(/[^\d.-]/g, '') * 1;
+				}
+
+				return a + b;
+			}, 0 );
+		} );
+
+	</script>
+
+	<script type="text/javascript">
+		$('.select2').select2({
+	    	minimumResultsForSearch: -1,
+	    	"language": {
+			    "noResults": function(){
+			        return '<div class="fs-12 py-2">ไม่พบข้อมูล</div>';
+			    }
+			},
+		    escapeMarkup: function (markup) {
+		        return markup;
+		    }
+	    });
+	</script>
+	<script type="text/javascript">
+		$('.btn-upload-image-agency').on('click',function(){
+	      $('.file-upload').click();
+	    })
+	    $(document).on('change','.file-upload',function(){
+	    	var $this = $(this);
+	    	var file = $this.get(0).files[0];
+	        var reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.addEventListener("load", function(e) {
+
+                $('.agency-preview-image').attr('src',e.target.result)
+
+            });
+	    })
+	</script>
+	<script type="text/javascript">
+		$('.btn-edit-sc').on('click',function (){
+			var div = $(this).closest('.ministry-g');
+			var input = div.find('input');
+			var btn_edit = div.find('.btn-edit-sc');
+			var btn_save = div.find('.btn-save-sc');
+
+			input.addClass('form-control').removeClass('form-control-plaintext');
+			btn_edit.addClass('d-none');
+			btn_save.removeClass('d-none')
+		})
+
+		$('.btn-save-sc').on('click',function (){
+
+			var div = $(this).closest('.ministry-g');
+			var input = div.find('input');
+			var btn_edit = div.find('.btn-edit-sc');
+			var btn_save = div.find('.btn-save-sc');
+
+			input.removeClass('form-control').addClass('form-control-plaintext');
+			btn_edit.removeClass('d-none');
+			btn_save.addClass('d-none')
+
+
+			console.log(input.val())
+		})
+	</script>
+
+	<script type="text/javascript">
+
+		var myData4 = [
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "10/07/2022 12:00",
+		        "create_date": "14/07/2022 12:00",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "10/07/2022 - 14/07/2022",
+		        "status": 0,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "10/07/2022 12:00",
+		        "create_date": "14/07/2022 12:00",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":0},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "3,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "10/07/2022 - 14/07/2022",
+		        "status": 1,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "14/07/2022 12:00",
+		        "create_date": "14/07/2022 12:00",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":0},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "5,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "10/07/2022 - 14/07/2022",
+		        "status": 2,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "14/07/2022 12:00",
+		        "create_date": "14/07/2022 12:00",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "5,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "10/07/2022 - 14/07/2022",
+		        "status": 3,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "14/07/2022 12:00",
+		        "create_date": "10/07/2022 12:00",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "5,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "10/07/2022 - 14/07/2022",
+		        "status": 4,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "14/07/2022 12:00",
+		        "create_date": "10/07/2022 12:00",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "5,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "10/07/2022 - 14/07/2022",
+		        "status": 5,
+		        
+		    },
+
+
+
+		];
+
+
+		var table =	$('#list-table').DataTable({
+	        scrollX:        true,
+	        scrollCollapse: true,
+			data: myData4,
+		    columns: [
+		        { data: 'id' },
+		        { data: 'offer_code' },
+		        { data: 'budget_year' },
+		        { data: 'request_date' },
+		        { data: 'create_date' },
+		        { data: 'project_detail' },
+		        { data: 'project_flagship' },
+		        { data: 'project_group' },
+		        { data: 'budget' },
+		        { data: 'project_type' },
+		        { data: 'plan_goal' },
+		        { data: 'plan_indicator' },
+		        { data: 'operation_guideline' },
+		        { data: 'guideline_indicator' },
+		        { data: 'ministry' },
+		        { data: 'agency' },
+		        { data: 'project_leader' },
+		        { data: 'project_main_coordinator' },
+		        { data: 'project_creator' },
+		        { data: 'project_period' },
+		        { data: 'status' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle ","width":30,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check form-check-st-1"><input class="form-check-input check-input" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left","width":120,"orderable": false,
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<a href="/'+data+'" target="_blank" class="alink-st-1"  >'+data+'</a>';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left","width":120,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data+'</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		        { targets : [3],className:"align-middle text-center","width":120,"orderable": false},
+		    	{ targets : [4],className:"align-middle text-left","width":120,"orderable": false},
+		    	{ targets : [5],className:"align-middle text-left","width":180,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+
+			          	if(data.project_annual == 1){
+			          		html += '<div class="project_annual active">'+data.project_name+'</div>'
+			          	}else{
+			          		html += '<div class="project_annual">'+data.project_name+'</div>'
+			          	}
+			          	
+			            return html;
+			        }
+		    	},
+		    	{ targets : [6],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [7],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [8],className:"align-middle text-left ps-3" , "orderable": true,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="pe-5">'+data+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [9],className:"align-middle text-left","width":120,"orderable": false},
+		    	{ targets : [10],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [11],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [12],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [13],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [14],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [15],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [16],className:"align-middle text-left","width":200,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data.name+'</div>'
+			          	html += '<div class="text-color-9 fs-12">'+data.tel+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [17],className:"align-middle text-left","width":200,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data.name+'</div>'
+			          	html += '<div class="text-color-9 fs-12">'+data.tel+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [18],className:"align-middle text-left","width":200,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data.name+'</div>'
+			          	html += '<div class="text-color-9 fs-12">'+data.tel+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [19],className:"align-middle text-left","width":140,"orderable": false},
+		    	{ targets : [20],className:"align-middle text-center   ","width":140,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="projectstatus-table">'
+			          	if(data == 0){
+			          		html += '<div class="project-status-b status-0">แบบร่าง</div>'
+			          	}else if(data == 1){
+			          		html += '<div class="project-status-b status-1">รอแก้ไข</div>'
+			          	}else if(data == 2){
+			          		html += '<div class="project-status-b status-2">รออนุมัติ</div>'
+			          	}else if(data == 3){
+			          		html += '<div class="project-status-b status-3">รอยกเลิก</div>'
+			          	}else if(data == 4){
+			          		html += '<div class="project-status-b status-4">อนุมัติแล้ว</div>'
+			          	}else if(data == 5){
+			          		html += '<div class="project-status-b status-5">ยกเลิก</div>'
+			          	}
+			          	
+			          	html += '</div>'
+
+					
+					
+			            return html;
+			        }
+		    	}
+				  				
+							  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			// "ordering": true,
+			"dom": '<<t>ilp>',
+			'drawCallback': function (settings) {
+				var api = this.api();
+				$('.count-p1').html(
+			        api.rows( ).count()
+			    );
+			},
+			initComplete: function () {
+
+			}
+		});
+
+
+		var allcolums = $(".checkboxinput input:checkbox").map(function(){
+	      return $(this).val();
+	    }).get();
+
+		var showcolums = $(".checkboxinput input:checkbox:checked").map(function(){
+	      return $(this).val();
+	    }).get();
+
+
+
+		table.columns( allcolums ).visible( false );
+		table.columns(showcolums).visible( true );    	
+
+
+
+		$('.checkboxinput input:checkbox').on('change',function() {
+
+	    	var allcolums = $(".checkboxinput input:checkbox").map(function(){
+		      return $(this).val();
+		    }).get();
+			var showcolums = $(".checkboxinput input:checkbox:checked").map(function(){
+		      return $(this).val();
+		    }).get();
+
+    		table.columns( allcolums ).visible( false );
+    		table.columns(showcolums).visible( true );
+
+		});
+
+		var countStatus0 = table.column(20).data().filter( function ( value, index ) {
+	        return value === 0 ? true : false;
+	    } ).count();
+	    var countStatus1 = table.column(20).data().filter( function ( value, index ) {
+	        return value === 1 ? true : false;
+	    } ).count();
+	    var countStatus2 = table.column(20).data().filter( function ( value, index ) {
+	        return value === 2 ? true : false;
+	    } ).count();
+	    var countStatus3 = table.column(20).data().filter( function ( value, index ) {
+	        return value === 3 ? true : false;
+	    } ).count();
+	    var countStatus4 = table.column(20).data().filter( function ( value, index ) {
+	        return value === 4 ? true : false;
+	    } ).count();
+	    var countStatus5 = table.column(20).data().filter( function ( value, index ) {
+	        return value === 5 ? true : false;
+	    } ).count();
+
+		$('.countStatus0').text(countStatus0)
+		$('.countStatus1').text(countStatus1)
+		$('.countStatus2').text(countStatus2)
+		$('.countStatus3').text(countStatus3)
+		$('.countStatus4').text(countStatus4)
+		$('.countStatus5').text(countStatus5)
+		$('.countStatus').text(countStatus0 + countStatus1 + countStatus2 + countStatus3 + countStatus4 + countStatus5 );
+
+
+		$('#search').keyup(function(){
+		      table.search($(this).val()).draw() ;
+		})
+
+		$('.input-status').on('change',function(){
+			var status = $('.input-status:checked').val();
+			table.column(20).search(status,true, false, true  ).draw();
+		})
+
+
+		$(".select2-c2").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c2').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(2).search( text,true, false, true  ).draw();
+		});
+
+
+		$(".select2-c6").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c6').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(6).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c7").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c7').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(7).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c9").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c9').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(9).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c10").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c10').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(10).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c11").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c11').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(11).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c12").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c12').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(12).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c13").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c13').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(13).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c14").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c14').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(14).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c15").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c15').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(15).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c16").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c16').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(16).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c17").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c17').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(17).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c18").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c18').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(18).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-c20").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-c20').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(20).search( text,true, false, true  ).draw();
+		});
+
+		$('.check-input-all').on('click',function() {
+		    if($(this).is(':checked')){
+		    	$('.check-input').prop('checked',true);
+		    }else{
+		    	$('.check-input').prop('checked',false);
+		    }
+		});
+
+
+
+		var startDate = "";
+		var endDate = "";
+		$(function() {
+          	var start = moment().subtract(0, 'days');
+          	var end = moment();
+          	function cb(start, end) {
+          		startDate = start.format('YYYY-MM-DD');
+         		endDate = end.format('YYYY-MM-DD');
+
+         		loadDataFromDate($(".select2-date").select2('val'),startDate,endDate,1)
+          	}
+          	$('.daterange-p1').daterangepicker({
+	            startDate: start,
+	            endDate: end,
+	            ranges: {
+	               'Today': [moment(), moment()],
+	               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+	               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+	               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+	               'This Month': [moment().startOf('month'), moment().endOf('month')],
+	               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+	            },
+	            locale: {
+			      format: 'DD/MM/YYYY'
+			    },
+
+	        }, cb);
+          	
+      	});
+
+
+		$(".select2-date").select2({
+				minimumResultsForSearch: Infinity
+		});
+		$('.select2-date').on('select2:open', function (e) {
+			$('.select2-container').addClass('custom-container')
+		});
+
+		$('.select2-date').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data != ''){
+		    	$('.daterange-p1').prop('disabled',false)
+		    }
+		});
+
+
+
+
+		$('.btn-show-export-detail').on('click',function (){
+
+			$('.export-detail').removeClass('d-none')
+			$(this).closest('li').addClass('d-none')
+		})
+		$('body').on("click", ".btn-show-export-detail", function (e) {
+		   e.stopPropagation();
+		});
+
+		$('body').on("click", ".dropdisplay-p1 .dropdown-menu", function (e) {
+		   e.stopPropagation();
+		});
+
+		$('.btn-close-dropdisplay').on('click',function (){
+
+			$(".ripple1").dropdown('toggle');
+
+		})
+	</script>
+
+
+
+	<script type="text/javascript">
+
+		var myDatadraft = [
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "4,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 0,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":0},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "3,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 1,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":0},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "5,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 2,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "5,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 3,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "5,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 4,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget": "5,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 5,
+		        
+		    },
+
+
+
+		];
+
+
+		var table2 =	$('#list-table-2').DataTable({
+	        scrollX:        true,
+	        scrollCollapse: true,
+			data: myDatadraft,
+		    columns: [
+		        { data: 'id' },
+		        { data: 'offer_code' },
+		        { data: 'budget_year' },
+		        { data: 'request_date' },
+		        { data: 'create_date' },
+		        { data: 'project_detail' },
+		        { data: 'project_flagship' },
+		        { data: 'project_group' },
+		        { data: 'budget' },
+		        { data: 'budget_proposal' },
+		        { data: 'project_type' },
+		        { data: 'plan_goal' },
+		        { data: 'plan_indicator' },
+		        { data: 'operation_guideline' },
+		        { data: 'guideline_indicator' },
+		        { data: 'ministry' },
+		        { data: 'agency' },
+		        { data: 'project_leader' },
+		        { data: 'project_main_coordinator' },
+		        { data: 'project_creator' },
+		        { data: 'project_period' },
+		        { data: 'status' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle ","width":30,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check form-check-st-1"><input class="form-check-input check-input-2" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left","width":120,"orderable": false,
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<a href="/'+data+'" target="_blank" class="alink-st-1"  >'+data+'</a>';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left","width":120,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data+'</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		        { targets : [3],className:"align-middle text-center","width":120,"orderable": false},
+		    	{ targets : [4],className:"align-middle text-left","width":120,"orderable": false},
+		    	{ targets : [5],className:"align-middle text-left","width":180,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+
+			          	if(data.project_annual == 1){
+			          		html += '<div class="project_annual active">'+data.project_name+'</div>'
+			          	}else{
+			          		html += '<div class="project_annual">'+data.project_name+'</div>'
+			          	}
+			          	
+			            return html;
+			        }
+		    	},
+		    	{ targets : [6],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [7],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [8],className:"align-middle text-left ps-3" , "orderable": true,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="pe-5">'+data+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [9],className:"align-middle text-left ps-3" , "orderable": true,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="pe-5">'+data+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [10],className:"align-middle text-left","width":120,"orderable": false},
+		    	{ targets : [11],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [12],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [13],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [14],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [15],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [16],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [17],className:"align-middle text-left","width":200,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data.name+'</div>'
+			          	html += '<div class="text-color-9 fs-12">'+data.tel+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [18],className:"align-middle text-left","width":200,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data.name+'</div>'
+			          	html += '<div class="text-color-9 fs-12">'+data.tel+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [19],className:"align-middle text-left","width":200,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data.name+'</div>'
+			          	html += '<div class="text-color-9 fs-12">'+data.tel+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [20],className:"align-middle text-left","width":140,"orderable": false},
+		    	{ targets : [21],className:"align-middle text-center   ","width":140,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="projectstatus-table">'
+			          	if(data == 0){
+			          		html += '<div class="project-status-b status-0">แบบร่าง</div>'
+			          	}else if(data == 1){
+			          		html += '<div class="project-status-b status-1">รอแก้ไข</div>'
+			          	}else if(data == 2){
+			          		html += '<div class="project-status-b status-2">รออนุมัติ</div>'
+			          	}else if(data == 3){
+			          		html += '<div class="project-status-b status-3">รอยกเลิก</div>'
+			          	}else if(data == 4){
+			          		html += '<div class="project-status-b status-4">อนุมัติแล้ว</div>'
+			          	}else if(data == 5){
+			          		html += '<div class="project-status-b status-5">ยกเลิก</div>'
+			          	}
+			          	
+			          	html += '</div>'
+
+					
+					
+			            return html;
+			        }
+		    	}
+				  				
+							  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			// "ordering": true,
+			"dom": '<<t>ilp>',
+			'drawCallback': function (settings) {
+				var api = this.api();
+				$('.count-p2').html(
+			        api.rows( ).count()
+			    );
+			}
+		});
+
+
+		var allcolums = $(".checkboxinput-2 input:checkbox").map(function(){
+	      return $(this).val();
+	    }).get();
+
+		var showcolums = $(".checkboxinput-2 input:checkbox:checked").map(function(){
+	      return $(this).val();
+	    }).get();
+
+
+		table2.columns( allcolums ).visible( false );
+		table2.columns(showcolums).visible( true );    	
+
+
+
+		$('.checkboxinput-2 input:checkbox').on('change',function() {
+
+	    	var allcolums = $(".checkboxinput-2 input:checkbox").map(function(){
+		      return $(this).val();
+		    }).get();
+			var showcolums = $(".checkboxinput-2 input:checkbox:checked").map(function(){
+		      return $(this).val();
+		    }).get();
+
+    		table2.columns( allcolums ).visible( false );
+    		table2.columns(showcolums).visible( true );
+
+		});
+
+		var countStatus0 = table2.column(21).data().filter( function ( value, index ) {
+	        return value === 0 ? true : false;
+	    } ).count();
+	    var countStatus1 = table2.column(21).data().filter( function ( value, index ) {
+	        return value === 1 ? true : false;
+	    } ).count();
+	    var countStatus2 = table2.column(21).data().filter( function ( value, index ) {
+	        return value === 2 ? true : false;
+	    } ).count();
+	    var countStatus3 = table2.column(21).data().filter( function ( value, index ) {
+	        return value === 3 ? true : false;
+	    } ).count();
+	    var countStatus4 = table2.column(21).data().filter( function ( value, index ) {
+	        return value === 4 ? true : false;
+	    } ).count();
+	    var countStatus5 = table2.column(21).data().filter( function ( value, index ) {
+	        return value === 5 ? true : false;
+	    } ).count();
+
+		$('.countStatus2-0').text(countStatus0)
+		$('.countStatus2-1').text(countStatus1)
+		$('.countStatus2-2').text(countStatus2)
+		$('.countStatus2-3').text(countStatus3)
+		$('.countStatus2-4').text(countStatus4)
+		$('.countStatus2-5').text(countStatus5)
+		$('.countStatus2').text(countStatus0 + countStatus1 + countStatus2 + countStatus3 + countStatus4 + countStatus5 );
+
+
+		$('#search2').keyup(function(){
+		      table2.search($(this).val()).draw() ;
+		})
+
+		$('.input-status-2').on('change',function(){
+			var status = $('.input-status-2:checked').val();
+			table2.column(21).search(status,true, false, true  ).draw();
+		})
+
+
+		$(".select2-p2-c2").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c2').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(2).search( text,true, false, true  ).draw();
+		});
+
+
+		$(".select2-p2-c6").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c6').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(6).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c7").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c7').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(7).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c10").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c10').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(10).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c11").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c11').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(11).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c12").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c12').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(12).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c13").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c13').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(13).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c14").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c14').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(14).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c15").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c15').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(15).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c16").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c16').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(16).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c17").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c17').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(17).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c18").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c18').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(18).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c19").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c19').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(19).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-c21").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-c21').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table2.column(21).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p2-date").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p2-date').on('select2:open', function (e) {
+			$('.select2-container').addClass('custom-container')
+
+		});
+
+		$('.select2-p2-date').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+
+		    if(data != ''){
+		    	$('.daterange-p2').prop('disabled',false)
+		    }
+		});
+
+		$('.btn-p2-show-export-detail').on('click',function (){
+			$('.export-detail-p2').removeClass('d-none')
+			$(this).closest('li').addClass('d-none')
+		})
+		$('body').on("click", ".btn-p2-show-export-detail", function (e) {
+		   e.stopPropagation();
+		});
+
+		$('body').on("click", ".dropdisplay-p2 .dropdown-menu", function (e) {
+		   e.stopPropagation();
+		});
+
+		$('.btn-p2-close-dropdisplay').on('click',function (){
+
+			$(".ripple2").dropdown('toggle');
+
+		})
+
+		$('.check-input-all-2').on('click',function() {
+		    if($(this).is(':checked')){
+		    	$('.check-input-2').prop('checked',true);
+		    }else{
+		    	$('.check-input-2').prop('checked',false);
+		    }
+		});
+
+
+		var startDate2;
+		var endDate2;
+		$(function() {
+          	var start2 = moment().subtract(0, 'days');
+          	var end2 = moment();
+          	function cb2(start2, end2) {
+          		startDate2 = start2.format('YYYY-MM-DD');
+         		endDate2 = end2.format('YYYY-MM-DD');
+
+         		loadDataFromDate($(".select2-date").select2('val'),startDate2,endDate2,2)
+
+          	}
+          	$('.daterange-p2').daterangepicker({
+	            startDate2: start2,
+	            endDate2: end2,
+	            ranges: {
+	               'Today': [moment(), moment()],
+	               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+	               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+	               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+	               'This Month': [moment().startOf('month'), moment().endOf('month')],
+	               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+	            },
+	            locale: {
+			      format: 'DD/MM/YYYY'
+			    }
+	        }, cb2);
+      	});
+	</script>
+
+
+
+	<script type="text/javascript">
+
+		var myData3 = [
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget_act": "4,050,000",
+		        "budget_draft_act": "4,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 0,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":0},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget_act": "4,050,000",
+		        "budget_draft_act": "4,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 1,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":0},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget_act": "4,050,000",
+		        "budget_draft_act": "4,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 2,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget_act": "4,050,000",
+		        "budget_draft_act": "4,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 3,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget_act": "4,050,000",
+		        "budget_draft_act": "4,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 4,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001-A",
+		        "budget_year": "2565",
+		        "request_date": "DD/MM/YYYY HH:MM:SS",
+		        "create_date": "DD/MM/YYYY HH:MM:SS",
+		        "project_detail": {"project_name":"ชื่อค่าใช้จ่าย","project_annual":1},
+		        "project_flagship": "โครงการยกระดับและพัฒนาบุคลากรด้านดิจิทัล",
+		        "project_group": "พัฒนาโครงสร้างพื้นฐานด้านอุตสาหกรรมอาหารแล",
+		        "budget_act": "4,050,000",
+		        "budget_draft_act": "4,050,000",
+		        "budget_proposal": "4,050,000",
+		        "project_type": "โครงการใหม่",
+		        "plan_goal": "เป้าหมายที่ 1 : มีการวางรากฐานเพื่อรองรับการ",
+		        "plan_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของการลงทุน",
+		        "operation_guideline": "แนวทางที่ 1.1 :ส่งเสริมการพัฒนาอุตสาหกรรม",
+		        "guideline_indicator": "ตัวชี้วัดที่ 1 : อัตราการขยายตัวของอุตสาหกรรม..",
+		        "ministry": "กระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัย",
+		        "agency": "กรมวิทยาศาสตร์บริการ",
+		        "project_leader": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_main_coordinator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_creator": {"name":"คำนำหน้า-ชื่อ-นามสกุล","tel":"066-154-1519"},
+		        "project_period": "DD/MM/YYYY - DD/MM/YYYY",
+		        "status": 4,
+		        
+		    },
+
+
+
+		];
+
+
+		var table3 =	$('#list-table-3').DataTable({
+	        scrollX:        true,
+	        scrollCollapse: true,
+			data: myData3,
+		    columns: [
+		        { data: 'id' },
+		        { data: 'offer_code' },
+		        { data: 'budget_year' },
+		        { data: 'request_date' },
+		        { data: 'create_date' },
+		        { data: 'project_detail' },
+		        { data: 'project_flagship' },
+		        { data: 'project_group' },
+		        { data: 'budget_act' },
+		        { data: 'budget_draft_act' },
+		        { data: 'budget_proposal' },
+		        { data: 'project_type' },
+		        { data: 'plan_goal' },
+		        { data: 'plan_indicator' },
+		        { data: 'operation_guideline' },
+		        { data: 'guideline_indicator' },
+		        { data: 'ministry' },
+		        { data: 'agency' },
+		        { data: 'project_leader' },
+		        { data: 'project_main_coordinator' },
+		        { data: 'project_creator' },
+		        { data: 'project_period' },
+		        { data: 'status' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle ","width":30,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check mt-1 form-check-st-1"><input class="form-check-input check-input-3" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left","width":120,"orderable": false,
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<a href="/'+data+'" target="_blank" class="alink-st-1"  >'+data+'</a>';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left","width":120,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data+'</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		        { targets : [3],className:"align-middle text-center","width":120,"orderable": false},
+		    	{ targets : [4],className:"align-middle text-left","width":120,"orderable": false},
+		    	{ targets : [5],className:"align-middle text-left","width":180,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+
+			          	if(data.project_annual == 1){
+			          		html += '<div class="project_annual active">'+data.project_name+'</div>'
+			          	}else{
+			          		html += '<div class="project_annual">'+data.project_name+'</div>'
+			          	}
+			          	
+			            return html;
+			        }
+		    	},
+		    	{ targets : [6],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [7],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [8],className:"align-middle text-left ps-3" , "orderable": true,"width":100,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="pe-5">'+data+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [9],className:"align-middle text-left ps-3" , "orderable": true,"width":100,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="pe-5">'+data+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [10],className:"align-middle text-left ps-3" , "orderable": true,"width":100,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="pe-5">'+data+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [11],className:"align-middle text-left","width":120,"orderable": false},
+		    	{ targets : [12],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [13],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [14],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [15],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [16],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [17],className:"align-middle text-left","width":300,"orderable": false},
+		    	{ targets : [18],className:"align-middle text-left","width":200,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data.name+'</div>'
+			          	html += '<div class="text-color-9 fs-12">'+data.tel+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [19],className:"align-middle text-left","width":200,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data.name+'</div>'
+			          	html += '<div class="text-color-9 fs-12">'+data.tel+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [20],className:"align-middle text-left","width":200,"orderable": false,
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data.name+'</div>'
+			          	html += '<div class="text-color-9 fs-12">'+data.tel+'</div>'
+			            return html;
+			        }
+		    	},
+		    	{ targets : [21],className:"align-middle text-left","width":140,"orderable": false},
+		    	{ targets : [22],className:"align-middle text-center   ","width":140,"orderable": false,
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="projectstatus-table">'
+			          	if(data == 0){
+			          		html += '<div class="project-status-3 status-0">รอตรวจสอบ</div>'
+			          	}else if(data == 1){
+			          		html += '<div class="project-status-3 status-1">ดำเนินการอยู่</div>'
+			          	}else if(data == 2){
+			          		html += '<div class="project-status-3 status-2">ปิดโครงการ</div>'
+			          	}else if(data == 3){
+			          		html += '<div class="project-status-3 status-3">รอยืนยัน</div>'
+			          	}else if(data == 4){
+			          		html += '<div class="project-status-3 status-4">ยกเลิก</div>'
+			          	}
+			          	
+			          	html += '</div>'
+
+					
+					
+			            return html;
+			        }
+		    	}
+				  				
+							  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			// "ordering": true,
+			"dom": '<<t>ilp>',
+			'drawCallback': function (settings) {
+				var api = this.api();
+				$('.count-p3').html(
+			        api.rows( ).count()
+			    );
+			}
+		});
+
+
+		var allcolums = $(".checkboxinput-3 input:checkbox").map(function(){
+	      return $(this).val();
+	    }).get();
+
+		var showcolums = $(".checkboxinput-3 input:checkbox:checked").map(function(){
+	      return $(this).val();
+	    }).get();
+
+		table3.columns( allcolums ).visible( false );
+		table3.columns(showcolums).visible( true );    	
+
+
+
+		$('.checkboxinput-3 input:checkbox').on('change',function() {
+
+	    	var allcolums = $(".checkboxinput-3 input:checkbox").map(function(){
+		      return $(this).val();
+		    }).get();
+			var showcolums = $(".checkboxinput-3 input:checkbox:checked").map(function(){
+		      return $(this).val();
+		    }).get();
+
+    		table3.columns( allcolums ).visible( false );
+    		table3.columns(showcolums).visible( true );
+
+		});
+
+		var countStatus30 = table3.column(22).data().filter( function ( value, index ) {
+	        return value === 0 ? true : false;
+	    } ).count();
+	    var countStatus31 = table3.column(22).data().filter( function ( value, index ) {
+	        return value === 1 ? true : false;
+	    } ).count();
+	    var countStatus32 = table3.column(22).data().filter( function ( value, index ) {
+	        return value === 2 ? true : false;
+	    } ).count();
+	    var countStatus33 = table3.column(22).data().filter( function ( value, index ) {
+	        return value === 3 ? true : false;
+	    } ).count();
+	    var countStatus34 = table3.column(22).data().filter( function ( value, index ) {
+	        return value === 4 ? true : false;
+	    } ).count();
+
+		$('.countStatus3-0').text(countStatus30)
+		$('.countStatus3-1').text(countStatus31)
+		$('.countStatus3-2').text(countStatus32)
+		$('.countStatus3-3').text(countStatus33)
+		$('.countStatus3-4').text(countStatus34)
+		$('.countStatus3').text(countStatus30 + countStatus31 + countStatus32 + countStatus33 + countStatus34  );
+
+
+		$('#search3').keyup(function(){
+		      table3.search($(this).val()).draw() ;
+		})
+
+		$('.input-status-3').on('change',function(){
+			var status = $('.input-status-3:checked').val();
+			table3.column(22).search(status,true, false, true  ).draw();
+		})
+
+
+		$(".select2-p3-c2").select2({
+			minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c2').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(2).search( text,true, false, true  ).draw();
+		});
+
+
+		$(".select2-p3-c6").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c6').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(6).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c7").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c7').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(7).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c9").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c9').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(11).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c10").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c10').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(12).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c11").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c11').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(13).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c12").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c12').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(14).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c13").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c13').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(15).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c14").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c14').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(16).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c15").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c15').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(17).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c16").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c16').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(18).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c17").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c17').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(19).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c18").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c18').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(20).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-c20").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-c20').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'แสดงทั้งหมด'){
+		    	text = '';
+		    }
+		    table3.column(22).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-p3-date").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-p3-date').on('select2:open', function (e) {
+			$('.select2-container').addClass('custom-container')
+
+		});
+
+		$('.select2-p3-date').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+
+		    if(data != ''){
+		    	$('.daterange').prop('disabled',false)
+		    }
+
+		});
+
+
+		$('.btn-p3-show-export-detail').on('click',function (){
+
+			$('.export-detail-p3').removeClass('d-none')
+			$(this).closest('li').addClass('d-none')
+		})
+		$('body').on("click", ".btn-p3-show-export-detail", function (e) {
+		   e.stopPropagation();
+		});
+
+		$('body').on("click", ".dropdisplay-p3 .dropdown-menu", function (e) {
+		   e.stopPropagation();
+		});
+
+		$('.btn-p3-close-dropdisplay').on('click',function (){
+
+			$(".ripple3").dropdown('toggle');
+
+		})
+
+		$('.check-input-all-3').on('click',function() {
+		    if($(this).is(':checked')){
+		    	$('.check-input-3').prop('checked',true);
+		    }else{
+		    	$('.check-input-3').prop('checked',false);
+		    }
+		});
+
+		var startDate3;
+		var endDate3;
+		$(function() {
+          	var start3 = moment().subtract(0, 'days');
+          	var end3 = moment();
+          	function cb3(start3, end3) {
+          		startDate3 = start3.format('YYYY-MM-DD');
+         		endDate3 = end3.format('YYYY-MM-DD');
+         		loadDataFromDate($(".select2-date").select2('val'),startDate3,endDate3,3)
+          	}
+          	$('.daterange-p3').daterangepicker({
+	            startDate3: start3,
+	            endDate3: end3,
+	            ranges: {
+	               'Today': [moment(), moment()],
+	               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+	               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+	               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+	               'This Month': [moment().startOf('month'), moment().endOf('month')],
+	               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+	            },
+	            locale: {
+			      format: 'DD/MM/YYYY'
+			    }
+	        }, cb3);
+      	});
+	</script>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+
+		var myData5 = [
+		    {
+		        "id": 1,
+		        "request_code":"PIEO64/001-C",
+		        "project_name":"ชื่อโครงการ",
+		        "sum_report_success": 3,
+		        "sum_examine_success": 2,
+		        "sum_guarantee_success": 1,
+		        "quarter": [
+		        	{
+		        		"quarter_code":"RIEO64/002-1",
+		        		"quarter_name":"ไตรมาสที่ 1 ",
+		        		"report_success":1,
+		        		"examine_success":1,
+		        		"guarantee_success":1,
+		        		"status":3
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-2",
+		        		"quarter_name":"ไตรมาสที่ 2 ",
+		        		"report_success":1,
+		        		"examine_success":1,
+		        		"guarantee_success":0,
+		        		"status":2
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-3",
+		        		"quarter_name":"ไตรมาสที่ 3",
+		        		"report_success":1,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":4
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-4",
+		        		"quarter_name":"ไตรมาสที่ 4 ",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":0
+		        	}
+		        ]
+		        
+		    },
+		    {
+		        "id": 1,
+		        "request_code":"PIEO64/001-C",
+		        "project_name":"ชื่อโครงการ",
+		        "sum_report_success": 3,
+		        "sum_examine_success": 2,
+		        "sum_guarantee_success": 1,
+		        "quarter": [
+		        	{
+		        		"quarter_code":"RIEO64/002-1",
+		        		"quarter_name":"ไตรมาสที่ 1 ",
+		        		"report_success":1,
+		        		"examine_success":1,
+		        		"guarantee_success":1,
+		        		"status":3
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-2",
+		        		"quarter_name":"ไตรมาสที่ 2 ",
+		        		"report_success":1,
+		        		"examine_success":1,
+		        		"guarantee_success":0,
+		        		"status":4
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-3",
+		        		"quarter_name":"ไตรมาสที่ 3",
+		        		"report_success":1,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":4
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-4",
+		        		"quarter_name":"ไตรมาสที่ 4 ",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":0
+		        	}
+		        ]
+		        
+		    },
+		    {
+		        "id": 1,
+		        "request_code":"PIEO64/001-C",
+		        "project_name":"ชื่อโครงการ",
+		        "sum_report_success": 0,
+		        "sum_examine_success": 0,
+		        "sum_guarantee_success": 0,
+		        "quarter": [
+		        	{
+		        		"quarter_code":"RIEO64/002-1",
+		        		"quarter_name":"ไตรมาสที่ 1 ",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":0
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-2",
+		        		"quarter_name":"ไตรมาสที่ 2 ",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":0
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-3",
+		        		"quarter_name":"ไตรมาสที่ 3",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":0
+		        	},
+		        	{
+		        		"quarter_code":"RIEO64/002-4",
+		        		"quarter_name":"ไตรมาสที่ 4 ",
+		        		"report_success":0,
+		        		"examine_success":0,
+		        		"guarantee_success":0,
+		        		"status":4
+		        	}
+		        ]
+		        
+		    },
+
+		];
+
+		
+
+							
+
+		var table4 =	$('#list-table-4').DataTable({
+	        // scrollX:        true,
+	        // scrollCollapse: true,
+			data: myData5,
+		    columns: [
+
+		        { data: 'id' },
+		        { data: 'request_code' },
+		        { data: 'project_name' },
+		        { data: 'sum_report_success' },
+		        { data: 'sum_examine_success' },
+		        { data: 'sum_guarantee_success' },
+		        { data: 'quarter' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle ","width": "5%",
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check form-check-st-1"><input class="form-check-input check-input-4" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left","width": "15%",
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<a href="/'+data+'" target="_blank" class="alink-st-1"  >'+data+'</a>';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left details-control","width": "25%",
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data+'</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		        { targets : [3],className:"align-middle text-center","width": "15%",
+
+		        	render : function (data, type, row) {
+
+			          	var html = "";
+			          	html += '<div class="card-p">'
+			          	html += '<div class="percent">'
+			          	html += '<svg>'
+			          	html += '<circle cx="20" cy="20" r="15"></circle>'
+			          	html += '<circle cx="20" cy="20" r="15" style="--percent: '+data*25+'"></circle>'
+			          	html += '</svg>'
+			          	html += '<div class="number">'
+			          	html += '<h3 class="mb-0">'+data+'</h3>'
+			          	html += '</div>'
+			          	html += '</div>'
+			          	html += '</div>'
+			            return html;
+
+			        }
+
+		    	},
+		    	{ targets : [4],className:"align-middle text-center","width": "15%",
+
+		    		render : function (data, type, row) {
+
+			          	var html = "";
+			          	html += '<div class="card-p">'
+			          	html += '<div class="percent">'
+			          	html += '<svg>'
+			          	html += '<circle cx="20" cy="20" r="15"></circle>'
+			          	html += '<circle cx="20" cy="20" r="15" style="--percent: '+data*25+'"></circle>'
+			          	html += '</svg>'
+			          	html += '<div class="number">'
+			          	html += '<h3 class="mb-0">'+data+'</h3>'
+			          	html += '</div>'
+			          	html += '</div>'
+			          	html += '</div>'
+			            return html;
+
+			        }
+
+		    	},
+		    	{ targets : [5],className:"align-middle text-center","width": "15%",
+
+		    		render : function (data, type, row) {
+
+			          	var html = "";
+			          	html += '<div class="card-p">'
+			          	html += '<div class="percent">'
+			          	html += '<svg>'
+			          	html += '<circle cx="20" cy="20" r="15"></circle>'
+			          	html += '<circle cx="20" cy="20" r="15" style="--percent: '+data*25+'"></circle>'
+			          	html += '</svg>'
+			          	html += '<div class="number">'
+			          	html += '<h3 class="mb-0">'+data+'</h3>'
+			          	html += '</div>'
+			          	html += '</div>'
+			          	html += '</div>'
+			            return html;
+
+			        }
+
+		    	},
+		    	{ targets : [6],className:"align-middle text-center   ","width": "10%",
+		        	render : function (data, type, row) {
+			          	var html = "";
+				
+			            return html;
+			        }
+		    	}
+				  								  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			"ordering": false,
+			"dom": '<<t>ilp>',
+	        'drawCallback': function (settings) {
+				var api = this.api();
+				$('.count-p4').html(
+			        api.rows( ).count()
+			    );
+			}
+		});
+
+		var detailRows = [];
+ 
+	    $('#list-table-4 tbody').on( 'click', 'tr td.details-control', function () {
+	        var tr = $(this).closest('tr');
+	        var row = table4.row( tr );
+	        var idx = $.inArray( tr.attr('id'), detailRows );
+	 
+	        if ( row.child.isShown() ) {
+	            tr.removeClass( 'details' );
+	            row.child.hide();
+	            detailRows.splice( idx, 1 );
+	        }
+	        else {
+	            tr.addClass( 'details' );
+	            row.child( format( row.data() ) ).show();
+	 
+	            if ( idx === -1 ) {
+	                detailRows.push( tr.attr('id') );
+	            }
+	        }
+	    } );
+
+	    table4.on( 'draw', function () {
+	        $.each( detailRows, function ( i, id ) {
+	            $('#'+id+' td.details-control').trigger( 'click' );
+	        } );
+
+	
+	    } );
+
+	    function format ( d ) {
+
+			var html = "";
+			html += '<table class="table">'
+			$.each(d.quarter, function(i, item) {
+
+				
+				html += '<tr>'
+				html += '<td width="5%"><div class="form-check form-check-st-1"><input class="form-check-input check-input-4" type="checkbox" value="'+d.quarter[i].quarter_code+'" ></div></td>'
+				html += '<td width="15%"><a href="" class="text-color-1">'+d.quarter[i].quarter_code+'</a></td>'
+				html += '<td width="25%"><div>'+d.quarter[i].quarter_name+'</div></td>'
+				if(d.quarter[i].report_success == 1){
+					html += '<td width="15%"><div class="check-mark active"></div></td>'
+				}else{
+					html += '<td width="15%"><div class="check-mark "></div></td>'
+				}
+				if(d.quarter[i].examine_success == 1){
+					html += '<td width="15%"><div class="check-mark active"></div></td>'
+				}else{
+					html += '<td width="15%"><div class="check-mark "></div></td>'
+				}
+				if(d.quarter[i].guarantee_success == 1){
+					html += '<td width="15%"><div class="check-mark active"></div></td>'
+				}else{
+					html += '<td width="15%"><div class="check-mark "></div></td>'
+				}
+				
+
+				if(d.quarter[i].status == 0){
+					html += '<td width="10%"><div class="project-quarter-status status-0">รอรายงาน</div></td>'
+				}else if(d.quarter[i].status == 1){
+					html += '<td width="10%"><div class="status-0 project-status align-middle text-center">แบบร่าง</div></td>'
+				}else if(d.quarter[i].status == 2){
+					html += '<td width="10%"><div class="project-quarter-status status-1">รอตรวจสอบ</div></td>'
+				}else if(d.quarter[i].status == 3){
+					html += '<td width="10%"><div class="project-quarter-status status-2">ตรวจสอบแล้ว</div></td>'
+				}else if(d.quarter[i].status == 4){
+					html += '<td width="10%"><div class="project-quarter-status" style="color: #FC8004;border: 1px solid #FF7676;">รอแก้ไข</div></td>'
+				}else{
+					html += '<td width="10%"></td>'
+				}
+	
+				html += '</tr>'
+
+			    // console.log(d.quarter[i].quarter_code);
+			});
+			html += '</table>'
+		    return html;
+		}
+
+
+
+		var countStatus0 = 0;
+		var countStatus1 = 0;
+		var countStatus2 = 0;
+		var countStatus3 = 0;
+		var countStatus4 = 0;
+		table4.rows().data().filter( function ( value, index ) {
+
+	        $.each( value.quarter, function( key, value ) {
+			  if(value.status == '0'){
+			  	countStatus1 += 1;
+			  }else if(value.status == '1'){
+			  	countStatus0 += 1;
+			  }else if(value.status == '2'){
+			  	countStatus3 += 1;
+			  }else if(value.status == '3'){
+			  	countStatus4 += 1;
+			  }else if(value.status == '4'){
+			  	countStatus2 += 1;
+			  }
+
+			});
+
+	    } ).count();
+	    
+		$('.countStatus40').text(countStatus1)
+		$('.countStatus41').text(countStatus3)
+		$('.countStatus42').text(countStatus4)
+		$('.countStatus43').text(countStatus2)
+
+
+		$('#search4').keyup(function(){
+		      table4.search($(this).val()).draw() ;
+		})
+
+
+		$('.input-status-4').on('change',function(){
+			var status = $('.input-status:checked').val();
+
+			table4.column(6).search(status,true, false, true  ).draw();
+		})
+
+		$('.check-input-all-4').on('click',function() {
+		    if($(this).is(':checked')){
+		    	$('.check-input-4').prop('checked',true);
+		    }else{
+		    	$('.check-input-4').prop('checked',false);
+		    }
+		});
+
+
+		var startDate4;
+		var endDate4;
+		$(function() {
+          	var start4 = moment().subtract(0, 'days');
+          	var end4 = moment();
+          	function cb4(start4, end4) {
+          		startDate4 = start4.format('YYYY-MM-DD');
+         		endDate4 = end4.format('YYYY-MM-DD');
+         		loadDataFromDate($(".select2-date").select2('val'),startDate4,endDate4,4)
+  
+          	}
+          	$('.daterange-p4').daterangepicker({
+	            startDate4: start4,
+	            endDate4: end4,
+	            ranges: {
+	               'Today': [moment(), moment()],
+	               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+	               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+	               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+	               'This Month': [moment().startOf('month'), moment().endOf('month')],
+	               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+	            },
+	            locale: {
+			      format: 'DD/MM/YYYY'
+			    }
+	        }, cb4);
+      	});
+
+
+	</script>
+
+
+
+	<script type="text/javascript">
+		function loadDataFromDate(dateType,dateStart,dateEnd,selectTable){
+
+
+			console.log(dateType + " - " + dateStart + " - " + dateEnd + " - " + selectTable)
+
+			// if(selectTable == 1){
+			// 	table.ajax.url( '' ).load();
+			// }else if(selectTable == 2){
+			// 	table2.ajax.url( '' ).load();
+			// }else if(selectTable == 3){
+			// 	table3.ajax.url( '' ).load();
+			// }else if(selectTable == 4){
+			// 	table4.ajax.url( '' ).load();
+			// }
+
+		}
+	</script>
+
+
+	<script type="text/javascript">
+		var drEvent =  $('.dropify').dropify({
+		    tpl: {
+		        wrap:            '<div class="dropify-wrapper dropify-wrapper-st-1 " style="border: 2px dashed #B7B7B7;"></div>',
+		        loader:          '<div class="dropify-loader"></div>',
+		        message:         '<div class="dropify-message"><span class="" /><div class="text-center fs-18 mb-2" style="color: #11142D;font-weight:500">กรุณาอัปโหลดรูปภาพ</div><div class="text-center fs-12 mb-3">รองรับ jpeg. png. ขนาด 300 x 300 px ขนาดไม่เกิน 1 MB</div><div class="text-center mt-3 mb-1 d-flex align-items-center justify-content-center"> <button class="btn btn-upload-dropify  py-1 text-white " style="background: #FC8004;border-radius: 16px;">อัพโหลดรูปภาพ</button></div> </div>',
+		        preview:'<label class="dropify-preview" for="drop-1"><span class="dropify-render"><div class="fildrop"></div></span><div class="dropify-infos"><div class="dropify-infos-inner"><p class="dropify-infos-message">{{ replace }}</p></div></div></label>',
+		        filename:        '<p class="dropify-filename"><span class="file-icon"></span> <span class="dropify-filename-inner"></span></p>',
+		        clearButton:     '<p class="dropify-clear">ลบรูปภาพ</p>',
+		        errorLine:       '<p class="dropify-error">{{ error }}</p>',
+		        errorsContainer: '<div class="dropify-errors-container"><ul></ul></div>'
+		    }
+		});
+	</script>
+
+	<script type="text/javascript">
+		// var pillEl = document.querySelector('button[data-bs-toggle="pill"]')
+		// pillEl.addEventListener('shown.bs.tab', function (event) {
+		//   table.columns.adjust().draw();
+		//   table2.columns.adjust().draw();
+		//   alert('x')
+		// })
+
+		$('button[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
+
+		  table.columns.adjust().draw();
+		  table2.columns.adjust().draw();
+		  table3.columns.adjust().draw();
+		  table4.columns.adjust().draw();
+
+		})
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo2.png">
+
+    <link href="assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="stylesheet" type="text/css" href="assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body class="bg-st-1">
+
+	<nav class="navbar fixed-top bg-white py-0">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">
+	    	<img src="assets/images/Logo4.png" width="253">
+	    </a>
+	  </div>
+	</nav>
+
+	<div class="box-st2 d-flex justify-content-center align-items-center " >
+		<div class=" card-st-2 my-lg-5 my-2">
+			<div class="card-body py-5 ">
+
+				<div class="mb-5">
+					<ul class="steps">
+						<li class="step-1 active ">
+							<div class="step-icon"></div>
+							<div class="step-name">กรอกข้อมูล</div>
+						</li>
+						<li class="step-2 active ">
+							<div class="step-icon"></div>
+							<div class="step-name">ตรวจสอบข้อมูล</div>
+						</li>
+						<li class="step-3  active">
+							<div class="step-icon"></div>
+							<div class="step-name">ยืนยันตัวตน</div>
+						</li>
+					</ul>
+				</div>
+				<div class="px-0 px-lg-5">
+					<form class="needs-validation" novalidate>
+						<div class="text-color-1 fw-bold fs-32 fs-m-24 mb-lg-5 mb-4 pt-0 pt-lg-4">การยืนยันตัวตนด้วย OTP</div>
+						<div class="fs-16 fs-m-12 mb-lg-5 mb-4 text-center">เราได้ส่งรหัส OTP เพื่อยืนยันการยืนยันตัวตนของคุณ</div>
+
+
+						<div class="show-error text-danger d-none text-center mb-3 fs-16"></div>
+						<div class="d-flex justify-content-center mb-5">
+				        	<input type="text" name="" class="input-otp-2" maxlength="1"  tabIndex="0" autofocus>
+				        	<input type="text" name="" class="input-otp-2" maxlength="1"  tabIndex="1" >
+				        	<input type="text" name="" class="input-otp-2" maxlength="1"  tabIndex="2" >
+				        	<input type="text" name="" class="input-otp-2" maxlength="1"  tabIndex="3" >
+				        	<input type="text" name="" class="input-otp-2" maxlength="1"  tabIndex="4" >
+				        	<input type="text" name="" class="input-otp-2" maxlength="1"  tabIndex="5" >
+				        </div>
+						
+						<div class="fs-16 text-center mb-3">ลองใหม่อีกครั้งใน <span class="text-color-1" id="timeExpire"></span>
+						</div>
+
+						<div class="text-center fs-16 mb-4">
+							<span class="me-4">หรือคุณยังไม่ได้รับรหัสผ่านใช่ไหม!</span>
+							<button class="btn btn-link text-color-1">ส่งอีกครั้ง</button>
+						</div>
+
+						<div class="text-center d-flex justify-content-center flex-wrap">
+							<a class="btn btn-st-3 mx-2 mb-3 order-1 order-sm-0">ยกเลิก</a>
+							<button type="button" class="btn btn-st-2 mx-2 mb-3 order-0 order-sm-1 btn-confirm" disabled="">ยืนยัน</button>
+						</div>
+					</form>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script>   
+	<script src="assets/plugins/select2/js/select2.min.js" ></script> 
+	<script type="text/javascript" src="assets/js/jquery.autotab.min.js"></script> 
+
+
+	<script type="text/javascript">
+		$('.btn-confirm').on('click',function (){
+
+			var otp = "";
+			$( ".input-otp-2" ).each(function( index ) {
+			  otp += $(this).val();
+			});
+
+			//  check
+
+			if(otp == '123456'){
+				$( ".input-otp-2" ).removeClass('is-invalid')
+				$('.show-error').text('').addClass('d-none')
+
+
+				alert('ถูกต้อง')
+			}else{
+				$( ".input-otp-2" ).addClass('is-invalid')
+				$('.show-error').text('รหัสไม่ถูกต้อง').removeClass('d-none')
+			}
+
+		})
+	</script>
+
+	<script type="text/javascript">
+		var countDownDate = new Date();
+		countDownDate.setMinutes(countDownDate.getMinutes() + 2);
+		countDownDate = new Date(countDownDate).getTime(); 
+
+		var x = setInterval(function() {
+		  var now = new Date().getTime();
+		  var distance = countDownDate - now;
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		  document.getElementById("timeExpire").innerHTML =   ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2)  + " ";
+		  if (distance < 0) {
+		    clearInterval(x);
+		    document.getElementById("timeExpire").innerHTML = "EXPIRED";
+		  }
+		}, 1000);
+	</script>
+
+	<script type="text/javascript">
+
+
+		if(navigator.userAgent.match(/(iPhone|iPod|iPad|android|Windows Phone|BlackBerry|webOS)/i)){
+
+		    $(".input-otp-2").attr('type', 'number');
+		    applyAutoTabNumeric("input[class='input-otp-2']");
+
+		    function applyAutoTabNumeric(eleName){
+		        var inputs = $(eleName);
+		        $(eleName).on('keydown', function (event){
+		            validateKeydown(event, this, inputs);
+		        });
+		        $(eleName).on('keypress', validateKeyPress);
+		        $(eleName).attr('autocomplete', 'off');
+		        $(eleName).on("keyup", function (e) {
+		            if(this.value.match(/\D/)){
+		                this.value=this.value.replace(/\D/g,'');
+		            }
+		            jumpNext($(this), $(this).val(), e, inputs)
+		        });
+		    }
+
+		    function validateKeydown(event, elem, inputs){
+		        var keyCode = window.event ? event.keyCode : event.which;
+		        if (keyCode != 8 && keyCode != 46) {
+		            if (elem.value.length == $(elem).attr('maxLength')){
+		                var next = $(elem).attr('tabIndex');
+		                if (next < inputs.length){
+		                    inputs.eq( inputs.index(elem)+ 1 ).focus();
+		                }
+		            }
+		        }
+		    }
+		    function validateKeyPress(event) {
+		        var key = event.key;
+		        return !key.match(/\D/);
+		    }
+
+		    function jumpNext(elem, value, event, inputs){
+		        var keyCode = event.keyCode || event.which;
+		        if(keyCode === 8 || keyCode === 46){
+		            if (value.length == 0){
+		                var previous = elem.attr('tabIndex');
+		                if (previous > 0){
+		                    inputs.eq( inputs.index(elem)-1 ).focus();
+		                }
+		            }
+		        }else{
+		            if (value.length == elem.attr('maxLength')){
+		                var next = elem.attr('tabIndex');
+		                if (next < inputs.length){
+		                    inputs.eq( inputs.index(elem)+ 1 ).focus();
+		                }
+		            }
+		        }
+
+		    }
+		}else{
+		    $(".input-otp-2").autotab('number');
+    		$(".input-otp-2").attr('type', '');
+		}
+	</script>
+	<script type="text/javascript">
+	$( ".input-otp-2" ).on('keyup',function (){
+		$('.btn-confirm').attr('disabled',false)
+		$( ".input-otp-2" ).each(function( index ) {
+		  if($(this).val().length == 0){
+		  	$('.btn-confirm').attr('disabled',true)
+		  }
+		});
+	})
+		
+	</script>
+	<script type="text/javascript">
+
+		(function () {
+		  'use strict'
+		  var forms = document.querySelectorAll('.needs-validation')
+		  Array.prototype.slice.call(forms)
+		    .forEach(function (form) {
+		      form.addEventListener('submit', function (event) {
+		        if (!form.checkValidity()) {
+		          event.preventDefault()
+		          event.stopPropagation()
+		        }
+
+		        form.classList.add('was-validated')
+		      }, false)
+		    })
+		})()
+	</script>
+
+
+
+	
+
+</body>
+</html>

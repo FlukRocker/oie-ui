@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../สศอ/assets/images/logo2.png">
+
+    <link href="../สศอ/assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="../สศอ/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../สศอ/assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/select2/css/select2.min.css">
+    <link href="../สศอ/assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+    <link href="../สศอ/assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../สศอ/assets/css/nestable.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll app-sidebar-be">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="../สศอ/assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="../สศอ/assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 "  data-toggle="slide"  href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">สำหรับผู้บริหาร</a></li>
+							<li><a class="slide-item py-2" href="/">ข้อมูลคำของบประมาณ</a></li>
+							<li><a class="slide-item py-2" href="/">การติดตามผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">การประเมินผลงาน</a></li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/line-md_document-report.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน<br/>(ตามเป้าหมาย แนวทาง และตัวชี้วัด) </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการประเมินผลโครงการ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม <br/> การเบิกจ่ายงบประมาณ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม<br/> การงานตามตัวชี้วัด </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการร่างพรบ.</a></li>
+							<li><a class="slide-item py-2" href="/">ติดตามความก้าวหน้า </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/bi_folder-fill.png" class="side-menu__icon">
+							<span class="side-menu__label">ข้อมูลหน่วยงาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">หน่วยงานทั้งหมด</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าหน่วยงาน.</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="/">
+							<img src="../สศอ/assets/images/icon/sidemenu/mdi_email.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/fa_user-solid.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการสิทธิ์และผู้ใช้งาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการผู้ใช้งาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการสิทธิ์การใช้งาน</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/ci_settings-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">ตั้งค่าทั่วไป</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการแผนงาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการแผนแม่บทฯ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการยุทธศาสตร์</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการหน่วยนับ</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าระยะเวลาดำเนินการ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="../สศอ/assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="fixed-custom-1 pt-4  px-3">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">Dashbord</a></li>
+					    <li class="breadcrumb-item active text-color-1 fw-500" aria-current="page">PL000001</li>
+					  </ol>
+					</nav>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="my-4">
+							<div class="row g-0">
+								<div class="col-xl-12">
+									<div class="card card-st-3 ">
+										<div class="card-body p-3 pt-4 ">
+											<div class="d-flex flex-wrap w-100">
+												<div class="flex-fill">
+													<div class="">
+														<div class="row g-0 mb-3">
+															<div class=" text-color-9 pe-2 text-nowrap w-100px">รหัสแผนงาน</div>
+															<div class="col text-color-1 text-nowrap">PL000001</div>
+														</div>
+													</div>
+												</div>
+												<div class="flex-fill">
+													<div class="">
+														<div class="row g-0 mb-3">
+															<div class="col-4 text-color-9 pe-2 text-nowrap w-100px">วันที่สร้าง</div>
+															<div class="col text-color-1 text-nowrap">01-03-2565</div>
+														</div>
+													</div>
+													<div class="">
+														<div class="row g-0 mb-3" >
+															<div class=" text-color-9 pe-2 text-nowrap w-100px">ผู้สร้าง</div>
+															<div class="col text-color-1 text-nowrap">นางสาวเบญจวรรณ บัวพิทักษ์</div>
+														</div>
+													</div>
+												</div>
+												<div class="flex-fill">
+													<div class="">
+														<div class="row g-0 mb-3">
+															<div class="col-4 text-color-9 pe-2 text-nowrap w-100px">วันแก้ไข</div>
+															<div class="col text-color-1 text-nowrap">01-03-2565</div>
+														</div>
+													</div>
+													<div class="">
+														<div class="row g-0 mb-3" >
+															<div class=" text-color-9 pe-2 text-nowrap w-100px">ผู้แก้ไข</div>
+															<div class="col text-color-1 text-nowrap">นางสาวเบญจวรรณ บัวพิทักษ์</div>
+														</div>
+													</div>
+												</div>
+												<div class=" text-end">
+													<div class="g-btn-document">
+														<button class="btn btn-download-document"> ดาวน์โหลดเอกสาร</button>
+														<button class="btn btn-print-document">พิมพ์เอกสาร</button>
+
+														<div class="btn-group btn-group-2" role="group">
+														    <button id="btnGroupDrop1" type="button" class="btn btn-more dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+														      เพิ่มเติม
+														    </button>
+														    <ul class="dropdown-menu py-0" aria-labelledby="btnGroupDrop1">
+														      <li class="">
+														      	<button class="dropdown-item btn-edit-data" >แก้ไขข้อมูล</button>
+														      </li>
+														      <li class="">
+														      	<button class="dropdown-item btn-copy-data" >คัดลอกข้อมูล</button>
+														      </li>
+														      <li class="">
+														      	<button class="dropdown-item btn-noti" ><i class="icon-noti"></i> ส่งแจ้งเตือน</button>
+														      </li>
+														      <li class="">
+														      	<button class="dropdown-item btn-delete-data text-danger" >ลบ</button>
+														      </li>
+														    </ul>
+														</div>
+													</div>
+													<div class="g-btn-edit-form d-none">
+														<button class="btn btn-st-2 ms-2 mb-3 ">บันทึกร่าง</button>
+														<button class="btn btn-st-9 ms-2 mb-3 ">ส่งอนุมัติ</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+						<form class="needs-validation mb-4" novalidate>
+							<div class="card card-st-3  mb-4">
+								<div class="card-body p-5">
+									<div class="row align-items-lg-center mb-3">
+										<div class="col-lg-2">
+											<label class="text-color-8 fw-bold"> ชื่อแผนงาน <span class="text-danger">*</span></label>
+										</div>
+										<div class="col-lg-6">
+											<input type="text" name="" class="form-control form-st-1"  placeholder="กรุณากรอกชื่อแผนงาน" required="" value="ชื่อแผนงาน" readonly="">
+										</div>
+									</div>
+									<div class="row align-items-lg-center mb-5">
+										<div class="col-lg-2">
+											<label class="text-color-8 fw-bold"> ปีงบประมาณ <span class="text-danger">*</span></label>
+										</div>
+										<div class="col-lg-6">
+											<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกปีงบประมาณ" required="" disabled="">
+												<option value=""></option>
+												<option value="2565" selected="">2565</option>
+											</select>
+										</div>
+									</div>
+
+									<div class="fw-bold fs-16 text-color-8 mb-4">จัดการแผนงาน</div>
+
+									<!-- https://github.com/dbushell/Nestable -->
+									<!-- http://dbushell.github.io/Nestable/ -->
+
+									<div class="data"></div>
+									<div class="dd dd-disabled" id="nestable3">
+										<ol class="dd-list " id="">
+									        <li class="dd-item dd3-item" data-id="1">
+									            <div class="dd-handle dd3-handle "></div>
+									            <div class="dd3-content">
+									            	<input type="text" class="form-control  form-control-main" name="" placeholder="กรุณากรอกเป้าหมายแผนงาน" readonly="" value="text">
+									            </div>
+									            <div class="dd-dropdown ">
+									            	<div class="dropdown">
+													  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+													    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+													  </a>
+
+													  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+													    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+													    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+													  </ul>
+													</div>
+									            </div>
+												<ol class="dd-list" >
+											        <li class="dd-item dd3-item  " data-id="">
+											        	<button data-action="collapse" type="button">Collapse</button>
+											        	<button data-action="expand" type="button" style="display: none;">Expand</button>
+											            <div class="dd-handle dd3-handle "></div>
+											            <div class="dd3-content">
+											            	<input type="text" class="form-control form-create-item" name="" placeholder="กรุณากรอกตัวชี้วัดเป้าหมายแผนงาน"   value="text" readonly="" >
+											            </div>
+											            <div class="dd-dropdown ">
+											            	<div class="dropdown">
+															  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+															    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+															  </a>
+
+															  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+															    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+															    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+															  </ul>
+															</div>
+											            </div>
+											            <ol class="dd-list">
+											                <li class="dd-item dd3-item  " data-id="">
+											                	<button data-action="collapse" type="button">Collapse</button>
+											        			<button data-action="expand" type="button" style="display: none;">Expand</button>
+											                    <div class="dd-handle dd3-handle "></div>
+											                    <div class="dd3-content">
+											                    	<input type="text" class="form-control form-create-item" name="" placeholder="กรุณากรอกแนวทาง"  value="text" readonly="">
+											                    </div>
+											                    <div class="dd-dropdown ">
+											                    	<div class="dropdown">
+																	  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+																	    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+																	  </a>
+
+																	  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+																	    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+																	    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+																	  </ul>
+																	</div>
+											                    </div>
+											                    <ol class="dd-list">
+													                <li class="dd-item dd3-item  " data-id="">
+													                	<button data-action="collapse" type="button">Collapse</button>
+											        					<button data-action="expand" type="button" style="display: none;">Expand</button>
+													                    <div class="dd-handle dd3-handle "></div>
+													                    <div class="dd3-content">
+													                    	<input type="text" class="form-control form-create-item" name="" placeholder="กรุณากรอกตัวชี้วัดแนวทาง"  value="text" readonly="">
+													                    </div>
+													                    <div class="dd-dropdown ">
+													                    	<div class="dropdown">
+																			  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+																			    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+																			  </a>
+
+																			  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+																			    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+																			    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+																			  </ul>
+																			</div>
+													                    </div>
+													                    <ol class="dd-list">
+															                <li class="dd-item dd3-item  " data-id="">
+															                	<button data-action="collapse" type="button">Collapse</button>
+											        							<button data-action="expand" type="button" style="display: none;">Expand</button>
+															                    <div class="dd-handle dd3-handle "></div>
+															                    <div class="dd3-content">
+															                    	<input type="text" class="form-control form-create-item" name="" placeholder="กรุณากรอกกลุ่มโครงการ"  value="text" readonly="">
+															                    </div>
+															                    <div class="dd-dropdown ">
+															                    	<div class="dropdown">
+																					  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+																					    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+																					  </a>
+
+																					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+																					    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+																					    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+																					  </ul>
+																					</div>
+															                    </div>
+															                    <ol class="dd-list">
+																	                <li class="dd-item dd3-item  " data-id="">
+
+																	                    <div class="dd-handle dd3-handle "></div>
+																	                    <div class="dd3-content">
+																	                    	<input type="text" class="form-control form-create-item" name="" placeholder="กรุณากรอกโครงการFlagship"  value="text" readonly="">
+																	                    </div>
+																	                    <div class="dd-dropdown ">
+																	                    	<div class="dropdown">
+																							  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+																							    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+																							  </a>
+
+																							  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+																							    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+																							    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+																							  </ul>
+																							</div>
+																	                    </div>
+																	                </li>
+																	           	</ol>
+															                </li>
+															           	</ol>
+													                </li>
+													           	</ol>
+											                </li>
+											           	</ol>
+											        </li>
+											   	</ol>
+											</li>
+											
+										</ol>
+
+							        </div>
+							        <li class="dd-item dd3-item dd3-main-item d-none" data-id="1">
+					                    <div class="dd3-content">
+					                    	<input type="text" class="form-control form-create-list-group" name="" placeholder="กรุณากรอกเป้าหมายแผนงาน" readonly="" value="">
+					                    </div>
+					                </li>
+
+					        		
+
+
+								</div>
+							</div>
+
+							<div class="text-center d-flex justify-content-end flex-wrap">
+								<button type="button" class="btn btn-st-5 mx-2 mb-3 btn-dp d-none">ยกเลิก</button>
+								<button class="btn btn-st-2 ms-2 mb-3 btn-dp d-none">บันทึก</button>
+							</div>
+						</form>
+
+
+
+						<div class="card card-st-3  mb-4">
+							<div class="card-body p-0">
+								<p class="mb-0" id="el5">
+								  <a class="btn btn-cp-2 px-3 fs-16 col-auto text-white py-3 fw-bold mb-0 " data-bs-toggle="collapse" href="#collapsex" role="button" aria-expanded="false" style="">
+								    ประวัติการใช้งาน
+								  </a>
+								</p>
+
+								<div class="collapse show mb-4" id="collapsex">
+								  <div class="card card-body p-4 border-0">
+								  		<table class="table">
+								  			<thead>
+								  				<tr>
+								  					<th class="fw-normal"c>วันเวลา</th>
+								  					<th class="fw-normal">รายการ</th>
+								  					<th class="fw-normal">ชื่อผู้ดำเนินการ</th>
+								  				</tr>
+								  			</thead>
+								  			<tbody>
+								  				<tr>
+								  					<td>
+								  						13/04/2565 15:30:50
+								  					</td>
+								  					<td>
+								  						แก้ไขเอกสาร <span class="text-color-1">PL000001</span>
+								  					</td>
+								  					<td>
+								  						<div class="text-color-1">เบญจวรรณ บัวพิทักษ์</div>
+								  					</td>
+								  				</tr>
+								  				<tr>
+								  					<td>
+								  						13/04/2565 15:30:50
+								  					</td>
+								  					<td>
+								  						แก้ไขเอกสาร <span class="text-color-1">PL000001</span>
+								  					</td>
+								  					<td>
+								  						<div class="text-color-1">เบญจวรรณ บัวพิทักษ์</div>
+								  					</td>
+								  				</tr>
+								  				<tr>
+								  					<td>
+								  						13/04/2565 15:30:50
+								  					</td>
+								  					<td>
+								  						แก้ไขเอกสาร <span class="text-color-1">PL000001</span>
+								  					</td>
+								  					<td>
+								  						<div class="text-color-1">เบญจวรรณ บัวพิทักษ์</div>
+								  					</td>
+								  				</tr>
+								  			</tbody>
+								  		</table>
+
+								  </div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<li class="dd-item dd3-item d-none" data-id="" id="dd-list-clone">
+    	<button data-action="collapse" type="button">Collapse</button>
+	    <button data-action="expand" type="button" style="display: none;">Expand</button>
+        <div class="dd-handle dd3-handle "></div>
+        <div class="dd3-content">
+        	<input type="text" class="form-control  form-control-main" name="" placeholder="กรุณากรอกเป้าหมายแผนงาน">
+        </div>
+        <div class="dd-dropdown ">
+        	<div class="dropdown">
+			  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+			    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+			  </a>
+
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+			    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+			  </ul>
+			</div>
+        </div>
+		<ol class="dd-list" >
+	        <li class="dd-item dd3-item  " data-id="">
+	        	<button data-action="collapse" type="button">Collapse</button>
+	        	<button data-action="expand" type="button" style="display: none;">Expand</button>
+	            <div class="dd-handle dd3-handle "></div>
+	            <div class="dd3-content">
+	            	<input type="text" class="form-control form-create-item" name="" placeholder="กรุณากรอกตัวชี้วัดเป้าหมายแผนงาน"   value="">
+	            </div>
+	            <div class="dd-dropdown ">
+	            	<div class="dropdown">
+					  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+					    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+					  </a>
+
+					  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+					    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+					  </ul>
+					</div>
+	            </div>
+	            <ol class="dd-list">
+	                <li class="dd-item dd3-item  " data-id="">
+	                	<button data-action="collapse" type="button">Collapse</button>
+	        			<button data-action="expand" type="button" style="display: none;">Expand</button>
+	                    <div class="dd-handle dd3-handle "></div>
+	                    <div class="dd3-content">
+	                    	<input type="text" class="form-control form-create-item" name="" placeholder="กรุณากรอกแนวทาง"  value="">
+	                    </div>
+	                    <div class="dd-dropdown ">
+	                    	<div class="dropdown">
+							  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+							  </a>
+
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+							    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+							  </ul>
+							</div>
+	                    </div>
+	                    <ol class="dd-list">
+			                <li class="dd-item dd3-item  " data-id="">
+			                	<button data-action="collapse" type="button">Collapse</button>
+	        					<button data-action="expand" type="button" style="display: none;">Expand</button>
+			                    <div class="dd-handle dd3-handle "></div>
+			                    <div class="dd3-content">
+			                    	<input type="text" class="form-control form-create-item" name="" placeholder="กรุณากรอกตัวชี้วัดแนวทาง"  value="">
+			                    </div>
+			                    <div class="dd-dropdown ">
+			                    	<div class="dropdown">
+									  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+									    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+									  </a>
+
+									  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+									    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+									    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+									  </ul>
+									</div>
+			                    </div>
+			                    <ol class="dd-list">
+					                <li class="dd-item dd3-item  " data-id="">
+					                	<button data-action="collapse" type="button">Collapse</button>
+	        							<button data-action="expand" type="button" style="display: none;">Expand</button>
+					                    <div class="dd-handle dd3-handle "></div>
+					                    <div class="dd3-content">
+					                    	<input type="text" class="form-control form-create-item" name="" placeholder="กรุณากรอกกลุ่มโครงการ"  value="">
+					                    </div>
+					                    <div class="dd-dropdown ">
+					                    	<div class="dropdown">
+											  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+											    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+											  </a>
+
+											  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+											    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+											    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+											  </ul>
+											</div>
+					                    </div>
+					                    <ol class="dd-list">
+							                <li class="dd-item dd3-item  " data-id="">
+
+							                    <div class="dd-handle dd3-handle "></div>
+							                    <div class="dd3-content">
+							                    	<input type="text" class="form-control form-create-item" name="" placeholder="กรุณากรอกโครงการFlagship"  value="">
+							                    </div>
+							                    <div class="dd-dropdown ">
+							                    	<div class="dropdown">
+													  <a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+													    <img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">
+													  </a>
+
+													  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+													    <li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>
+													    <li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>
+													  </ul>
+													</div>
+							                    </div>
+							                </li>
+							           	</ol>
+					                </li>
+					           	</ol>
+			                </li>
+			           	</ol>
+	                </li>
+	           	</ol>
+	        </li>
+	   	</ol>
+	</li>
+
+
+	<div class="modal fade" id="successModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+	      <div class="modal-body pb-5">
+
+		      	<button type="button" class="btn-close btn-close-2" data-bs-dismiss="modal" aria-label="Close"></button>
+		        
+		        <div class="text-center pt-5 pb-4">
+		        	<div class="mx-auto i-success" style="">
+						<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3 10L10.3333 17.5L25 2.5" stroke="#4AD991" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+		        	</div>
+		        </div>
+		        <div class="text-center fw-bold fs-20 mb-2">บันทึกข้อมูลสำเร็จ</div>
+		        <div class="text-center fs-18">ระบบทำการบันทึกข้อมูลเรียบร้อยแล้ว</div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<div class="modal fade" id="notisuccessModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 400px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+	      <div class="modal-body pb-5">
+
+		      	<button type="button" class="btn-close btn-close-2" data-bs-dismiss="modal" aria-label="Close"></button>
+		        
+		        <div class="text-center pt-5 pb-4">
+		        	<div class="mx-auto i-success" style="">
+						<svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M3 10L10.3333 17.5L25 2.5" stroke="#4AD991" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+		        	</div>
+		        </div>
+		        <div class="text-center fw-bold fs-20 mb-2">ส่งแจ้งเตือนสำเร็จ</div>
+		        <div class="text-center fs-18">ระบบได้ส่งแจ้งเตือนไปยังผู้ใช้งานเรียบร้อยแล้ว</div>
+
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../สศอ/assets/plugins/moment/moment.js"></script>
+	<script src="../สศอ/assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../สศอ/assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="../สศอ/assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="../สศอ/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+
+	<script src="../สศอ/assets/js/jquery.nestable.js"></script>
+	
+	<script type="text/javascript">
+    	var successModal = new bootstrap.Modal(document.getElementById('successModal'), {
+		  keyboard: false
+		})
+	</script>
+	<script type="text/javascript">
+    	var notisuccessModal = new bootstrap.Modal(document.getElementById('notisuccessModal'), {
+		  keyboard: false
+		})
+	</script>
+
+	<script type="text/javascript">
+
+		(function () {
+		  'use strict'
+		  var forms = document.querySelectorAll('.needs-validation')
+		  Array.prototype.slice.call(forms)
+		    .forEach(function (form) {
+		      form.addEventListener('submit', function (event) {
+		        if (!form.checkValidity()) {
+		          event.preventDefault()
+		          event.stopPropagation()
+		        }else{
+		        	event.preventDefault()
+		          	event.stopPropagation()
+		        	console.log($('.dd').nestable('serialize'))
+		        	successModal.show()
+		        }
+
+		        
+
+		        form.classList.add('was-validated')
+		      }, false)
+		    })
+		})()
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.select2').select2({
+		    	minimumResultsForSearch: -1,
+		    	"language": {
+				    "noResults": function(){
+				        return '<div class="fs-12 py-2">ไม่พบข้อมูล</div>';
+				    }
+				},
+			    escapeMarkup: function (markup) {
+			        return markup;
+			    }
+		    });
+		});
+	</script>
+	<script type="text/javascript">
+		$('#nestable3').nestable({
+			maxDepth :6,
+			handleClass:"no-handle"
+		});
+
+		$('.dd').on('change', function() {
+			serialize()
+		});
+
+
+		$(document).on("keypress",'.dd3-content .form-create-list-group', function(event) {
+		  if (event.key === "Enter") {
+		    event.preventDefault();
+		    if($(this).val().length > 0){
+		    	var $div = $('#dd-list-clone').clone();
+		    	$div.removeClass('d-none').attr('id','')
+		    	$div.find('.form-control-main').val($(this).val())
+		    	$div.find('.dd-item:first-child').attr('data-text',$(this).val())
+
+		    	$('#nestable3').children('ol').append($div)
+		    	$(this).val('')
+		    	$('#nestable3').nestable({
+					maxDepth :6,
+					handleClass:"no-handle"
+				});
+				serialize()
+		    }
+		  }
+		});
+
+		$(document).on("keypress",'.dd3-content .form-create-item', function(event) {
+		  if (event.key === "Enter") {
+		    event.preventDefault();
+		    if($(this).val().length > 0){
+
+		    	var input = $(this).clone().attr('value','')
+		    	console.log(input)
+
+		    	var html = ''
+				html += '<li class="dd-item dd3-item  " data-id="" data-text="'+$(this).val()+'" >'
+				html += '<div class="dd-handle dd3-handle "></div>'
+				html += '<div class="dd3-content">'
+				html += $('<div>').append(input).html();
+				html += '</div>'
+				html += '<div class="dd-dropdown ">'
+				html += '<div class="dropdown">'
+				html += '<a class="btn btn-link py-0 " href="#"  id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">'
+				html += '<img src="../สศอ/assets/images/icon/akar-icons-vertical-fill.png" width="7">'
+				html += '</a>'
+				html += '<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">'
+				html += '<li><a class="dropdown-item btn btn-copy" href="#">คัดลอกข้อมูล</a></li>'
+				html += '<li><a class="dropdown-item btn btn-delete" href="#">ลบ</a></li>'
+				html += '</ul>'
+				html += '</div>'
+				html += '</div>'
+				html += '</li>'
+
+		
+
+		    	$( html ).insertAfter( $(this).closest('.dd-list').children('.dd3-item:last-child') );
+
+		    	$(this).closest('.dd-list').children('.dd3-item:last-child').find('input').focus()
+
+
+		    	$('#nestable3').nestable({
+					maxDepth :6,
+					handleClass:"no-handle"
+				});
+				serialize()
+		    }
+		  }
+		});
+
+		$(document).on("keypress",'.dd3-content .form-control', function(event) {
+
+		    var $div = $(this).closest('.dd-item').data('text',$(this).val());
+		
+		});
+
+
+		$(document).on('click','.dd3-content',function(){
+			$(this).find('.form-control').attr('readonly',false).focus()
+		})
+
+		$(document).on('click','.btn-delete',function(){
+			$(this).closest('.dd-item').remove()
+			serialize()
+		})
+		$(document).on('click','.btn-copy',function(){
+			var $div = $(this).closest('.dd-item').clone();
+			$( $div ).insertBefore( ".dd3-main-item" );
+		})
+	</script>
+			                
+	<script type="text/javascript">
+		$('.btn-edit-data').on('click',function(){
+
+    		$('form input').attr('readonly',false).attr('disabled',false);
+    		$('form .select2').attr('disabled',false);
+    		$('.dd3-main-item').removeClass('d-none');
+    		$('.btn-dp').removeClass('d-none');
+    		$('.dd').removeClass('dd-disabled');
+    	})
+	</script>
+
+	<script type="text/javascript">
+		$(document).on('click','.btn-noti',function(){
+			notisuccessModal.show()
+		})
+	</script>
+	<script>
+		function serialize (){
+			var placeholder = ['กรุณากรอกเป้าหมายแผนงาน','กรุณากรอกตัวชี้วัดเป้าหมายแผนงาน','กรุณากรอกแนวทาง','กรุณากรอกตัวชี้วัดแนวทาง','กรุณากรอกกลุ่มโครงการ','กรุณากรอกโครงการFlagship']
+   			var data,
+                depth = 0,
+                list  = $('.dd');
+                step  = function(level, depth)
+                {
+                    var array = [ ],
+                    items = level.children('li');
+                    items.each(function()
+                    {	
+        
+                        var li   = $(this),
+                        	item = {"value" : li.find('.form-control').val() };
+                            sub  = li.children('ol');
+                            li.find('.form-control').attr('name','plan['+depth+'][]').attr('placeholder',placeholder[depth])
+                        if (sub.length) {
+                            item.children = step(sub, depth + 1);
+                        }
+                        array.push(item);
+                    });
+                    return array;
+                };
+            data = step(list.find('ol').first(), depth);
+			$(".data").text(JSON.stringify(data));
+		}
+	</script>
+</body>
+</html>

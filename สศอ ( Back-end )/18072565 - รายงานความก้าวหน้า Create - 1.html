@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../สศอ/assets/images/logo2.png">
+
+    <link href="../สศอ/assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="../สศอ/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../สศอ/assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll app-sidebar-be">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="../สศอ/assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="../สศอ/assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 "  data-toggle="slide"  href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">สำหรับผู้บริหาร</a></li>
+							<li><a class="slide-item py-2" href="/">ข้อมูลคำของบประมาณ</a></li>
+							<li><a class="slide-item py-2" href="/">การติดตามผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">การประเมินผลงาน</a></li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/line-md_document-report.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน<br/>(ตามเป้าหมาย แนวทาง และตัวชี้วัด) </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการประเมินผลโครงการ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม <br/> การเบิกจ่ายงบประมาณ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม<br/> การงานตามตัวชี้วัด </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการร่างพรบ.</a></li>
+							<li><a class="slide-item py-2" href="/">ติดตามความก้าวหน้า </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/bi_folder-fill.png" class="side-menu__icon">
+							<span class="side-menu__label">ข้อมูลหน่วยงาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">หน่วยงานทั้งหมด</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าหน่วยงาน.</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="/">
+							<img src="../สศอ/assets/images/icon/sidemenu/mdi_email.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/fa_user-solid.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการสิทธิ์และผู้ใช้งาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการผู้ใช้งาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการสิทธิ์การใช้งาน</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/ci_settings-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">ตั้งค่าทั่วไป</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการแผนงาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการแผนแม่บทฯ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการยุทธศาสตร์</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการหน่วยนับ</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าระยะเวลาดำเนินการ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="../สศอ/assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+				<div class="px-3">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">รายงานความก้าวหน้า</a></li>
+					    <li class="breadcrumb-item active text-color-1 fw-500" aria-current="page">RIEO64/001-A-4</li>
+					  </ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="sticky" data-sticky-class="step-sticky">
+				<div class="container-fluid">
+					<div class="my-4 pt-4 ">
+						<div class="row">
+							<div class="col-xl-9 col-12">
+								<ul class="steps-2">
+									<li class="step-1 active ">
+										<div class="step-icon">1</div>
+										<div class="step-name">งบประมาณรายจ่าย  / ตัวชี้วัดโครงการ</div>
+									</li>
+									<li class="step-2  ">
+										<div class="step-icon">2</div>
+										<div class="step-name">ผลการดำเนินงาน / ปัญหา</div>
+									</li>
+									<li class="step-3  ">
+										<div class="step-icon">3</div>
+										<div class="step-name">ดำเนินการสำเร็จ</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col">
+
+						<div class="card card-st-3  mb-4">
+							<div class="card-body p-4">
+								<div class="fs-24 mb-2">
+									<span class="fw-bold text-color-1">รายงานความก้าวหน้าประจำไตรมาสที่ 4 ปีงบประมาณ 2565 </span>
+									<span class="text-color-9">(หน้า 1/2)</span>
+								</div>
+								<div class="fs-15 mb-4 text-color-8">กรุณากรอกข้อมูลเพื่อสร้างรายงานความก้าวหน้าโครงการ </div>
+
+								<form class="needs-validation" novalidate>
+						
+									<div class="mb-3 row align-items-lg-center" id="el1">
+										<label class=" fs-18 col-lg-5 text-color-1 fw-bold mb-2 mb-lg-0">1.งบประมาณรายจ่าย</label>
+									</div>
+
+									<div class="dx-2 fw-500 text-color-8 fw-500 mb-4">งบประมาณทั้งหมด 6,804,000.00 บาท (หกล้านแปดแสนสี่พันบาทถ้วน)</div>
+
+									<div class="table-st-2 mb-4">
+										<div class="row g-0">
+											<div class="col-auto">
+												<div class="border py-3 px-2 th" >ปีงบประมาณ </div>
+												<div class="border py-2 px-2 td">
+													<div class="fs-14 fw-light text-center pt-2">2565</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="border py-3 px-2 th" >ไตรมาสที่ 1 </div>
+												<div class="border py-2 px-2 td">
+													<div class="d-flex flex-wrap">
+														<div class="me-auto mb-2 fw-light fs-14 text-color-17">แผน</div>
+														<div class="fs-14 fw-light mb-2">0,000,000.00</div>
+													</div>
+													<input type="text" name="" class="form-control form-st-1  border-color-o maskMoney budget-quarter" placeholder="ระบุงบประมาณ" required="" id="budget-quarter-1"  value="0,000,000.00" disabled="">
+												</div>
+											</div>
+											<div class="col">
+												<div class="border py-3 px-2 th" >ไตรมาสที่ 2 </div>
+												<div class="border py-2 px-2 td">
+													<div class="d-flex flex-wrap">
+														<div class="me-auto mb-2 fw-light fs-14 text-color-17">แผน</div>
+														<div class="fs-14 fw-light mb-2">0,000,000.00</div>
+													</div>
+													<input type="text" name="" class="form-control form-st-1 border-color-o  maskMoney budget-quarter" placeholder="ระบุงบประมาณ" required="" id="budget-quarter-2"  value="0,000,000.00" disabled="">
+												</div>
+											</div>
+											<div class="col">
+												<div class="border py-3 px-2 th" >ไตรมาสที่ 3 </div>
+												<div class="border py-2 px-2 td">
+													<div class="d-flex flex-wrap">
+														<div class="me-auto mb-2 fw-light fs-14 text-color-17">แผน</div>
+														<div class="fs-14 fw-light mb-2">0,000,000.00</div>
+													</div>
+													<input type="text" name="" class="form-control form-st-1 border-color-o  maskMoney budget-quarter" placeholder="ระบุงบประมาณ" required="" id="budget-quarter-3"  value="0,000,000.00" disabled="">
+												</div>
+											</div>
+											<div class="col">
+												<div class="border py-3 px-2 th" >ไตรมาสที่ 4 </div>
+												<div class="border py-2 px-2 td">
+													<div class="d-flex flex-wrap">
+														<div class="me-auto mb-2 fw-light fs-14 text-color-17">แผน</div>
+														<div class="fs-14 fw-light mb-2">0,000,000.00</div>
+													</div>
+													<input type="text" name="" class="form-control form-st-1 border-color-o maskMoney budget-quarter" placeholder="ระบุงบประมาณ" required="" id="budget-quarter-4"  value="">
+												</div>
+											</div>
+											<div class="col">
+												<div class="border py-3 px-2 th" >งบประมาณรวม </div>
+												<div class="border py-2 px-2 td">
+													<div class="d-flex flex-wrap">
+														<div class="me-auto mb-2 fw-light fs-14 text-color-17">แผน</div>
+														<div class="fs-14 fw-light mb-2">0,000,000.00</div>
+													</div>
+													<input type="text" name="" class="form-control form-st-1 maskMoney budget-quarter" placeholder="ระบุงบประมาณ" required="" id="budget-sum" readonly="">
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="ps-lg-4 ms-4 mb-5">
+										<label class="fs-16 fw-500 text-color-8 mb-2">สาเหตุที่ไม่สามารถเบิกจ่ายตามงบประมาณจริง</label>
+										<input type="text" name="" class="form-control form-st-1" placeholder="  " value="กิจกรรมพัฒนาบุคลากรในอุตสาหกรรมดิจิทัลและอุตสาหกรรมอิเล็กทรอนิกส">
+									</div>
+
+
+									<div class="mb-3 row align-items-lg-center" id="el4">
+										<div class="col-12">
+											<label class=" fs-18  text-color-1 fw-bold mb-4">2.ตัวชี้วัดโครงการ 
+											<span class="text-danger">*</span></label>
+											<div class="title-g mb-5" id="title-g-3" data-title="measure">
+												<table class="table   fs-14">
+													<thead>
+														<tr>
+															<th class="border" width="5%"></th>
+															<th class="border" width="46%">ตัวชี้วัดระดับผลผลิต</th>
+															<th class="border" width="17%">จำนวน</th>
+															<th class="border" width="17%">หน่วยนับ</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="border">
+																<div class="inputnumber-s2 text-center">1</div>
+															</td>
+															<td class="border">
+																<textarea class="form-control form-st-1 mb-3" rows="4" required="" readonly=""></textarea>
+
+																<div class="d-flex flex-wrap align-items-center">
+																	<div class="mb-2 me-3 fs-14">ตัวชี้วัดตาม :</div>
+																	
+																	<div class="me-2 mb-2 measure-g2">
+																		<input type="checkbox" class="btn-check" name="measure" id="measure-c-c2" autocomplete="off" disabled="">
+																		<label class="btn btn-check-st-1" for="measure-c-c2">พรบ.งบฯ</label>
+																	</div>
+																</div>
+																<div class="table-st-3 mt-2">
+																	<div class="row g-0">
+																		<div class="col">
+																			<div class="border py-2 px-2 th" >ไตรมาสที่ 1 </div>
+																			<div class="border py-2 px-2 td">
+																				<div class="d-flex flex-wrap">
+																					<div class="me-2 mb-2 fw-light fs-14 text-color-17">แผน</div>
+																					<div class="fs-14 fw-light mb-2 text-color-1">2</div>
+																				</div>
+																				<input type="text" name="" class="form-control form-st-1 border-color-o validateNumber" placeholder="ระบุจำนวน" required="" value="2" disabled="">
+																			</div>
+																		</div>
+																		<div class="col">
+																			<div class="border py-2 px-2 th" >ไตรมาสที่ 2 </div>
+																			<div class="border py-2 px-2 td">
+																				<div class="d-flex flex-wrap">
+																					<div class="me-2 mb-2 fw-light fs-14 text-color-17">แผน</div>
+																					<div class="fs-14 fw-light mb-2 text-color-1">2</div>
+																				</div>
+																				<input type="text" name="" class="form-control form-st-1  border-color-o validateNumber" placeholder="ระบุจำนวน" required="" value="2"  disabled="">
+																			</div>
+																		</div>
+																		<div class="col">
+																			<div class="border py-2 px-2 th" >ไตรมาสที่ 3 </div>
+																			<div class="border py-2 px-2 td">
+																				<div class="d-flex flex-wrap">
+																					<div class="me-2 mb-2 fw-light fs-14 text-color-17">แผน</div>
+																					<div class="fs-14 fw-light mb-2 text-color-1">2</div>
+																				</div>
+																				<input type="text" name="" class="form-control form-st-1 border-color-o  validateNumber" placeholder="ระบุจำนวน" required="" value="2"  disabled="">
+																			</div>
+																		</div>
+																		<div class="col">
+																			<div class="border py-2 px-2 th" >ไตรมาสที่ 4 </div>
+																			<div class="border py-2 px-2 td">
+																				<div class="d-flex flex-wrap">
+																					<div class="me-2 mb-2 fw-light fs-14 text-color-17">แผน</div>
+																					<div class="fs-14 fw-light mb-2 text-color-1">2</div>
+																				</div>
+																				<input type="text" name="" class="form-control border-color-o form-st-1 validateNumber" placeholder="ระบุจำนวน" required="">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</td>
+															<td class="border">
+																<input type="text" name="" class="form-control form-st-1 text-center validateNumber"  placeholder="จำนวน" required="" readonly="">
+															</td>
+															<td class="border">
+																<select class="form-control form-st-1 form-select" required="" disabled="">
+																	<option value="" selected=""></option>
+																	<option value="กิจการ">กิจการ</option>
+																</select>
+															</td>
+															
+														</tr>
+
+													</tbody>
+												</table>
+
+												<button type="button" class="btn btn-st-6 btn-link btn-addInput-table ms-5 d-none el-custom-view">เพิ่มตัวชี้วัดระดับผลผลิต</button>
+
+											</div>
+
+											<div class="title-g" id="title-g-4" data-title="measureresult">
+												<table class="table   fs-14">
+													<thead>
+														<tr>
+															<th class="border" width="5%"></th>
+															<th class="border" width="46%">ตัวชี้วัดระดับผลลัพธ์</th>
+															<th class="border" width="17%">จำนวน</th>
+															<th class="border" width="17%">หน่วยนับ</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="border">
+																<div class="inputnumber-s2 text-center">1</div>
+															</td>
+															<td class="border">
+																<textarea class="form-control form-st-1 mb-3" rows="4" required="" readonly=""></textarea>
+
+																<div class="d-flex flex-wrap align-items-center">
+																	<div class="mb-2 me-3 fs-14">ตัวชี้วัดตาม :</div>
+																	
+																	<div class="me-2 mb-2 measure-g2">
+																		<input type="checkbox" class="btn-check" name="measureresult" id="measureresult-c-c2" autocomplete="off" disabled="">
+																		<label class="btn btn-check-st-1" for="measureresult-c-c2">พรบ.งบฯ</label>
+																	</div>
+																</div>
+																<div class="table-st-3 mt-2">
+																	<div class="row g-0">
+																		<div class="col">
+																			<div class="border py-2 px-2 th" >ไตรมาสที่ 1 </div>
+																			<div class="border py-2 px-2 td">
+																				<div class="d-flex flex-wrap">
+																					<div class="me-2 mb-2 fw-light fs-14 text-color-17">แผน</div>
+																					<div class="fs-14 fw-light mb-2 text-color-1">2</div>
+																				</div>
+																				<input type="text" name="" class="form-control form-st-1 border-color-o  validateNumber" placeholder="ระบุจำนวน" required=""  value="2"  disabled="">
+																			</div>
+																		</div>
+																		<div class="col">
+																			<div class="border py-2 px-2 th" >ไตรมาสที่ 2 </div>
+																			<div class="border py-2 px-2 td">
+																				<div class="d-flex flex-wrap">
+																					<div class="me-2 mb-2 fw-light fs-14 text-color-17">แผน</div>
+																					<div class="fs-14 fw-light mb-2 text-color-1">2</div>
+																				</div>
+																				<input type="text" name="" class="form-control form-st-1 border-color-o  validateNumber" placeholder="ระบุจำนวน" required=""  value="2"  disabled="">
+																			</div>
+																		</div>
+																		<div class="col">
+																			<div class="border py-2 px-2 th" >ไตรมาสที่ 3 </div>
+																			<div class="border py-2 px-2 td">
+																				<div class="d-flex flex-wrap">
+																					<div class="me-2 mb-2 fw-light fs-14 text-color-17">แผน</div>
+																					<div class="fs-14 fw-light mb-2 text-color-1">2</div>
+																				</div>
+																				<input type="text" name="" class="form-control form-st-1 border-color-o validateNumber" placeholder="ระบุจำนวน" required=""  value="2" disabled="">
+																			</div>
+																		</div>
+																		<div class="col">
+																			<div class="border py-2 px-2 th" >ไตรมาสที่ 4 </div>
+																			<div class="border py-2 px-2 td">
+																				<div class="d-flex flex-wrap">
+																					<div class="me-2 mb-2 fw-light fs-14 text-color-17">แผน</div>
+																					<div class="fs-14 fw-light mb-2 text-color-1">2</div>
+																				</div>
+																				<input type="text" name="" class="form-control form-st-1 border-color-o validateNumber" placeholder="ระบุจำนวน" required="" >
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</td>
+															<td class="border">
+																<input type="text" name="" class="form-control form-st-1 text-center validateNumber"  placeholder="จำนวน" required="" readonly="">
+															</td>
+															<td class="border">
+																<select class="form-control form-st-1 form-select" required="" disabled="">
+																	<option value="" selected=""></option>
+																	<option value="กิจการ">กิจการ</option>
+																</select>
+															</td>
+															
+														</tr>
+
+													</tbody>
+												</table>
+
+
+											</div>
+
+										</div>
+									</div>
+
+									<div class="text-center d-flex justify-content-end flex-wrap">
+										<button class="btn btn-st-5 mx-2 mb-3 order-1 order-sm-0">บันทึกแบบร่าง</button>
+										<button class="btn btn-st-2 ms-2 mb-3 order-0 order-sm-1">ขั้นตอนถัดไป</button>
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div style="width: 280px;">
+							<div class="sticky" data-sticky-class="card-title-sticky">
+
+								<div class="card card-st-3 mb-4">
+									<div class="card-body p-3 pe-4">
+
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">รหัสโครงการ</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">PIEO64/001</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">วันที่สร้าง</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">01-03-2565</div>
+											</div>
+										</div>
+										<div class="mb-4">
+
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">แก้ไขล่าสุด</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">01-03-2565</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-auto mb-2  text-color-9 fw-light">ผู้สร้าง</div>
+												<div class="col mb-2 text-color-11 fw-bolder">น.ส. เบญจวรรณ บัวพิทักษ์1</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="modal fade" id="confirmModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+
+	      <div class="modal-body pb-4">
+	      	<div class="text-end">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      	</div>
+	        
+	        <div class="text-center text-color-1 fs-18 fw-500 pt-4 mb-5 pb-3">กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน ?</div>
+
+
+	        <div class="text-center d-flex flex-wrap justify-content-center">
+	        	<button type="button" class="btn btn-st-3 mx-2 mb-3 order-1 order-sm-0" data-bs-dismiss="modal">ยกเลิก</button>
+	        	<a href="" class="btn btn-st-2 mx-2  mb-3 order-0 order-sm-1">ยืนยัน</a>
+	        </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../สศอ/assets/plugins/moment/moment.js"></script>
+	<script src="../สศอ/assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../สศอ/assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="../สศอ/assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="../สศอ/assets/js/sticky.min.js"></script>
+	<script src="../สศอ/assets/js/jquery.maskMoney.min.js" ></script> 
+
+	<script type="text/javascript">
+		var sticky = new Sticky('.sticky');
+		sticky.update();
+	</script>
+
+
+	<script type="text/javascript">
+		var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'), {
+		  keyboard: false
+		})
+	</script>
+	
+	<script type="text/javascript">
+
+		(function () {
+		  'use strict'
+		  var forms = document.querySelectorAll('.needs-validation')
+		  Array.prototype.slice.call(forms)
+		    .forEach(function (form) {
+		      form.addEventListener('submit', function (event) {
+		        if (!form.checkValidity()) {
+		          event.preventDefault()
+		          event.stopPropagation()
+
+		          confirmModal.show()
+		        }
+
+		        form.classList.add('was-validated')
+		      }, false)
+		    })
+		})()
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.select2').select2({
+		    	minimumResultsForSearch: -1,
+		    	"language": {
+				    "noResults": function(){
+				        return '<div class="fs-12 py-2">ไม่พบข้อมูล</div>';
+				    }
+				},
+			    escapeMarkup: function (markup) {
+			        return markup;
+			    }
+		    });
+		});
+	</script>
+
+
+    <script type="text/javascript">
+		$(".maskMoney").maskMoney({precision:2});
+	</script>
+
+	<script type="text/javascript">
+    	$('.budget-quarter').on('keyup',function (){
+
+    		var budget1 = $('#budget-quarter-1').maskMoney('unmasked')[0];
+    		var budget2 = $('#budget-quarter-2').maskMoney('unmasked')[0];
+    		var budget3 = $('#budget-quarter-3').maskMoney('unmasked')[0];
+    		var budget4 = $('#budget-quarter-4').maskMoney('unmasked')[0];
+
+    		var budgetsum = parseFloat(budget1) + parseFloat(budget2)  + parseFloat(budget3)  + parseFloat(budget4);
+
+    		$('#budget-sum').val(budgetsum).trigger('mask.maskMoney');
+
+    		if($(this).val().length > 0){
+    			$(this).removeClass('border-color-o')
+    		}else{
+    			$(this).addClass('border-color-o')
+    		}
+
+
+    	})
+    </script>
+
+	<script type="text/javascript">
+		function validateNumber(event) {
+            var key = window.event ? event.keyCode : event.which;
+            if (event.keyCode === 8) {
+                return true;
+            } else if ( key < 48 || key > 57 ) {
+                return false;
+            } else {
+                return true;
+            }
+        };
+        $(document).ready(function(){
+            $('.validateNumber').keypress(validateNumber);
+        });
+	</script>
+
+</body>
+</html>

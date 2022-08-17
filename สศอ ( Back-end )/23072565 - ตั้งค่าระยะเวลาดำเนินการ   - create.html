@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../สศอ/assets/images/logo2.png">
+
+    <link href="../สศอ/assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="../สศอ/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../สศอ/assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/select2/css/select2.min.css">
+    <link href="../สศอ/assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+
+    <link href="../สศอ/assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll app-sidebar-be">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="../สศอ/assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="../สศอ/assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 "  data-toggle="slide"  href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">สำหรับผู้บริหาร</a></li>
+							<li><a class="slide-item py-2" href="/">ข้อมูลคำของบประมาณ</a></li>
+							<li><a class="slide-item py-2" href="/">การติดตามผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">การประเมินผลงาน</a></li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/line-md_document-report.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน<br/>(ตามเป้าหมาย แนวทาง และตัวชี้วัด) </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการประเมินผลโครงการ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม <br/> การเบิกจ่ายงบประมาณ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม<br/> การงานตามตัวชี้วัด </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการร่างพรบ.</a></li>
+							<li><a class="slide-item py-2" href="/">ติดตามความก้าวหน้า </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/bi_folder-fill.png" class="side-menu__icon">
+							<span class="side-menu__label">ข้อมูลหน่วยงาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">หน่วยงานทั้งหมด</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าหน่วยงาน.</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="/">
+							<img src="../สศอ/assets/images/icon/sidemenu/mdi_email.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/fa_user-solid.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการสิทธิ์และผู้ใช้งาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการผู้ใช้งาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการสิทธิ์การใช้งาน</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/ci_settings-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">ตั้งค่าทั่วไป</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการแผนงาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการแผนแม่บทฯ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการยุทธศาสตร์</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการหน่วยนับ</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าระยะเวลาดำเนินการ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="../สศอ/assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="fixed-custom-1 pt-4  px-3">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">ตั้งค่าระยะเวลาดำเนินการ</a></li>
+					  </ol>
+					</nav>
+
+
+				</div>
+
+				<div class="pt-4 pb-3"></div>
+
+				<div class="row">
+					<div class="col">
+						<form class="needs-validation" novalidate>
+							<div class="card card-st-3  mb-4">
+								<div class="card-body ">
+
+									<div class="row align-items-lg-center mb-3">
+										<label class=" fs-16 col-lg-3 text-color-8 fw-bold mb-2 mb-lg-0">ชื่อระยะเวลาดำเนินการ <span class="text-danger">*</span></label>
+										<div class="col-lg-7">
+											<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณาชื่อระยะเวลาดำเนินการ" >
+										</div>
+									</div>
+									<div class="row align-items-lg-center mb-3">
+										<label class=" fs-16 col-lg-3 text-color-8 fw-bold mb-2 mb-lg-0">ปีงบประมาณ <span class="text-danger">*</span></label>
+										<div class="col-lg-4">
+											<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาระบุปีงบประมาณ" required="">
+												<option value=""></option>
+												<option value="2565">2565</option>
+											</select>
+										</div>
+
+										
+
+										
+									</div>
+								
+								</div>
+							</div>
+
+							<div class="card card-st-3  mb-4">
+								<div class="card-body ">
+
+									<div class="text-color-8 fw-bold fs-16 mb-3">ขั้นตอนการดำเนินงาน <span class="text-danger">*</span></div>
+
+									<div>
+										<table class="table table-bordered table-st-4">
+											<thead>
+												<tr>
+													<th class="text-center" width="7%">#</th>
+													<th width="43%">ขั้นตอนการดำเนินงาน</th>
+													<th class="text-center" width="30%">วันที่เริ่มต้น - วันที่สิ้นสุด</th>
+													<th class="text-center" width="15%">รวมระยะเวลา</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="text-center align-middle">1</td>
+													<td class="align-middle">สร้างข้อเสนอโครงการ</td>
+													<td>
+														<div class="row g-0 align-items-center date">
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_start" placeholder="dd/mm/yyyy" >
+															</div>
+															<div class="col-auto px-3">
+																<div class=" fs-14 fw-bold px-2">ถึง</div>
+															</div>
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_end" placeholder="dd/mm/yyyy" >
+															</div>
+														</div>
+													</td>
+													<td class="text-center align-middle date_calc">( <span class="month">X </span> เดือน <span class="days">Y</span> วัน)</td>
+												</tr>
+												<tr>
+													<td class="text-center align-middle">2</td>
+													<td class="align-middle">ยืนยันงบประมาณร่างพ.ร.บ.งบประมาณ </td>
+													<td>
+														<div class="row g-0 align-items-center date">
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_start" placeholder="dd/mm/yyyy" >
+															</div>
+															<div class="col-auto px-3">
+																<div class=" fs-14 fw-bold px-2">ถึง</div>
+															</div>
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_end" placeholder="dd/mm/yyyy" >
+															</div>
+														</div>
+													</td>
+													<td class="text-center align-middle date_calc">( <span class="month">X </span> เดือน <span class="days">Y</span> วัน)</td>
+												</tr>
+												<tr>
+													<td class="text-center align-middle">3</td>
+													<td class="align-middle">ยืนยันงบประมาณพ.ร.บ.งบประมาณ </td>
+													<td>
+														<div class="row g-0 align-items-center date">
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_start" placeholder="dd/mm/yyyy" >
+															</div>
+															<div class="col-auto px-3">
+																<div class=" fs-14 fw-bold px-2">ถึง</div>
+															</div>
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_end" placeholder="dd/mm/yyyy" >
+															</div>
+														</div>
+													</td>
+													<td class="text-center align-middle date_calc">( <span class="month">X </span> เดือน <span class="days">Y</span> วัน)</td>
+												</tr>
+												<tr>
+													<td class="text-center align-middle">4</td>
+													<td class="align-middle">รายงานความก้าวหน้าไตรมาสที่ 1</td>
+													<td>
+														<div class="row g-0 align-items-center date">
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_start" placeholder="dd/mm/yyyy" >
+															</div>
+															<div class="col-auto px-3">
+																<div class=" fs-14 fw-bold px-2">ถึง</div>
+															</div>
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_end" placeholder="dd/mm/yyyy" >
+															</div>
+														</div>
+													</td>
+													<td class="text-center align-middle date_calc">( <span class="month">X </span> เดือน <span class="days">Y</span> วัน)</td>
+												</tr>
+												<tr>
+													<td class="text-center align-middle">5</td>
+													<td class="align-middle">รายงานความก้าวหน้าไตรมาสที่ 2</td>
+													<td>
+														<div class="row g-0 align-items-center date">
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_start" placeholder="dd/mm/yyyy" >
+															</div>
+															<div class="col-auto px-3">
+																<div class=" fs-14 fw-bold px-2">ถึง</div>
+															</div>
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_end" placeholder="dd/mm/yyyy" >
+															</div>
+														</div>
+													</td>
+													<td class="text-center align-middle date_calc">( <span class="month">X </span> เดือน <span class="days">Y</span> วัน)</td>
+												</tr>
+												<tr>
+													<td class="text-center align-middle">6</td>
+													<td class="align-middle">รายงานความก้าวหน้าไตรมาสที่ 3</td>
+													<td>
+														<div class="row g-0 align-items-center date">
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_start" placeholder="dd/mm/yyyy" >
+															</div>
+															<div class="col-auto px-3">
+																<div class=" fs-14 fw-bold px-2">ถึง</div>
+															</div>
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_end" placeholder="dd/mm/yyyy" >
+															</div>
+														</div>
+													</td>
+													<td class="text-center align-middle date_calc">( <span class="month">X </span> เดือน <span class="days">Y</span> วัน)</td>
+												</tr>
+												<tr>
+													<td class="text-center align-middle">7</td>
+													<td class="align-middle">รายงานความก้าวหน้าไตรมาสที่ 4</td>
+													<td>
+														<div class="row g-0 align-items-center date">
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_start" placeholder="dd/mm/yyyy" >
+															</div>
+															<div class="col-auto px-3">
+																<div class=" fs-14 fw-bold px-2">ถึง</div>
+															</div>
+															<div class="col">
+																<input type="" name="" class="form-control form-st-1 datepicker icon-calendar fs-14 date_end" placeholder="dd/mm/yyyy" >
+															</div>
+														</div>
+													</td>
+													<td class="text-center align-middle date_calc">( <span class="month">X </span> เดือน <span class="days">Y</span> วัน)</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+
+								
+								</div>
+							</div>
+
+
+						</form>
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../สศอ/assets/plugins/moment/moment.js"></script>
+	<script src="../สศอ/assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../สศอ/assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="../สศอ/assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="../สศอ/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+	<script src="../สศอ/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jquery.dataTables.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jszip.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/pdfmake.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/vfs_fonts.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.html5.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.print.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+	<script src="../สศอ/assets/plugins/daterangepicker/daterangepicker.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.select2').select2({
+		    	minimumResultsForSearch: -1,
+		    	"language": {
+				    "noResults": function(){
+				        return '<div class="fs-12 py-2">ไม่พบข้อมูล</div>';
+				    }
+				},
+			    escapeMarkup: function (markup) {
+			        return markup;
+			    }
+		    });
+
+		});
+	</script>
+	<script type="text/javascript">
+		$('.datepicker').datepicker({
+	        format: 'dd/mm/yyyy',
+	        autoclose:true
+	    });
+		$('.datepicker').on('change',function(){
+			
+
+			var $div = $(this).closest('td');
+			var date_start = $div.find('.date_start').val();
+			var date_end = $div.find('.date_end').val();
+
+			date_start = Date.parse(moment(date_start, "DD/MM/YYYY"))
+			date_end = Date.parse(moment(date_end, "DD/MM/YYYY"))
+			$div.next().addClass('xxx')
+			if(date_start > 0 && date_end > 0){
+
+				var distance = date_end - date_start;
+				var month = Math.floor((distance / (1000 * 60 * 60 * 24 * 30)));
+				var days = Math.floor((distance % (1000 * 60 * 60 * 24 * 30) ) / (1000 * 60 * 60 * 24));
+
+				$div.next().find('.month').html(month);
+				$div.next().find('.days').html(days);
+
+			}
+
+		})
+
+
+
+ 
+	</script>
+
+
+</body>
+</html>

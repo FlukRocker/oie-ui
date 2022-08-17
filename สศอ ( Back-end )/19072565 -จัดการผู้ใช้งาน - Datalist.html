@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../สศอ/assets/images/logo2.png">
+
+    <link href="../สศอ/assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="../สศอ/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../สศอ/assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/select2/css/select2.min.css">
+    <link href="../สศอ/assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+    <link href="../สศอ/assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll app-sidebar-be">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="../สศอ/assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="../สศอ/assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 "  data-toggle="slide"  href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">สำหรับผู้บริหาร</a></li>
+							<li><a class="slide-item py-2" href="/">ข้อมูลคำของบประมาณ</a></li>
+							<li><a class="slide-item py-2" href="/">การติดตามผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">การประเมินผลงาน</a></li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/line-md_document-report.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน<br/>(ตามเป้าหมาย แนวทาง และตัวชี้วัด) </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการประเมินผลโครงการ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม <br/> การเบิกจ่ายงบประมาณ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม<br/> การงานตามตัวชี้วัด </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการร่างพรบ.</a></li>
+							<li><a class="slide-item py-2" href="/">ติดตามความก้าวหน้า </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/bi_folder-fill.png" class="side-menu__icon">
+							<span class="side-menu__label">ข้อมูลหน่วยงาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">หน่วยงานทั้งหมด</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าหน่วยงาน.</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="/">
+							<img src="../สศอ/assets/images/icon/sidemenu/mdi_email.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/fa_user-solid.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการสิทธิ์และผู้ใช้งาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการผู้ใช้งาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการสิทธิ์การใช้งาน</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/ci_settings-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">ตั้งค่าทั่วไป</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการแผนงาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการแผนแม่บทฯ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการยุทธศาสตร์</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการหน่วยนับ</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าระยะเวลาดำเนินการ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="../สศอ/assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="fixed-custom-1 pt-4  px-4">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">Dashboard </a></li>
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">กระทรวงอุตสาหกรรม  </a></li>
+					    <li class="breadcrumb-item active text-color-1 fw-500" aria-current="page">จัดการข้อมูลผู้ใช้งาน</li>
+					  </ol>
+					</nav>
+				</div>
+
+				<div class="pt-4 pb-3"></div>
+				<div class="mb-4 ps-2">
+					<a href="" class="btn btn-st-2 ">เพิ่มผู้ใช้งาน</a>
+				</div>
+				<div class="row">
+					<div class="col">
+
+						<div class="card card-st-3  mb-4 " style="">
+							<div class="card-body py-0 px-2">
+								
+								<nav>
+								  <div class="nav nav-tabs nav-tabs-1" id="nav-tab" role="tablist">
+								    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab" aria-selected="true">ผู้ใช้งานทั้งหมด</button>
+								    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab"  aria-selected="false">ประวัติการใช้งาน  (<span>5</span>)</button>
+								  </div>
+								</nav>
+
+								<div class="tab-content" id="nav-tabContent">
+								  	<div class="tab-pane fade show active" id="nav-1" role="tabpanel" >
+								  		<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+											<button class="btn btn-st-11 btn-export  btn-control   me-3 mb-2 " id="" >
+												<img src="../สศอ/assets/images/icon/carbon_export.png" class="mt-n1" width="24"> นำข้อมูลออก
+											</button>
+
+											<div class="fs-16 text-color-8 mb-2  me-3">เลือกจากวันที่ลงทะเบียน</div>
+											<div class="mb-2 me-auto">
+												<input type="text" name="" id="" class="form-control form-st-1 icon-calendar-2 daterange " placeholder="dd/mm/yyyy -  dd/mm/yyyy" style="min-width: 240px;">
+											</div>
+			
+											<div class="mb-2">
+												<input type="search" name="" id="search" class="form-control form-st-1" placeholder="รหัสพนักงานขาย" style="min-width: 240px;">
+											</div>
+										</div>
+										<table class="table" id="list-table">
+											<thead >
+												<tr>
+													<th class="py-1 ">
+														<div class="form-check form-check-st-1">
+							  								<input class="form-check-input" type="checkbox" >
+														</div>
+													</th>
+													<th class="py-1">รหัสผู้ใช้งาน</th>
+													<th class="py-1">ชื่อ - นามสกุล</th>
+													<th class="py-1">เบอร์โทรศัพท์</th>
+													<th class="select2-filter py-1">
+														Email
+													</th>
+													<th class="select2-filter py-1">
+														ตำแหน่ง
+														<select class="select2-position" name="">
+															<option value="" selected="">ทั้งหมด</option>
+															<option value="0">ชื่อตำแหน่ง</option>
+														</select>
+													</th>
+													<th class="select2-filter py-1">
+														สิทธิ์การใข้งาน
+														<select class="select2-permissions" name="">
+															<option value="" selected="">ทั้งหมด</option>
+															<option value="0">admin</option>
+														</select>
+													</th>
+													<th class="py-1 select2-filter">
+														สถานะ
+														<select class="select2-status" name="">
+															<option value="" selected="">ทั้งหมด</option>
+															<option value="เปิดใช้งาน">เปิดใช้งาน</option>
+															<option value=" ปิดใช้งาน"> ปิดใช้งาน</option>
+														</select>
+													</th>
+													<th class="py-1"></th>
+												</tr>
+											</thead>
+										</table>
+								  	</div>
+								  	<div class="tab-pane fade " id="nav-2" role="tabpanel" >
+								  		<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+											<button class="btn btn-st-11 btn-export  btn-control   me-3 mb-2 " id="" >
+												<img src="../สศอ/assets/images/icon/carbon_export.png" class="mt-n1" width="24"> นำข้อมูลออก
+											</button>
+
+											<div class="fs-16 text-color-8 mb-2  me-3">เลือกจากวันที่</div>
+											<div class="mb-2 me-auto">
+												<input type="text" name="" id="" class="form-control form-st-1 icon-calendar-2 daterange2 " placeholder="dd/mm/yyyy -  dd/mm/yyyy" style="min-width: 240px;">
+											</div>
+			
+											<div class="mb-2">
+												<input type="search" name="" id="search2" class="form-control form-st-1" placeholder="" style="min-width: 240px;">
+											</div>
+										</div>
+										<table class="table" id="list-table-2">
+											<thead >
+												<tr>
+													<th class="py-1 ">
+														<div class="form-check form-check-st-1">
+							  								<input class="form-check-input" type="checkbox" >
+														</div>
+													</th>
+													<th class="py-1">วันที่</th>
+													<th class="py-1">กิจกรรม</th>
+													<th class="py-1">หมายเลข IP </th>
+													<th class="select2-filter py-1">
+														ช่องทาง
+													</th>
+												</tr>
+											</thead>
+										</table>
+								  	</div>
+								</div>
+
+
+								
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../สศอ/assets/plugins/moment/moment.js"></script>
+	<script src="../สศอ/assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../สศอ/assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="../สศอ/assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="../สศอ/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+	<script src="../สศอ/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jquery.dataTables.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jszip.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/pdfmake.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/vfs_fonts.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.html5.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.print.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+	<script src="../สศอ/assets/plugins/daterangepicker/daterangepicker.js"></script>
+
+	<script type="text/javascript">
+			$(function() {
+	          	var start = moment().subtract(0, 'days');
+	          	var end = moment();
+	          	function cb(start, end) {
+
+	          		console.log( start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY') )
+
+	          		// table.ajax.url( 'newDatajson url' ).load();
+	          	}
+	          	$('.daterange').daterangepicker({
+		            startDate: start,
+		            endDate: end,
+		            ranges: {
+		               'Today': [moment(), moment()],
+		               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+		               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+		               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+		               'This Month': [moment().startOf('month'), moment().endOf('month')],
+		               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+		            },
+		             locale: {
+				      format: 'DD/MM/YYYY'
+				    }
+		        }, cb);
+
+	      	});
+	</script>
+
+	<script type="text/javascript">
+
+		var myData4 = [
+		    {
+		        "id": 1,
+		        "user_code":"UDSS64001",
+		        "user_name": {"image":"../สศอ/assets/images/Avatar.png","name":"นาย สมรักษ์ พงมั่นหมาย"},
+		        "phone_number": "0896925803",
+		        "email": "Ex@mail.com",
+		        "position": "ชื่อตำแหน่ง",
+		        "permissions":"Admin",
+		        "status": 1
+		        
+		    },
+		    {
+		        "id": 2,
+		        "user_code":"UDSS64001",
+		        "user_name": {"image":"../สศอ/assets/images/Avatar.png","name":"นาย สมรักษ์ พงมั่นหมาย"},
+		        "phone_number": "0896925803",
+		        "email": "Ex@mail.com",
+		        "position": "ชื่อตำแหน่ง",
+		        "permissions":"Admin",
+		        "status": 0
+		        
+		    },
+		    {
+		        "id": 3,
+		        "user_code":"UDSS64001",
+		        "user_name": {"image":"../สศอ/assets/images/Avatar.png","name":"นาย สมรักษ์ พงมั่นหมาย"},
+		        "phone_number": "0896925803",
+		        "email": "Ex@mail.com",
+		        "position": "ชื่อตำแหน่ง",
+		        "permissions":"Admin",
+		        "status": 1
+		        
+		    },
+		    {
+		        "id": 4,
+		        "user_code":"UDSS64001",
+		        "user_name": {"image":"../สศอ/assets/images/Avatar.png","name":"นาย สมรักษ์ พงมั่นหมาย"},
+		        "phone_number": "0896925803",
+		        "email": "Ex@mail.com",
+		        "position": "ชื่อตำแหน่ง",
+		        "permissions":"Admin",
+		        "status": 1
+		        
+		    }
+		];
+
+
+		var table =	$('#list-table').DataTable({
+	        // scrollX:        true,
+	        // scrollCollapse: true,
+			data: myData4,
+		    columns: [
+		        { data: 'id' },
+		        { data: 'user_code' },
+		        { data: 'user_name' },
+		        { data: 'phone_number' },
+		        { data: 'email' },
+		        { data: 'position' },
+		        { data: 'permissions' },
+		        { data: 'status' },
+		        { data: 'id' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle ",
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check form-check-st-1"><input class="form-check-input" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left",
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<a href="/'+data+'" target="_blank" class="alink-st-1"  >'+data+'</a>';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left",
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="d-flex align-items-center">'
+			          	html += '<div class="user-image me-2"><img src="'+data.image+'" class=""></div>'
+			          	html += '<div class="">'+data.name+'</div>'
+			          	html += '</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		        { targets : [3],className:"align-middle text-left"
+		    	},
+		    	{ targets : [4],className:"align-middle text-left"
+
+		    	},
+		    	{ targets : [5],className:"align-middle text-left"
+
+		    	},
+		    	{ targets : [6],className:"align-middle text-left"
+
+		    	},
+		    	{ targets : [7],className:"align-middle text-center   ",
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	if(data == 0){
+			          		html += '<div class="status-usage off "> ปิดใช้งาน</div>'
+			          	}else if(data == 1){
+			          		html += '<div class="status-usage on">เปิดใช้งาน</div>'
+			          	}
+			            return html;
+			        }
+		    	}
+		    	,
+		    	{ targets : [8],className:"align-middle text-center   ",
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<button class="btn btn-link p-0 btn-delete-user mx-3" data-id="'+data+'"></button>'
+			         
+			            return html;
+			        }
+		    	}
+
+		    	
+			  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			"ordering": false,
+			"dom": '<<t>ilp>'
+		});
+
+
+		$('#search').keyup(function(){
+		      table.search($(this).val()).draw() ;
+		})
+
+
+
+
+		$(".select2-position").select2({
+				minimumResultsForSearch: Infinity
+		});
+		$('.select2-position').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'ทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(5).search( text,true, false, true  ).draw();
+		});
+
+		$(".select2-permissions").select2({
+				minimumResultsForSearch: Infinity
+		});
+		$('.select2-permissions').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'ทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(6).search( text,true, false, true  ).draw();
+		});
+		$(".select2-status").select2({
+				minimumResultsForSearch: Infinity
+		});
+		$('.select2-status').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'ทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(7).search( text,true, false, true  ).draw();
+		});
+
+
+
+	</script>
+
+	<script type="text/javascript">
+		$(document).on('click','.btn-delete-user',function (){
+			var id  = $(this).data('id')
+			console.log(id)
+			// table.ajax.reload();
+			
+		})
+
+		
+	</script>
+
+	<script type="text/javascript">
+
+		var myData5 = [
+		    {
+		        "id": 1,
+		        "date":"22/02/2022 01:59",
+		        "activity": "เข้าสู่ระบบ",
+		        "ip_number": "180.222.149.18",
+		        "channel": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56"
+		    },
+		    {
+		        "id": 2,
+		        "date":"22/02/2022 01:59",
+		        "activity": "เข้าสู่ระบบ",
+		        "ip_number": "180.222.149.18",
+		        "channel": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56"
+		    },
+		    {
+		        "id": 3,
+		        "date":"22/02/2022 01:59",
+		        "activity": "เข้าสู่ระบบ",
+		        "ip_number": "180.222.149.18",
+		        "channel": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56"
+		    },
+		    {
+		        "id": 4,
+		        "date":"22/02/2022 01:59",
+		        "activity": "เข้าสู่ระบบ",
+		        "ip_number": "180.222.149.18",
+		        "channel": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56"
+		    },
+		    {
+		        "id": 5,
+		        "date":"22/02/2022 01:59",
+		        "activity": "เข้าสู่ระบบ",
+		        "ip_number": "180.222.149.18",
+		        "channel": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56"
+		    }
+		];
+
+
+		var table2 =	$('#list-table-2').DataTable({
+	        // scrollX:        true,
+	        // scrollCollapse: true,
+			data: myData5,
+		    columns: [
+		        { data: 'id' },
+		        { data: 'date' },
+		        { data: 'activity' },
+		        { data: 'ip_number' },
+		        { data: 'channel' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle ",
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check form-check-st-1"><input class="form-check-input" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left",
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<a href="/'+data+'" target="_blank" class="alink-st-1"  >'+data+'</a>';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left",
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data+'</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		        { targets : [3],className:"align-middle text-left"
+		    	},
+		    	{ targets : [4],className:"align-middle text-left"
+
+		    	}
+
+		    	
+			  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			"ordering": true,
+			"dom": '<<t>ilp>'
+		});
+
+
+		$('#search2').keyup(function(){
+		      table2.search($(this).val()).draw() ;
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(function() {
+          	var start = moment().subtract(0, 'days');
+          	var end = moment();
+          	function cb2(start, end) {
+
+          		console.log( start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY') )
+
+          		// table2.ajax.url( 'newDatajson url' ).load();
+          	}
+          	$('.daterange2').daterangepicker({
+	            startDate: start,
+	            endDate: end,
+	            ranges: {
+	               'Today': [moment(), moment()],
+	               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+	               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+	               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+	               'This Month': [moment().startOf('month'), moment().endOf('month')],
+	               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+	            },
+	             locale: {
+			      format: 'DD/MM/YYYY'
+			    }
+	        }, cb2);
+
+      	});
+	</script>
+	<script type="text/javascript">
+		$('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+		  table.columns.adjust().draw();
+		  table2.columns.adjust().draw();
+		})
+	</script>
+</body>
+</html>

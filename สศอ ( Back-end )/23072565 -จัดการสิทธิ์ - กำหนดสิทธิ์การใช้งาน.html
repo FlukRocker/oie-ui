@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="../สศอ/assets/images/logo2.png">
+
+    <link href="../สศอ/assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="../สศอ/assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="../สศอ/assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/select2/css/select2.min.css">
+    <link href="../สศอ/assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+    <link href="../สศอ/assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+	<link href="../สศอ/assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+	<link href="../สศอ/assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../สศอ/assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll app-sidebar-be">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="../สศอ/assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="../สศอ/assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 "  data-toggle="slide"  href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">สำหรับผู้บริหาร</a></li>
+							<li><a class="slide-item py-2" href="/">ข้อมูลคำของบประมาณ</a></li>
+							<li><a class="slide-item py-2" href="/">การติดตามผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">การประเมินผลงาน</a></li>
+						</ul>
+					</li>
+
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/line-md_document-report.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน</a></li>
+							<li><a class="slide-item py-2" href="/">รายงานผลการดำเนินงาน<br/>(ตามเป้าหมาย แนวทาง และตัวชี้วัด) </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการประเมินผลโครงการ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม <br/> การเบิกจ่ายงบประมาณ </a></li>
+							<li><a class="slide-item py-2" href="/">สรุปผลการกำกับติดตาม<br/> การงานตามตัวชี้วัด </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการข้อเสนอโครงการร่างพรบ.</a></li>
+							<li><a class="slide-item py-2" href="/">ติดตามความก้าวหน้า </a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/bi_folder-fill.png" class="side-menu__icon">
+							<span class="side-menu__label">ข้อมูลหน่วยงาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">หน่วยงานทั้งหมด</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าหน่วยงาน.</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="/">
+							<img src="../สศอ/assets/images/icon/sidemenu/mdi_email.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/fa_user-solid.png" class="side-menu__icon">
+							<span class="side-menu__label">จัดการสิทธิ์และผู้ใช้งาน</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการผู้ใช้งาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการสิทธิ์การใช้งาน</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="../สศอ/assets/images/icon/sidemenu/ci_settings-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">ตั้งค่าทั่วไป</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">จัดการแผนงาน</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการแผนแม่บทฯ</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการยุทธศาสตร์</a></li>
+							<li><a class="slide-item py-2" href="/">จัดการหน่วยนับ</a></li>
+							<li><a class="slide-item py-2" href="/">ตั้งค่าระยะเวลาดำเนินการ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="../สศอ/assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="fixed-custom-1 pt-4  px-4">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">Dashbord </a></li>
+					    <li class="breadcrumb-item active text-color-1 fw-500" aria-current="page">จัดการสิทธิ์การใช้งาน</li>
+					  </ol>
+					</nav>
+				</div>
+
+				<div class="pt-4 pb-5"></div>
+				<form class="needs-validation" novalidate>
+					<div class="row">
+						<div class="col">
+
+
+
+							<div class="fs-18 text-color-12 px-3 mb-4">
+								กำหนดสิทธิ์การใช้งาน
+							</div>
+							<div class="px-3">
+								<div class="row">
+				    				<div class="col-lg-4">
+						    			<div class="row align-items-center mb-3">
+											<div class="col-4">ชื่อสิทธิ์การใช้งาน :</div>
+											<div class="col-8">
+												<input type="" name="" class="form-control form-bd-1" required="" style="border-radius: 20px;width: 257px;" required="">
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+						    			<div class="d-flex align-items-center mb-3 ps-4">
+											<div class="me-4 mb-1">สถานะ</div>
+											<div class="unit-status-check">
+								        		<input type="checkbox" name="" class="hide-input" id="unit-check" checked="">
+								        		<label for="unit-check"></label>
+								        	</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card card-st-3  mb-4 " style="">
+								<div class="card-body py-0 px-4">
+								
+							  		
+										<div class="py-1"></div>
+										
+										
+							    		<div>
+
+											<div class="mt-4 permission">
+												<div style="" class="ms-3 ps-3">
+													<div class="permission-group mb-3">
+														<div class="d-flex mb-3">
+															<div class="w-40">Dashboard</div>
+															<div class="w-60  d-flex align-items-center">
+																<div class="form-check form-check-inline" >
+																  <input type="radio" id="m1-1" name="menu-1" class="form-check-input main-menu " data-choice="1">
+																  <label class="custom-control-label" for="m1-1">อ่านและแก้ไข</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m1-2" name="menu-1" class="form-check-input main-menu" data-choice="2">
+																  <label class="custom-control-label" for="m1-2"> อ่านอย่างเดียว</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m1-3" name="menu-1" class="form-check-input main-menu" data-choice="3">
+																  <label class="custom-control-label" for="m1-3">ไม่อนุญาต</label>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">สำหรับผู้บริหาร</div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m1-s1-1" name="menu-1-s1" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m1-s1-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m1-s1-2" name="menu-1-s1" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m1-s1-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m1-s1-3" name="menu-1-s1" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m1-s1-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">ข้อมูลคำของบประมาณ</div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m1-s2-1" name="menu-1-s2" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m1-s2-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m1-s2-2" name="menu-1-s2" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m1-s2-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m1-s2-3" name="menu-1-s2" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m1-s2-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">การติดตามผลการดำเนินงาน</div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m1-s3-1" name="menu-1-s3" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m1-s3-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m1-s3-2" name="menu-1-s3" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m1-s3-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m1-s3-3" name="menu-1-s3" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m1-s3-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">การประเมินผลงาน</div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m1-s4-1" name="menu-1-s4" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m1-s4-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m1-s4-2" name="menu-1-s4" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m1-s4-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m1-s4-3" name="menu-1-s4" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m1-s4-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="permission-group mb-3">
+														<div class="d-flex mb-3">
+															<div class="w-40">รายงาน</div>
+															<div class="w-60  d-flex align-items-center">
+																<div class="form-check form-check-inline" >
+																  <input type="radio" id="m2-1" name="menu-2" class="form-check-input main-menu " data-choice="1">
+																  <label class="custom-control-label" for="m2-1">อ่านและแก้ไข</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m2-2" name="menu-2" class="form-check-input main-menu" data-choice="2">
+																  <label class="custom-control-label" for="m2-2"> อ่านอย่างเดียว</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m2-3" name="menu-2" class="form-check-input main-menu" data-choice="3">
+																  <label class="custom-control-label" for="m2-3">ไม่อนุญาต</label>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">รายงานผลการดำเนินงาน</div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m2-s1-1" name="menu-2-s1" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m2-s1-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m2-s1-2" name="menu-2-s1" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m2-s1-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m2-s1-3" name="menu-2-s1" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m2-s1-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">รายงานผลการดำเนินงาน (ตามเป้าหมาย แนวทาง และตัวชี้วัด) </div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m2-s2-1" name="menu-2-s2" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m2-s2-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m2-s2-2" name="menu-2-s2" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m2-s2-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m2-s2-3" name="menu-2-s2" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m2-s2-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">สรุปผลการประเมินผลโครงการ </div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m2-s3-1" name="menu-2-s3" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m2-s3-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m2-s3-2" name="menu-2-s3" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m2-s3-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m2-s3-3" name="menu-2-s3" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m2-s3-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">สรุปผลการกำกับติดตามการเบิกจ่ายงบประมาณ </div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m2-s4-1" name="menu-2-s4" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m2-s4-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m2-s4-2" name="menu-2-s4" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m2-s4-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m2-s4-3" name="menu-2-s4" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m2-s4-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">สรุปผลการกำกับติดตามการงานตามตัวชี้วัด </div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m2-s5-1" name="menu-2-s5" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m2-s5-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m2-s5-2" name="menu-2-s5" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m2-s5-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m2-s5-3" name="menu-2-s5" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m2-s5-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+													<div class="permission-group mb-3">
+														<div class="d-flex mb-3">
+															<div class="w-40">โครงการ</div>
+															<div class="w-60  d-flex align-items-center">
+																<div class="form-check form-check-inline" >
+																  <input type="radio" id="m3-1" name="menu-3" class="form-check-input main-menu " data-choice="1">
+																  <label class="custom-control-label" for="m3-1">อ่านและแก้ไข</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m3-2" name="menu-3" class="form-check-input main-menu" data-choice="2">
+																  <label class="custom-control-label" for="m3-2"> อ่านอย่างเดียว</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m3-3" name="menu-3" class="form-check-input main-menu" data-choice="3">
+																  <label class="custom-control-label" for="m3-3">ไม่อนุญาต</label>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">จัดการข้อเสนอโครงการ</div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m3-s1-1" name="menu-3-s1" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m3-s1-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m3-s1-2" name="menu-3-s1" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m3-s1-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m3-s1-3" name="menu-3-s1" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m3-s1-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">จัดการข้อเสนอโครงการร่างพรบ.</div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m3-s2-1" name="menu-3-s2" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m3-s2-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m3-s2-2" name="menu-3-s2" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m3-s2-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m3-s2-3" name="menu-3-s2" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m3-s2-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">ติดตามความก้าวหน้า</div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m3-s3-1" name="menu-3-s3" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m3-s3-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m3-s3-2" name="menu-3-s3" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m3-s3-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m3-s3-3" name="menu-3-s3" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m3-s3-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+													<div class="permission-group mb-3">
+														<div class="d-flex mb-3">
+															<div class="w-40">ข้อมูลหน่วยงาน</div>
+															<div class="w-60  d-flex align-items-center">
+																<div class="form-check form-check-inline" >
+																  <input type="radio" id="m4-1" name="menu-4" class="form-check-input main-menu " data-choice="1">
+																  <label class="custom-control-label" for="m4-1">อ่านและแก้ไข</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m4-2" name="menu-4" class="form-check-input main-menu" data-choice="2">
+																  <label class="custom-control-label" for="m4-2"> อ่านอย่างเดียว</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m4-3" name="menu-4" class="form-check-input main-menu" data-choice="3">
+																  <label class="custom-control-label" for="m4-3">ไม่อนุญาต</label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="permission-group mb-3">
+														<div class="d-flex mb-3">
+															<div class="w-40">จัดการข่าวประชาสัมพันธ์</div>
+															<div class="w-60  d-flex align-items-center">
+																<div class="form-check form-check-inline" >
+																  <input type="radio" id="m5-1" name="menu-5" class="form-check-input main-menu " data-choice="1">
+																  <label class="custom-control-label" for="m5-1">อ่านและแก้ไข</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m5-2" name="menu-5" class="form-check-input main-menu" data-choice="2">
+																  <label class="custom-control-label" for="m5-2"> อ่านอย่างเดียว</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m5-3" name="menu-5" class="form-check-input main-menu" data-choice="3">
+																  <label class="custom-control-label" for="m5-3">ไม่อนุญาต</label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="permission-group mb-3">
+														<div class="d-flex mb-3">
+															<div class="w-40">จัดการสิทธิ์และผู้ใช้งาน</div>
+															<div class="w-60  d-flex align-items-center">
+																<div class="form-check form-check-inline" >
+																  <input type="radio" id="m6-1" name="menu-6" class="form-check-input main-menu " data-choice="1">
+																  <label class="custom-control-label" for="m6-1">อ่านและแก้ไข</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m6-2" name="menu-6" class="form-check-input main-menu" data-choice="2">
+																  <label class="custom-control-label" for="m6-2"> อ่านอย่างเดียว</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m6-3" name="menu-6" class="form-check-input main-menu" data-choice="3">
+																  <label class="custom-control-label" for="m6-3">ไม่อนุญาต</label>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">จัดการผู้ใช้งาน</div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m6-s1-1" name="menu-6-s1" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m6-s1-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m6-s1-2" name="menu-6-s1" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m6-s1-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m6-s1-3" name="menu-6-s1" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m6-s1-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">จัดการสิทธิ์การใช้งาน </div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m6-s2-1" name="menu-6-s2" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m6-s2-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m6-s2-2" name="menu-6-s2" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m6-s2-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m6-s2-3" name="menu-6-s2" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m6-s2-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														
+													</div>
+
+													<div class="permission-group mb-3">
+														<div class="d-flex mb-3">
+															<div class="w-40">ตั้งค่าทั่วไป</div>
+															<div class="w-60  d-flex align-items-center">
+																<div class="form-check form-check-inline" >
+																  <input type="radio" id="m7-1" name="menu-7" class="form-check-input main-menu " data-choice="1">
+																  <label class="custom-control-label" for="m7-1">อ่านและแก้ไข</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m7-2" name="menu-7" class="form-check-input main-menu" data-choice="2">
+																  <label class="custom-control-label" for="m7-2"> อ่านอย่างเดียว</label>
+																</div>
+																<div class="form-check form-check-inline">
+																  <input type="radio" id="m7-3" name="menu-7" class="form-check-input main-menu" data-choice="3">
+																  <label class="custom-control-label" for="m7-3">ไม่อนุญาต</label>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">จัดการแผนงาน</div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m7-s1-1" name="menu-7-s1" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m7-s1-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m7-s1-2" name="menu-7-s1" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m7-s1-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m7-s1-3" name="menu-7-s1" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m7-s1-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">จัดการแผนแม่บทฯ </div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m7-s2-1" name="menu-7-s2" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m7-s2-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m7-s2-2" name="menu-7-s2" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m7-s2-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m7-s2-3" name="menu-7-s2" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m7-s2-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">จัดการยุทธศาสตร์ </div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m7-s3-1" name="menu-7-s3" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m7-s3-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m7-s3-2" name="menu-7-s3" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m7-s3-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m7-s3-3" name="menu-7-s3" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m7-s3-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">จัดการหน่วยนับ </div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m7-s4-1" name="menu-7-s4" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m7-s4-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m7-s4-2" name="menu-7-s4" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m7-s4-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m7-s4-3" name="menu-7-s4" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m7-s4-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="submenu ps-4 mb-3">
+															<div class="d-flex">
+																<div class="w-40">ตั้งค่าระยะเวลาดำเนินการ </div>
+																<div class="w-60  d-flex align-items-center">
+																	<div class="form-check form-check-inline" >
+																	  <input type="radio" id="m7-s5-1" name="menu-7-s5" class="form-check-input choice1" >
+																	  <label class="custom-control-label" for="m7-s5-1">อ่านและแก้ไข</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m7-s5-2" name="menu-7-s5" class="form-check-input choice2 " >
+																	  <label class="custom-control-label" for="m7-s5-2"> อ่านอย่างเดียว</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																	  <input type="radio" id="m7-s5-3" name="menu-7-s5" class="form-check-input choice3" >
+																	  <label class="custom-control-label" for="m7-s5-3">ไม่อนุญาต</label>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+
+
+
+					
+												</div>
+
+
+							
+
+
+											</div>
+
+							    		</div>
+
+
+
+									
+									
+
+								</div>
+							</div>
+
+							<div class="text-end pt-1 pb-5 ">
+				    			<button class="btn btn-st-2 me-3">บันทึก</button>
+				    			<a href="" class="btn btn-st-3">ยกเลิก</a>
+				    		</div>
+						</div>
+
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../สศอ/assets/plugins/moment/moment.js"></script>
+	<script src="../สศอ/assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="../สศอ/assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar.js"></script>
+	<script src="../สศอ/assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="../สศอ/assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="../สศอ/assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="../สศอ/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+	<script src="../สศอ/assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jquery.dataTables.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/jszip.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/pdfmake.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/vfs_fonts.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.html5.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.print.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="../สศอ/assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+	<script src="../สศอ/assets/plugins/daterangepicker/daterangepicker.js"></script>
+
+	<script type="text/javascript">
+		$('.main-toggle').on('click', function() {
+			$(this).toggleClass('on');
+		})
+		$('.main-menu ').on('click', function() {
+			var choice =  $(this).data('choice');
+			var sel =  $(this).closest('.permission-group').find('.submenu').find('.choice'+choice).prop("checked", true);
+		})
+		$('#menu-c1').on('click', function() {
+			$(this).toggleClass('on');
+			$('.choice1').prop("checked", true);
+			$('[data-choice="1"]').prop("checked", true);
+		})
+		$('#menu-c2').on('click', function() {
+			$('.choice2').prop("checked", true);
+			$('[data-choice="2"]').prop("checked", true);
+		})
+		$('#menu-c3').on('click', function() {
+			$('.choice3').prop("checked", true);
+			$('[data-choice="3"]').prop("checked", true);
+		})
+	</script>
+
+
+		
+	<script type="text/javascript">
+
+		(function () {
+		  'use strict'
+		  var forms = document.querySelectorAll('.needs-validation')
+		  Array.prototype.slice.call(forms)
+		    .forEach(function (form) {
+		      form.addEventListener('submit', function (event) {
+		        if (!form.checkValidity()) {
+		          event.preventDefault()
+		          event.stopPropagation()
+
+
+		        }
+
+		        form.classList.add('was-validated')
+		      }, false)
+		    })
+		})()
+	</script>
+
+</body>
+</html>

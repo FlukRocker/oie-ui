@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo2.png">
+
+    <link href="assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 active"  href="#">
+							<img src="assets/images/icon/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/fluent_people-20-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">งานของฉัน</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="assets/images/icon/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">ข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">คำของบประมาณ</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/mdi_email-newsletter.png" class="side-menu__icon">
+							<span class="side-menu__label">ข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="px-3">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">Dashbord</a></li>
+					    <li class="breadcrumb-item"><a href="#" class="fw-500 text-color-8 text-decoration-none">โครงการทั้งหมด</a></li>
+					    <li class="breadcrumb-item active text-color-1 fw-500" aria-current="page">เพิ่มโครงการใหม่</li>
+					  </ol>
+					</nav>
+				</div>
+			</div>
+
+			<div class="sticky" data-sticky-class="step-sticky">
+				<div class="container-fluid">
+					<div class="my-4">
+						<div class="row">
+							<div class="col-xl-9 col-11">
+								<ul class="steps-2">
+									<li class="step-1 active ">
+										<div class="step-icon">1</div>
+										<div class="step-name">รายละเอียดหลัก</div>
+									</li>
+									<li class="step-2  ">
+										<div class="step-icon">2</div>
+										<div class="step-name">หลักการและเหตุผล</div>
+									</li>
+									<li class="step-3  ">
+										<div class="step-icon">3</div>
+										<div class="step-name">การดำเนินงาน</div>
+									</li>
+									<li class="step-4  ">
+										<div class="step-icon">4</div>
+										<div class="step-name">สถานที่/ประมาณการ</div>
+									</li>
+									<li class="step-5  ">
+										<div class="step-icon">5</div>
+										<div class="step-name">ผู้รับผิดชอบ</div>
+									</li>
+									<li class="step-6  ">
+										<div class="step-icon">6</div>
+										<div class="step-name">ดำเนินการสำเร็จ</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col">
+
+						<div class="card card-st-3  mb-4">
+							<div class="card-body p-4">
+								<div class="fs-24 mb-2">
+									<span class="fw-bold text-color-1">ข้อเสนอโครงการ</span>
+									<span class="text-color-9">(หน้า 1/6)</span>
+								</div>
+								<div class="fs-15 mb-3 text-color-8">กรุณากรอกข้อมูลเพื่อสร้างข้อเสนอโครงการ </div>
+
+								<div class="fs-15 mb-4 text-danger">*จำเป็นต้องกรอก  </div>
+
+
+								<form class="needs-validation" novalidate>
+						
+
+									<div class="mb-5">
+										<div class="mb-3 row align-items-lg-center" id="el1">
+											<label class=" fs-18 col-lg-5 text-color-1 fw-bold mb-2 mb-lg-0">1.ชื่อโครงการ <span class="text-danger">*</span></label>
+											<div class="col-lg-7">
+												<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณาระบุชื่อโครงการค่าใช้จ่าย">
+
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<label class="  col-lg-5">
+											
+											</label>
+											<div class="col-lg-7">
+												<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาระบุชื่อโครงการ Flagship หรือ โครงการเทียบเท่าผลผลิต " required="">
+													<option value=""></option>
+													<option value="1">Flagship 1</option>
+												</select>
+
+											</div>
+										</div>
+
+										<div class="mb-3 row align-items-lg-center">
+											<label class=" fs-16 col-lg-5 text-color-8 fw-500 mb-2 mb-lg-0">
+												<span class="ps-lg-4">งบประมาณ (บาท)</span> 
+												<span class="text-danger">*</span>
+											</label>
+											<div class="col-lg-7">
+												<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณาระบุงบประมาณ">
+											</div>
+										</div>
+
+										<div class="mb-3 row align-items-lg-center">
+											<label class="  col-lg-5 mb-2 mb-lg-0">
+												<div class="fs-16 fw-500 text-color-8 ps-lg-4  ">ความเขื่อมโยงกับแผนบูรณาการฯ <span class="text-danger">*</span></div>
+												<div class="fs-14 text-color-9 ps-lg-4">(อ้างอิงตามแผนภาพความเชื่อมโยง)</div>
+											</label>
+											<div class="col-lg-7">
+												<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกเป้าหมายโครงการ"  required="">
+													<option value=""></option>
+													<option value="1">เป้าหมายโครงการ 1</option>
+												</select>
+
+											</div>
+										</div>
+
+										<div class="mb-3 row align-items-lg-center">
+											<label class="  col-lg-5">
+											
+											</label>
+											<div class="col-lg-7">
+												<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกตัวชี้วัดเป้าหมายแผนงาน" required="">
+													<option value=""></option>
+													<option value="1">เป้าหมายแผนงาน 1</option>
+												</select>
+
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<label class="  col-lg-5">
+											
+											</label>
+											<div class="col-lg-7">
+												<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกแนวทางการดำเนินงาน" required="">
+													<option value=""></option>
+													<option value="1">แนวทางการดำเนินงาน 1</option>
+												</select>
+
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<label class="  col-lg-5">
+											
+											</label>
+											<div class="col-lg-7">
+												<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกตัวชี้วัดแนวทาง" required="">
+													<option value=""></option>
+													<option value="1">ตัวชี้วัดแนวทาง 1</option>
+												</select>
+
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<label class="  col-lg-5">
+											
+											</label>
+											<div class="col-lg-7">
+												<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณาระบุโครงการ" required="">
+
+											</div>
+										</div>
+
+										<div class="mb-4 row align-items-lg-center">
+											<label class=" fs-16 col-lg-12 text-color-8 fw-500 mb-2">
+												<span class="ps-lg-4">โครงการส่งผลต่อตัวชี้วัดเป้าหมายแผนงานและตัวชี้วัดแนวทาง ของแผนงานบูรณาการฯ 	อย่างไร</span> 
+												<span class="text-danger">*</span>
+											</label>
+											<div class="col-lg-12">
+												<div class="ps-lg-4">
+													<textarea class="form-control form-st-1" placeholder="กรุณาระบุข้อความ" required="" rows="10"></textarea>
+												</div>
+												
+											</div>
+										</div>
+
+										<div class="mb-3 row align-items-lg-center">
+											<label class=" fs-16 col-lg-auto text-color-8 fw-500 mb-2">
+												<span class="ps-lg-4">ลักษณะโครงการ</span> 
+												<span class="text-danger">*</span>
+											</label>
+											<div class="col">
+												<div class="d-flex flex-wrap">
+													<div class="form-check mb-2 me-3 "> 
+													  <input class="form-check-input form-check-projectDescription" type="radio" name="projectDescription" id="c1" required="">
+													  <label class="form-check-label fs-14 text-color-8 spacing-1" for="c1">โครงการใหม่</label>
+													</div>
+													<div class="form-check mb-2 me-3 ">
+													  <input class="form-check-input form-check-projectDescription" type="radio" name="projectDescription" id="c2">
+													  <label class="form-check-label fs-14 text-color-8 spacing-1" for="c2">โครงการต่อเนื่อง</label>
+													</div>
+													<div class="form-check mb-2 me-3 ">
+													  <input class="form-check-input form-check-projectDescription" type="radio" name="projectDescription" id="c3">
+													  <label class="form-check-label fs-14 text-color-8 spacing-1" for="c3">โครงการที่เคยขอแล้ว แต่ไม่ได้รับการพิจารณา</label>
+													</div>
+												</div>
+
+												
+											</div>
+										</div>
+									</div>
+
+									<div class="mb-5">
+
+										<div class="mb-4 row align-items-lg-center" id="el2">
+											<label class=" fs-18 col-lg-12 text-color-1 fw-bold">2.ความเชื่อมโยง/ความสอดคล้องกับแผนระดับชาติ <span class="text-danger">*</span></label>
+										</div>
+
+										<div class="mb-4 row align-items-lg-center">
+											<div class="col ps-lg-5 fs-18 text-color-8 fw-bold" >1.ยุทธศาสตร์ชาติ</div>
+										</div>
+										
+
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">ด้าน (หลัก) <span class="text-danger">*</span></label>
+
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกุด้าน (หลัก).......เช่น การสร้างความสามารถในการแข่งขัน......" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<div class="mb-4 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">ด้าน (รอง) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกด้าน (รอง) .......เช่น การสร้างโอกาสและความเสมอภาคทางสังคม........" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="mb-4 row align-items-lg-center">
+											<div class="col ps-lg-5 fs-18 text-color-8 fw-bold" >2.แผนแม่บทภายใต้ยุทธศาสตร์ชาติ </div>
+										</div>
+										
+
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">ประเด็น (หลัก) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกประเด็น (หลัก)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">เป้าหมายแผนแม่บท (หลัก) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกเป้าหมายแผนแม่บท (หลัก)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">ตัวชี้วัดแผนแม่บท (หลัก) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกตัวชี้วัดแผนแม่บท (หลัก)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">แผนย่อย (หลัก) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกแผนย่อย (หลัก)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">เป้าหมายแผนย่อย (หลัก) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกเป้าหมายแผนย่อย (หลัก)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2"> ตัวชี้วัดแผนย่อย (หลัก)<span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกตัวชี้วัดแผนย่อย (หลัก)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">ประเด็น (รอง) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกประเด็น (รอง)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">เป้าหมายแผนแม่บท (รอง) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกเป้าหมายแผนแม่บท (รอง)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">ตัวชี้วัดแผนแม่บท (รอง) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกตัวชี้วัดแผนแม่บท (รอง)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2"> แผนย่อย (รอง) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกแผนย่อย (รอง)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mb-3 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">เป้าหมายแผนย่อย (รอง) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกเป้าหมายแผนย่อย (รอง)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="mb-4 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<label class="fs-16 fw-500 text-color-8 mb-2">ตัวชี้วัดแผนย่อย (รอง) <span class="text-danger">*</span></label>
+													<select class="form-control form-st-1 form-select select2" data-placeholder="กรุณาเลือกตัวชี้วัดแผนย่อย (รอง)" required="">
+														<option value=""></option>
+														<option value="1">choice 1</option>
+													</select>
+												</div>
+											</div>
+										</div>
+
+
+										<div class="mb-3 row align-items-lg-center" id="el3">
+											<div class="col ps-lg-5 fs-18 text-color-8 fw-bold" >3. แผนปฏิรูปประเทศ <span class="text-danger">*</span> </div>
+										</div>
+										<div class="mb-4 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณากรอกแผนปฏิรูปประเทศ">
+												</div>
+											</div>
+										</div>
+
+										<div class="mb-3 row align-items-lg-center" id="el4">
+											<div class="col ps-lg-5 fs-18 text-color-8 fw-bold" >4. ความสอดคล้องอื่นๆ<span class="text-danger">*</span> </div>
+											<div class="ps-lg-5 fs-14 text-color-9"><span class="ps-lg-3">(เช่น มติ ครม., ข้อสั่งการ นรม.)</span></div>
+										</div>
+										<div class="mb-4 row align-items-lg-center">
+											<div class="col-lg-12">
+												<div class="ps-lg-5 ms-4">
+													<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรุณากรอกความสอดคล้องอื่นๆ  ">
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="text-center d-flex justify-content-end flex-wrap">
+										<button class="btn btn-st-5 mx-2 mb-3 order-1 order-sm-0">บันทึกแบบร่าง</button>
+										<button class="btn btn-st-2 ms-2 mb-3 order-0 order-sm-1">ขั้นตอนถัดไป</button>
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div style="width: 280px;">
+
+							<div class="sticky" data-sticky-class="card-title-sticky">
+								<div class="card card-st-3 mb-4">
+									<div class="card-body p-3 pe-4">
+										<ul id="progress" class="ps-2">
+											<li data-elId="#el1"><div class="node activated"></div><p>ชื่อโครงการ</p></li>
+											<li><div class="divider  grey"></div></li>
+										    <li data-elId="#el2"><div class="node "></div><p>ความเชื่อมโยงฯ</p></li>
+										    <li><div class="divider  grey"></div></li>
+										    <li data-elId="#el3"><div class="node  "></div><p>แผนปฏิรูปประเทศ</p></li>
+										    <li><div class="divider grey"></div></li>
+										    <li data-elId="#el4"><div class="node "></div><p>ความสอดคล้องอื่นๆ</p></li>
+										</ul>
+									</div>
+								</div>
+								<div class="card card-st-3 mb-4">
+									<div class="card-body p-3 pe-4">
+
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">รหัสโครงการ</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">PIEO64/001</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">วันที่สร้าง</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">01-03-2565</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-12 mb-2  text-color-9 fw-light">ผู้สร้าง</div>
+												<div class="col-lg-12 mb-2 text-color-11 fw-bolder">น.ส. เบญจวรรณ บัวพิทักษ์1</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="modal fade" id="confirmModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+
+	      <div class="modal-body pb-4">
+	      	<div class="text-end">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      	</div>
+	        
+	        <div class="text-center text-color-1 fs-18 fw-500 pt-4 mb-5 pb-3">กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน ?</div>
+
+
+	        <div class="text-center d-flex flex-wrap justify-content-center">
+	        	<button type="button" class="btn btn-st-3 mx-2 mb-3 order-1 order-sm-0" data-bs-dismiss="modal">ยกเลิก</button>
+	        	<a href="" class="btn btn-st-2 mx-2  mb-3 order-0 order-sm-1">ยืนยัน</a>
+	        </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/plugins/moment/moment.js"></script>
+	<script src="assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="assets/plugins/sidebar/sidebar.js"></script>
+	<script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="assets/js/sticky.min.js"></script>
+
+	<script type="text/javascript">
+		var sticky = new Sticky('.sticky');
+		sticky.update();
+	</script>
+
+	<script type="text/javascript">
+		var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'), {
+		  keyboard: false
+		})
+	</script>
+	
+	<script type="text/javascript">
+
+		(function () {
+		  'use strict'
+		  var forms = document.querySelectorAll('.needs-validation')
+		  Array.prototype.slice.call(forms)
+		    .forEach(function (form) {
+		      form.addEventListener('submit', function (event) {
+		        if (!form.checkValidity()) {
+		          event.preventDefault()
+		          event.stopPropagation()
+
+		          confirmModal.show()
+		        }
+
+		        form.classList.add('was-validated')
+		      }, false)
+		    })
+		})()
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.select2').select2({
+		    	minimumResultsForSearch: -1,
+		    	"language": {
+				    "noResults": function(){
+				        return '<div class="fs-12 py-2">ไม่พบข้อมูล</div>';
+				    }
+				},
+			    escapeMarkup: function (markup) {
+			        return markup;
+			    }
+		    });
+		});
+	</script>
+
+	<script>
+        $(document).ready(function (){
+            $("#progress li").click(function (){
+            	$("#progress li div").removeClass('activated')
+            	for(i=0;i<=$(this).index();i++){
+            		$("#progress li:nth-child("+i+")").find('div').addClass('activated')
+            	}
+            	var ids = $(this).attr('data-elId')
+            	$(this).find('.node').addClass('activated')
+                $('html, body').animate({
+                    scrollTop: $(ids).offset().top-400
+                }, 0);
+            });
+
+            $(function(){
+			  $(window).scroll(function(){
+			    var el1 = $('#el1').height();
+			    var el2 = $('#el2').offset().top - 500;
+			    var el3 = $('#el3').offset().top - 500;
+			    var el4 = $('#el4').offset().top ;
+
+			    if($(this).scrollTop()>=el2){
+			    	$("#progress li:nth-child(2)").find('div').addClass('activated')
+			    	$("#progress li:nth-child(3)").find('div').addClass('activated')
+			    }else{
+			    	$("#progress li:nth-child(2)").find('div').removeClass('activated')
+			    	$("#progress li:nth-child(3)").find('div').removeClass('activated')
+			    }
+
+			    if($(this).scrollTop()>=el3){
+			    	$("#progress li:nth-child(4)").find('div').addClass('activated')
+			    	$("#progress li:nth-child(5)").find('div').addClass('activated')
+			    	$("#progress li:nth-child(6)").find('div').addClass('activated')
+			    	$("#progress li:nth-child(7)").find('div').addClass('activated')
+			    }else{
+			    	$("#progress li:nth-child(4)").find('div').removeClass('activated')
+			    	$("#progress li:nth-child(5)").find('div').removeClass('activated')
+			    	$("#progress li:nth-child(6)").find('div').removeClass('activated')
+			    	$("#progress li:nth-child(7)").find('div').removeClass('activated')
+			    }
+
+			  });
+			});
+        });
+    </script>
+
+	
+
+</body>
+</html>

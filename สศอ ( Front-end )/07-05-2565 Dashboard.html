@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo2.png">
+
+    <link href="assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/select2/css/select2.min.css">
+    <link href="assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 active"  href="#">
+							<img src="assets/images/icon/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/fluent_people-20-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">งานของฉัน</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="assets/images/icon/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">ข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">คำของบประมาณ</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/mdi_email-newsletter.png" class="side-menu__icon">
+							<span class="side-menu__label">ข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+
+
+			<div class="container-fluid">
+				<div class="mb-4">
+					<div class="row gx-lg-5">
+						<div class="col-auto">
+							<div class="fs-14 fw-bold text-color-7 mb-2 pe-5">ใช้ข้อมูลของปี</div>
+							<div class="select2-sm">
+								<select class="form-control form-select text-center select2">
+									<option value="2565">ปี 2565</option>
+									<option value="2564">ปี 2564</option>
+									<option value="2563">ปี 2563</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-auto">
+							<div class="fs-14 fw-bold text-color-7 mb-2 pe-5">ไตรมาส</div>
+							<div class="d-flex align-items-center pt-1">
+								<div class="form-check me-3">
+								  <input class="form-check-input form-check-input-st-2 quarterCheckall" type="checkbox" value="" id="quarter-all" >
+								  <label class="form-check-label fs-15 ms-2" for="quarter-all">
+								    ทั้งหมด
+								  </label>
+								</div>
+								<div class="form-check me-3">
+								  <input class="form-check-input form-check-input-st-2 quarterCheck" type="checkbox" value="" id="quarter-1" >
+								  <label class="form-check-label fs-15 ms-2" for="quarter-1">
+								    ไตรมาส 1
+								  </label>
+								</div>
+								<div class="form-check me-3">
+								  <input class="form-check-input form-check-input-st-2 quarterCheck" type="checkbox" value="" id="quarter-2" >
+								  <label class="form-check-label fs-15 ms-2" for="quarter-2">
+								    ไตรมาส 2
+								  </label>
+								</div>
+								<div class="form-check me-3">
+								  <input class="form-check-input form-check-input-st-2 quarterCheck" type="checkbox" value="" id="quarter-3" >
+								  <label class="form-check-label fs-15 ms-2" for="quarter-3">
+								    ไตรมาส 3
+								  </label>
+								</div>
+								<div class="form-check me-3">
+								  <input class="form-check-input form-check-input-st-2 quarterCheck" type="checkbox" value="" id="quarter-4" >
+								  <label class="form-check-label fs-15 ms-2" for="quarter-4">
+								    ไตรมาส 4
+								  </label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex flex-wrap mb-4">
+					<div class="card card-st-5">
+						<div class="card-body p-0">
+							<div class="card-title">ข้อเสนอโครงการ</div>
+							<div class="py-4">
+							<div class="row g-0">
+								<div class="col px-3" style="border-right: 1px solid #C4C4C4;">
+									<div class="text-center">
+										<svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.8 25.3492C14.8 25.031 14.9264 24.7257 15.1515 24.5007C15.3765 24.2756 15.6817 24.1492 16 24.1492C16.3183 24.1492 16.6235 24.2756 16.8485 24.5007C17.0736 24.7257 17.2 25.031 17.2 25.3492C17.2 25.6675 17.0736 25.9727 16.8485 26.1977C16.6235 26.4228 16.3183 26.5492 16 26.5492C15.6817 26.5492 15.3765 26.4228 15.1515 26.1977C14.9264 25.9727 14.8 25.6675 14.8 25.3492ZM16 28.9492C15.6817 28.9492 15.3765 29.0756 15.1515 29.3007C14.9264 29.5257 14.8 29.831 14.8 30.1492C14.8 30.4675 14.9264 30.7727 15.1515 30.9977C15.3765 31.2228 15.6817 31.3492 16 31.3492C16.3183 31.3492 16.6235 31.2228 16.8485 30.9977C17.0736 30.7727 17.2 30.4675 17.2 30.1492C17.2 29.831 17.0736 29.5257 16.8485 29.3007C16.6235 29.0756 16.3183 28.9492 16 28.9492ZM14.8 34.9492C14.8 34.631 14.9264 34.3257 15.1515 34.1007C15.3765 33.8756 15.6817 33.7492 16 33.7492C16.3183 33.7492 16.6235 33.8756 16.8485 34.1007C17.0736 34.3257 17.2 34.631 17.2 34.9492C17.2 35.2675 17.0736 35.5727 16.8485 35.7977C16.6235 36.0228 16.3183 36.1492 16 36.1492C15.6817 36.1492 15.3765 36.0228 15.1515 35.7977C14.9264 35.5727 14.8 35.2675 14.8 34.9492ZM20.8 24.1492C20.4817 24.1492 20.1765 24.2756 19.9515 24.5007C19.7264 24.7257 19.6 25.031 19.6 25.3492C19.6 25.6675 19.7264 25.9727 19.9515 26.1977C20.1765 26.4228 20.4817 26.5492 20.8 26.5492H32.8C33.1183 26.5492 33.4235 26.4228 33.6485 26.1977C33.8736 25.9727 34 25.6675 34 25.3492C34 25.031 33.8736 24.7257 33.6485 24.5007C33.4235 24.2756 33.1183 24.1492 32.8 24.1492H20.8ZM19.6 30.1492C19.6 29.831 19.7264 29.5257 19.9515 29.3007C20.1765 29.0756 20.4817 28.9492 20.8 28.9492H32.8C33.1183 28.9492 33.4235 29.0756 33.6485 29.3007C33.8736 29.5257 34 29.831 34 30.1492C34 30.4675 33.8736 30.7727 33.6485 30.9977C33.4235 31.2228 33.1183 31.3492 32.8 31.3492H20.8C20.4817 31.3492 20.1765 31.2228 19.9515 30.9977C19.7264 30.7727 19.6 30.4675 19.6 30.1492ZM20.8 33.7492C20.4817 33.7492 20.1765 33.8756 19.9515 34.1007C19.7264 34.3257 19.6 34.631 19.6 34.9492C19.6 35.2675 19.7264 35.5727 19.9515 35.7977C20.1765 36.0228 20.4817 36.1492 20.8 36.1492H32.8C33.1183 36.1492 33.4235 36.0228 33.6485 35.7977C33.8736 35.5727 34 35.2675 34 34.9492C34 34.631 33.8736 34.3257 33.6485 34.1007C33.4235 33.8756 33.1183 33.7492 32.8 33.7492H20.8ZM14.8 4.94922C13.527 4.94922 12.3061 5.45493 11.4059 6.35511C10.5057 7.25528 10 8.47618 10 9.74922V38.5492C10 39.8223 10.5057 41.0432 11.4059 41.9433C12.3061 42.8435 13.527 43.3492 14.8 43.3492H34C35.273 43.3492 36.4939 42.8435 37.3941 41.9433C38.2943 41.0432 38.8 39.8223 38.8 38.5492V17.9428C38.7992 16.9884 38.4193 16.0733 37.744 15.3988L28.3504 6.00282C27.6755 5.32837 26.7605 4.94942 25.8064 4.94922H14.8ZM12.4 9.74922C12.4 9.1127 12.6529 8.50225 13.1029 8.05216C13.553 7.60207 14.1635 7.34922 14.8 7.34922H24.4V15.7492C24.4 16.704 24.7793 17.6197 25.4544 18.2948C26.1295 18.9699 27.0452 19.3492 28 19.3492H36.4V38.5492C36.4 39.1857 36.1471 39.7962 35.6971 40.2463C35.247 40.6964 34.6365 40.9492 34 40.9492H14.8C14.1635 40.9492 13.553 40.6964 13.1029 40.2463C12.6529 39.7962 12.4 39.1857 12.4 38.5492V9.74922ZM35.9032 16.9492H28C27.6817 16.9492 27.3765 16.8228 27.1515 16.5977C26.9264 16.3727 26.8 16.0675 26.8 15.7492V7.84602L35.9032 16.9492Z" fill="#FC8004"/>
+										</svg>
+									</div>
+									<div class="text-center text-color-21 fs-14 fw-bold mt-2">ทั้งหมด</div>
+									<div class="text-center text-color-1 fs-32 fw-bold ">14</div>
+									<div class="text-center text-color-21 fs-14 fw-bold">โครงการ</div>
+								</div>
+								<div class="col px-4 fs-14">
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-7">
+										<div>แบบร่าง</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-1">
+										<div>รอแก้ไข</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-11">
+										<div>รออนุมัติ</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-22">
+										<div>อนุมัติแล้ว</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-15">
+										<div>ไม่อนุมัติ</div>
+										<div>2</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="card card-st-5">
+						<div class="card-body p-0">
+							<div class="card-title" style="background: #33ADEF;">ข้อเสนอโครงการ (ร่างพรบ.)</div>
+							<div class="py-4">
+							<div class="row g-0">
+								<div class="col px-3" style="border-right: 1px solid #C4C4C4;">
+									<div class="text-center">
+										<svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.8 25.3492C14.8 25.031 14.9264 24.7257 15.1515 24.5007C15.3765 24.2756 15.6817 24.1492 16 24.1492C16.3183 24.1492 16.6235 24.2756 16.8485 24.5007C17.0736 24.7257 17.2 25.031 17.2 25.3492C17.2 25.6675 17.0736 25.9727 16.8485 26.1977C16.6235 26.4228 16.3183 26.5492 16 26.5492C15.6817 26.5492 15.3765 26.4228 15.1515 26.1977C14.9264 25.9727 14.8 25.6675 14.8 25.3492ZM16 28.9492C15.6817 28.9492 15.3765 29.0756 15.1515 29.3007C14.9264 29.5257 14.8 29.831 14.8 30.1492C14.8 30.4675 14.9264 30.7727 15.1515 30.9977C15.3765 31.2228 15.6817 31.3492 16 31.3492C16.3183 31.3492 16.6235 31.2228 16.8485 30.9977C17.0736 30.7727 17.2 30.4675 17.2 30.1492C17.2 29.831 17.0736 29.5257 16.8485 29.3007C16.6235 29.0756 16.3183 28.9492 16 28.9492ZM14.8 34.9492C14.8 34.631 14.9264 34.3257 15.1515 34.1007C15.3765 33.8756 15.6817 33.7492 16 33.7492C16.3183 33.7492 16.6235 33.8756 16.8485 34.1007C17.0736 34.3257 17.2 34.631 17.2 34.9492C17.2 35.2675 17.0736 35.5727 16.8485 35.7977C16.6235 36.0228 16.3183 36.1492 16 36.1492C15.6817 36.1492 15.3765 36.0228 15.1515 35.7977C14.9264 35.5727 14.8 35.2675 14.8 34.9492ZM20.8 24.1492C20.4817 24.1492 20.1765 24.2756 19.9515 24.5007C19.7264 24.7257 19.6 25.031 19.6 25.3492C19.6 25.6675 19.7264 25.9727 19.9515 26.1977C20.1765 26.4228 20.4817 26.5492 20.8 26.5492H32.8C33.1183 26.5492 33.4235 26.4228 33.6485 26.1977C33.8736 25.9727 34 25.6675 34 25.3492C34 25.031 33.8736 24.7257 33.6485 24.5007C33.4235 24.2756 33.1183 24.1492 32.8 24.1492H20.8ZM19.6 30.1492C19.6 29.831 19.7264 29.5257 19.9515 29.3007C20.1765 29.0756 20.4817 28.9492 20.8 28.9492H32.8C33.1183 28.9492 33.4235 29.0756 33.6485 29.3007C33.8736 29.5257 34 29.831 34 30.1492C34 30.4675 33.8736 30.7727 33.6485 30.9977C33.4235 31.2228 33.1183 31.3492 32.8 31.3492H20.8C20.4817 31.3492 20.1765 31.2228 19.9515 30.9977C19.7264 30.7727 19.6 30.4675 19.6 30.1492ZM20.8 33.7492C20.4817 33.7492 20.1765 33.8756 19.9515 34.1007C19.7264 34.3257 19.6 34.631 19.6 34.9492C19.6 35.2675 19.7264 35.5727 19.9515 35.7977C20.1765 36.0228 20.4817 36.1492 20.8 36.1492H32.8C33.1183 36.1492 33.4235 36.0228 33.6485 35.7977C33.8736 35.5727 34 35.2675 34 34.9492C34 34.631 33.8736 34.3257 33.6485 34.1007C33.4235 33.8756 33.1183 33.7492 32.8 33.7492H20.8ZM14.8 4.94922C13.527 4.94922 12.3061 5.45493 11.4059 6.35511C10.5057 7.25528 10 8.47618 10 9.74922V38.5492C10 39.8223 10.5057 41.0432 11.4059 41.9433C12.3061 42.8435 13.527 43.3492 14.8 43.3492H34C35.273 43.3492 36.4939 42.8435 37.3941 41.9433C38.2943 41.0432 38.8 39.8223 38.8 38.5492V17.9428C38.7992 16.9884 38.4193 16.0733 37.744 15.3988L28.3504 6.00282C27.6755 5.32837 26.7605 4.94942 25.8064 4.94922H14.8ZM12.4 9.74922C12.4 9.1127 12.6529 8.50225 13.1029 8.05216C13.553 7.60207 14.1635 7.34922 14.8 7.34922H24.4V15.7492C24.4 16.704 24.7793 17.6197 25.4544 18.2948C26.1295 18.9699 27.0452 19.3492 28 19.3492H36.4V38.5492C36.4 39.1857 36.1471 39.7962 35.6971 40.2463C35.247 40.6964 34.6365 40.9492 34 40.9492H14.8C14.1635 40.9492 13.553 40.6964 13.1029 40.2463C12.6529 39.7962 12.4 39.1857 12.4 38.5492V9.74922ZM35.9032 16.9492H28C27.6817 16.9492 27.3765 16.8228 27.1515 16.5977C26.9264 16.3727 26.8 16.0675 26.8 15.7492V7.84602L35.9032 16.9492Z" fill="#33ADEF"/>
+										</svg>
+									</div>
+									<div class="text-center text-color-21 fs-14 fw-bold mt-2">ทั้งหมด</div>
+									<div class="text-center text-color-11 fs-32 fw-bold ">14</div>
+									<div class="text-center text-color-21 fs-14 fw-bold">โครงการ</div>
+								</div>
+								<div class="col px-4 fs-14">
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-7">
+										<div>แบบร่าง</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-1">
+										<div>รอแก้ไข</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-11">
+										<div>รออนุมัติ</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-22">
+										<div>อนุมัติแล้ว</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-15">
+										<div>ไม่อนุมัติ</div>
+										<div>2</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="card card-st-5">
+						<div class="card-body p-0">
+							<div class="card-title" style="background: #56B68B;">ข้อเสนอโครงการ</div>
+							<div class="py-4">
+							<div class="row g-0">
+								<div class="col px-3" style="border-right: 1px solid #C4C4C4;">
+									<div class="text-center">
+										<svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M14.8 25.3492C14.8 25.031 14.9264 24.7257 15.1515 24.5007C15.3765 24.2756 15.6817 24.1492 16 24.1492C16.3183 24.1492 16.6235 24.2756 16.8485 24.5007C17.0736 24.7257 17.2 25.031 17.2 25.3492C17.2 25.6675 17.0736 25.9727 16.8485 26.1977C16.6235 26.4228 16.3183 26.5492 16 26.5492C15.6817 26.5492 15.3765 26.4228 15.1515 26.1977C14.9264 25.9727 14.8 25.6675 14.8 25.3492ZM16 28.9492C15.6817 28.9492 15.3765 29.0756 15.1515 29.3007C14.9264 29.5257 14.8 29.831 14.8 30.1492C14.8 30.4675 14.9264 30.7727 15.1515 30.9977C15.3765 31.2228 15.6817 31.3492 16 31.3492C16.3183 31.3492 16.6235 31.2228 16.8485 30.9977C17.0736 30.7727 17.2 30.4675 17.2 30.1492C17.2 29.831 17.0736 29.5257 16.8485 29.3007C16.6235 29.0756 16.3183 28.9492 16 28.9492ZM14.8 34.9492C14.8 34.631 14.9264 34.3257 15.1515 34.1007C15.3765 33.8756 15.6817 33.7492 16 33.7492C16.3183 33.7492 16.6235 33.8756 16.8485 34.1007C17.0736 34.3257 17.2 34.631 17.2 34.9492C17.2 35.2675 17.0736 35.5727 16.8485 35.7977C16.6235 36.0228 16.3183 36.1492 16 36.1492C15.6817 36.1492 15.3765 36.0228 15.1515 35.7977C14.9264 35.5727 14.8 35.2675 14.8 34.9492ZM20.8 24.1492C20.4817 24.1492 20.1765 24.2756 19.9515 24.5007C19.7264 24.7257 19.6 25.031 19.6 25.3492C19.6 25.6675 19.7264 25.9727 19.9515 26.1977C20.1765 26.4228 20.4817 26.5492 20.8 26.5492H32.8C33.1183 26.5492 33.4235 26.4228 33.6485 26.1977C33.8736 25.9727 34 25.6675 34 25.3492C34 25.031 33.8736 24.7257 33.6485 24.5007C33.4235 24.2756 33.1183 24.1492 32.8 24.1492H20.8ZM19.6 30.1492C19.6 29.831 19.7264 29.5257 19.9515 29.3007C20.1765 29.0756 20.4817 28.9492 20.8 28.9492H32.8C33.1183 28.9492 33.4235 29.0756 33.6485 29.3007C33.8736 29.5257 34 29.831 34 30.1492C34 30.4675 33.8736 30.7727 33.6485 30.9977C33.4235 31.2228 33.1183 31.3492 32.8 31.3492H20.8C20.4817 31.3492 20.1765 31.2228 19.9515 30.9977C19.7264 30.7727 19.6 30.4675 19.6 30.1492ZM20.8 33.7492C20.4817 33.7492 20.1765 33.8756 19.9515 34.1007C19.7264 34.3257 19.6 34.631 19.6 34.9492C19.6 35.2675 19.7264 35.5727 19.9515 35.7977C20.1765 36.0228 20.4817 36.1492 20.8 36.1492H32.8C33.1183 36.1492 33.4235 36.0228 33.6485 35.7977C33.8736 35.5727 34 35.2675 34 34.9492C34 34.631 33.8736 34.3257 33.6485 34.1007C33.4235 33.8756 33.1183 33.7492 32.8 33.7492H20.8ZM14.8 4.94922C13.527 4.94922 12.3061 5.45493 11.4059 6.35511C10.5057 7.25528 10 8.47618 10 9.74922V38.5492C10 39.8223 10.5057 41.0432 11.4059 41.9433C12.3061 42.8435 13.527 43.3492 14.8 43.3492H34C35.273 43.3492 36.4939 42.8435 37.3941 41.9433C38.2943 41.0432 38.8 39.8223 38.8 38.5492V17.9428C38.7992 16.9884 38.4193 16.0733 37.744 15.3988L28.3504 6.00282C27.6755 5.32837 26.7605 4.94942 25.8064 4.94922H14.8ZM12.4 9.74922C12.4 9.1127 12.6529 8.50225 13.1029 8.05216C13.553 7.60207 14.1635 7.34922 14.8 7.34922H24.4V15.7492C24.4 16.704 24.7793 17.6197 25.4544 18.2948C26.1295 18.9699 27.0452 19.3492 28 19.3492H36.4V38.5492C36.4 39.1857 36.1471 39.7962 35.6971 40.2463C35.247 40.6964 34.6365 40.9492 34 40.9492H14.8C14.1635 40.9492 13.553 40.6964 13.1029 40.2463C12.6529 39.7962 12.4 39.1857 12.4 38.5492V9.74922ZM35.9032 16.9492H28C27.6817 16.9492 27.3765 16.8228 27.1515 16.5977C26.9264 16.3727 26.8 16.0675 26.8 15.7492V7.84602L35.9032 16.9492Z" fill="#56B68B"/>
+										</svg>
+									</div>
+									<div class="text-center text-color-21 fs-14 fw-bold mt-2">ทั้งหมด</div>
+									<div class="text-center text-color-22 fs-32 fw-bold ">14</div>
+									<div class="text-center text-color-21 fs-14 fw-bold">โครงการ</div>
+								</div>
+								<div class="col px-4 fs-14">
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-7">
+										<div>แบบร่าง</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-1">
+										<div>รอแก้ไข</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-11">
+										<div>รออนุมัติ</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-22">
+										<div>อนุมัติแล้ว</div>
+										<div>2</div>
+									</div>
+									<div class="d-flex align-items-center justify-content-between mb-2 text-color-15">
+										<div>ไม่อนุมัติ</div>
+										<div>2</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="d-flex flex-wrap">
+					<div class="card-st-6 me-3 mb-3" style="width: 640px">
+						<div class="card-body">
+							<div class="fs-20 fw-bold text-color-23 mb-5">งบประมาณทั้งหมด</div>
+							<div style="width: 100%;">
+								<div class="ps-3 mb-4">
+									<div id="legend-container" class="chart-legend-st-1"></div>
+								</div>
+								
+
+								<canvas id="Chart1"  width="50" height="30"></canvas>
+							</div>
+						</div>
+					</div>
+					<div class="card-st-6 me-3 mb-3" style="width: 640px">
+						<div class="card-body">
+							<div class="fs-20 fw-bold text-color-23 mb-4">โครงการทั้งหมด</div>
+							<div style="width: 100%;">
+								<table class="table table-2 table-striped">
+									<thead>
+										<tr>
+											<th width="40%">ชื่อโครงการ</th>
+											<th width="23%">งบประมาณ(บาท)</th>
+											<th width="23%">ผลการเบิกจ่าย(บาท)</th>
+											<th width="14%">ใช้แล้ว (%)</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+										<tr>
+											<td width="40%">ชื่อค่าใช้จ่าย</td>
+											<td width="23%">12,000,000.65</td>
+											<td width="23%">8,000,000.65</td>
+											<td width="14%">87.59 %</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<div class="card-st-6 me-3 mb-3" style="width: 640px">
+						<div class="card-body">
+							<div class="d-flex align-items-center mb-4">
+								<div class="text-nowrap me-3 fs-14 text-color-23 fw-500">เลือกโครงการที่แสดง</div>
+								<div class="flex-fill select2-sm">
+									<select class="form-control form-select text-center select2">
+										<option value="โครงการทั้งหมด">โครงการทั้งหมด</option>
+									</select>
+								</div>
+							</div>
+							<div style="width: 100%;">
+								<div class="text-center text-color-23 fw-bold fs-20">ผลการเบิกจ่าย</div>
+								<div class="ps-3 mb-4 d-flex justify-content-end">
+									<div id="legend-container-2" class="chart-legend-st-1"></div>
+								</div>
+							
+								<canvas id="Chart2"  width="50" height="30"></canvas>
+							</div>
+						</div>
+					</div>
+
+					<div class="card-st-6 me-3 mb-3" style="width: 640px">
+						<div class="card-body">
+							<div class="d-flex align-items-center mb-4 " style="height: 36px;">
+								
+							</div>
+							<div style="width: 100%;">
+								<div class="text-center text-color-23 fw-bold fs-20">ผลการดำเนินงาน</div>
+								<div class="ps-3 mb-4 d-flex justify-content-end">
+									<div id="legend-container-3" class="chart-legend-st-1"></div>
+								</div>
+							
+								<canvas id="Chart3"  width="50" height="30"></canvas>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/plugins/moment/moment.js"></script>
+	<script src="assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="assets/plugins/sidebar/sidebar.js"></script>
+	<script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+	<script src="assets/js/chart.min.js" ></script>  
+	<script src="assets/js/sticky.min.js"></script>
+
+	<script type="text/javascript">
+		var sticky = new Sticky('.sticky');
+		sticky.update();
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.select2').select2({
+		    	minimumResultsForSearch: -1,
+		    	"language": {
+				    "noResults": function(){
+				        return '<div class="fs-12 py-2">ไม่พบข้อมูล</div>';
+				    }
+				},
+			    escapeMarkup: function (markup) {
+			        return markup;
+			    }
+		    });
+		});
+	</script>
+
+	<script type="text/javascript">
+		$('.quarterCheckall').on('change',function (){
+			if($(this).is(':checked')){
+				$('.quarterCheck').prop('checked',true)
+			}else{
+				$('.quarterCheck').prop('checked',false)
+			}
+		})
+		$('.quarterCheck').on('change',function (){
+			if($('.quarterCheck:checked').length == 4){
+				$('.quarterCheckall').prop('checked',true)
+			}else{
+				$('.quarterCheckall').prop('checked',false)
+			}
+
+		})
+
+
+	</script>
+
+	<script type="text/javascript">
+		const getOrCreateLegendList = (chart, id) => {
+		  const legendContainer = document.getElementById(id);
+		  let listContainer = legendContainer.querySelector('ul');
+		  if (!listContainer) {
+		    listContainer = document.createElement('ul');
+		    listContainer.style.display = 'flex';
+		    listContainer.style.flexDirection = 'row';
+		    listContainer.style.margin = 0;
+		    listContainer.style.padding = 0;
+
+		    legendContainer.appendChild(listContainer);
+		  }
+		  return listContainer;
+		};
+		const htmlLegendPlugin = {
+		  id: 'htmlLegend',
+		  afterUpdate(chart, args, options) {
+		    const ul = getOrCreateLegendList(chart, options.containerID);
+		    while (ul.firstChild) {
+		      ul.firstChild.remove();
+		    }
+		    const items = chart.options.plugins.legend.labels.generateLabels(chart);
+		    items.forEach(item => {
+		      const li = document.createElement('li');
+		      li.style.alignItems = 'center';
+		      li.style.cursor = 'pointer';
+		      li.style.display = 'flex';
+		      li.style.flexDirection = 'row';
+		      li.style.marginLeft = '10px';
+		      li.onclick = () => {
+		        const {type} = chart.config;
+		        if (type === 'pie' || type === 'doughnut') {
+		          chart.toggleDataVisibility(item.index);
+		        } else {
+		          chart.setDatasetVisibility(item.datasetIndex, !chart.isDatasetVisible(item.datasetIndex));
+		        }
+		        chart.update();
+		      };
+
+		      const boxSpan = document.createElement('span');
+		      boxSpan.style.background = item.fillStyle;
+		      boxSpan.style.borderColor = item.strokeStyle;
+		      boxSpan.style.borderWidth = item.lineWidth + 'px';
+		      boxSpan.style.display = 'inline-block';
+		      boxSpan.style.height = '20px';
+		      boxSpan.style.marginRight = '10px';
+		      boxSpan.style.width = '20px';
+
+		      const textContainer = document.createElement('p');
+		      textContainer.style.color = item.fontColor;
+		      textContainer.style.margin = 0;
+		      textContainer.style.padding = 0;
+		      textContainer.style.textDecoration = item.hidden ? 'line-through' : '';
+
+		      const text = document.createTextNode(item.text);
+		      textContainer.appendChild(text);
+
+		      li.appendChild(boxSpan);
+		      li.appendChild(textContainer);
+		      ul.appendChild(li);
+		    });
+		  }
+		};
+
+		const ctx = document.getElementById('Chart1').getContext('2d');
+		const Chart1 = new Chart(ctx, {
+		    type: 'bar',
+		    data: {
+		        labels: ['2564', '2565', '2566', '2567'],
+		        datasets: [
+		        {
+		            label: 'ข้อเสนอโครงการ',
+		            data: [50000000, 50000000, 50000000, 50000000],
+		            backgroundColor: '#FC8004',
+		            borderColor: '#FC8004',
+		            borderWidth: 1,
+		            yAxisID: 'y',
+		            order: 1,
+		            pointStyle: 'rect',
+		        },
+		        {
+		            label: 'ข้อเสนอโครงการ (ร่างพรบ.)',
+		            data: [40000000, 40000000, 40000000, 40000000],
+		            backgroundColor: '#33ADEF',
+		            borderColor: '#33ADEF',
+		            borderWidth: 1,
+		            yAxisID: 'y',
+		            order: 1,
+		            pointStyle: 'rect',
+
+		        }
+		        ,
+		        {
+		            label: 'คำของบประมาณ (ตามพรบ.โอน)',
+		            data: [30000000, 30000000, 30000000, 20000000],
+		            backgroundColor: '#56B68B',
+		            borderColor: '#56B68B',
+		            borderWidth: 1,
+		            yAxisID: 'y',
+		            order: 1,
+		            pointStyle: 'rect',
+
+		        }
+		        ]
+		    },
+		    options: {
+			    responsive: true,
+			    categoryPercentage: .8, // here 
+            	barPercentage: 0.98,  // here
+			    interaction: {
+			      mode: 'index',
+			      intersect: false,
+			    },
+			    stacked: false,
+			    plugins: {
+			    	htmlLegend: {
+				        containerID: 'legend-container',
+				    },
+				    legend: {
+				        display: false,
+				    }
+			    },
+			    scales: {
+			      y: {
+			      	grace: '20%',
+			        type: 'linear',
+			        display: true,
+			        position: 'left',
+			        title: {
+			          display: true,
+			          text: 'งบประมาณ(บาท)',
+			          color: '#171725',
+			          font: {
+			            family: 'Sarabun',
+			            size: 14,
+			            weight: 'bold',
+			            style: 'normal',
+			            lineHeight: 1.2
+			          },
+			          padding: {top: 0, left: 0, right: 0, bottom: 10}
+			        }
+			      },
+			      x: {
+				    title: {
+			          display: true,
+			          text: 'ปีงบประมาณ',
+			          color: '#171725',
+			          font: {
+			            family: 'Sarabun',
+			            size: 14,
+			            weight: 'bold',
+			            style: 'normal',
+			            lineHeight: 1.2
+			          },
+			          padding: {top: 20, left: 0, right: 0, bottom: 0}
+			        }
+				  }
+			    },
+			},
+			  plugins: [htmlLegendPlugin],
+		});
+
+		const ctx2 = document.getElementById('Chart2').getContext('2d');
+		const Chart2 = new Chart(ctx2, {
+		    type: 'line',
+		    data: {
+		        labels: ['Q1/2565', 'Q2/2565', 'Q3/2565', 'Q4/2565'],
+		        datasets: [
+		        {
+		            label: 'แผน',
+		            data: [2000000, 3000000, 5000000, 7000000],
+		            backgroundColor: '#FC8004',
+		            borderColor: '#FC8004',
+		            borderWidth: 6,
+		            yAxisID: 'y',
+		            type: 'line',
+		            order: 0,
+		            pointRadius: 6,
+		            pointBorderColor: '#FC8004',
+		            pointBackgroundColor: '#FFFFFF',
+		            pointBorderWidth:3
+		        },
+		        {
+		            label: 'ผล ',
+		             data: [1000000, 2000000, 4000000, 6900000],
+		            backgroundColor: '#1488CA',
+		            borderColor: '#1488CA',
+		            borderWidth: 6,
+		            yAxisID: 'y',
+		            type: 'line',
+		            order: 0,
+		            pointRadius: 6,
+		            pointBorderColor: '#1488CA',
+		            pointBackgroundColor: '#FFFFFF',
+		            pointBorderWidth:3
+
+		        }
+
+		        ]
+		    },
+		    options: {
+			    responsive: true,
+			    interaction: {
+			      mode: 'index',
+			      intersect: false,
+			    },
+			    stacked: false,
+			    plugins: {
+			    	htmlLegend: {
+				        containerID: 'legend-container-2',
+				    },
+				    legend: {
+				        display: false,
+				    }
+			    },
+			    scales: {
+			      y: {
+			      	grace: '20%',
+			        type: 'linear',
+			        display: true,
+			        position: 'left',
+			        title: {
+			          display: true,
+			          text: 'ผลการเบิกจ่าย(บาท)',
+			          color: '#171725',
+			          font: {
+			            family: 'Sarabun',
+			            size: 14,
+			            weight: 'bold',
+			            style: 'normal',
+			            lineHeight: 1.2
+			          },
+			          padding: {top: 0, left: 0, right: 0, bottom: 10}
+			        }
+			      },
+			      x: {
+				    title: {
+			          display: true,
+			          text: 'ไตรมาส',
+			          color: '#171725',
+			          font: {
+			            family: 'Sarabun',
+			            size: 14,
+			            weight: 'bold',
+			            style: 'normal',
+			            lineHeight: 1.2
+			          },
+			          padding: {top: 20, left: 0, right: 0, bottom: 0}
+			        }
+				  }
+			    },
+			},
+			  plugins: [htmlLegendPlugin],
+		});
+
+		const ctx3 = document.getElementById('Chart3').getContext('2d');
+		const Chart3 = new Chart(ctx3, {
+		    type: 'line',
+		    data: {
+		        labels: ['Q1/2565', 'Q2/2565', 'Q3/2565', 'Q4/2565'],
+		        datasets: [
+		        {
+		            label: 'แผน',
+		            data: [100, 250, 400, 500],
+		            backgroundColor: '#002992',
+		            borderColor: '#002992',
+		            borderWidth: 6,
+		            yAxisID: 'y',
+		            type: 'line',
+		            order: 0,
+		            pointRadius: 6,
+		            pointBorderColor: '#002992',
+		            pointBackgroundColor: '#FFFFFF',
+		            pointBorderWidth:3
+		        },
+		        {
+		            label: 'ผล ',
+		             data: [50, 200, 300, 400],
+		            backgroundColor: '#4AD991',
+		            borderColor: '#4AD991',
+		            borderWidth: 6,
+		            yAxisID: 'y',
+		            type: 'line',
+		            order: 0,
+		            pointRadius: 6,
+		            pointBorderColor: '#4AD991',
+		            pointBackgroundColor: '#FFFFFF',
+		            pointBorderWidth:3
+
+		        }
+
+		        ]
+		    },
+		    options: {
+			    responsive: true,
+			    interaction: {
+			      mode: 'index',
+			      intersect: false,
+			    },
+			    stacked: false,
+			    plugins: {
+			    	htmlLegend: {
+				        containerID: 'legend-container-3',
+				    },
+				    legend: {
+				        display: false,
+				    }
+			    },
+			    scales: {
+			      y: {
+			      	grace: '20%',
+			        type: 'linear',
+			        display: true,
+			        position: 'left',
+			        title: {
+			          display: true,
+			          text: 'ผลการดำเนินงาน(หน่วย)',
+			          color: '#171725',
+			          font: {
+			            family: 'Sarabun',
+			            size: 14,
+			            weight: 'bold',
+			            style: 'normal',
+			            lineHeight: 1.2
+			          },
+			          padding: {top: 0, left: 0, right: 0, bottom: 10}
+			        }
+			      },
+			      x: {
+				    title: {
+			          display: true,
+			          text: 'ไตรมาส',
+			          color: '#171725',
+			          font: {
+			            family: 'Sarabun',
+			            size: 14,
+			            weight: 'bold',
+			            style: 'normal',
+			            lineHeight: 1.2
+			          },
+			          padding: {top: 20, left: 0, right: 0, bottom: 0}
+			        }
+				  }
+			    },
+			},
+			  plugins: [htmlLegendPlugin],
+		});
+	</script>
+
+</body>
+</html>

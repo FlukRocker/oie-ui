@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo2.png">
+
+    <link href="assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/select2/css/select2.min.css">
+    <link href="assets/plugins/summernote/summernote-lite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+
+    <link href="assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+	<link href="assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+	<link href="assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+	<link href="assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+	<link href="assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+	<link href="assets/plugins/daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 active"  href="#">
+							<img src="assets/images/icon/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/fluent_people-20-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">งานของฉัน</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="assets/images/icon/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">ข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">คำของบประมาณ</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/mdi_email-newsletter.png" class="side-menu__icon">
+							<span class="side-menu__label">ข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="fixed-custom-1 pt-4  px-4">
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">โครงการที่ดำเนินการอยู่ทั้งหมด </a></li>
+					  </ol>
+					</nav>
+
+
+				</div>
+
+				<div class="pt-4 pb-5"></div>
+
+				<div class="row">
+					<div class="col">
+
+						<div class="card card-st-3  mb-4">
+							<div class="card-body p-0">
+								
+								<ul class="data-status d-flex">
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-1" data-status ="0" value="" checked="">
+										<label for="data-status-1" class="mb-0">ทั้งหมด (<span class="countStatus">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-2" data-status ="1" value="รอตรวจสอบ">
+										<label for="data-status-2" class="mb-0">รอตรวจสอบ (<span class="countStatus0">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-3" data-status ="2" value="ดำเนินการอยู่">
+										<label for="data-status-3" class="mb-0">อยู่ระหว่างดำเนินการ (<span class="countStatus1">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-4" data-status ="3" value="ปิดโครงการ">
+										<label for="data-status-4" class="mb-0">ปิดโครงการ (<span class="countStatus2">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-5" data-status ="4" value="รอยืนยัน">
+										<label for="data-status-5" class="mb-0">รอยืนยัน (<span class="countStatus3">0</span>)</label>
+									</li>
+									<li>
+										<input type="radio" name="data-status" class="input-status" id="data-status-6" data-status ="4" value="ยกเลิก">
+										<label for="data-status-6" class="mb-0 text-danger">ยกเลิก  (<span class="countStatus4">0</span>)</label>
+									</li>
+
+
+								</ul>
+								<div class="table-tools d-flex pb-1 flex-wrap align-items-center">
+
+									<button class="btn btn-st-11 btn-export  btn-control   me-3 mb-2 " id="" >
+										<img src="assets/images/icon/carbon_export.png" class="mt-n1" width="24"> นำข้อมูลออก
+									</button>
+
+								
+									<div class="fs-16 text-color-8 mb-2  mx-3">เลือกจากวันเริ่มต้นโครงการ</div>
+									<div class="mb-2 me-auto">
+										<input type="text" name="" id="" class="form-control form-st-1 icon-calendar-2 daterange " placeholder="dd/mm/yyyy -  dd/mm/yyyy" style="min-width: 240px;">
+									</div>
+	
+									<div class="mb-2">
+										<input type="search" name="" id="search" class="form-control form-st-1" placeholder="รหัสโครงการ / ชื่อโครงการ" style="min-width: 240px;">
+									</div>
+								</div>
+								<table class="table border-0" id="list-table">
+									<thead>
+										<tr>
+											<th class="py-1">
+												<div class="form-check form-check-st-1" style="padding-top:2px;">
+					  								<input class="form-check-input" type="checkbox" >
+												</div>
+											</th>
+											<th class="py-1">รหัสข้อเสนอ</th>
+											<th class="py-1">ชื่อโครงการ</th>
+											<th class="py-1">งบประมาณ</th>
+											<th class="select2-filter py-1">
+												ประเภท
+												<select class="select2-type" name="">
+													<option value="" selected="">ทั้งหมด</option>
+													<option value="0">โครงการใหม่</option>
+													<option value="1">text</option>
+												</select>
+											</th>
+											<th class="py-1">ระยะเวลาโครงการ</th>
+											<th class="py-1">สถานะ</th>
+										</tr>
+									</thead>
+								</table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/plugins/moment/moment.js"></script>
+	<script src="assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="assets/plugins/sidebar/sidebar.js"></script>
+	<script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="assets/plugins/summernote/summernote-lite.min.js"></script>
+	<script type="text/javascript" src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+
+	<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+	<script src="assets/plugins/datatable/js/jquery.dataTables.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+	<script src="assets/plugins/datatable/js/jszip.min.js"></script>
+	<script src="assets/plugins/datatable/js/pdfmake.min.js"></script>
+	<script src="assets/plugins/datatable/js/vfs_fonts.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.html5.min.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.print.min.js"></script>
+	<script src="assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+	<script src="assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+	<script src="assets/plugins/daterangepicker/daterangepicker.js"></script>
+
+	<script type="text/javascript">
+			$(function() {
+	          	var start = moment().subtract(0, 'days');
+	          	var end = moment();
+	          	function cb(start, end) {
+
+	          		console.log( start.format('DD/MM/YYYY') + ' - ' + end.format('DD/MM/YYYY') )
+	          	}
+	          	$('.daterange').daterangepicker({
+		            startDate: start,
+		            endDate: end,
+		            ranges: {
+		               'Today': [moment(), moment()],
+		               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+		               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+		               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+		               'This Month': [moment().startOf('month'), moment().endOf('month')],
+		               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+		            }
+		        }, cb);
+	          	cb(start, end);
+	      	});
+		</script>
+	<script type="text/javascript">
+
+		var myData4 = [
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001",
+		        "project_name": "ชื่อโครงการ",
+		        "budget": "5,050,000",
+		        "project_type": "โครงการใหม่",
+		        "date": "DD/MM/YYYY-DD/MM/YYYY",
+		        "status": 0,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001",
+		        "project_name": "ชื่อโครงการ",
+		        "budget": "5,050,000",
+		        "project_type": "โครงการใหม่",
+		        "date": "DD/MM/YYYY-DD/MM/YYYY",
+		        "status": 1,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001",
+		        "project_name": "ชื่อโครงการ",
+		        "budget": "5,050,000",
+		        "project_type": "โครงการใหม่",
+		        "date": "DD/MM/YYYY-DD/MM/YYYY",
+		        "status": 2,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001",
+		        "project_name": "ชื่อโครงการ",
+		        "budget": "5,050,000",
+		        "project_type": "โครงการใหม่",
+		        "date": "DD/MM/YYYY-DD/MM/YYYY",
+		        "status": 3,
+		        
+		    },
+		    {
+		        "id": 1,
+		        "offer_code":"PDSS64/001",
+		        "project_name": "ชื่อโครงการ",
+		        "budget": "5,050,000",
+		        "project_type": "โครงการใหม่",
+		        "date": "DD/MM/YYYY-DD/MM/YYYY",
+		        "status": 4,
+		        
+		    },
+		];
+
+
+		var table =	$('#list-table').DataTable({
+	        scrollX:        true,
+	        scrollCollapse: true,
+			data: myData4,
+		    columns: [
+		        { data: 'id' },
+		        { data: 'offer_code' },
+		        { data: 'project_name' },
+		        { data: 'budget' },
+		        { data: 'project_type' },
+		        { data: 'date' },
+		        { data: 'status' }
+		    ],
+		    columnDefs : [
+
+		    	{ targets : [0],className:"text-center align-middle pt-2  ",width:"20px",
+		    		render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="form-check form-check-st-1 " style="padding-top:3px;"><input class="form-check-input" type="checkbox" value="'+data+'" ></div>';
+			            return html;
+			        }
+		    	},
+		        { targets : [1],className:"align-middle text-left",width:"120px",
+		        	render : function (data, type, row) {
+			          	
+			            var html = "";
+			          	html += '<a href="/'+data+'" target="_blank" class="alink-st-1"  >'+data+'</a>';
+			            return html;
+			        }
+		    	},
+		        { targets : [2],className:"align-middle text-left",width:"140px",
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="">'+data+'</div>'
+			            return html;
+			        }
+		    	}
+		    	,
+		        { targets : [3],className:"align-middle text-center",width:"160px",
+		    	},
+		    	{ targets : [4],className:"align-middle text-center",width:"200px",
+
+		    	},
+		    	{ targets : [5],className:"align-middle text-center",width:"200px",
+
+		    	},
+		    	{ targets : [6],className:"align-middle text-center   ",width:"200px",
+		        	render : function (data, type, row) {
+			          	var html = "";
+			          	html += '<div class="projectstatus-table">'
+			          	if(data == 0){
+			          		html += '<div class="project-status-3 status-0">รอตรวจสอบ</div>'
+			          	}else if(data == 1){
+			          		html += '<div class="project-status-3 status-1">ดำเนินการอยู่</div>'
+			          	}else if(data == 2){
+			          		html += '<div class="project-status-3 status-2">ปิดโครงการ</div>'
+			          	}else if(data == 3){
+			          		html += '<div class="project-status-3 status-3">รอยืนยัน</div>'
+			          	}else if(data == 4){
+			          		html += '<div class="project-status-3 status-4">ยกเลิก</div>'
+			          	}
+			          	
+			          	html += '</div>'
+
+					
+					
+			            return html;
+			        }
+		    	}
+				  				
+							  			
+		    ],
+			language: {
+				searchPlaceholder: 'ค้นหา เลขที่, ชื่อผู้จำหน่าย',
+				sSearch: '',
+				lengthMenu: '_MENU_',
+				oPaginate: {
+			   		sNext: '<i class="fa fa-chevron-right"></i>',
+			   		sPrevious: '<i class="fa fa-chevron-left"></i>',
+			   		sFirst: '<i class="fa fa-chevron-left"></i>',
+			   		sLast: '<i class="fa fa-chevron-right"></i>'
+			    }
+			},
+			aLengthMenu: [
+		        [10,25, 50, 100, 200, -1],
+		        [10,25, 50, 100, 200, "All"]
+		    ],
+		    iDisplayLength:-1,
+			"ordering": false,
+			"dom": '<<t>ilp>',
+
+		});
+
+		var countStatus0 = table.column(6).data().filter( function ( value, index ) {
+	        return value === 0 ? true : false;
+	    } ).count();
+	    var countStatus1 = table.column(6).data().filter( function ( value, index ) {
+	        return value === 1 ? true : false;
+	    } ).count();
+	    var countStatus2 = table.column(6).data().filter( function ( value, index ) {
+	        return value === 2 ? true : false;
+	    } ).count();
+	    var countStatus3 = table.column(6).data().filter( function ( value, index ) {
+	        return value === 3 ? true : false;
+	    } ).count();
+	    var countStatus4 = table.column(6).data().filter( function ( value, index ) {
+	        return value === 4 ? true : false;
+	    } ).count();
+
+
+		$('.countStatus0').text(countStatus0)
+		$('.countStatus1').text(countStatus1)
+		$('.countStatus2').text(countStatus2)
+		$('.countStatus3').text(countStatus3)
+		$('.countStatus4').text(countStatus4)
+		$('.countStatus').text(countStatus0 + countStatus1 + countStatus2 + countStatus3 + countStatus4 );
+
+
+		$('#search').keyup(function(){
+		      table.search($(this).val()).draw() ;
+		})
+
+
+		$('.input-status').on('change',function(){
+			var status = $('.input-status:checked').val();
+			console.log(status)
+			table.column(6).search(status,true, false, true  ).draw();
+
+
+		})
+
+
+		$(".select2-type").select2({
+				minimumResultsForSearch: Infinity
+		});
+
+		$('.select2-type').on('select2:select', function (e) {
+		    var data = e.params.data;
+		    var text = data.text;
+		    if(data.text == 'ทั้งหมด'){
+		    	text = '';
+		    }
+		    table.column(4).search( text,true, false, true  ).draw();
+		});
+
+	</script>
+
+</body>
+</html>

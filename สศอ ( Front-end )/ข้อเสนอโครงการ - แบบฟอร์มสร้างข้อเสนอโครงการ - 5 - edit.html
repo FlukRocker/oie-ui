@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>สศอ</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="assets/images/logo2.png">
+
+    <link href="assets/bootstrap-5.0.1/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+    <link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sidemenu.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dropify.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- <body class="main-body app sidebar-mini "> -->
+<body class="main-body app sidebar-mini sidenav-toggled">
+
+	<div class="page">
+		<div class="app-sidebar__overlay" data-toggle="sidebar"></div>
+		<aside class="app-sidebar sidebar-scroll">
+			<div class="main-sidebar-header p-3 active">
+				<a class="desktop-logo active" href="">
+					<img src="assets/images/logo3.png" class="main-logo" alt="logo">
+				</a>
+				<a class="logo-icon mobile-logo py-3 icon-light active" href="">
+					<img src="assets/images/logo2.png" class="logo-icon mx-auto" alt="logo">
+				</a>
+			</div>
+			<div class="main-sidemenu">
+				<ul class="side-menu">
+					<li class="slide">
+						<a class="side-menu__item py-2 active"  href="#">
+							<img src="assets/images/icon/entypo_bar-graph.png" class="side-menu__icon">
+							<span class="side-menu__label">Dashbord</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/fluent_people-20-filled.png" class="side-menu__icon">
+							<span class="side-menu__label">งานของฉัน</span>
+						</a>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"   data-toggle="slide" href="#">
+							<img src="assets/images/icon/jam_write-f.png" class="side-menu__icon">
+							<span class="side-menu__label">โครงการ</span>
+						</a>
+						<ul class="slide-menu py-0">
+							<li><a class="slide-item py-2" href="/">ข้อเสนอโครงการ</a></li>
+							<li><a class="slide-item py-2" href="/">คำของบประมาณ</a></li>
+						</ul>
+					</li>
+					<li class="slide">
+						<a class="side-menu__item py-2"  href="#">
+							<img src="assets/images/icon/mdi_email-newsletter.png" class="side-menu__icon">
+							<span class="side-menu__label">ข่าวประชาสัมพันธ์</span>
+						</a>
+					</li>
+
+				</ul>
+			</div>
+		</aside>
+		<div class="main-content app-content">
+			
+			<nav class="navbar fixed-top navbar-st-1">
+			  <div class="container-fluid">
+			    <div class="app-sidebar__toggle mx-0" data-toggle="sidebar">
+					<a class="open-toggle" href="#"></i></a>
+					<a class="close-toggle" href="#"></a>
+				</div>
+
+		
+			    <div class="dropdown">
+				  <a class="btn  dropdown-toggle-1 pe-5" href="#" role="button" id="" data-bs-toggle="dropdown" aria-expanded="false">
+				  	<div class="d-flex align-items-center">
+				  		<img src="assets/images/Avatar.png" class="Avatar">
+				  		<div class="text-color-6 fs-14 spacing-1 ms-2">พีรยา ปัญญาโชจน์</div>
+				  	</div>
+				  </a>
+				  <ul class="dropdown-menu" >
+				    <li><a class="dropdown-item text-color-6 fs-14 spacing-1 ms-2" href="#">ออกจากระบบ</a></li>
+				  </ul>
+				</div>
+			  </div>
+			</nav>
+			<div class="container-fluid">
+
+				<div class="px-3">
+
+					<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" >
+					  <ol class="breadcrumb fs-16">
+					    <li class="breadcrumb-item "><a href="#" class="text-color-7 fw-500 text-decoration-none">Dashbord</a></li>
+					    <li class="breadcrumb-item"><a href="#" class="fw-500 text-color-8 text-decoration-none">โครงการทั้งหมด</a></li>
+					    <li class="breadcrumb-item active text-color-1 fw-500" aria-current="page">PIEO64/001</li>
+					  </ol>
+					</nav>
+
+					<div class="my-4">
+						<div class="row g-0">
+							<div class="col-xl-12">
+								<div class="card card-st-3 ">
+									<div class="card-body p-3 pt-4 ">
+										<div class="d-flex flex-wrap w-100">
+											<div class="flex-fill">
+												<div class="">
+													<div class="row g-0 mb-3">
+														<div class=" text-color-9 pe-2 text-nowrap w-100px">รหัสเอกสาร</div>
+														<div class="col text-color-1 text-nowrap">PIEO64/001</div>
+													</div>
+												</div>
+												<div class="">
+													<div class="row g-0 mb-3">
+														<div class=" text-color-9 pe-2 text-nowrap w-100px">สถานะ</div>
+														<div class="col text-color-1 text-nowrap">แบบร่าง</div>
+
+														<!-- <div class="col text-danger text-nowrap">ไม่อนุมัติ</div> -->
+														
+													</div>
+												</div>
+												
+											</div>
+											<div class="flex-fill">
+												<div class="">
+													<div class="row g-0 mb-3">
+														<div class="col-4 text-color-9 pe-2 text-nowrap w-100px">วันที่สร้าง</div>
+														<div class="col text-color-1 text-nowrap">01-03-2565</div>
+													</div>
+												</div>
+												<div class="">
+													<div class="row g-0 mb-3" >
+														<div class=" text-color-9 pe-2 text-nowrap w-100px">ผู้สร้าง</div>
+														<div class="col text-color-1 text-nowrap">นางสาวเบญจวรรณ บัวพิทักษ์</div>
+													</div>
+												</div>
+											</div>
+											<div class=" text-end">
+
+												<div class="g-btn-document">
+													<button class="btn btn-download-document"> ดาวน์โหลดเอกสาร</button>
+													<button class="btn btn-print-document">พิมพ์เอกสาร</button>
+
+													<div class="btn-group" role="group">
+													    <button id="btnGroupDrop1" type="button" class="btn btn-more dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+													      เพิ่มเติม
+													    </button>
+													    <ul class="dropdown-menu py-0" aria-labelledby="btnGroupDrop1">
+													      <li class="border-bottom py-1">
+													      	<button class="dropdown-item btn-approve" >ส่งอนุมัติ</button>
+													      </li>
+													      <li class="border-bottom py-1">
+													      	<button class="dropdown-item btn-edit" >แก้ไข</button>
+													      </li>
+													      <li class="border-bottom py-1">
+													      	<button class="dropdown-item btn-delete" >ลบ</button>
+													      </li>
+													    </ul>
+													</div>
+												</div>
+
+
+												<div class="g-btn-edit-form d-none">
+													<button class="btn btn-st-2 ms-2 mb-3 ">บันทึกร่าง</button>
+													<button class="btn btn-st-9 ms-2 mb-3 ">ส่งอนุมัติ</button>
+												</div>
+
+
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="sticky" data-sticky-class="step-sticky">
+				<div class="container-fluid">
+					<div class="my-4">
+						<div class="row">
+							<div class="col-xl-9 col-11 d-flex align-items-center">
+								<ul class="steps-2 step-success flex-fill">
+									<li class="step-1 active ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ - 1 - edit.html">
+											<div class="step-icon">1</div>
+											<div class="step-name">รายละเอียดหลัก</div>
+										</a>
+									</li>
+									<li class="step-2 active ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ - 2 - edit.html">
+											<div class="step-icon">2</div>
+											<div class="step-name">หลักการและเหตุผล</div>
+										</a>
+									</li>
+									<li class="step-3 active ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ - 3 - edit.html">
+											<div class="step-icon">3</div>
+											<div class="step-name">การดำเนินงาน</div>
+										</a>
+									</li>
+									<li class="step-4 active ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ - 4 - edit.html">
+											<div class="step-icon">4</div>
+											<div class="step-name">สถานที่/ประมาณการ</div>
+										</a>
+									</li>
+									<li class="step-5 active ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ - 5 - edit.html">
+											<div class="step-icon">5</div>
+											<div class="step-name" style="color: #56B68B;">ผู้รับผิดชอบ</div>
+										</a>
+									</li>
+							<!-- 		<li class="step-6 success ">
+										<div class="step-icon">6</div>
+										<div class="step-name">ดำเนินการสำเร็จ</div>
+									</li> -->
+								</ul>
+								<ul class="steps-3">
+									<li class="step-1 active  ">
+										<a class="text-decoration-none" href="ข้อเสนอโครงการ - แบบฟอร์มสร้างข้อเสนอโครงการ ข้อแก้ไข.html">
+											<div class="step-icon"></div>
+											<div class="step-name">ข้อแก้ไข</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col">
+
+						<div class="card card-st-3  mb-4">
+							<div class="card-body p-4">
+								<div class="fs-24 mb-2">
+									<span class="fw-bold text-color-1">ข้อเสนอโครงการ</span>
+									<span class="text-color-9">(หน้า 5/6)</span>
+								</div>
+								<div class="fs-15 mb-5 text-color-8">กรุณากรอกข้อมูลเพื่อสร้างข้อเสนอโครงการ </div>
+
+								<div class="fs-15 mb-4 text-danger el-custom-view d-none">*จำเป็นต้องกรอก  </div>
+
+
+								<form class="needs-validation" novalidate>
+						
+
+									<div class="mb-5">
+
+										<div class="mb-4 row align-items-lg-center" id="el1">
+											<label class=" fs-18 col-lg-12 text-color-1 fw-bold">15.ผู้รับผิดชอบและผู้ประสานงานโครงการ </label>
+										</div>
+
+										<div class="ps-4 fs-16 fw-bold text-color-8 mb-4">15.1 ผู้รับผิดชอบโครงการ</div>
+										<div class="box-responsible-person mb-4">
+											<div class="ps-5 d-flex responsible-person mb-4">
+												<div class="number mt-2 me-2" style="padding-top: 1px;">1.</div>
+												<div class="flex-fill">
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">คำนำหน้าชื่อ <span class="text-danger">*</span></div>
+														<div class="col-lg-3">
+															<select class="form-control form-st-1 form-select "  required="" disabled="">
+																<option value=""></option>
+																<option value="1">นาย</option>
+																<option value="2">นาง</option>
+															</select>
+														</div>
+														<div class="col-lg-3"></div>
+														<div class="col-lg-3"></div>
+													</div>
+
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">
+															<label class="text-color-8"> ชื่อ  <span class="text-danger">*</span></label>
+															
+														</div>
+														<div class="col-lg-3">
+															<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรอกชื่อ" readonly="">
+														</div>
+														<div class="col-lg-3 text-lg-center">
+															<label class="text-color-8"> นามสกุล  <span class="text-danger">*</span></label>
+														</div>
+														<div class="col-lg-3">
+															<input type="text" name="" class="form-control form-st-1"  placeholder="กรอกนามสกุล" required="" readonly="">
+														</div>
+													</div>
+
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">
+															<label class="text-color-8"> ตำแหน่ง</label>
+														</div>
+														<div class="col-lg-9">
+															<input type="text" name="" class="form-control form-st-1"  placeholder="กรอกชื่อ" readonly="">
+														</div>
+													</div>
+
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">
+															<label class="text-color-8"> หน่วยงานภายใน</label>
+														</div>
+														<div class="col-lg-9">
+															<input type="text" name="" class="form-control form-st-1"  placeholder="กรอกชื่อหน่วยงาน" readonly="">
+														</div>
+													</div>
+
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">
+															<label class="text-color-8"> เบอร์โทร</label>
+														</div>
+														<div class="col-lg-9">
+															<input type="text" name="" class="form-control form-st-1 validateNumber"  placeholder="กรอกเบอร์โทร" readonly="">
+														</div>
+													</div>
+
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">
+															<label class="text-color-8"> อีเมล</label>
+														</div>
+														<div class="col-lg-9">
+															<input type="text" name="" class="form-control form-st-1" placeholder="กรอกอีเมล" readonly="">
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+										<div class="ps-3">
+											<button type="button" class="btn btn-st-6 btn-link btn-add-responsible-person ms-5 el-custom-view d-none">เพิ่มผู้รับผิดชอบ</button>
+										</div>
+
+										<div class="py-4"></div>
+
+										<div class="ps-4 fs-16 fw-bold text-color-8 mb-4">15.2 ผู้ประสานงาน</div>
+										<div class="box-coordinator mb-4">
+											<div class="ps-5 d-flex coordinator mb-4">
+												<div class="number mt-2 me-2" style="padding-top: 1px;">1.</div>
+												<div class="flex-fill">
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">คำนำหน้าชื่อ <span class="text-danger">*</span></div>
+														<div class="col-lg-3">
+															<select class="form-control form-st-1 form-select "  required="" disabled="">
+																<option value=""></option>
+																<option value="1">นาย</option>
+																<option value="2">นาง</option>
+															</select>
+														</div>
+														<div class="col-lg-3"></div>
+														<div class="col-lg-3"></div>
+													</div>
+
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">
+															<label class="text-color-8"> ชื่อ  <span class="text-danger">*</span></label>
+															
+														</div>
+														<div class="col-lg-3">
+															<input type="text" name="" class="form-control form-st-1" required="" placeholder="กรอกชื่อ" readonly="">
+														</div>
+														<div class="col-lg-3 text-lg-center">
+															<label class="text-color-8"> นามสกุล  <span class="text-danger">*</span></label>
+														</div>
+														<div class="col-lg-3">
+															<input type="text" name="" class="form-control form-st-1"  placeholder="กรอกนามสกุล" required="" readonly="">
+														</div>
+													</div>
+
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">
+															<label class="text-color-8"> ตำแหน่ง</label>
+														</div>
+														<div class="col-lg-9">
+															<input type="text" name="" class="form-control form-st-1"  placeholder="กรอกชื่อ" readonly="">
+														</div>
+													</div>
+
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">
+															<label class="text-color-8"> หน่วยงานภายใน</label>
+														</div>
+														<div class="col-lg-9">
+															<input type="text" name="" class="form-control form-st-1"  placeholder="กรอกชื่อหน่วยงาน" readonly="">
+														</div>
+													</div>
+
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">
+															<label class="text-color-8"> เบอร์โทร</label>
+														</div>
+														<div class="col-lg-9">
+															<input type="text" name="" class="form-control form-st-1 validateNumber"  placeholder="กรอกเบอร์โทร" readonly="">
+														</div>
+													</div>
+
+													<div class="row align-items-lg-center mb-3">
+														<div class="col-lg-3">
+															<label class="text-color-8"> อีเมล</label>
+														</div>
+														<div class="col-lg-9">
+															<input type="text" name="" class="form-control form-st-1" placeholder="กรอกอีเมล" readonly="">
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+										<div class="ps-3">
+											<button type="button" class="btn btn-st-6 btn-link btn-add-coordinator ms-5 el-custom-view d-none">เพิ่มผู้ประสานงาน</button>
+										</div>
+
+										<div class="py-4"></div>
+										<div class="mb-4 row align-items-lg-center" id="el2">
+											<label class=" fs-18 col-lg-12 text-color-1 fw-bold">16.แนบไฟล์เอกสารเพิ่มเติม </label>
+										</div>
+										<div class="ps-5">
+											<div class="mb-4">
+												<div class="fs-16 text-color-8 fw-bold mb-3">15.1 เอกสาร TOR ฉบับเต็ม <span class="text-danger">*</span><span class="ms-3 fs-14 text-color-9">(รองรับเฉพาะไฟล์นามสกุล doc.,docx.,pdf.)</span> </div>
+												<div class="row">
+													<div class="col-lg-8">
+														<!-- แก้ไข 29/03/2565 เพิ่ม multiple=""  -->
+														<input type="file" class="dropify form-control" data-max-file-size="5M" data-allowed-file-extensions="doc docx pdf" id="file-upload-1" accept=".doc,.docx,.pdf" multiple="" required="" disabled="" />
+													</div>
+													<div class="col-lg-4">
+														<ul class="file-list" id="file-list-1">
+
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="mb-4">
+												<div class="fs-16 text-color-8 fw-bold mb-3">15.2 เอกสาร Onepage (ไฟล์ Word) <span class="text-danger">*</span><span class="ms-3 fs-14 text-color-9">(รองรับเฉพาะไฟล์นามสกุล doc.,docx.)</span> </div>
+												<div class="row">
+													<div class="col-lg-8">
+														<!-- แก้ไข 29/03/2565 เพิ่ม multiple=""  -->
+														<input type="file" class="dropify2 form-control" data-max-file-size="5M" data-allowed-file-extensions="doc docx" id="file-upload-2" accept=".doc,.docx" multiple="" required="" disabled="" />
+													</div>
+													<div class="col-lg-4">
+														<ul class="file-list" id="file-list-2">
+
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="mb-4">
+												<div class="fs-16 text-color-8 fw-bold mb-3">15.3 เอกสาร Onepage (ไฟล์ Powerpoint)  <span class="text-danger">*</span><span class="ms-3 fs-14 text-color-9">(รองรับเฉพาะไฟล์นามสกุล ppt.,pptx.)</span> </div>
+												<div class="row">
+													<div class="col-lg-8">
+														<!-- แก้ไข 29/03/2565 เพิ่ม multiple=""  -->
+														<input type="file" class="dropify3 form-control" data-max-file-size="5M" data-allowed-file-extensions="ppt pptx" id="file-upload-3" accept=".pptx,.ppt" multiple="" required="" disabled="" />
+													</div>
+													<div class="col-lg-4">
+														<ul class="file-list" id="file-list-3">
+
+														</ul>
+													</div>
+												</div>
+											</div>
+											<div class="mb-4">
+												<div class="fs-16 text-color-8 fw-bold mb-3">15.4 เอกสารเพิ่มเติมอื่นๆ   </div>
+												<div class="row">
+													<div class="col-lg-8">
+														<!-- แก้ไข 29/03/2565 เพิ่ม multiple=""  -->
+														<input type="file" class="dropify4 form-control" data-max-file-size="5M" data-allowed-file-extensions="ppt pptx" id="file-upload-4" accept=".docx,.jpg,.png,.pdf,.xlsx,.pptx" multiple="" disabled=""  />
+													</div>
+													<div class="col-lg-4">
+														<ul class="file-list" id="file-list-4">
+
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+
+
+
+
+									<div class="text-center d-flex justify-content-end flex-wrap ">
+										<button class="btn btn-st-2 ms-2 mb-3 btn-save d-none">บันทึก</button>
+									</div>
+
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-auto">
+						<div style="width: 280px;">
+							<div class="sticky" data-sticky-class="card-title-sticky">
+								<div class="card card-st-3 mb-4">
+									<div class="card-body p-3 pe-4">
+										<ul id="progress" class="ps-2">
+											<li data-elId="#el1"><div class="node activated"></div><p>ผู้รับผิดชอบและผู้ประสานงาน</p></li>
+											<li><div class="divider  grey"></div></li>
+										    <li data-elId="#el2"><div class="node "></div><p>แนบเอกสารเพิ่มเติม</p></li>
+										</ul>
+									</div>
+								</div>
+								<div class="card card-st-3 mb-4">
+									<div class="card-body p-3 pe-4">
+
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">รหัสโครงการ</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">PIEO64/001</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">วันที่สร้าง</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">01-03-2565</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">อ้างอิง</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">-</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-6 mb-2  text-color-9 fw-light">แก้ไขล่าสุด</div>
+												<div class="col-lg-6 mb-2 text-color-11 fw-bolder">01-03-2565</div>
+											</div>
+										</div>
+										<div class="mb-2">
+											<div class="row g-2">
+												<div class="col-lg-auto mb-2  text-color-9 fw-light">ผู้สร้าง</div>
+												<div class="col mb-2 text-color-11 fw-bolder">น.ส. เบญจวรรณ บัวพิทักษ์1</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="modal fade" id="confirmModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+
+	      <div class="modal-body pb-4">
+	      	<div class="text-end">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      	</div>
+	        
+	        <div class="text-center text-color-1 fs-18 fw-500 pt-4 mb-5 pb-3">กรุณากรอกข้อมูลที่จำเป็นให้ครบถ้วน ?</div>
+
+
+	        <div class="text-center d-flex flex-wrap justify-content-center">
+	        	<button type="button" class="btn btn-st-3 mx-2 mb-3 order-1 order-sm-0" data-bs-dismiss="modal">ยกเลิก</button>
+	        	<a href="" class="btn btn-st-2 mx-2  mb-3 order-0 order-sm-1">ยืนยัน</a>
+	        </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="modal fade" id="deleteConfirmModal" tabindex="-1"  aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" style="max-width: 420px;">
+	    <div class="modal-content " style="border-radius: 15px;">
+
+	      <div class="modal-body ">
+	      	<div class="text-end">
+	      		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      	</div>
+	        <div class="text-center">
+	        	<img src="assets/images/icon/ion_trash-bin.png" width="50">
+	        </div>
+	        <div class="text-center text-color-8 fs-18 fw-500 pt-4 mb-4 pb-3">กคุณต้องการลบไฟล์ใช่หรือไม่ ?</div>
+
+
+	        <div class="text-center d-flex flex-wrap justify-content-center">
+	        	<button  class="btn btn-st-2 mx-2  mb-3 order-0 order-sm-1">ยืนยัน</button>
+	        	<button type="button" class="btn btn-st-3 mx-2 mb-3 order-1 order-sm-0" data-bs-dismiss="modal">ยกเลิก</button>
+	        </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- End Page -->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="assets/plugins/moment/moment.js"></script>
+	<script src="assets/bootstrap-5.0.1/js/bootstrap.bundle.min.js" ></script> 
+	<script src="assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/plugins/side-menu/sidemenu.js"></script>
+	<script src="assets/plugins/sidebar/sidebar.js"></script>
+	<script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+	<script src="assets/plugins/select2/js/select2.min.js" ></script> 
+	<script src="assets/js/dropify.js" ></script> 
+	<script src="assets/js/sticky.min.js"></script>
+
+	<script type="text/javascript">
+		var sticky = new Sticky('.sticky');
+		sticky.update();
+	</script>
+
+
+	<script type="text/javascript">
+		var confirmModal = new bootstrap.Modal(document.getElementById('confirmModal'), {
+		  keyboard: false
+		})
+	</script>
+	
+	<script type="text/javascript">
+
+		(function () {
+		  'use strict'
+		  var forms = document.querySelectorAll('.needs-validation')
+		  Array.prototype.slice.call(forms)
+		    .forEach(function (form) {
+		      form.addEventListener('submit', function (event) {
+		        if (!form.checkValidity()) {
+		          event.preventDefault()
+		          event.stopPropagation()
+
+		          confirmModal.show()
+		        }
+
+		        form.classList.add('was-validated')
+		        $('.form-control:invalid').closest('.dropify-wrapper').css("border-color", "#dc3545");
+		      }, false)
+		    })
+		})()
+	</script>
+
+	<script type="text/javascript">
+		$('.btn-add-responsible-person').on('click',function (){
+			var div = $('.responsible-person:first-child').clone()
+			div.find('input').val('')
+			div.find('.number').text($('.responsible-person').length + 1)
+			
+			$('.box-responsible-person').append(div)
+		})
+
+		$('.btn-add-coordinator').on('click',function (){
+			var div = $('.coordinator:first-child').clone()
+			div.find('input').val('')
+			div.find('.number').text($('.coordinator').length + 1)
+			
+			$('.box-coordinator').append(div)
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.select2').select2({
+		    	minimumResultsForSearch: -1,
+		    	"language": {
+				    "noResults": function(){
+				        return '<div class="fs-12 py-2">ไม่พบข้อมูล</div>';
+				    }
+				},
+			    escapeMarkup: function (markup) {
+			        return markup;
+			    }
+		    });
+		});
+	</script>
+
+	<script>
+        $(document).ready(function (){
+            $("#progress li").click(function (){
+            	$("#progress li div").removeClass('activated')
+            	for(i=0;i<=$(this).index();i++){
+            		$("#progress li:nth-child("+i+")").find('div').addClass('activated')
+            	}
+            	var ids = $(this).attr('data-elId')
+            	$(this).find('.node').addClass('activated')
+                $('html, body').animate({
+                    scrollTop: $(ids).offset().top-400
+                }, 0);
+            });
+
+            $(function(){
+			  $(window).scroll(function(){
+			    var el1 = $('#el1').height();
+			    var el2 = $('#el2').offset().top - 500;
+
+			    if($(this).scrollTop()>=el2){
+			    	$("#progress li:nth-child(2)").find('div').addClass('activated')
+			    	$("#progress li:nth-child(3)").find('div').addClass('activated')
+			    }else{
+			    	$("#progress li:nth-child(2)").find('div').removeClass('activated')
+			    	$("#progress li:nth-child(3)").find('div').removeClass('activated')
+			    }
+
+
+
+			  });
+			});
+        });
+    </script>
+
+	<script type="text/javascript">
+		function validateNumber(event) {
+            var key = window.event ? event.keyCode : event.which;
+            if (event.keyCode === 8) {
+                return true;
+            } else if ( key < 48 || key > 57 ) {
+                return false;
+            } else {
+                return true;
+            }
+        };
+        $(document).ready(function(){
+            $('.validateNumber').keypress(validateNumber);
+        });
+	</script>
+
+	<script type="text/javascript">
+    	$('.btn-edit').on('click',function(){
+
+    		$('form input').attr('readonly',false).attr('disabled',false);
+    		$('form textarea').attr('readonly',false);
+    		$('form .select2').attr('disabled',false);
+    		$('form select').attr('disabled',false);
+    		$('.btn-save').removeClass('d-none');
+    		$('.dropify-wrapper').removeClass('disabled')
+
+    		$('.g-btn-document').addClass('d-none');
+    		$('.g-btn-edit-form').removeClass('d-none');
+    		$('.el-custom-view').removeClass('d-none');
+    		$('.steps-2').removeClass('step-success')
+
+    	})
+
+    	var deleteConfirmModal = new bootstrap.Modal(document.getElementById('deleteConfirmModal'), {
+		  keyboard: false
+		})
+
+    	$('.btn-delete').on('click',function(){
+    		deleteConfirmModal.show()
+    	})
+    </script>
+	<script type="text/javascript">
+		/*แก้ไข 29/03/2565 เพิ่ม class dropify-wrapper-file  */
+		var drEvent =  $('.dropify').dropify({
+		    tpl: {
+		        wrap:            '<div class="dropify-wrapper dropify-wrapper-file dropify-wrapper-st-3 "></div>',
+		        loader:          '<div class="dropify-loader"></div>',
+		        message:         '<div class="dropify-message"><span class="" /><div class="text-center fs-16 mb-1">ลากไฟล์มาวางที่นี่</div><div class="text-center fs-12 mb-1">รองรับไฟล์นามสกุล doc.,docx.,pdf.</div><div class="text-center fs-12 mb-1">ขนาดไม่เกิน 5 MB สูงสุดไม่เกิน 5 ไฟล์</div><div class="text-center mt-3 mb-1 d-flex align-items-center justify-content-center"> <span class="pe-3 fs-16 text-color-14">หรือ</span> <button class="btn btn-upload-dropify  py-1 "><img src="assets/images/icon/IconAttach.png" width="15" class="me-2" /> เลือกแนบไฟล์</button></div> </div>',
+		        preview:'<label class="dropify-preview" for="drop-1"><span class="dropify-render"><div class="fildrop"></div></span><div class="dropify-infos"><div class="dropify-infos-inner"><p class="dropify-infos-message">{{ replace }}</p></div></div></label>',
+		        filename:        '<p class="dropify-filename"><span class="file-icon"></span> <span class="dropify-filename-inner"></span></p>',
+		        clearButton:     '<p class="dropify-clear">ลบรูปภาพ</p>',
+		        errorLine:       '<p class="dropify-error">{{ error }}</p>',
+		        errorsContainer: '<div class="dropify-errors-container"><ul></ul></div>'
+		    }
+		});
+
+		var drEvent =  $('.dropify2').dropify({
+		    tpl: {
+		        wrap:            '<div class="dropify-wrapper dropify-wrapper-file dropify-wrapper-st-3 "></div>',
+		        loader:          '<div class="dropify-loader"></div>',
+		        message:         '<div class="dropify-message"><span class="" /><div class="text-center fs-16 mb-1">ลากไฟล์มาวางที่นี่</div><div class="text-center fs-12 mb-1">รองรับไฟล์นามสกุล doc.,docx.</div><div class="text-center fs-12 mb-1">ขนาดไม่เกิน 5 MB สูงสุดไม่เกิน 5 ไฟล์</div><div class="text-center mt-3 mb-1 d-flex align-items-center justify-content-center"> <span class="pe-3 fs-16 text-color-14">หรือ</span> <button class="btn btn-upload-dropify  py-1 "><img src="assets/images/icon/IconAttach.png" width="15" class="me-2" /> เลือกแนบไฟล์</button></div> </div>',
+		        preview:'<label class="dropify-preview" for="drop-1"><span class="dropify-render"><div class="fildrop"></div></span><div class="dropify-infos"><div class="dropify-infos-inner"><p class="dropify-infos-message">{{ replace }}</p></div></div></label>',
+		        filename:        '<p class="dropify-filename"><span class="file-icon"></span> <span class="dropify-filename-inner"></span></p>',
+		        clearButton:     '<p class="dropify-clear">ลบรูปภาพ</p>',
+		        errorLine:       '<p class="dropify-error">{{ error }}</p>',
+		        errorsContainer: '<div class="dropify-errors-container"><ul></ul></div>'
+		    }
+		});
+
+		var drEvent =  $('.dropify3').dropify({
+		    tpl: {
+		        wrap:            '<div class="dropify-wrapper dropify-wrapper-file dropify-wrapper-st-3 "></div>',
+		        loader:          '<div class="dropify-loader"></div>',
+		        message:         '<div class="dropify-message"><span class="" /><div class="text-center fs-16 mb-1">ลากไฟล์มาวางที่นี่</div><div class="text-center fs-12 mb-1">รองรับไฟล์นามสกุล ppt.,pptx.</div><div class="text-center fs-12 mb-1">ขนาดไม่เกิน 5 MB สูงสุดไม่เกิน 5 ไฟล์</div><div class="text-center mt-3 mb-1 d-flex align-items-center justify-content-center"> <span class="pe-3 fs-16 text-color-14">หรือ</span> <button class="btn btn-upload-dropify  py-1 "><img src="assets/images/icon/IconAttach.png" width="15" class="me-2" /> เลือกแนบไฟล์</button></div> </div>',
+		        preview:'<label class="dropify-preview" for="drop-1"><span class="dropify-render"><div class="fildrop"></div></span><div class="dropify-infos"><div class="dropify-infos-inner"><p class="dropify-infos-message">{{ replace }}</p></div></div></label>',
+		        filename:        '<p class="dropify-filename"><span class="file-icon"></span> <span class="dropify-filename-inner"></span></p>',
+		        clearButton:     '<p class="dropify-clear">ลบรูปภาพ</p>',
+		        errorLine:       '<p class="dropify-error">{{ error }}</p>',
+		        errorsContainer: '<div class="dropify-errors-container"><ul></ul></div>'
+		    }
+		});
+
+		var drEvent =  $('.dropify4').dropify({
+		    tpl: {
+		        wrap:            '<div class="dropify-wrapper dropify-wrapper-file dropify-wrapper-st-3 "></div>',
+		        loader:          '<div class="dropify-loader"></div>',
+		        message:         '<div class="dropify-message"><span class="" /><div class="text-center fs-16 mb-1">ลากไฟล์มาวางที่นี่</div><div class="text-center fs-12 mb-1">รองรับไฟล์นามสกุล docx.,jpg.,png.,pdf.xlsx.,pptx</div><div class="text-center fs-12 mb-1">ขนาดไม่เกิน 5 MB สูงสุดไม่เกิน 5 ไฟล์</div><div class="text-center mt-3 mb-1 d-flex align-items-center justify-content-center"> <span class="pe-3 fs-16 text-color-14">หรือ</span> <button class="btn btn-upload-dropify  py-1 "><img src="assets/images/icon/IconAttach.png" width="15" class="me-2" /> เลือกแนบไฟล์</button></div> </div>',
+		        preview:'<label class="dropify-preview" for="drop-1"><span class="dropify-render"><div class="fildrop"></div></span><div class="dropify-infos"><div class="dropify-infos-inner"><p class="dropify-infos-message">{{ replace }}</p></div></div></label>',
+		        filename:        '<p class="dropify-filename"><span class="file-icon"></span> <span class="dropify-filename-inner"></span></p>',
+		        clearButton:     '<p class="dropify-clear">ลบรูปภาพ</p>',
+		        errorLine:       '<p class="dropify-error">{{ error }}</p>',
+		        errorsContainer: '<div class="dropify-errors-container"><ul></ul></div>'
+		    }
+		});
+	</script>
+
+	<script type="text/javascript">
+
+		$("#file-upload-1").change(function(){
+
+	        for (var i = 0; i < $(this).get(0).files.length; ++i) {
+			        // preview($(this).get(0).files[i])
+			    var filename = $(this).get(0).files[i].name;
+				var fileExtension =  filename.split('.').pop().toLowerCase();
+				var file =  $(this).get(0).files[i];
+				var reader = new FileReader();
+
+				// (อัพเดท 23042022)
+				reader.fileName = filename
+				reader.fileExtension = fileExtension
+				// (อัพเดท 23042022)
+
+	            reader.readAsDataURL(file);
+	            reader.addEventListener("load", function(e) {
+	               	var html = "";
+					html += '<li>'
+					// (อัพเดท 23042022)
+					html += '<div class="'+e.target.fileExtension+'">'
+					html += '<div class="text-color-5">'+e.target.filename+'</div>'
+					// (อัพเดท 23042022)
+					html += '<div class="text-color-9">11/03/2022 13:30 โดย ธนกาญจน์</div>'
+					html += '<button type="button" class="btn btn-link btn-del-file"></button>'
+					html += '</div>'
+					 html += '<input type="hidden" name="" class=" file-upload" value="'+e.target.result+'">'
+					html += '</li>'
+					$('#file-list-1').append(html)	
+	            });
+			}
+			$('.form-control:valid').closest('.dropify-wrapper').css("border-color", "");
+
+
+	    });
+
+
+		$("#file-upload-2").change(function(){
+	        for (var i = 0; i < $(this).get(0).files.length; ++i) {
+			        // preview($(this).get(0).files[i])
+			    var filename = $(this).get(0).files[i].name;
+				var fileExtension =  filename.split('.').pop().toLowerCase();
+				var file =  $(this).get(0).files[i];
+				var reader = new FileReader();
+				// (อัพเดท 28042022)
+				reader.fileName = filename
+				reader.fileExtension = fileExtension
+				// (อัพเดท 28042022)
+	            reader.readAsDataURL(file);
+	            reader.addEventListener("load", function(e) {
+	               	var html = "";
+					html += '<li>'
+
+					// (อัพเดท 28042022)
+					html += '<div class="'+e.target.fileExtension+'">'
+					html += '<div class="text-color-5">'+e.target.filename+'</div>'
+					// (อัพเดท 28042022)
+
+					html += '<div class="text-color-9">11/03/2022 13:30 โดย ธนกาญจน์</div>'
+					html += '<button type="button" class="btn btn-link btn-del-file"></button>'
+					html += '</div>'
+					 html += '<input type="hidden" name="" class=" file-upload" value="'+e.target.result+'">'
+					html += '</li>'
+					$('#file-list-2').append(html)	
+	            });
+			}
+			$('.form-control:valid').closest('.dropify-wrapper').css("border-color", "");
+
+ 
+	    });
+
+		$("#file-upload-3").change(function(){
+	        for (var i = 0; i < $(this).get(0).files.length; ++i) {
+			        // preview($(this).get(0).files[i])
+			    var filename = $(this).get(0).files[i].name;
+				var fileExtension =  filename.split('.').pop().toLowerCase();
+				var file =  $(this).get(0).files[i];
+				var reader = new FileReader();
+				// (อัพเดท 28042022)
+				reader.fileName = filename
+				reader.fileExtension = fileExtension
+				// (อัพเดท 28042022)
+	            reader.readAsDataURL(file);
+	            reader.addEventListener("load", function(e) {
+	               	var html = "";
+
+					html += '<li>'
+					// (อัพเดท 28042022)
+					html += '<div class="'+e.target.fileExtension+'">'
+					html += '<div class="text-color-5">'+e.target.filename+'</div>'
+					// (อัพเดท 28042022)
+
+					html += '<div class="text-color-9">11/03/2022 13:30 โดย ธนกาญจน์</div>'
+					html += '<button type="button" class="btn btn-link btn-del-file"></button>'
+					html += '</div>'
+					 html += '<input type="hidden" name="" class=" file-upload" value="'+e.target.result+'">'
+					html += '</li>'
+					$('#file-list-3').append(html)	
+	            });
+			}
+			$('.form-control:valid').closest('.dropify-wrapper').css("border-color", "");
+
+
+	    });
+
+	    $("#file-upload-4").change(function(){
+	        for (var i = 0; i < $(this).get(0).files.length; ++i) {
+			        // preview($(this).get(0).files[i])
+			    var filename = $(this).get(0).files[i].name;
+				var fileExtension =  filename.split('.').pop().toLowerCase();
+				var file =  $(this).get(0).files[i];
+				var reader = new FileReader();
+				// (อัพเดท 28042022)
+				reader.fileName = filename
+				reader.fileExtension = fileExtension
+				// (อัพเดท 28042022)
+	            reader.readAsDataURL(file);
+	            reader.addEventListener("load", function(e) {
+	               	var html = "";
+					html += '<li>'
+
+					// (อัพเดท 28042022)
+					html += '<div class="'+e.target.fileExtension+'">'
+					html += '<div class="text-color-5">'+e.target.filename+'</div>'
+					// (อัพเดท 28042022)
+
+					html += '<div class="text-color-9">11/03/2022 13:30 โดย ธนกาญจน์</div>'
+					html += '<button type="button" class="btn btn-link btn-del-file"></button>'
+					html += '</div>'
+					 html += '<input type="hidden" name="" class=" file-upload" value="'+e.target.result+'">'
+					html += '</li>'
+					$('#file-list-4').append(html)	
+	            });
+			}
+			$('.form-control:valid').closest('.dropify-wrapper').css("border-color", "");
+
+	    });
+	</script>
+	<script type="text/javascript">
+		$(document).on('click','.btn-del-file',function(){
+
+			var checkfile = $(this).closest('ul').find('li').length;
+
+			if(checkfile <= 1){
+				$(this).closest('.row').find('input[type="file"]').val('')
+			}
+
+			$(this).closest('li').remove()
+
+
+		})
+	</script>
+</body>
+</html>
